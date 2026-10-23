@@ -14,6 +14,7 @@ authors:
     orcid: "https://orcid.org/0009-0007-7953-1531"
 version: 1.0.1
 date-released: 2026-10-23
+doi: 10.5281/zenodo.23589733
 repository-code: "https://github.com/johnzfitch/five-valent-volume-gap"
 license: MIT
 keywords:
@@ -26,6 +27,7 @@ keywords:
   - computer-assisted proof
 preferred-citation:
   type: article
+  doi: 10.5281/zenodo.23589733
   title: "The Volume Gap at Five-Valent Vertices"
   authors:
     - family-names: Fitch

@@ -2,6 +2,10 @@
 
 John Zachary Fitch (zack@internetuniverse.org) · ORCID [0009-0007-7953-1531](https://orcid.org/0009-0007-7953-1531)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23589733.svg)](https://doi.org/10.5281/zenodo.23589733)
+
+**DOI:** [10.5281/zenodo.23589733](https://doi.org/10.5281/zenodo.23589733) (all versions; resolves to the latest). Release `v1.0.1` is archived as [10.5281/zenodo.23589734](https://doi.org/10.5281/zenodo.23589734).
+
 This repository holds the paper, its LaTeX sources, the code written for it, and the certificates behind its computer-assisted proofs. The paper is [`lqg_volume_gap.pdf`](lqg_volume_gap.pdf), 80 pages, version of 22 October 2026.
 
 ## What the paper proves
