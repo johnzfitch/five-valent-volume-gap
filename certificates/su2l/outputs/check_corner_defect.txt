@@ -1,0 +1,1 @@
+interior-diagonal sites 195361 (corner sites 27993), 2j1<=11, doubled legs 1..8: mismatches 0

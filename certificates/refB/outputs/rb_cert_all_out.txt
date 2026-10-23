@@ -1,0 +1,4 @@
+2j1=3: all 168000 tuples with legs 2j<=40 (j2<=j3, j4<=j5, (j2,j3)<=(j4,j5)), exact target q >= 7.18: {'certified': 147480, 'trivial': 20520}; failures 0 []  (55s)
+2j1=5: all 168000 tuples with legs 2j<=40 (j2<=j3, j4<=j5, (j2,j3)<=(j4,j5)), exact target q >= 7.69: {'trivial': 16474, 'certified': 151526}; failures 0 []  (172s)
+2j1=2: all 137731 tuples with legs 2j<=38 (j2<=j3, j4<=j5, (j2,j3)<=(j4,j5)), exact target q >= 4.558: {'certified': 119320, 'trivial': 18411}; failures 0 []  (38s)
+2j1=4: all 137731 tuples with legs 2j<=38 (j2<=j3, j4<=j5, (j2,j3)<=(j4,j5)), exact target q >= 4.5579607: {'trivial': 14689, 'certified': 123042}; failures 0 []  (114s)

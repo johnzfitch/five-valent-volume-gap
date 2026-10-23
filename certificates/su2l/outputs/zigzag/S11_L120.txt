@@ -1,0 +1,2 @@
+NO ADMISSIBLE READING 11 (19, 20, 21, 27) open q=115.117
+2s=11 tuples=1000 no-admissible=1 min ratio bound/q=0.3373 median=1.0000 worst=(np.float64(0.33726727934886114), (86, 87, 93, 101), 'open', np.float64(480.8780769087843), np.float64(162.1844406975381), ((86, 87), (93, 101), 'odd-up'))  time 205.7s

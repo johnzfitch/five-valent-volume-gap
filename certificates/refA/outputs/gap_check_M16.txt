@@ -1,0 +1,20 @@
+level  1: tuples with nonzero spectrum      0, covered by [CL] Cor. 9      0, doubly-shifted ladder     0
+level  2: tuples with nonzero spectrum      5, covered by [CL] Cor. 9      4, doubly-shifted ladder     0
+level  3: tuples with nonzero spectrum     16, covered by [CL] Cor. 9     13, doubly-shifted ladder     0
+level  4: tuples with nonzero spectrum     47, covered by [CL] Cor. 9     33, doubly-shifted ladder     1
+level  5: tuples with nonzero spectrum     99, covered by [CL] Cor. 9     71, doubly-shifted ladder     1
+level  6: tuples with nonzero spectrum    198, covered by [CL] Cor. 9    131, doubly-shifted ladder     4
+level  7: tuples with nonzero spectrum    339, covered by [CL] Cor. 9    228, doubly-shifted ladder     4
+level  8: tuples with nonzero spectrum    566, covered by [CL] Cor. 9    365, doubly-shifted ladder    10
+level  9: tuples with nonzero spectrum    865, covered by [CL] Cor. 9    563, doubly-shifted ladder    10
+level 10: tuples with nonzero spectrum   1299, covered by [CL] Cor. 9    822, doubly-shifted ladder    20
+level 11: tuples with nonzero spectrum   1843, covered by [CL] Cor. 9   1173, doubly-shifted ladder    20
+level 12: tuples with nonzero spectrum   2583, covered by [CL] Cor. 9   1617, doubly-shifted ladder    35
+level 13: tuples with nonzero spectrum   3478, covered by [CL] Cor. 9   2181, doubly-shifted ladder    35
+level 14: tuples with nonzero spectrum   4642, covered by [CL] Cor. 9   2882, doubly-shifted ladder    56
+level 15: tuples with nonzero spectrum   6014, covered by [CL] Cor. 9   3730, doubly-shifted ladder    56
+level 16: tuples with nonzero spectrum   7738, covered by [CL] Cor. 9   4776, doubly-shifted ladder    84
+(E) explicit-closedness violations (all pairings): 0
+(T6/T8) closed-class blocks with odd N-sum or a spin-1/2 pair: 40795; violations (odd sum: injective with sigma >= 1; spin-1/2 pair, even sum: nonzero sigma >= 1): 0; q < 2 sqrt(mu): 0
+(C11) doubly-shifted ladder tuples: 336; pairings failing [interval, shifted by one, equal to P_J'(H'+1)P_J, sigma >= c*, q >= 2 sqrt(mu) c*]: 0; min sigma_min = 0.961732
+total 11s

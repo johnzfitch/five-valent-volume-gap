@@ -1,0 +1,1 @@
+2j1=5, multiset tuples 2j<=32: 23846; without a monotone pairing: 0 []

@@ -1,0 +1,22 @@
+[K] lam0 = 0.324609464730;  T0 <= 2.2118984606;  S(0) = 1.6449340668
+[K] phi decreasing on k>=1: True;  phi(2) * (pi^2/6 - 5/4) = 1.1519 < T0 (bound for T(m1,m1+2), m1>=0)
+[K] max_m T(m1, m2) over (0,1) and m2=m1+2, m1<60: 2.211888 (<= T0: True)
+[NN] every wall chain: F <= 1.644934  => sigma^2 >= 0.607927, q >= 6.2376  (target 4.5579607)  PASS
+[C1] worst corner (n1,m1,n2,m2)=(3,0,22,1): sW=0.60793 sM=1.69538 C=3/2  (*) True  margin sM/need = 1.2380
+[C1] grid scan of the closed forms: 1269011 configurations, 0 failures, min margin 1.2380
+[T3] n1=1000: Wbar=540.80, Creq-1.5=1041.92  PASS
+[T3] n1=2000: Wbar=589.92, Creq-1.5=2086.49  PASS
+[T3] n1=10000: Wbar=705.00, Creq-1.5=10442.99  PASS
+[T3] n1=100000: Wbar=870.53, Creq-1.5=104453.72  PASS
+[T3] per-unit increments near 1000: Creq >= 1.0446, Wbar <= 0.0705 (Creq slope constant, Wbar slope ~72/n decreasing)
+   [B3] up to n1=100: 13800 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (0s)
+   [B3] up to n1=200: 58050 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (2s)
+   [B3] up to n1=300: 132300 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (6s)
+   [B3] up to n1=400: 236550 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (11s)
+   [B3] up to n1=500: 370800 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (19s)
+   [B3] up to n1=600: 535050 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (30s)
+   [B3] up to n1=700: 729300 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (43s)
+   [B3] up to n1=800: 953550 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (61s)
+   [B3] up to n1=900: 1207800 configurations, 0 failures, worst margin 3.2357 at (21, 0, 22, 1)  (82s)
+[B3] C3 slices, 21<=n1<=999: 1489059 configurations, 0 failures; worst margin sM/need = 3.2357 at (21, 0, 22, 1) (W=4.301)
+total 130s

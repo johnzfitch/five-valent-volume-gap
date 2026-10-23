@@ -1,0 +1,5 @@
+windows tested: 3767400 (all a, b=N-2), N<= 300, m in 0..40 step 1/2 and 100, 1e3, 1e6
+violations of V_k >= s*: 0 []
+smallest min-eig(V_k - s*) = -3.331e-16 at (N,m) = (3, 0.0)  (0 at the equality case N=3, m=0)
+Riccati vs direct SVD sign mismatches (N<=40, 4 m values): 0
+wall 37s

@@ -1,0 +1,2 @@
+finite cert, doubled spins <= 38: 2965780 distinct squared links; 1633 with x**0.5 != sqrt(x); worst exact error among those 1.445714 u at r=(1420173554688, 21229568); bound assumed by the certificate 2.0001 u -> HOLDS  (9s)
+j1=5/2 recheck, doubled spins <= 70: 489138 distinct squared links; 274 with x**0.5 != sqrt(x); worst exact error among those 1.342678 u at r=(7100669952000, 24281088); bound assumed by the certificate 2.0001 u -> HOLDS  (2s)

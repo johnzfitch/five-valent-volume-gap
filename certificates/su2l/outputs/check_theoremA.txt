@@ -1,0 +1,3 @@
+(1) honest two-spin strips: 3312 models (2s<=11, doubled spins<=24); exact (L) checks 145308, failures 0; wall-diagonal failures 0; spectrum vs Theorem A+B prediction failures 0
+(2) random exact ladders: 400 models, failures 0; min |eig| (half-integer s) 0.500000; min nonzero |eig| (integer s) 1.000000
+(3) random flat T-ladders: 300 models, spectrum = |m_x| sqrt(g) plus kernel: failures 0

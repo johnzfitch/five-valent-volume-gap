@@ -1,0 +1,115 @@
+\section{Valence six: a ladder and a factorial}\label{sec:v6}
+
+At valence six the sign configurations are too many for a normal form (there are
+$23\,808$ of them~\cite[Table~1]{BR2008b}), and we treat only the configuration that
+Brunnemann and Rideout single out as producing the smallest eigenvalues,
+\[
+  \sigma=(2,0,0,0,0,0,0,0,-2,0)\quad\text{in the order }123,124,125,134,135,145,234,235,245,345,
+\]
+so that $A=2\hat q_{123}-2\hat q_{245}=-8i(X-Y)$ with $X=J_1\cdot(J_2\times J_3)$ and
+$Y=J_2\cdot(J_4\times J_5)$. It is realised by the integer tangents
+$\dot e_1=(-1,2,-3)$, $\dot e_2=(-2,4,1)$, $\dot e_3=(2,-1,-4)$, $\dot e_4=(-3,1,4)$,
+$\dot e_5=(-4,3,3)$, $\dot e_6=(-2,-3,2)$, all of whose twenty triple determinants are
+nonzero. The spins are $2j=(1,1,n,n,n+1,n+1)$, Brunnemann and Rideout's minimising
+spins at even $2j_{\max}=n+1$~\cite[Table~9]{BR2008b}; at odd $2j_{\max}$ their minimisers
+are different. Their Table~9 labels the configuration both with $-2$ and with $+2$ in the
+ninth place; both labels are realisable in general position, and they give the same ladder and
+identical spectra.
+
+\subsection{The picture: two rows of dimers}
+
+The two triple products share leg $2$, so the useful labels are the spin
+$c=|J_1+J_3|\in\{c_-,c_+\}=\{\frac{n-1}2,\frac{n+1}2\}$ of legs $1,3$ and the spin
+$e=|J_4+J_5|$ of legs $4,5$. In the basis that also fixes $h=|J_2+J_4+J_5|$ the
+product $Y$ is a set of dimers: it pairs $e=h-\frac12$ with $e=h+\frac12$ on each row
+$c$, with weight $y_h=\frac14\sqrt{(n+1-h)(n+2+h)h(h+1)}$, and it has exactly two zero
+rows, at the two ends of the row $c_+$. The product $X$ is a rung: in each block of fixed
+$e$ it is a rank-two antisymmetric map of fixed size $x=\frac14\sqrt{n(n+2)}$ between
+the two rows. So the matrix is a two-row ladder (\cref{fig:ladder}). The two zero rows
+of $Y$ are end modes, and to couple them through the ladder costs a factor $x/y_h$ per
+dimer, about $1/h$ for $h$ small against $n$. After $n$ dimers the cost is the product,
+and it can be written down exactly: $\prod_{h=1}^n(x/y_h)^2$ is $(n(n+2))^n$ divided by
+$n!\,(n+1)!\,n!\,(2n+2)!/(n+2)!$, which by Stirling is $\exp(-2n\ln n+O(n))$. So the cost
+is about $1/n!$, up to a factor $e^{O(n)}$.
+
+\begin{schemfigure}
+\begin{tikzpicture}[scale=0.74]
+  \foreach \i in {0,...,7}{
+    \draw[esPlotAmber, line width=2.2pt] (2*\i+0.25,1.6) -- (2*\i+1.05,1.6);
+    \draw[esPlotAmber, line width=2.2pt] (2*\i+0.25,0) -- (2*\i+1.05,0);
+    \fill[esPlotInk] (2*\i+0.25,1.6) circle (2.6pt); \fill[esPlotInk] (2*\i+1.05,1.6) circle (2.6pt);
+    \fill[esPlotInk] (2*\i+0.25,0) circle (2.6pt); \fill[esPlotInk] (2*\i+1.05,0) circle (2.6pt);
+    \draw[esPlotBlue, line width=0.6pt] (2*\i+1.05,1.6) -- (2*\i+1.65,0);
+    \draw[esPlotBlue, line width=0.6pt] (2*\i+1.05,0) -- (2*\i+1.65,1.6);
+  }
+  \draw[esPlotInk, fill=white, line width=1pt] (-0.55,1.6) circle (3pt);
+  \draw[esPlotInk, fill=white, line width=1pt] (16.05,1.6) circle (3pt);
+  \draw[esPlotBlue, line width=0.6pt] (-0.55,1.6) -- (0.25,0);
+  \draw[esPlotBlue, line width=0.6pt] (15.05,0) -- (16.05,1.6);
+  \node[anchor=east, font=\small] at (-0.9,1.6) {row $c_+$};
+  \node[anchor=east, font=\small] at (-0.9,0) {row $c_-$};
+  \node[font=\small, text=esPlotAmber!80!black] at (4.65,2.15) {$Y$: dimers $y_h\approx\frac14 nh$};
+  \node[font=\small, text=esPlotBlue] at (10.6,2.15) {$X$: rungs of size $x\approx\frac14 n$};
+  \node[font=\small, align=center] at (-0.55,2.55) {end mode};
+  \node[font=\small, align=center] at (16.05,2.55) {end mode};
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:ladder}%
+\schemcap{FIG.\ \theesfig}{The six-valent operator as a ladder. Each row is a chain of
+dimers of $Y$; the rungs of $X$ couple the rows only through a fixed direction in each
+block. The two sites that $Y$ leaves unpaired, at the ends of the upper row, carry the
+nearly-zero mode; it reaches across through $n$ dimers, each costing a factor of
+order $x/y_h\approx1/h$, so the splitting is factorial, not exponential.}
+
+\subsection{The theorem}
+
+\begin{theorem}{Factorial gap closing at valence six}{v6}
+For the configuration and spins above:
+\begin{enumerate}
+\item[(i)] for odd $n$ the operator has trivial kernel, and for even $n$ its kernel is
+  exactly two-dimensional;
+\item[(ii)] for odd $n\ge7$,
+  \[
+    0<\qm(n)\ \le\ 22700\Bigl(\frac{(n+1)\sqrt{2n}}4+\frac{\sqrt n}4\Bigr)\sqrt{12}\;
+    \frac{(n+2)^{(n-3)/2}}{((n-2)!)^{3/2}}\ =\ \exp\bigl(-n\ln n+O(n)\bigr).
+  \]
+\end{enumerate}
+So the smallest nonzero volume tends to zero along a six-valent embedding in general position,
+faster than any exponential.
+\end{theorem}
+
+The proof is in \cref{app:valence6}. It runs the zero-energy recursion along the ladder:
+the equations of $A\psi=0$ split into two independent chains of $2\times2$ transfer
+steps, one killed by the left end, the other carrying the end modes, which reaches the
+right end only for odd $n$ (this is (i)). For odd $n$ a quasimode built from the
+transfer matrix $\mathsf T$ gives $\smin\le\mathrm{const}\cdot|\det\mathsf T|/\|\mathsf T\|$; the determinant
+telescopes to a bounded quantity, and $\|\mathsf T\|$ grows like the product $\prod(y_j/x)$ over
+the dimers, whose square is $(n-1)!\,n!\,(n-2)!\,\prod_{k=n+5}^{2n+1}k/(12(n(n+2))^{n-3})$.
+The proof uses the moduli of the matrix elements and the sign structure of
+\cref{prop:ladder}, in which each rung block has rank two; it does not cover arbitrary
+independent signs of the entries.
+
+\paragraph{The rate, and Brunnemann and Rideout's fit.}
+By Stirling, $\ln\prod_{j=3}^{n-1}(y_j/x)=n\ln n+O(n)$, so the bound is
+$\exp(-n\ln n+O(n))$. Exact characteristic polynomials of the operator for odd
+$n\le51$ (computed from \eqref{eq:sigma}, and identical to those of the full
+twenty-triple operator for $n\le6$) give $\ln\qm=-1.0016\,n\ln n+0.316\,n+\dots$ for a four-parameter fit over
+$15\le n\le51$, consistent with the bound having the right leading term. (The factor
+$((n-2)!)^{3/2}$ in the bound alone would suggest a coefficient $\frac32$; the numerator
+$(n+2)^{(n-3)/2}$ contributes $+\frac12n\ln n$, and the coefficient is $1$.) In Brunnemann and Rideout's variables
+this is $\lambda_V=\sqrt{\qm}\approx\exp(-\frac12n\ln n)$, a factorial law; their fit
+$\lambda_V\approx e^{3.72}e^{-1.215\cdot2j_{\max}}$ over $2j_{\max}\le13$ is an
+exponential fit to it over a short window, where $n\ln n$ is close to linear, and it
+should not be extrapolated. Our own values on this family are $\qm=0.840877$,
+$0.0459024$, $6.86354\times10^{-4}$ and $4.65514\times10^{-6}$ for $n=1,3,5,7$.
+
+\begin{remark}[Every valence, degenerately]
+If several edges share one tangent direction, every triple containing two of them has
+$\epsilon=0$, and the operator of an $N$-valent vertex is that of a five-valent vertex
+with one leg replaced by the total spin of the bundle, because the triple products of
+the bundle's edges with any two other legs carry the same sign and add up to the triple
+product of the bundle's total spin, while those with two edges inside the bundle have
+$\epsilon=0$. So bundling edges onto the fifth edge of the vertex of
+\cref{thm:closing} closes the gap at every valence $N\ge5$. These vertices are five-valent
+in disguise, and we do not count them as evidence about generic higher valence.
+\end{remark}

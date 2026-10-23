@@ -1,0 +1,16 @@
+1. Kisielowski Table 2 cross-check (V = sqrt(Q_RS/32))
+   5-valent j=1.0: ours [(np.float64(1.201406), 6)]  Kisielowski [(1.201406, 6)]
+   5-valent j=2.0: ours [(np.float64(0.0), 1), (np.float64(2.293525), 5), (np.float64(2.754087), 5), (np.float64(2.911094), 4), (np.float64(3.095988), 1)]  Kisielowski [(0.0, 1), (2.293525, 5), (2.754087, 5), (2.911094, 4), (3.095988, 1)]
+   (4-valent j=1/2: sqrt(4*sqrt3/32) = 0.465302 ; Kisielowski 0.465302)
+2. Q_RS on (1/2, j-1/2, j, j, j):
+   2j=2: 21.35; 2j=3: 29.65; 2j=4: 55.91; 2j=5: 65.45; 2j=6: 104.87; 2j=7: 113.30; 2j=8: 167.22; 2j=9: 172.54; 2j=10: 242.32; 2j=11: 242.71; 2j=12: 329.70; 2j=13: 323.46; 2j=14: 428.98; 2j=15: 414.50; 2j=16: 539.87; 2j=17: 515.59; 2j=18: 662.11; 2j=19: 626.54; 2j=20: 795.50; 2j=21: 747.17; 2j=22: 939.84; 2j=23: 877.32; 2j=24: 1094.97; 2j=25: 1016.86; 2j=26: 1260.74; 2j=27: 1165.67; 2j=28: 1437.01; 2j=29: 1323.62; 2j=30: 1623.68; 2j=31: 1490.63; 2j=32: 1820.62; 2j=33: 1666.60; 2j=34: 2027.74; 2j=35: 1851.44; 2j=36: 2244.94; 2j=37: 2045.07; 2j=38: 2472.13; 2j=39: 2247.41; 2j=40: 2709.23
+3. 50-digit recomputation from exact entries:
+   (1, 1, 1, 1, 2): lambda_min(Q_RS) = 15.932510652501766506; lambda_min(sum_(T contains 1)|q_T|) = 7.129392033067413969
+   (1, 2, 2, 3, 4): lambda_min(Q_RS) = 21.900011007973648219; lambda_min(sum_(T contains 1)|q_T|) = 17.349626042540811352
+   (1, 1, 2, 2, 2): lambda_min(Q_RS) = 21.35378629581951204; lambda_min(sum_(T contains 1)|q_T|) = 10.67689314790975602
+   (1, 2, 2, 2, 3): lambda_min(Q_RS) = 16.553242152094225719; lambda_min(sum_(T contains 1)|q_T|) = 13.310330001910260748
+4. brute-force tensor-product spot checks (spectrum of Q_RS and of sum c_T q_T):
+   (1, 5, 5, 5, 4): dim 10, lambda_min(Q_RS) 65.451614, max discrepancy 2.84e-13
+   (1, 2, 2, 5, 4): dim 5, lambda_min(Q_RS) 26.699394, max discrepancy 1.99e-13
+   (1, 1, 3, 5, 4): dim 4, lambda_min(Q_RS) 55.467295, max discrepancy 1.56e-13
+   (5, 1, 4, 3, 5): dim 8, lambda_min(Q_RS) 71.687310, max discrepancy 2.98e-13

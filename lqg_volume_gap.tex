@@ -1,0 +1,124 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{etch-math}
+\usepackage{etch-plot}
+\usepackage{array}
+\usepackage{longtable}
+% 12 pt review copy: the kit maps 12 pt text (its \large heading size at 11 pt) to
+% 8 pt math. At the 12 pt class 12 pt is the body size, so restore standard math sizes.
+\DeclareMathSizes{12}{12}{8}{6}
+\usetikzlibrary{patterns,calc,arrows.meta,decorations.pathreplacing}
+
+% Conjectures are named, unproved claims: same inline register as definitions.
+\theoremstyle{esmath-tier3}
+\newtheorem{conjecture}{Conjecture}[section]
+\crefname{conjecture}{conjecture}{conjectures}
+\Crefname{conjecture}{Conjecture}{Conjectures}
+
+% Figures sit on the kit's non-floating plates; this counter makes them citable.
+\newcounter{esfig}
+\crefname{esfig}{figure}{figures}
+\Crefname{esfig}{Figure}{Figures}
+\newcommand{\esfiglabel}[1]{\refstepcounter{esfig}\label{#1}}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Inv}{\operatorname{Inv}}
+\newcommand{\qm}{q_{\min}}
+\newcommand{\Jv}{\mathbf{J}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\smin}{\sigma_{\min}}
+\newcommand{\Cl}{\mathcal{C}}
+
+% ---------------------------------------------------------------------------
+% STATUS OF THE j1 = 3/2 CERTIFICATE: the interval box has finished (all eight
+% regimes; certificates/z32rigor/outputs/ibox_*.json). Printed in Theorem 6.1
+% and Theorem 6.14.
+\newcommand{\zstatus}{with a finite parameter box certified in outward-rounded
+interval arithmetic}
+\newcommand{\zmark}{}
+% ---------------------------------------------------------------------------
+
+\hypersetup{pdftitle={The Volume Gap at Five-Valent Vertices},pdfauthor={John Zachary Fitch},
+  pdfsubject={Spectral gap of the Ashtekar-Lewandowski volume operator in loop quantum gravity at five-valent vertices},
+  pdfkeywords={loop quantum gravity, volume operator, spectral gap, Jacobi matrices, recoupling theory,
+  Stark matrix, Su-Schrieffer-Heeger chain, computer-assisted proof, MSC 2020 83C45, 81Q10, 47B36}}
+
+\begin{document}
+
+\begin{center}
+\estitle{The Volume Gap at Five-Valent Vertices}\\[4pt]
+\essubtitle{Every five-valent Ashtekar--Lewandowski vertex whose edge tangents are in
+general position is zero or one of three operators. The gap closes when the two triple products through the
+distinguished edge carry unequal weights, and survives when they do not compete; at
+equal weights it survives on every class we can reach.}\\[10pt]
+{\normalsize John Zachary Fitch}\\[1pt]
+{\small\texttt{zack@internetuniverse.org}}
+\end{center}
+
+\esrule
+
+\begin{quote}\small
+\textsc{Abstract.} Whether the volume operator of loop quantum gravity has a
+spectral gap had been addressed at valence four semiclassically, numerically and at
+leading order in the spins, and at valence five and higher only numerically:
+Brunnemann and Rideout observed that some embeddings produce eigenvalues accumulating
+at zero and others do not, and that the decaying ones are exactly those whose reduced
+sign factors contain $\pm4$. We explain this rule for the Ashtekar--Lewandowski
+operator and prove most of it in the convention in which spins are assigned to the
+edges of a fixed embedding. Up to relabelling, every five-valent vertex operator whose
+edge tangents are in general position (no three coplanar) is zero or $-4i[\alpha\,J_1\cdot(J_2\times J_3)+\beta\,J_1\cdot(J_4\times
+J_5)]$ with $(\alpha,\beta)\in\{(2,0),(2,2),(4,2)\}$, and ``contains $\pm4$'' means
+$t=\beta/\alpha=\frac12$. One direction of the rule is proved in full: for every
+$|t|\notin\{0,1\}$ the gap closes, through a dimerised chain with two edge modes,
+exponentially in the spin; at the Ashtekar--Lewandowski value $t=\frac12$ the rate is
+$\qm\asymp N^{3/2}2^{-N}$. The other direction is proved for $t=0$, where the gap is
+exactly $2\sqrt3$, and in part for $t=1$: there the gap is proved when the
+distinguished spin is $\frac12$, $1$, $\frac32$ or $2$, on every tuple in which three
+of the other four spins are at most $3$ (where it grows linearly in the distinguished
+spin with the sharp slope $4\sqrt{10-6\sqrt2}$), and on several further infinite classes,
+and it is certified for all spins up to $19$. The rest of $t=1$ is stated as a
+conjecture: a uniform gap, growing with that slope in the distinguished spin and like
+$M/\ln M$ in the largest spin, for which we prove the upper bound. In Brunnemann and
+Rideout's own convention, with the spins sorted, the decay is proved for $6$ of the
+$60$ sign vectors (up to sign) that contain $\pm4$. Along the way we prove the sharp
+four-valent law $\lambda^2\ge j_{\max}(j_{\max}+1)/4$ for the nonzero eigenvalues $\lambda$ of
+$J_1\cdot(J_2\times J_3)$, whose constant and minimisers Brunnemann and Thiemann found
+numerically, through a factorisation into a hydrogen Stark matrix; a factorial gap
+closing at a six-valent vertex in general position; and a uniform gap for the
+Rovelli--Smolin operator on every five-valent vertex with an edge of spin $\frac12$,
+which includes the vertices on which we prove that the Ashtekar--Lewandowski gap closes. What is new is the proofs, the mechanisms and the sharp constants. The
+computer-assisted steps are exact rational, interval, or rigorously bounded
+floating-point certificates, and all ship with replayable scripts.
+
+\smallskip\noindent\textsc{MSC 2020.} 83C45 (primary); 81Q10, 47B36.
+\end{quote}
+
+\input{sec1_intro}
+\input{sec2_operator}
+\input{sec3_fourvalent}
+\input{sec4_normalform}
+\input{sec5_closing}
+\input{sec6_tone}
+\input{sec7_large}
+\input{sec8_valence6}
+\input{sec9_rs}
+\input{sec10_computer}
+\input{sec11_open}
+\input{sec12_history}
+\appendix
+\crefalias{section}{appendix}
+% Appendices in order of first citation (file names keep their old letters).
+\input{appG_fourvalent}
+\input{appC_windows}
+\input{appA_chains}
+\input{appB_jone}
+\input{appD_z32}
+\input{appE_jtwo}
+\input{appF_bounded}
+\input{appH_valence6}
+\input{appI_ladder}
+\input{appJ_provenance}
+\input{refs}
+
+\end{document}

@@ -1,0 +1,15 @@
+{
+ "regime": "R2-",
+ "NMAX": 4000.0,
+ "device": "cuda",
+ "count": 15984004,
+ "seconds": 389.7034351825714,
+ "nan_count": 0,
+ "nonpositive_count": 0,
+ "min_8sigma": 4.72310274280925,
+ "argmin_n": 3.0,
+ "argmin_a": 1.0,
+ "F0": 0.25198412723611113,
+ "F1": 1.1654320999308643,
+ "W": 0.0
+}

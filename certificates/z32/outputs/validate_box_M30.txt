@@ -1,0 +1,2 @@
+validate box vs exact matrices, all j1=3/2 tuples 2j<=30: 18135 tuples, 0 failures, 17.0s
+smallest ratio sqrt(s2_box)/sigma_min(B) = 0.0301 at (3, 1, 1, 29, 30)

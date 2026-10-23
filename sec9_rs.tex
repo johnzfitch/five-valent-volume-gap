@@ -1,0 +1,69 @@
+\section{A contrast: the Rovelli--Smolin operator}\label{sec:rs}
+
+The vertices on which \cref{thm:closing} closes the gap all have an edge of spin
+$\frac12$. The Rovelli--Smolin operator, in the form of De Pietri and
+Rovelli~\cite[eqs.~(7.15), (7.42)]{DPR1996}, takes the absolute value of each triple
+before summing and has no orientation signs:
+\[
+  Q_{RS}=\sum_{I<J<K\le N}|\hat q_{IJK}|,\qquad \hat V_{RS}=c_{RS}\sqrt{Q_{RS}},
+\]
+which is also the form Ashtekar and Lewandowski re-derive in their
+appendix~\cite{AL1998} and Kisielowski studies~\cite{Kis2021}. On exactly the spin labels
+where the Ashtekar--Lewandowski gap closes, it has a uniform gap.
+
+\begin{theorem}{Rovelli--Smolin gap with a spin-\texorpdfstring{$\frac12$}{1/2} edge}{rs}
+Let a five-valent vertex have nonzero spins, one of them $\frac12$, and
+$\dim\Inv\ge2$. Then $Q_{RS}\ge3\sqrt3$ on the whole invariant space; in particular
+$Q_{RS}$ has trivial kernel. The variant $\sum_T\sqrt{|\hat q_T|}$ of Giesel and
+Thiemann~\cite{GT2006} is at least $3\cdot3^{1/4}$.
+\end{theorem}
+
+\begin{proof}
+Label the spin-$\frac12$ edge $1$. The six triples containing it split into three
+complementary pairs $\{1JK\},\{1LM\}$ with $\{J,K,L,M\}=\{2,3,4,5\}$.
+
+The triple $\hat q_{1JK}$ commutes with $S=|J_L+J_M|$, and on each value of $S$ it is the
+four-valent operator on $\Inv(\frac12,j_J,j_K,S)$, of dimension at most two because
+$x=|J_J+J_K|\in\{S\pm\frac12\}$. On a two-dimensional block it is
+$\bigl(\begin{smallmatrix}0&-4a\\4a&0\end{smallmatrix}\bigr)$, so $|\hat q_{1JK}|=4a$ there,
+and by \eqref{eq:ak} with the factor $4k^2-1$ cancelled ($k=j_J+\frac12$),
+$16a^2=((j_K+S+1)^2-k^2)(k^2-(j_K-S)^2)\ge k(2k+1)\ge3$. So
+$|\hat q_{1JK}|\ge\sqrt3\,P_{JK}$, with $P_{JK}$ its range projector.
+
+The kernel of $\hat q_{1JK}$ is spanned by the one-dimensional blocks, each a joint
+eigenvector of $x=|J_J+J_K|$ and $y=|J_L+J_M|$ with $(x,y)$ equal to
+$(j_J+j_K,\,j_J+j_K+\frac12)$ or $(|j_J-j_K|,\,|j_J-j_K|-\frac12)$. Joint eigenspaces of
+$(x,y)$ are at most one-dimensional (the spin-$\frac12$ leg must couple $x$ and $y$ to
+zero), so these are lines of one orthonormal basis. The kernel lines of $\hat q_{1LM}$
+lie in the same basis with the roles of $x$ and $y$ exchanged. A common line would need
+$j_J+j_K=j_L+j_M\pm\frac12$ simultaneously in both directions, which is impossible, or
+one spin equal to the sum of the other four, which forces $\dim\Inv=1$. So the two kernel
+projectors are orthogonal, $P_{JK}+P_{LM}\ge1$, and
+\[
+  Q_{RS}\ \ge\ \sum_{T\ni1}|\hat q_T|\ \ge\ \sqrt3\sum_{\rm pairs}(P_{JK}+P_{LM})\ \ge\ 3\sqrt3 .
+\]
+For the variant, $|\hat q_T|\ge\sqrt3P_T$ gives $\sqrt{|\hat q_T|}\ge3^{1/4}P_T$.
+\end{proof}
+
+The bound is not sharp: the minimum over all spin-$\frac12$ tuples with spins up to $20$
+is $15.93$, at $(\frac12,\frac12,\frac12,\frac12,1)$ (and we reproduce it with our own code
+on small tuples). Along the Ashtekar--Lewandowski family $(\frac12;j-\frac12,j,j,j)$ the
+smallest eigenvalue of $Q_{RS}$ grows, from $21.4$ at $2j=2$ to $2709$ at $2j=40$, while
+\cref{thm:closing} has the Ashtekar--Lewandowski value falling like $2^{-2j}$.
+
+\paragraph{What the contrast does and does not say.}
+The mechanism of \cref{thm:closing} is a cancellation between two triple products that
+enter with signs; taking the absolute value of each triple first removes it. It is the
+order of the absolute value and the sum that matters, not the presence of orientation
+signs: the signless sum $|\sum_T\hat q_T|$ has exact zero eigenvalues on spin-$\frac12$
+tuples too. The Rovelli--Smolin operator is not therefore gapped in general. It has
+zero-volume states at valence five, for instance at five spins $2$ (\cref{sec:operator});
+its general gap at valence five is open, with numerical support; and since the
+consistency check of Giesel and Thiemann~\cite{GT2006}, which found it incompatible with
+the quantisation of the fluxes, it has been disfavoured for dynamics, which is why
+Brunnemann and Rideout study the Ashtekar--Lewandowski operator. The original paper
+of Rovelli and Smolin~\cite{RS1995} (in its arXiv version, which was never revised;
+we could not obtain the two-page erratum) states the higher-valence operator in a form that, read literally, takes the
+absolute value after summing over triples; \cref{thm:rs} does not apply to that form,
+and the later works cited here~\cite{DPR1996,AL1998,GT2006,Kis2021} use the per-triple
+form above.

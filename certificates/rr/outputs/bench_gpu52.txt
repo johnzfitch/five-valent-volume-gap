@@ -1,0 +1,1 @@
+j1=5/2, level 60, first 2000 tuples: 1144 blocks, nO in [1, 12], 27 shapes; exact build (CPU) 0.2s; linear algebra numpy 1 process 0.0s; torch CUDA float64 batched incl. transfers 0.5s (NVIDIA GeForce RTX 4090)

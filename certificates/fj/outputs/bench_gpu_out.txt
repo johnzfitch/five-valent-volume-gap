@@ -1,0 +1,4 @@
+bounded workload: all stage tridiagonals of 300 random j1=5/2 tuples at 2j_max=60 (17574 matrices, sizes 1..57)
+  exact build of the Gram data (CPU, rational) 4.0s
+  lambda_min: CPU scipy 0.31s ; CUDA float64 dense batched by size incl. packing+transfer 3.89s ; max rel diff 6.8e-11
+  GPU name: NVIDIA GeForce RTX 4090, free mem 19.9 GiB

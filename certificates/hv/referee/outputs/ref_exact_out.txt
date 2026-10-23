@@ -1,0 +1,8 @@
+determinants: {(0, 1, 2): 2, (0, 1, 3): -6, (0, 1, 4): -10, (0, 2, 3): 28, (0, 2, 4): 40, (0, 3, 4): 20, (1, 2, 3): -18, (1, 2, 4): -26, (1, 3, 4): -12, (2, 3, 4): -4}
+sigma(123,124,134,234) = [4, 2, 2, 0]
+2j=2: dim Inv=4 sites=4  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [0.0s]
+2j=3: dim Inv=6 sites=6  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [0.0s]
+2j=4: dim Inv=8 sites=8  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [0.2s]
+2j=5: dim Inv=10 sites=10  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [0.6s]
+2j=6: dim Inv=12 sites=12  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [1.7s]
+2j=7: dim Inv=14 sites=14  charpoly(eps,10 triples)==charpoly(chain): True  charpoly(sigma-reduced)==chain: True  p(0)!=0: True  [4.7s]

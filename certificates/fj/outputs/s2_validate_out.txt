@@ -1,0 +1,25 @@
+[V2] routing lemma on 6591 gap patterns: regimes {'NN': 2649, 'C3': 1332, 'C1': 2610}, 0 not in NN/C1/C3
+[V1] 3000 random configurations (n<=70):
+     max closed-form sigma_W^2 / true (must be <=1): 0.309231 at (4, 0, 5, 0)  OK
+     max closed-form sigma_M^2 / true (must be <=1): 0.054371 at (6, 0, 8, 1)  OK
+     max true coupling / 1.5 (C1, must be <=1): 0.998920 at (58, 3, 61, 7)  OK
+     max true coupling / (1.5+W_C3) (C3, must be <=1): 0.999311 at (65, 9, 66, 14)  OK
+[V3] 2j_max=39: 1207 W2 tuples, regimes {'C1': 419, 'NN': 561, 'C3': 227}; below target 0; bound above true q 0; min bound 8 sigma = 5.323 at (3, 3, 37, 39) (C1, true q 213.37)
+[V3] 2j_max=40: 1366 W2 tuples, regimes {'C1': 459, 'NN': 653, 'C3': 254}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 38, 40) (C1, true q 219.18)
+[V3] 2j_max=41: 1393 W2 tuples, regimes {'C1': 486, 'NN': 653, 'C3': 254}; below target 0; bound above true q 0; min bound 8 sigma = 5.323 at (3, 3, 39, 41) (C1, true q 224.38)
+[V3] 2j_max=42: 1567 W2 tuples, regimes {'C1': 530, 'NN': 755, 'C3': 282}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 40, 42) (C1, true q 230.17)
+[V3] 2j_max=43: 1597 W2 tuples, regimes {'C1': 560, 'NN': 755, 'C3': 282}; below target 0; bound above true q 0; min bound 8 sigma = 5.323 at (3, 3, 41, 43) (C1, true q 235.39)
+[V3] 2j_max=44: 1787 W2 tuples, regimes {'C1': 608, 'NN': 867, 'C3': 312}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 42, 44) (C1, true q 241.17)
+[V3] 2j_max=45: 1820 W2 tuples, regimes {'C1': 641, 'NN': 867, 'C3': 312}; below target 0; bound above true q 0; min bound 8 sigma = 5.323 at (3, 3, 43, 45) (C1, true q 246.40)
+[V3] 2j_max=46: 2026 W2 tuples, regimes {'C1': 693, 'NN': 990, 'C3': 343}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 44, 46) (C1, true q 252.16)
+[V3] 2j_max=47: 2063 W2 tuples, regimes {'C1': 730, 'NN': 990, 'C3': 343}; below target 0; bound above true q 0; min bound 8 sigma = 5.323 at (3, 3, 45, 47) (C1, true q 257.40)
+[V3] 2j_max=48: 2286 W2 tuples, regimes {'C1': 786, 'NN': 1124, 'C3': 376}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 46, 48) (C1, true q 263.15)
+[V3] 2j_max=60: 4320 W2 tuples, regimes {'C1': 1523, 'NN': 2193, 'C3': 604}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 58, 60) (C1, true q 329.09)
+[V3] 2j_max=80: 9899 W2 tuples, regimes {'C1': 3587, 'NN': 5208, 'C3': 1104}; below target 0; bound above true q 0; min bound 8 sigma = 4.807 at (2, 2, 78, 80) (C1, true q 438.94)
+[V4] 2j_max=39: exact stage certificates at q0=4.5579607 for 1207 W2 tuples (routed pairing): 1207 certified, 0 not  (1s)
+[V4] 2j_max=40: exact stage certificates at q0=4.5579607 for 1366 W2 tuples (routed pairing): 1366 certified, 0 not  (1s)
+[V4] 2j_max=41: exact stage certificates at q0=4.5579607 for 1393 W2 tuples (routed pairing): 1393 certified, 0 not  (1s)
+[V4] 2j_max=42: exact stage certificates at q0=4.5579607 for 1567 W2 tuples (routed pairing): 1567 certified, 0 not  (1s)
+[V4] 2j_max=43: exact stage certificates at q0=4.5579607 for 1597 W2 tuples (routed pairing): 1597 certified, 0 not  (1s)
+[V4] 2j_max=44: exact stage certificates at q0=4.5579607 for 1787 W2 tuples (routed pairing): 1787 certified, 0 not  (1s)
+total 16s

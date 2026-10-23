@@ -1,0 +1,2 @@
+NO ADMISSIBLE READING 7 (41, 43, 44, 45) open q=142.510
+2s=7 tuples=1000 no-admissible=1 min ratio bound/q=0.7042 median=1.0000 worst=(np.float64(0.704239971238556), (43, 44, 48, 54), 'open', np.float64(206.26566968940577), np.float64(145.2605292895686), ((43, 54), (44, 48), 'even-down'))  time 127.6s

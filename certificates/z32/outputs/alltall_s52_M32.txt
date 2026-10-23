@@ -1,0 +1,1 @@
+2j1=5, all tuples with 2j<=32: 23846; with an all-tall ordered pairing: 23846; without: 0

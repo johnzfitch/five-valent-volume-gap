@@ -1,0 +1,1 @@
+tuples 1562: max relative spectral difference T(from W0) vs brute force 2.5e-15; violations of q >= 2 sqrt(mu) lambda(W0): 0

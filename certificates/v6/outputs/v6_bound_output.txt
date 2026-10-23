@@ -1,0 +1,31 @@
+n=  7 j_max=  4.0: log10 q_min =    -5.332, log10 B =    -0.523, log10 B2 =     4.614; q<=B<=B2: True; min y_j/x = 3.381; Phi0 = 21.126; S = 0.2481; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 3.541
+n=  9 j_max=  5.0: log10 q_min =    -7.747, log10 B =    -2.773, log10 B2 =     3.531; q<=B<=B2: True; min y_j/x = 3.447; Phi0 = 21.384; S = 0.2840; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 5.136
+n= 11 j_max=  6.0: log10 q_min =   -10.353, log10 B =    -5.248, log10 B2 =     2.190; q<=B<=B2: True; min y_j/x = 3.476; Phi0 = 21.564; S = 0.3045; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 6.830
+n= 13 j_max=  7.0: log10 q_min =   -13.117, log10 B =    -7.902, log10 B2 =     0.650; q<=B<=B2: True; min y_j/x = 3.491; Phi0 = 21.699; S = 0.3172; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 8.605
+n= 15 j_max=  8.0: log10 q_min =   -16.013, log10 B =   -10.704, log10 B2 =    -1.053; q<=B<=B2: True; min y_j/x = 3.498; Phi0 = 21.804; S = 0.3256; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 10.449
+n= 17 j_max=  9.0: log10 q_min =   -19.026, log10 B =   -13.634, log10 B2 =    -2.893; q<=B<=B2: True; min y_j/x = 3.501; Phi0 = 21.888; S = 0.3312; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 12.351
+n= 19 j_max= 10.0: log10 q_min =   -22.140, log10 B =   -16.675, log10 B2 =    -4.851; q<=B<=B2: True; min y_j/x = 3.503; Phi0 = 21.956; S = 0.3352; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 14.305
+n= 21 j_max= 11.0: log10 q_min =   -25.345, log10 B =   -19.815, log10 B2 =    -6.912; q<=B<=B2: True; min y_j/x = 3.503; Phi0 = 22.014; S = 0.3381; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 16.305
+n= 23 j_max= 12.0: log10 q_min =   -28.633, log10 B =   -23.043, log10 B2 =    -9.067; q<=B<=B2: True; min y_j/x = 3.503; Phi0 = 22.063; S = 0.3402; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 18.347
+n= 25 j_max= 13.0: log10 q_min =   -31.996, log10 B =   -26.351, log10 B2 =   -11.306; q<=B<=B2: True; min y_j/x = 3.502; Phi0 = 22.105; S = 0.3418; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 20.426
+n= 27 j_max= 14.0: log10 q_min =   -35.429, log10 B =   -29.734, log10 B2 =   -13.622; q<=B<=B2: True; min y_j/x = 3.502; Phi0 = 22.141; S = 0.3429; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 22.541
+n= 29 j_max= 15.0: log10 q_min =   -38.926, log10 B =   -33.184, log10 B2 =   -16.008; q<=B<=B2: True; min y_j/x = 3.501; Phi0 = 22.173; S = 0.3438; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 24.688
+n= 31 j_max= 16.0: log10 q_min =   -42.483, log10 B =   -36.697, log10 B2 =   -18.459; q<=B<=B2: True; min y_j/x = 3.499; Phi0 = 22.201; S = 0.3445; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 26.865
+n= 41 j_max= 21.0: log10 q_min =   -61.045, log10 B =   -55.075, log10 B2 =   -31.550; q<=B<=B2: True; min y_j/x = 3.494; Phi0 = 22.305; S = 0.3459; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 38.141
+n= 51 j_max= 26.0: log10 q_min =   -80.676, log10 B =   -74.563, log10 B2 =   -45.776; q<=B<=B2: True; min y_j/x = 3.490; Phi0 = 22.371; S = 0.3460; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 49.953
+n= 61 j_max= 31.0: log10 q_min =  -101.163, log10 B =   -94.933, log10 B2 =   -60.901; q<=B<=B2: True; min y_j/x = 3.487; Phi0 = 22.416; S = 0.3457; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 62.194
+n= 81 j_max= 41.0: log10 q_min =  -144.182, log10 B =  -137.765, log10 B2 =   -93.270; q<=B<=B2: True; min y_j/x = 3.482; Phi0 = 22.475; S = 0.3446; |detT_rest|^2=(n+5)/(2n+2): True; log q + 1.5 n ln n /ln10 = 87.699
+over odd n in [7,399] and n = 1001, 4001, 20001: max Phi0 = 22.6662 (<= 30), max S = 0.3461 (<= 4/3), min_j y_j/x >= 3 always
+kernel dim (40 digits) n=1: 0
+kernel dim (40 digits) n=2: 2
+kernel dim (40 digits) n=3: 0
+kernel dim (40 digits) n=4: 2
+kernel dim (40 digits) n=5: 0
+kernel dim (40 digits) n=6: 2
+kernel dim (40 digits) n=7: 0
+kernel dim (40 digits) n=8: 2
+kernel dim (40 digits) n=9: 0
+kernel dim (40 digits) n=10: 2
+kernel dim (40 digits) n=11: 0
+kernel dim (40 digits) n=12: 2
+wall time 211 s

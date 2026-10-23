@@ -1,0 +1,51 @@
+PASS  R2-: q0(c) = (3/16)(n-c)(n+c+3)(c-a+2)(c+1+a) c/(c+1)
+PASS  R2+: q0(c) = (3/16)(n-c)(n+c+3)(c+1-a)(c+2+a) c/(c+1)
+PASS  R1:  q0(c) = (3/16)(n-c)(n+c+3)(c+3-a)(c+a) c/(c+1)
+PASS  p0(c) = (3/16)(n-c-1)(n+c+1)(c+1-a)(c+1+a)(2c+5)/(2c+3)
+PASS  R2-: q1(i) = (3/16)(n-i+2)(n+i+1)(i-a)(i+a-1)(i+1)/i
+PASS  R2+: q1(i) = (3/16)(n-i+2)(n+i+1)(i-1-a)(i+a)(i+1)/i
+PASS  R1:  q1(c) = (3/16)(n-c+2)(n+c+1)(c+1-a)(c+a-2)(c+1)/c
+PASS  R1  s_t = T/(T+3) nu phi
+PASS  R2+ s_t = T/(T+1) (t+1+a)/(t+3+a) nu phi
+PASS  R2- s_t = T/(T+2) (t+1+a)/(t+2+a) nu phi
+PASS  R1  s'_t = T/(T+1) (t+1+a)/(t-1+a) (2t-1)(t+1)/((2t+1)(t+2)) nu'
+PASS  R1  T/(T+3) phi <= 1  (a >= 3/2, t >= a)
+PASS  R2+ T/(T+1) (t+1+a)/(t+3+a) phi <= 1  (a >= 1/2, t >= a)
+PASS  R2- T/(T+2) (t+1+a)/(t+2+a) phi <= 1  (a >= 1, t >= a)
+PASS  R1  T/(T+1) (t+1+a)/(t-1+a) (2t-1)(t+1)/((2t+1)(t+2)) <= 1  (a >= 3/2, t >= a)
+PASS  nu' <= 1  (t <= n-2)
+PASS  R1c s_t = nu (t+1/2)(t+2)/((t+5/2)(t+1))
+PASS  R1c (t+1/2)(t+2) <= (t+5/2)(t+1)
+PASS  R1c s'_t = nu' (t+3/2)(t-1/2)(t+1)/((t+1/2)^2 (t+2))
+PASS  R1c (t+3/2)(t-1/2)(t+1) <= (t+1/2)^2 (t+2)
+PASS  Lambda^2 nonincreasing in m2^2 (c >= 1, c <= n2 - 3/2)
+PASS  R2- numerator is quadratic in n
+PASS  R2- A2 <= a^2(32c^2+48c+9) + a(16c^3+20c^2)   (0 <= a <= c)
+PASS  R2- A1 <= -48 c^5   (0 <= a <= c, c >= 1; after a -> c majorisation)
+PASS  R2- A0 <= 48c^6 + 479c^5   (0 <= a <= c, c >= 1; after majorisation)
+PASS  R2+ B2 <= a^2(32c^2+48c+9) + a(12c+9)   (0 <= a <= c)
+PASS  R2+ B1 <= -48 c^5   (0 <= a <= c, c >= 1/2; after majorisation)
+PASS  R2+ B0 <= 32c^6 + 255c^5   (0 <= a <= c, c >= 1; after majorisation)
+PASS  (32c^2+48c+9) * 2c^2 <= den  (c >= 0)
+PASS  (16c^3+20c^2) * 4c <= den   (c >= 0)
+PASS  (12c+9) * 4c <= den   (c >= 1/2)
+PASS  den >= 64 c^4
+PASS  R2+ Lambda_{1/2} <= n^2/16  (n >= 0)
+PASS  R1 C2 <= a^2(64c^3+208c^2+144c)
+PASS  R1 (64c^2+208c+144)/(64(c+1)(2c+1)(2c+3)) <= (c+1)/(4c^2)
+PASS  R1 C1 <= -(3/4) c D1
+PASS  R1 C0 = a^2 X(c) + Y(c)
+PASS  R1 X(c) <= 256 c^4 (c/4 + 2)   (c >= 3/2)
+PASS  R1 Y(c) <= 256 c^4 (c^2/2 + 27c/16 + 25/16)
+PASS  R1 D1 >= 256 c^4
+PASS  R1c numerator = n^2(4c-3) - n(48c^3+84c^2+24c+9) + 32c^4+48c^3-5c^2-13c-6
+PASS  R1c Lambda <= n^2(4c-3)/(64c(c+1))  (c >= 1, n >= c+1)
+PASS  R1c (4c-3)/(c(c+1)) <= 0.84   (c >= 0)
+PASS  R1c Lambda_{1/2} <= 0  (n >= 1)
+PASS  Tm Lambda closed form
+PASS  Tm Lambda <= c^2/2 + c + n(4c+3)/16   (c >= 0)
+PASS  Tp Lambda closed form
+PASS  Tp Lambda <= c^2/2 + c   (c >= 0)
+PASS  Tm RC ratio q0/p0 closed form
+PASS  Tp RC ratio q0/p0 closed form
+ALL PASS

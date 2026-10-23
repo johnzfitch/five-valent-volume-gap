@@ -1,0 +1,5 @@
+torch 2.11.0+cu128, device NVIDIA GeForce RTX 4090, free/total memory 22.5/24.0 GiB
+workload: open tuples with 2jmax=24: 6936 tuples, 48552 bipartite blocks, 1817 shapes (selection 1.6s, not counted)
+CPU (numpy, 1 process, build+svd): 14.99s
+GPU (build on CPU 5.69s + pack/transfer/svdvals/sync/collect 459.59s): 465.28s
+max relative difference CPU vs GPU minima: 6.03e-14

@@ -1,0 +1,96 @@
+\section{The slice \texorpdfstring{$j_1=1$}{j1 = 1}}\label{app:jone}
+
+This appendix proves \cref{thm:jone} from the pencil of \cref{prop:pencil1}. The pencil is
+a weighted birth--death problem: each edge contributes $A_e(\Phi_e-\Phi_{e-1})^2$ plus a
+nonnegative term, where here and below $A_e$ stands for the weight $A^+_e$ of
+\cref{prop:pencil1}, the masses are $\mu_\ell$, and a missing end is a Dirichlet condition.
+We need the smallest nonzero eigenvalue $\lambda=(q/8)^2$ of the pencil to satisfy
+$\lambda\ge\lambda_*:=(4.558/8)^2=0.32461506\ldots$.
+
+\begin{lemma}[Discrete Hardy inequality]\label{lem:hardy}
+On a chain with $\Phi=0$ at a ghost site at one end, let $\tau_k$ be the sum of $1/A_e$ over
+the edges from the ghost to site $k$ and $\mathbb M_k$ the $\mu$-mass of the sites from $k$
+onwards, $k$ included. Then $\sum\mu\Phi^2\le4\mathsf B\sum A(\Delta\Phi)^2$ with
+$\mathsf B=\max_k\tau_k\mathbb M_k$, so the smallest eigenvalue is at least $1/(4\mathsf B)$.
+\end{lemma}
+
+\begin{proof}
+By Cauchy--Schwarz with weights $\sqrt{\tau}$,
+\[
+  \Phi_k^2\le2\sqrt{\tau_k}\sum_{e\le k}A_e\Delta_e^2\sqrt{\tau_e},\qquad\text{because}\quad
+  \sum_{e\le k}\Delta\tau_e/\sqrt{\tau_e}\le2\sqrt{\tau_k}.
+\]
+Since $\tau_k\le\mathsf B/\mathbb M_k$,
+\[
+  \sum_{k\ge e}\mu_k\sqrt{\tau_k}\le\sqrt{\mathsf B}\sum_{k\ge e}\mu_k/\sqrt{\mathbb M_k}
+  \le2\sqrt{\mathsf B\,\mathbb M_e}\le2\mathsf B/\sqrt{\tau_e}.
+\]
+Exchange the sums.
+\end{proof}
+
+This is Muckenhoupt's weighted Hardy inequality with constant $4$~\cite{Muckenhoupt1972}.
+
+\begin{lemma}[Identical pairs]\label{lem:nodal}
+If the two pairs are identical with $m>0$, then $A^-\equiv0$, both ends are free, the kernel
+is the constants, and the second eigenvalue satisfies $\lambda_2\ge1/(2\tau_{\rm int}\mathbb M)$,
+with $\tau_{\rm int}$ the sum of $1/A$ over the interior edges and $\mathbb M$ the total mass.
+\end{lemma}
+
+\begin{proof}
+The eigenvector of $\lambda_2$ of the irreducible Jacobi pencil changes sign once, say
+after site $k$. Then $\lambda_2\sum\mu(v^+)^2=\langle v^+,Lv\rangle\ge\mathcal E_{\rm left}(v^+)$,
+since the cross term $-A_{k+1}v_kv_{k+1}$ is nonnegative, and $\mathcal E_{\rm left}$ is the left
+piece with a ghost at $k+1$; likewise on the right. \Cref{lem:hardy} on each piece gives
+$\lambda_2\ge\max(1/(4\tau_L\mathbb M_L),1/(4\tau_R\mathbb M_R))$, and $\tau_L+\tau_R\le2\tau_{\rm int}$,
+$\mathbb M_L+\mathbb M_R=\mathbb M$ finish the proof.
+\end{proof}
+
+\paragraph{The estimates.}
+Order the pairs so that $n:=n_1\le\nu:=n_2$, and put $m=\max(m_1,m_2)$, $N=n-m$. Since
+$j_1=1$, $n$ and $\nu$ are both integers or both half-integers, so $\nu>n$ means $\nu\ge n+1$.
+For an interior edge, $P_i(e)\ge(n_i^2-e^2)(e^2-m^2)$ and $(a+b)^2\ge3a^2+b^2$ for $b\ge a$
+give
+\[
+  (\sqrt{P_1}+\sqrt{P_2})^2\ge(e^2-m^2)\bigl[(\nu^2-n^2)+4(n^2-e^2)\bigr],
+\]
+hence $1/A_e\le2/((n+m)(e-m)(n-e))$, using $e(n+m)\le(e+m)(n+e)$, and also
+$1/A_e\le8/((e-m)(\nu^2-n^2))$. At a Dirichlet top edge ($\nu>n$),
+$1/A_n\le8n/((\nu^2-n^2)(n^2-m^2))\le4/((n-m)(n+m))$; at a Dirichlet bottom edge
+$1/A\le8/(n^2-m^2)$, or $2/(n^2-1)$ at the corner. For the masses, $\mu_\ell\le2/\ell$, so
+$\mathbb M\le4+2\ln2n$ (counting $\mu_{1/2}=\frac83$ in the half-integer case), and
+$\mathbb M\le4N/n$ when $m>n/2$. Summing $\sum_e1/((e-m)(n-e))\le2H_{N-1}/N$ gives two
+forms of the Hardy product with the reference at the top:
+\[
+  \mathsf B\le\mathsf F:=\mathbb M\cdot\min\Bigl(\frac{4H_{N-1}+4}{(n-m)(n+m)},\ \frac{8H_N}{\nu^2-n^2}\Bigr).
+\]
+
+\begin{proof}[Proof of \cref{thm:jone}]
+Since $(4/4.558)^2>0.7701$, it suffices that $\mathsf B\le0.7701$, or $\tau_{\rm int}\mathbb M\le2\cdot0.7701$ for
+identical pairs.
+
+\emph{Analytic part, $\nu\ge33$.}
+If $\nu>n\ge25$: $\mathsf F\le8(H_n+1)(4+2\ln2n)/n^2$, which is $0.729$ at $n=25$ and decreases
+(each factor's ratio between $n$ and $n+1$ is below $(n+1)^2/n^2$); for $m>n/2$ the bound
+$(32/3)(H_n+2)/n^2$ is smaller still.
+If $\nu>n$ and $n\le24\frac12$: take the minimum of the two forms. The second gives
+$\mathsf F\le8H_{24}(4+2\ln48)/(33^2-24^2)=0.691$ for $n\le24$; at $n=24\frac12$ the second form
+gives $0.7806$ but the first gives $0.750$.
+If $\nu=n$ and the pairs are not identical (or the corner is present), the bottom end is
+Dirichlet and the same estimate with $H+2$ gives $0.729$ at $n=28$, decreasing.
+If the pairs are identical, \cref{lem:nodal} with $\tau_{\rm int}\mathbb M\le8H_n(4+2\ln2n)/n^2$
+gives $0.483$ at $n=28$.
+
+\emph{Finite part, $\nu\le32\frac12$.}
+For every unordered pair of pairs with $n_1,n_2\le32$ ($164\,176$ cases, half-integers
+included) the matrix $\mathcal E-\lambda_*\mu$, with $\lambda_*$ the exact rational $(4.558/8)^2$, was factorised exactly: $163\,246$ are positive
+definite and the other $930$ are identical pairs with exactly one negative pivot, the
+kernel, so $\lambda_2\ge\lambda_*$. The $10\,416$ pairs of pairs with $\max(n_1,n_2)=32\frac12$
+were certified the same way ($10\,385$ positive definite, $31$ with exactly the kernel
+pivot); for them the analytic bound is also at most $0.4949$. The pencil depends only on
+the two pairs, and the spectrum of $T$ does not depend on the pairing (\cref{prop:S4}), so
+this covers every tuple with $j_1=1$.
+\end{proof}
+
+For large spins the bound grows like $n/\ln n$, and on the computed range it tracks the
+computed value within a factor of about $2.6$. The smallest value on this slice over
+spins at most $19$ is $7.3534$, at $(1;\frac12,1,1,\frac32)$.

@@ -1,0 +1,13 @@
+N=2: Gamma_N / RHS = 1.000000
+N=4: Gamma_N / RHS = 1.125000
+N=6: Gamma_N / RHS = 1.318359
+N=8: Gamma_N / RHS = 1.495361
+N=10: Gamma_N / RHS = 1.655996
+N=20: Gamma_N / RHS = 2.303203
+N=48: Gamma_N / RHS = 3.538334
+N=50: Gamma_N / RHS = 3.610482
+N=100: Gamma_N / RHS = 5.092462
+N=400: Gamma_N / RHS = 10.165365
+all even N in [2,400]: Gamma_N >= RHS: True; minimum ratio 1.000000 at N=2 (equality only at N=2)
+R_N <= 8K(K+1)/(2K+1)^2 for K>=1, N<=400: True
+analytic tail at P=25: (arctan 5 - 2/sqrt 24)/5 = 0.19303 >= 4/25 = 0.16

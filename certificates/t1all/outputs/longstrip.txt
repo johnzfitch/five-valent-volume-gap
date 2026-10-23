@@ -1,0 +1,60 @@
+2s=  5 open (s; n-1/2, n, n, n)     legs=(9, 10, 10, 10) dim=   51 type=open       q=   22.603 lamW0=0.7845 lamW0*(s+1)=2.746
+2s=  5 open (s; n-1/2, n, n, n)     legs=(19, 20, 20, 20) dim=  111 type=open       q=   34.188 lamW0=0.7456 lamW0*(s+1)=2.610
+2s=  5 open (s; n-1/2, n, n, n)     legs=(39, 40, 40, 40) dim=  231 type=open       q=   53.974 lamW0=0.7240 lamW0*(s+1)=2.534
+2s=  5 open (s; n-1/2, n, n, n)     legs=(79, 80, 80, 80) dim=  471 type=open       q=   88.008 lamW0=0.7115 lamW0*(s+1)=2.490
+2s=  5 eq (s; n,n,n,n)              legs=(11, 10, 10, 10) dim=   54 type=open       q=   35.476 lamW0=0.9241 lamW0*(s+1)=3.235
+2s=  5 eq (s; n,n,n,n)              legs=(21, 20, 20, 20) dim=  114 type=open       q=   54.421 lamW0=0.8857 lamW0*(s+1)=3.100
+2s=  5 eq (s; n,n,n,n)              legs=(41, 40, 40, 40) dim=  234 type=open       q=   87.928 lamW0=0.8649 lamW0*(s+1)=3.027
+2s=  5 eq (s; n,n,n,n)              legs=(81, 80, 80, 80) dim=  474 type=open       q=  147.317 lamW0=0.8533 lamW0*(s+1)=2.986
+2s=  5 gap (s; n, n+1, n+2, n+3)    legs=(11, 12, 14, 16) dim=   65 type=open       q=   53.349 lamW0=1.4062 lamW0*(s+1)=4.922
+2s=  5 gap (s; n, n+1, n+2, n+3)    legs=(21, 22, 24, 26) dim=  125 type=open       q=   75.602 lamW0=1.3816 lamW0*(s+1)=4.836
+2s=  5 gap (s; n, n+1, n+2, n+3)    legs=(41, 42, 44, 46) dim=  245 type=open       q=  115.024 lamW0=1.3551 lamW0*(s+1)=4.743
+2s=  5 gap (s; n, n+1, n+2, n+3)    legs=(81, 82, 84, 86) dim=  485 type=open       q=  185.495 lamW0=1.3321 lamW0*(s+1)=4.663
+2s=  7 open (s; n-1/2, n, n, n)     legs=(9, 10, 10, 10) dim=   62 type=open       q=   28.740 lamW0=0.7847 lamW0*(s+1)=3.531
+2s=  7 open (s; n-1/2, n, n, n)     legs=(19, 20, 20, 20) dim=  142 type=open       q=   42.009 lamW0=0.7336 lamW0*(s+1)=3.301
+2s=  7 open (s; n-1/2, n, n, n)     legs=(39, 40, 40, 40) dim=  302 type=open       q=   64.642 lamW0=0.7070 lamW0*(s+1)=3.181
+2s=  7 open (s; n-1/2, n, n, n)     legs=(79, 80, 80, 80) dim=  622 type=open       q=  103.237 lamW0=0.6920 lamW0*(s+1)=3.114
+2s=  7 eq (s; n,n,n,n)              legs=(11, 10, 10, 10) dim=   66 type=open       q=   43.657 lamW0=0.8929 lamW0*(s+1)=4.018
+2s=  7 eq (s; n,n,n,n)              legs=(21, 20, 20, 20) dim=  146 type=open       q=   64.867 lamW0=0.8411 lamW0*(s+1)=3.785
+2s=  7 eq (s; n,n,n,n)              legs=(41, 40, 40, 40) dim=  306 type=open       q=  102.187 lamW0=0.8152 lamW0*(s+1)=3.668
+2s=  7 eq (s; n,n,n,n)              legs=(81, 80, 80, 80) dim=  626 type=open       q=  167.946 lamW0=0.8012 lamW0*(s+1)=3.605
+2s=  7 gap (s; n, n+1, n+2, n+3)    legs=(11, 12, 14, 16) dim=   83 type=open       q=   66.055 lamW0=0.9978 lamW0*(s+1)=4.490
+2s=  7 gap (s; n, n+1, n+2, n+3)    legs=(21, 22, 24, 26) dim=  163 type=open       q=   91.965 lamW0=0.9864 lamW0*(s+1)=4.439
+2s=  7 gap (s; n, n+1, n+2, n+3)    legs=(41, 42, 44, 46) dim=  323 type=open       q=  136.550 lamW0=0.9589 lamW0*(s+1)=4.315
+2s=  7 gap (s; n, n+1, n+2, n+3)    legs=(81, 82, 84, 86) dim=  643 type=open       q=  214.591 lamW0=0.9284 lamW0*(s+1)=4.178
+2s=  9 open (s; n-1/2, n, n, n)     legs=(9, 10, 10, 10) dim=   70 type=open       q=   35.680 lamW0=0.7933 lamW0*(s+1)=4.363
+2s=  9 open (s; n-1/2, n, n, n)     legs=(19, 20, 20, 20) dim=  170 type=open       q=   50.315 lamW0=0.7277 lamW0*(s+1)=4.002
+2s=  9 open (s; n-1/2, n, n, n)     legs=(39, 40, 40, 40) dim=  370 type=open       q=   75.485 lamW0=0.6960 lamW0*(s+1)=3.828
+2s=  9 open (s; n-1/2, n, n, n)     legs=(79, 80, 80, 80) dim=  770 type=open       q=  118.274 lamW0=0.6787 lamW0*(s+1)=3.733
+2s=  9 eq (s; n,n,n,n)              legs=(11, 10, 10, 10) dim=   75 type=open       q=   52.626 lamW0=0.8815 lamW0*(s+1)=4.848
+2s=  9 eq (s; n,n,n,n)              legs=(21, 20, 20, 20) dim=  175 type=open       q=   75.866 lamW0=0.8141 lamW0*(s+1)=4.478
+2s=  9 eq (s; n,n,n,n)              legs=(41, 40, 40, 40) dim=  375 type=open       q=  116.598 lamW0=0.7825 lamW0*(s+1)=4.304
+2s=  9 eq (s; n,n,n,n)              legs=(81, 80, 80, 80) dim=  775 type=open       q=  188.054 lamW0=0.7662 lamW0*(s+1)=4.214
+2s=  9 gap (s; n, n+1, n+2, n+3)    legs=(11, 12, 14, 16) dim=   98 type=open       q=   78.730 lamW0=0.9977 lamW0*(s+1)=5.487
+2s=  9 gap (s; n, n+1, n+2, n+3)    legs=(21, 22, 24, 26) dim=  198 type=open       q=  108.472 lamW0=0.9743 lamW0*(s+1)=5.359
+2s=  9 gap (s; n, n+1, n+2, n+3)    legs=(41, 42, 44, 46) dim=  398 type=open       q=  158.535 lamW0=0.9279 lamW0*(s+1)=5.103
+2s=  9 gap (s; n, n+1, n+2, n+3)    legs=(81, 82, 84, 86) dim=  798 type=open       q=  244.127 lamW0=0.8900 lamW0*(s+1)=4.895
+2s= 13 open (s; n-1/2, n, n, n)     legs=(9, 10, 10, 10) dim=   77 type=open       q=   52.544 lamW0=0.8330 lamW0*(s+1)=6.248
+2s= 13 open (s; n-1/2, n, n, n)     legs=(19, 20, 20, 20) dim=  217 type=open       q=   69.193 lamW0=0.7267 lamW0*(s+1)=5.450
+2s= 13 open (s; n-1/2, n, n, n)     legs=(39, 40, 40, 40) dim=  497 type=open       q=   98.472 lamW0=0.6835 lamW0*(s+1)=5.127
+2s= 13 open (s; n-1/2, n, n, n)     legs=(79, 80, 80, 80) dim= 1057 type=open       q=  148.690 lamW0=0.6617 lamW0*(s+1)=4.963
+2s= 13 eq (s; n,n,n,n)              legs=(11, 10, 10, 10) dim=   84 type=open       q=   73.220 lamW0=0.8979 lamW0*(s+1)=6.734
+2s= 13 eq (s; n,n,n,n)              legs=(21, 20, 20, 20) dim=  224 type=open       q=  100.142 lamW0=0.7888 lamW0*(s+1)=5.916
+2s= 13 eq (s; n,n,n,n)              legs=(41, 40, 40, 40) dim=  504 type=open       q=  146.900 lamW0=0.7444 lamW0*(s+1)=5.583
+2s= 13 eq (s; n,n,n,n)              legs=(81, 80, 80, 80) dim= 1064 type=open       q=  228.397 lamW0=0.7231 lamW0*(s+1)=5.424
+2s= 13 gap (s; n, n+1, n+2, n+3)    legs=(11, 12, 14, 16) dim=  119 type=open       q=   97.982 lamW0=0.9985 lamW0*(s+1)=7.489
+2s= 13 gap (s; n, n+1, n+2, n+3)    legs=(21, 22, 24, 26) dim=  259 type=open       q=  141.510 lamW0=0.9360 lamW0*(s+1)=7.020
+2s= 13 gap (s; n, n+1, n+2, n+3)    legs=(41, 42, 44, 46) dim=  539 type=open       q=  202.983 lamW0=0.8715 lamW0*(s+1)=6.537
+2s= 13 gap (s; n, n+1, n+2, n+3)    legs=(81, 82, 84, 86) dim= 1099 type=open       q=  304.549 lamW0=0.8337 lamW0*(s+1)=6.253
+2s= 21 open (s; n-1/2, n, n, n)     legs=(9, 10, 10, 10) dim=   55 type=closed-odd q=  210.478 lamW0=1.5016 lamW0*(s+1)=17.268
+2s= 21 open (s; n-1/2, n, n, n)     legs=(19, 20, 20, 20) dim=  275 type=open       q=  118.619 lamW0=0.7513 lamW0*(s+1)=8.640
+2s= 21 open (s; n-1/2, n, n, n)     legs=(39, 40, 40, 40) dim=  715 type=open       q=  153.614 lamW0=0.6772 lamW0*(s+1)=7.787
+2s= 21 open (s; n-1/2, n, n, n)     legs=(79, 80, 80, 80) dim= 1595 type=open       q=  214.876 lamW0=0.6452 lamW0*(s+1)=7.420
+2s= 21 eq (s; n,n,n,n)              legs=(11, 10, 10, 10) dim=   66 type=W2         q=  188.142 lamW0=1.5023 lamW0*(s+1)=17.277
+2s= 21 eq (s; n,n,n,n)              legs=(21, 20, 20, 20) dim=  286 type=open       q=  159.271 lamW0=0.7923 lamW0*(s+1)=9.112
+2s= 21 eq (s; n,n,n,n)              legs=(41, 40, 40, 40) dim=  726 type=open       q=  216.619 lamW0=0.7154 lamW0*(s+1)=8.227
+2s= 21 eq (s; n,n,n,n)              legs=(81, 80, 80, 80) dim= 1606 type=open       q=  314.996 lamW0=0.6826 lamW0*(s+1)=7.850
+2s= 21 gap (s; n, n+1, n+2, n+3)    legs=(11, 12, 14, 16) dim=  125 type=closed-odd q=  130.547 lamW0=1.0000 lamW0*(s+1)=11.500
+2s= 21 gap (s; n, n+1, n+2, n+3)    legs=(21, 22, 24, 26) dim=  345 type=open       q=  184.583 lamW0=0.9019 lamW0*(s+1)=10.372
+2s= 21 gap (s; n, n+1, n+2, n+3)    legs=(41, 42, 44, 46) dim=  785 type=open       q=  289.000 lamW0=0.8135 lamW0*(s+1)=9.356
+2s= 21 gap (s; n, n+1, n+2, n+3)    legs=(81, 82, 84, 86) dim= 1665 type=open       q=  427.096 lamW0=0.7941 lamW0*(s+1)=9.133

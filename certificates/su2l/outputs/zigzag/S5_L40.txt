@@ -1,0 +1,1 @@
+2s=5 tuples=1000 no-admissible=0 min ratio bound/q=0.4645 median=1.0000 worst=(np.float64(0.4644971414428204), (11, 11, 12, 13), 'open', np.float64(47.42678749928649), np.float64(22.029607221234663), ((11, 11), (12, 13), 'odd-up'))  time 11.7s

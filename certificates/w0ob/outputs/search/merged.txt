@@ -1,0 +1,40 @@
+merged samples: 10000
+2j1=  5 tuples=  483 min best-pairing lambda(W0)=0.70396 lambda*(j1+1)=2.464 at (162, 163, 163, 163) open
+2j1=  6 tuples=  124 min best-pairing lambda(W0)=1.00327 lambda*(j1+1)=4.013 at (140, 142, 142, 144) W2
+2j1=  7 tuples=  491 min best-pairing lambda(W0)=0.68418 lambda*(j1+1)=3.079 at (144, 145, 145, 145) open
+2j1=  8 tuples=  137 min best-pairing lambda(W0)=1.00368 lambda*(j1+1)=5.018 at (177, 179, 179, 181) W2
+2j1=  9 tuples=  424 min best-pairing lambda(W0)=0.66784 lambda*(j1+1)=3.673 at (172, 173, 173, 173) open
+2j1= 10 tuples=  150 min best-pairing lambda(W0)=1.00474 lambda*(j1+1)=6.028 at (176, 178, 178, 180) W2
+2j1= 11 tuples=  418 min best-pairing lambda(W0)=0.68598 lambda*(j1+1)=4.459 at (191, 192, 193, 193) open
+2j1= 12 tuples=  120 min best-pairing lambda(W0)=1.00540 lambda*(j1+1)=7.038 at (187, 189, 189, 191) W2
+2j1= 13 tuples=  408 min best-pairing lambda(W0)=0.67399 lambda*(j1+1)=5.055 at (149, 150, 151, 151) open
+2j1= 14 tuples=  130 min best-pairing lambda(W0)=1.00713 lambda*(j1+1)=8.057 at (164, 166, 166, 168) W2
+2j1= 15 tuples=  442 min best-pairing lambda(W0)=0.64597 lambda*(j1+1)=5.491 at (130, 131, 131, 131) open
+2j1= 16 tuples=  144 min best-pairing lambda(W0)=1.00831 lambda*(j1+1)=9.075 at (159, 161, 161, 163) W2
+2j1= 17 tuples=  411 min best-pairing lambda(W0)=0.65063 lambda*(j1+1)=6.181 at (82, 83, 83, 83) open
+2j1= 18 tuples=  131 min best-pairing lambda(W0)=1.00956 lambda*(j1+1)=10.096 at (185, 185, 185, 189) W2
+2j1= 19 tuples=  409 min best-pairing lambda(W0)=0.63027 lambda*(j1+1)=6.618 at (189, 190, 190, 190) open
+2j1= 20 tuples=  137 min best-pairing lambda(W0)=1.00904 lambda*(j1+1)=11.099 at (179, 181, 181, 183) W2
+2j1= 21 tuples=  375 min best-pairing lambda(W0)=0.63320 lambda*(j1+1)=7.282 at (127, 128, 128, 128) open
+2j1= 22 tuples=  134 min best-pairing lambda(W0)=1.01204 lambda*(j1+1)=12.144 at (182, 182, 182, 186) W2
+2j1= 23 tuples=  363 min best-pairing lambda(W0)=0.64255 lambda*(j1+1)=8.032 at (114, 115, 116, 116) open
+2j1= 24 tuples=  146 min best-pairing lambda(W0)=1.01066 lambda*(j1+1)=13.139 at (174, 176, 176, 178) W2
+2j1= 25 tuples=  427 min best-pairing lambda(W0)=0.62957 lambda*(j1+1)=8.499 at (173, 174, 175, 175) open
+2j1= 26 tuples=  137 min best-pairing lambda(W0)=1.01164 lambda*(j1+1)=14.163 at (167, 169, 169, 171) W2
+2j1= 27 tuples=  395 min best-pairing lambda(W0)=0.62754 lambda*(j1+1)=9.099 at (166, 167, 168, 168) open
+2j1= 28 tuples=  147 min best-pairing lambda(W0)=1.01132 lambda*(j1+1)=15.170 at (183, 185, 185, 187) W2
+2j1= 29 tuples=  365 min best-pairing lambda(W0)=0.62318 lambda*(j1+1)=9.659 at (182, 183, 184, 184) open
+2j1= 30 tuples=  162 min best-pairing lambda(W0)=1.01158 lambda*(j1+1)=16.185 at (187, 189, 189, 191) W2
+2j1= 31 tuples=  353 min best-pairing lambda(W0)=0.62044 lambda*(j1+1)=10.237 at (188, 189, 190, 190) open
+2j1= 32 tuples=  125 min best-pairing lambda(W0)=1.01306 lambda*(j1+1)=17.222 at (166, 168, 168, 170) W2
+2j1= 33 tuples=  368 min best-pairing lambda(W0)=0.61419 lambda*(j1+1)=10.748 at (164, 165, 165, 165) open
+2j1= 34 tuples=  150 min best-pairing lambda(W0)=1.01294 lambda*(j1+1)=18.233 at (174, 176, 176, 178) W2
+2j1= 35 tuples=  336 min best-pairing lambda(W0)=0.62750 lambda*(j1+1)=11.609 at (172, 173, 175, 175) open
+2j1= 36 tuples=  145 min best-pairing lambda(W0)=1.00505 lambda*(j1+1)=19.096 at (153, 163, 163, 183) W2
+2j1= 37 tuples=  339 min best-pairing lambda(W0)=0.61401 lambda*(j1+1)=11.973 at (149, 150, 150, 150) open
+2j1= 38 tuples=  131 min best-pairing lambda(W0)=1.01450 lambda*(j1+1)=20.290 at (152, 154, 154, 156) W2
+2j1= 39 tuples=  344 min best-pairing lambda(W0)=0.62320 lambda*(j1+1)=12.776 at (181, 182, 184, 184) open
+2j1= 40 tuples=  144 min best-pairing lambda(W0)=1.01278 lambda*(j1+1)=21.268 at (191, 193, 193, 195) W2
+2j1= 41 tuples=  355 min best-pairing lambda(W0)=0.61608 lambda*(j1+1)=13.246 at (170, 171, 172, 172) open
+half-integer j1: overall min lambda = 0.61401 at 2j1=37; min lambda*(j1+1) = 2.464
+integer j1     : overall min lambda = 1.00327 at 2j1=6

@@ -1,0 +1,299 @@
+\section{The slice \texorpdfstring{$j_1=\frac32$}{j1 = 3/2}}\label{app:z32}
+
+This appendix proves \cref{thm:z32}. The proof has four parts: the reduction, the chain
+lemmas with their $30$ polynomial certificates, a finite box of $6.4\times10^7$ parameter
+sets evaluated in outward-rounded interval arithmetic (\cref{subsec:box32}), and the tail
+lemmas with their $50$ certificates.
+
+\subsection{Zigzags and links}
+
+Fix an ordered pairing with pairs $(n_1,m_1)$, $(n_2,m_2)$ and write
+$P_i(L)=(n_i^2-L^2)(L^2-m_i^2)$. For $s=\frac32$, $F(x)=4-x^2$ and
+$G(u)=(u+\frac52)(u-\frac32)$. Zigzag $0$ has rows $R_b=(b,b+\frac32)$ and columns
+$C_b=(b,b+\frac12)$; zigzag $1$ has rows $R'_b=(b,b-\frac12)$ and columns $C'_b=(b,b-\frac32)$.
+In the order of $u$ each zigzag is a path $C_b,R_b,C_{b+1},\dots$, and the block is
+$B=\bigl(\begin{smallmatrix}D_0&0\\N&D_1\end{smallmatrix}\bigr)$. By \cref{prop:grid} the squared
+links of $T$ are
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+\estabhead{link} & \estabhead{between} & \estabhead{squared weight}\\
+\midrule
+$q_b$ & $C_b$--$R_b$ & $\frac3{16}P_2(b+\frac32)\,b/(b+1)$\\
+$p_b$ & $R_b$--$C_{b+1}$ & $\frac3{16}P_1(b+1)\,(2b+5)/(2b+3)$\\
+$q'_b$ & $C'_b$--$R'_b$ & $\frac3{16}P_2(b-\frac12)\,(b+1)/b$\\
+$p'_b$ & $R'_b$--$C'_{b+1}$ & $\frac3{16}P_1(b+1)\,(2b-1)/(2b+1)$\\
+$n^+_b$ & $R'_b$--$C_b$ & $P_2(b+\frac12)(2b+3)(2b-1)/(16b(b+1))$\\
+$n^-_b$ & $R'_b$--$C_{b-1}$ & $P_1(b)(b^2-1)/(4b^2-1)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+(checked exactly against the grid on $4\,171$ links). The site ranges follow from the
+region: rows of zigzag $0$ have $b\in[\max(m_1,m_2-\frac32,0),\min(n_1-1,n_2-\frac52)]$,
+its columns $b\in[\max(m_1,m_2-\frac12,\frac12),\min(n_1-1,n_2-\frac32)]$, rows of zigzag $1$
+$b\in[\max(m_1,m_2+\frac12,1),\min(n_1-1,n_2-\frac12)]$, and its columns
+$b\in[\max(m_1,m_2+\frac32,\frac32),\min(n_1-1,n_2+\frac12)]$. A zigzag is of type CR, RC,
+RR or CC according to whether its path starts with a column or a row and ends with a
+column or a row; its imbalance is $0$, $0$, $+1$ or $-1$.
+
+\subsection{Reduction}
+
+\begin{lemma}[All-tall pairings]\label{lem:alltall}
+If in some ordered pairing both zigzags have imbalance $0$ or $+1$, then $B$ is injective
+and $\lambda(T)=\smin(B)$.
+\end{lemma}
+
+\begin{proof}
+Each $D_k$ is a path with nonzero links and at least as many rows as columns, so it is
+injective (delete an end row if it is tall). If $Bx=0$ then $D_0x_0=0$, so $x_0=0$, and then
+$D_1x_1=0$.
+\end{proof}
+
+The proof needs a pairing in which neither zigzag has more columns than rows, and which
+pairing works depends on the gaps between the sorted spins of legs $2$--$5$. The
+regimes below sort the tuples by those gaps. In R1 and R4 one outer gap exceeds the
+other by at least $\frac32$ ($g_1$ in R1, $g_3$ in R4); in R2$^\mp$ they differ by
+exactly $\frac12$; R1c and R4c are the boundary cases in which the smaller outer gap
+vanishes; and Tm, Tp are the two one-parameter families in which only one leg differs
+from the others, by $-\frac12$ (Tm, the smallest leg) or $+\frac12$ (Tp, the largest).
+
+\begin{lemma}[Regimes]\label{lem:regimes}
+Sort $j_2\le j_3\le j_4\le j_5$ and put $g_1=j_3-j_2$, $g_2=j_4-j_3$, $g_3=j_5-j_4$; then
+$g_1+g_3\equiv\frac12\pmod1$. Every tuple falls in exactly one of the following regimes,
+and in the pairing listed both zigzags have imbalance in $\{0,1\}$.
+\begin{center}\small
+\begin{tabular}{llll}
+\toprule
+\estabhead{regime} & \estabhead{gaps} & \estabhead{pairing} & \estabhead{zigzag 0 / zigzag 1}\\
+\midrule
+R1 & $g_1-g_3\ge\frac32$ & $(j_2j_4|j_3j_5)$ & CR / CR\\
+R2$^-$ & $g_1-g_3=\frac12$, $g_3\ge\frac12$ & $(j_2j_4|j_3j_5)$ & CR / RR\\
+R1c & $g_1=\frac12$, $g_3=0$, $g_2\ge\frac12$ & $(j_2j_3|j_4j_5)$ & CR / CR\\
+Tm & $g_1=\frac12$, $g_2=g_3=0$ & $(j_3j_4|j_2j_5)$ & RC / RR\\
+R4 & $g_3-g_1\ge\frac32$ & $(j_2j_4|j_3j_5)$ & RR / RR\\
+R2$^+$ & $g_3-g_1=\frac12$, $g_1\ge\frac12$ & $(j_2j_4|j_3j_5)$ & CR / RR\\
+R4c & $g_1=0$, $g_3=\frac12$, $g_2\ge\frac12$ & $(j_2j_3|j_4j_5)$ & RR / RR\\
+Tp & $g_1=0$, $g_3=\frac12$, $g_2=0$ & $(j_2j_3|j_4j_5)$ & RC / RR\\
+\bottomrule
+\end{tabular}
+\end{center}
+The one-parameter families are Tm $=(\frac32;j,j+\frac12,j+\frac12,j+\frac12)$ and
+Tp $=(\frac32;j,j,j,j+\frac12)$.
+\end{lemma}
+
+\begin{proof}
+In $(j_2j_4|j_3j_5)$, $n_2-n_1=g_1+g_3$ and $m_2-m_1=g_3-g_1$, with $m_1=g_1+g_2$,
+$m_2=g_2+g_3$; in $(j_2j_3|j_4j_5)$, $n_2-n_1=g_1+2g_2+g_3$ and $(m_1,m_2)=(g_1,g_3)$. The
+conditions are disjoint and exhaustive because $g_1-g_3$ is a nonzero half-odd integer.
+Substituting into the four range formulas gives the types; for example in R1,
+$m_2+\frac32\le m_1$ and $m_1\ge\frac32$ make every lower end $m_1$, and $n_2\ge n_1+\frac32$
+makes every upper end $n_1-1$.
+\end{proof}
+
+The census of all $54\,019$ tuples with spins at most $20$ (legs $2$--$5$ sorted,
+$\dim\Inv\ge2$) confirms the types, the
+imbalances and the ratio hypotheses below in exact arithmetic.
+
+\begin{proposition}{The coupling identity}{coupling32}
+On the columns of zigzag $0$, $N^TN=\frac43D_0^TD_0+\diag(\Lambda)$ with
+$\Lambda_c=n^+_c{}^2+n^-_{c+1}{}^2-\frac43(q_c^2+p_{c-1}^2)=\Lambda^1_c+\Lambda^2_c$,
+\[
+  \Lambda^1_c=\frac{P_1(c+1)\,c(c+2)}{(2c+1)(2c+3)}-\frac{P_1(c)(2c+3)}{4(2c+1)},\qquad
+  \Lambda^2_c=\frac{P_2(c+\frac12)(2c+3)(2c-1)}{16c(c+1)}-\frac{P_2(c+\frac32)\,c}{4(c+1)} .
+\]
+\end{proposition}
+
+This is \cref{prop:zigzag} with $\mathsf r=F(0)/F(-1)=\frac43$; the formula holds at every
+column, the ends included, because the link of a missing row vanishes.
+
+\begin{corollary}\label{cor:FW}
+Let $F_0\ge1/\lambda_{\min}(D_0^TD_0)$, $F_1\ge1/\lambda_{\min}(D_1^TD_1)$ and
+$C_\Lambda \ge\sup_xx^T\Lambda x/|D_0x|^2$ ($C_\Lambda =0$ if $\Lambda\le0$). Then for every $\tau>0$,
+\[
+  \smin(B)^2\ge\min\Bigl(\frac{1-\tau(\frac43+C_\Lambda)}{F_0},\ \frac{\tau}{(1+\tau)F_1}\Bigr).
+\]
+When $D_0$ is square one may take $C_\Lambda =\sum_c\Lambda_c^+R_c$ with $R_c\ge\sum_k(D_0^{-1})_{ck}^2$.
+\end{corollary}
+
+\begin{proof}
+If $1-\tau(\frac43+C_\Lambda)\le0$, the first term of the minimum is at most $0$ and there is
+nothing to prove. Otherwise, by \eqref{eq:twochain} and $D_0^TD_0-\tau N^TN=(1-\frac43\tau)D_0^TD_0-\tau\Lambda\succeq
+(1-\tau(\frac43+C_\Lambda))D_0^TD_0$; for the last statement write $y=D_0x$ and bound the operator
+norm of $\Lambda^{+1/2}D_0^{-1}$ by its Frobenius norm.
+\end{proof}
+
+\subsection{Chains}
+
+Each lemma uses only the explicit inverse of a bidiagonal path. For a row $R_b$ write
+$r_b=p_b^2/q_b^2$ (same-row ratio) and $\bar r_b=p_b^2/q_{b+1}^2$ (same-column ratio).
+
+\begin{lemma}[CR chains]\label{lem:CR}
+If $D$ is square with $(Dx)_{R_b}=q_bx_b+p_bx_{b+1}$, then for $k\ge c$
+\[
+  |(D^{-1})_{ck}|=q_c^{-1}\prod_{t=c}^{k-1}\sqrt{\bar r_t}.
+\] If every $\bar r_t\le1$, then
+$1/\lambda_{\min}(D^TD)\le\sum_c(\mathrm{hi}-c+1)/q_c^2$ and $R_c\le(\mathrm{hi}-c+1)/q_c^2$
+(count form). With $\ell_c\le q_c^2$ the entries obey
+$E_{ck}^2\le\ell_c^{-1}\prod_{t=c}^{k-1}p_t^2/\ell_{t+1}$, which gives the forward recursion
+$F=\sum_k\Phi_k$, $\Phi_k=(p_{k-1}^2\Phi_{k-1}+1)/\ell_k$, and the backward recursion
+$R_c=(1+p_c^2R_{c+1})/\ell_c$ (exact-product form).
+\end{lemma}
+
+\begin{lemma}[RC chains]\label{lem:RC}
+If the rows $R_{\rm lo},\dots,R_{\rm hi}$ are matched to the columns above them by $p$, then
+$|E_{c,i}|=p_i^{-1}\prod_{t=i+1}^{c-1}q_t/p_t$ for $i<c$; if every $r_t\ge1$, then
+$1/\lambda_{\min}\le\sum_i(\mathrm{hi}-i+1)/p_i^2$ and $R_c\le\sum_{i<c}1/p_i^2$.
+\end{lemma}
+
+\begin{lemma}[Tall chains]\label{lem:tall}
+If the rows are $R_{\rm lo},\dots,R_{\rm hi}$, the columns $C_{\rm lo+1},\dots,C_{\rm hi}$,
+and $r_t$ is strictly decreasing on the interior rows, then
+$1/\lambda_{\min}(D^TD)\le\sum_{i<\mathrm{hi}}(\mathrm{hi}-i)/p_i^2+\sum_{i>\mathrm{lo}}(i-\mathrm{lo})/q_i^2$.
+\end{lemma}
+
+\begin{proof}
+Delete the first row $j$ with $r_j\le1$ (or the top row). The lower piece is matched by $p$
+with ratios $q/p\le1$, the upper by $q$ with ratios $p/q\le1$; add their Frobenius norms.
+\end{proof}
+
+In every bound the length factors ($\mathrm{hi}-c+1$, $\mathrm{hi}-i$, $i-\mathrm{lo}$) are
+cancelled by a factor $n-L$ or $L-m$ of the links, which is what makes the bounds uniform.
+The sums that remain are handled by the identity
+$\sum_{1\le c\le k\le N}\frac1{k(N+1-c)}=H_N^{(2)}<\frac{\pi^2}6$, which follows from
+grouping $\sum_{j+k\le N}1/(jk)$ by $j+k$.
+
+\subsection{Worst cases and certificates}
+
+Pair $1$ enters exactly. Pair $2$ enters only through monotone dependences ($P_2(L)$
+increases in $n_2$ and decreases in $m_2$; $\Lambda^2$ is nonincreasing in $n_2^2$ and $m_2^2$
+for $c\ge1$), so each regime is evaluated at the boundary of pair $2$: $n_2=n_1+\frac32$, and
+$m_2$ at its extreme value; in R4 the pair-$1$ parameter is worst-cased instead. Every bound
+is then a function of two parameters, $(n_1,m_1)$ or $(n_1,m_2)$, or of $n_1$ alone in R1c,
+R4c, Tp and Tm. The hypotheses are $30$ exact polynomial certificates, each showing that a
+polynomial in nonnegative shift variables has coefficients of one sign (or, once, that a
+univariate polynomial has no root on $(1,\infty)$):
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.3cm}>{\raggedright\arraybackslash}p{9.3cm}>{\raggedright\arraybackslash}p{2.6cm}}
+\toprule
+\estabhead{label} & \estabhead{claim} & \estabhead{used for}\\
+\midrule
+S1 & $\Lambda_c\le0$ on zigzag $0$ in R4 and R4c & $C_\Lambda =0$ there\\
+S2 & $r$ strictly decreasing on interior rows of every tall chain & \cref{lem:tall}\\
+S3 & $\bar r\le1$ for the CR chains of R1, R1c and R2$^\pm$ (zigzag $0$) & \cref{lem:CR}\\
+S4 & $r\ge1$ for the RC chains of Tp and Tm & \cref{lem:RC}\\
+S5 & $\partial\Lambda^2/\partial(n_2^2)\le0$, $\partial\Lambda^2/\partial(m_2^2)\le0$ for $c\ge1$ & worst cases\\
+S6 & $\Lambda\le m_1^2[(4c+9)n_1^2+c(4c^2+11c+8)]/(4(2c+1)(2c+3))$ & tails\\
+S7 & telescoping bounds $\bar r\le\frac{\Theta_c}{\Theta_c+1}\cdot(\dots)$, $\Theta_c=c-\mathrm{lo}+1$ & tails\\
+S8 & two elementary rational inequalities & tails\\
+\bottomrule
+\end{tabular}
+\end{center}
+Negative controls (false variants of S1--S3) fail, as they must. The two columns $c=\frac12$
+that occur (in R1c and in R2$^+$ with $m_1=\frac12$) are treated exactly:
+$\Lambda_{1/2}=\frac5{16}(n_1^2-\frac94)-\frac13(n_2^2-4)\le0$ in R1c and
+$\Lambda_{1/2}\le n_1^2/16$ in R2$^+$.
+
+\subsection{The box}\label{subsec:box32}
+
+For each parameter set the bound of \cref{cor:FW} is evaluated with $F_0,F_1,C_\Lambda$ the
+smaller of the count and exact-product forms (\cref{lem:tall} for tall chains) and $\tau$ chosen
+to balance the two terms. The parameter sets are all those with $n_1\le4000$ in the four
+two-parameter regimes and $n_1\le10^5$ in the four one-parameter ones, $6.4\times10^7$ in
+all. The minima of the resulting lower bound for $q=8\smin(B)$ are:
+\begin{center}\small
+\begin{tabular}{lrrl}
+\toprule
+\estabhead{regime} & \estabhead{parameter sets} & \estabhead{min bound for $q$} & \estabhead{at}\\
+\midrule
+R1 & $15\,980\,006$ & $10.873$ & $n_1=\frac72$, $m_1=\frac32$\\
+R2$^+$ & $15\,988\,002$ & $7.125$ & $n_1=\frac92$, $m_1=\frac12$\\
+R2$^-$ & $15\,984\,004$ & $4.723$ & $n_1=3$, $m_1=1$\\
+R4 & $15\,999\,998$ & $6.507$ & $n_1=2$, $m_2=\frac32$\\
+R1c & $99\,998$ & $8.219$ & $n_1=\frac52$\\
+R4c & $99\,999$ & $4.621$ & $n_1=3$\\
+Tp & $99\,999$ & $4.386$ & $n_1=4$\\
+Tm & $99\,998$ & $3.777$ & $n_1=4$, i.e. $(\frac32;1,\frac32,\frac32,\frac32)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These values come from a binary64 evaluation, truncated to three decimals, and were
+reproduced to six decimals by an independent exact-rational evaluation at the minimising
+parameters. The certified version re-runs the whole box with every operation rounded outward
+by one ulp in the safe direction and bounds the cancellation $1-\tau(\frac43+C_\Lambda)$ from
+below directly. Every one of the $64\,352\,004$ parameter sets is certified positive, with no
+NaN, and the certified lower bounds for the minima, truncated to six decimals, are
+$10.873596$ (R1), $7.125868$ (R2$^+$), $4.723102$ (R2$^-$), $6.507913$ (R4), $8.219252$
+(R1c), $4.621864$ (R4c), $4.386733$ (Tp) and $3.777422$ (Tm), each at the same parameters as
+above. The smallest certified cancellation margin $1-\tau(\frac43+C_\Lambda)$ is
+$3.02\times10^{-5}$ (truncated), at Tm. The binding value
+$3.7774$ exceeds the constant $3.7$ of \cref{thm:z32}.
+
+\subsection{Tails}
+
+Beyond the box we use a sufficient condition that needs no choice of $\tau$.
+
+\begin{lemma}\label{lem:sufficient}
+Let $\lambda_*=(3.7/8)^2$ and $\mathcal C=\lambda_*[F_0+\frac73F_1+C_\Lambda F_1]$. If $\mathcal C\le1$, then
+$\smin(B)^2\ge \lambda_*$.
+\end{lemma}
+
+\begin{proof}
+Take $\tau=\theta/(\frac43+C_\Lambda)$ with $\theta=1-\lambda_*F_0$. The first term of \cref{cor:FW} is then
+$\lambda_*$, and the second is at least $\lambda_*$ iff $\theta\ge \lambda_*(\frac43+C_\Lambda+\theta)F_1$, which
+follows from $(1-\lambda_*F_0)(1-\lambda_*F_1)\ge1-\lambda_*F_0-\lambda_*F_1\ge \lambda_*(\frac43+C_\Lambda)F_1$, a consequence of
+$\mathcal C\le1$.
+\end{proof}
+
+In each regime the three box quantities are bounded by closed forms in $n=n_1$ and
+$\mathsf L=1+\ln n$, uniformly in the second parameter $a$. The factorisations behind them
+are exact identities: for instance in R2$^-$ ($m_2=a-\frac12$, $\Theta_c=c-a+1$)
+the squared links of zigzag $0$ satisfy
+\[
+  \frac{16}3\,\frac{c+1}c\,q_c^2=(n-c)(n+c+3)(\Theta_c+1)(c+1+a),
+\]
+and the same-column ratio is
+\[
+  \bar r_t=\frac{\Theta_t}{\Theta_t+2}\cdot\frac{t+1+a}{t+2+a}\cdot\frac{n+t+1}{n+t+4}\cdot\frac{(2t+5)(t+2)}{(2t+3)(t+1)},
+\]
+whose products telescope; $\Lambda$ is a quadratic in $n$ whose three coefficients are
+bounded by certified polynomial inequalities. The resulting bounds are:
+\begin{center}\small
+\begin{tabular}{llll}
+\toprule
+\estabhead{regime} & \estabhead{$F_0$} & \estabhead{$F_1$} & \estabhead{$C_\Lambda$}\\
+\midrule
+R2$^-$ & $\frac{32}{3n}$ & $\frac{12}n+\frac{32\mathsf L}{3n(n+2)}$ & $8(2.5+\ln n)\mathsf L+\frac{400(2.5+\ln n)}{n-10}$\\[7pt]
+R2$^+$ & $\frac{16}n$ & $\frac{32}{3n}+\frac{32\mathsf L}{3n(n+2)}$ & $16\mathsf L^2+\frac23\mathsf L$\\[7pt]
+R1 & $\frac{4.22}n$ & $\frac{16}{3n}S(2a-3)$ & $a[2.67\mathsf L^2+12.6\mathsf L+9.3]$\\[7pt]
+R4 & $\frac{16\pi^2}{18n}+\frac{64\mathsf L}{3n(n+3)}$ & $\frac{3.52}n+\frac{32\mathsf L}{3n(n+2)}$ & $0$\\[7pt]
+R4c & $\frac{16\pi^2}{18n}+\frac{32\mathsf L}{3n(n+2)}$ & $\frac{16(\pi^2/6-1)}n+\frac{32\mathsf L}{3n(n+3)}$ & $0$\\[7pt]
+R1c & $\frac{16(\mathsf L+\ln2)(1+2\mathsf L)}{3n^2}$ & $\frac{32\mathsf L^2}{n(n+1)}$ & $\frac{16}{225}(\mathsf L+\ln2)(1+2\mathsf L)$\\[7pt]
+Tm & $\frac{32\mathsf L^2}{3n^2}$ & $\frac{16(\pi^2/6-1)}n+\frac{32\mathsf L}{3n(n+1)}$ & $6\mathsf L^2$\\[7pt]
+Tp & $\frac{64\mathsf L^2}{3n^2}$ & $\frac{16(\pi^2/6-1)}n+\frac{32\mathsf L}{3n(n+2)}$ & $6\mathsf L^2$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here $S(x)=\sum_{i\ge1}1/(i(i+x))\le1/(1+x)+\ln(1+x)/x$, and in R1 the product
+$C_\Lambda F_1$ is made uniform in $a$ by $aS(2a-3)\le3+\frac12\ln2n$. Writing $\mathcal C(n)$ as a sum
+of monomials $K\mathsf L^p/\prod(n+\gamma_i)$, each is nonincreasing for $n\ge n_0$ once its
+logarithmic derivative is negative at $n_0$, and $\mathcal C(n_0)$ is evaluated in $120$-bit
+interval arithmetic, with every decimal constant entered as an exact rational and the
+derivative test also done in intervals: $\mathcal C\le0.7644$ (R1), $0.7960$ (R2$^+$),
+$0.5189$ (R2$^-$), $0.000915$ (R4) at $n_0=4000$, and $3\times10^{-6}$ (R1c),
+$7.03\times10^{-5}$ (R4c), $0.0208$ (Tp, Tm) at $n_0=10^5$ (upper bounds, rounded up). All
+are below $1$. (An earlier version of the script entered the decimal constants as binary64
+numbers, so that its intervals enclosed the nearest binary64 points rather than the decimals,
+and did the derivative test in ordinary precision. The margins are wide enough that its
+verdicts were the same; the certificate of record is the repaired script,
+\texttt{certificates/z32rigor/scripts/tail\_certify\_exact.py}.) The $50$ polynomial facts used are exact certificates,
+and every closed form was also checked to dominate the corresponding box quantity at
+$n_1\in\{60,60\frac12,200,200\frac12,500,999\frac12\}$ for all $a$.
+
+\subsection{Small spins exactly}
+
+Independently of box and tails, the two matrices of \eqref{eq:twochain} are tridiagonal
+in the column index with rational diagonals and off-diagonals whose squares are rational,
+so their positivity is decided by exact $LDL^T$ pivots at rational $\tau$. All $54\,019$ tuples
+with $j_1=\frac32$ and spins at most $20$, counted as above, are certified this way at $q\ge7.18$; the smallest
+certified value is $7.190$ at $(\frac32;\frac12,1,1,1)$, where the computed value is $7.476$, so the
+two-chain inequality loses $4\%$ there.

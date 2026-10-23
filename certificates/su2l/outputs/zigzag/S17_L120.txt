@@ -1,0 +1,4 @@
+NO ADMISSIBLE READING 17 (67, 72, 76, 78) open q=501.536
+NO ADMISSIBLE READING 17 (103, 109, 110, 115) open q=776.468
+NO ADMISSIBLE READING 17 (103, 107, 109, 112) open q=681.163
+2s=17 tuples=1000 no-admissible=3 min ratio bound/q=0.2549 median=1.0000 worst=(np.float64(0.2549414098843179), (72, 72, 73, 76), 'open', np.float64(415.900152741313), np.float64(106.0301713109735), ((72, 72), (73, 76), 'odd-up'))  time 250.2s

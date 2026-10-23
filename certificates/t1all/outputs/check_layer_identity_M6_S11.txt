@@ -1,0 +1,1 @@
+tuples 6588, entries checked 97597, mismatches 0

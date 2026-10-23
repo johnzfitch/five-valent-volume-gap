@@ -1,0 +1,9 @@
+M=24: 7862 tuples, 1014 parameter sets, 9.0s; failures 0
+  R1     3146 tuples; min analytic 8*sigma >= 6.1191 at (3, 21, 24, 24, 24) (true q=43.4557) prm={'n1': '47/2', 'm1': '3/2'}
+  R1c     253 tuples; min analytic 8*sigma >= 6.9663 at (3, 3, 4, 5, 5) (true q=14.8867) prm={'n1': '9/2'}
+  R2+     946 tuples; min analytic 8*sigma >= 6.3010 at (3, 3, 4, 4, 6) (true q=14.0175) prm={'n1': '9/2', 'm1': '1/2'}
+  R2-     946 tuples; min analytic 8*sigma >= 4.6799 at (3, 1, 3, 3, 4) (true q=16.6100) prm={'n1': '3', 'm1': '1'}
+  R4     2272 tuples; min analytic 8*sigma >= 6.5079 at (3, 1, 1, 1, 4) (true q=14.2829) prm={'n1': '2', 'm2': '3/2'}
+  R4c     253 tuples; min analytic 8*sigma >= 4.6219 at (3, 2, 2, 3, 4) (true q=17.2522) prm={'n1': '3'}
+  Tm       23 tuples; min analytic 8*sigma >= 2.4317 at (3, 23, 24, 24, 24) (true q=30.1158) prm={'n1': '25'}
+  Tp       23 tuples; min analytic 8*sigma >= 4.0732 at (3, 4, 4, 4, 5) (true q=16.7796) prm={'n1': '5'}

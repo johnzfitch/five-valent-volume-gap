@@ -1,0 +1,14 @@
+C6/max(q0,4.922951 s-1370)         {'certified': 1193}
+P1-all/4.558                       {'certified': 19700, 'trivial': 2400}
+P1-rand/4.558                      {'certified': 1500}
+S2-W2/q0                           {'certified': 1500}
+S2-all/q0                          {'trivial': 1513, 'certified': 20587}
+S2-nonW2/7.8                       {'certified': 1500}
+S52-39..70/q0                      {'certified': 1500}
+S72-two/q0                         {'certified': 2}
+Z32-all/3.7                        {'certified': 20080, 'trivial': 1920}
+Z32-all/7.18                       {'certified': 20080, 'trivial': 1920}
+Z32-r40/7.18                       {'certified': 1500}
+Z32-rand/3.7                       {'certified': 1500}
+non-certified (excluding 'trivial' = no nonzero spectrum): 0
+jobs 98395, 196s on 8 processes

@@ -1,0 +1,2 @@
+row-product identity, all labelled tuples 2s odd, 2j_i<=8: 16630 plaquettes, 0 failures; plaquettes (both row diagonals inside the strip) with both columns but a missing row: 0
+column-pair identity (ratio G(u+1)/G(u)): 16630 plaquettes, 0 failures

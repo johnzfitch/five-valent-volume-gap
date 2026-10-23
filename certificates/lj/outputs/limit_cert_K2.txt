@@ -1,0 +1,25 @@
+t=(1, 1, 1) M2=-3: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 1) M2= -1 assign=(1, 1, 1) sigma_inf>=0.86602454  s0=   4.5  E(s0)=  2.6984
+t=(1, 1, 1) M2=  1 assign=(1, 1, 1) sigma_inf>=0.86602454  s0=   2.0  E(s0)=  0.7818
+t=(1, 1, 1) M2=3: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 2) M2=-4: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 2) M2= -2 assign=(1, 1, 2) sigma_inf>=1.11803287  s0=   5.0  E(s0)=  4.5671
+t=(1, 1, 2) M2=  0 assign=(1, 1, 2) sigma_inf>=1.49999850  s0=   3.0  E(s0)=  3.8490
+t=(1, 1, 2) M2=  2 assign=(1, 2, 1) sigma_inf>=1.11803287  s0=   2.5  E(s0)=  0.9478
+t=(1, 1, 2) M2=4: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 2) M2=-5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 2) M2= -3 assign=(1, 2, 2) sigma_inf>=1.41421215  s0=   6.5  E(s0)=  7.9576
+t=(1, 2, 2) M2= -1 assign=(2, 2, 1) sigma_inf>=0.61536891  s0=   8.0  E(s0)=  4.1717
+t=(1, 2, 2) M2=  1 assign=(2, 2, 1) sigma_inf>=0.61536891  s0=   4.5  E(s0)=  1.9549
+t=(1, 2, 2) M2=  3 assign=(2, 2, 1) sigma_inf>=1.41421215  s0=   3.0  E(s0)=  2.4230
+t=(1, 2, 2) M2=5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 2) M2=-6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 2) M2= -4 assign=(2, 2, 2) sigma_inf>=1.73204908  s0=   8.0  E(s0)= 12.0056
+t=(2, 2, 2) M2= -2 assign=(2, 2, 2) sigma_inf>=1.07046520  s0=   9.5  E(s0)=  9.1407
+t=(2, 2, 2) M2=  0 assign=(2, 2, 2) sigma_inf>=0.99999900  s0=   6.0  E(s0)=  4.8927
+t=(2, 2, 2) M2=  2 assign=(2, 2, 2) sigma_inf>=1.07046520  s0=   3.5  E(s0)=  2.6772
+t=(2, 2, 2) M2=  4 assign=(2, 2, 2) sigma_inf>=1.73204908  s0=   4.0  E(s0)=  3.1817
+t=(2, 2, 2) M2=6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+cases certified 14, failures 0: []
+smallest certified slope sigma_inf = 0.61536891 at t=(1, 2, 2) M2=-1;  8*sigma = 4.922951
+largest s0 = 9.5

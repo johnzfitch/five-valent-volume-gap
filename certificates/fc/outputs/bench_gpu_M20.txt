@@ -1,0 +1,1 @@
+level 20: 18285 matrices in 1371 shapes; building (CPU, exact data) 12.6s; linear algebra numpy 1 process 9.0s; torch CUDA float64 batched by shape incl. transfers 16.3s (NVIDIA GeForce RTX 4090)

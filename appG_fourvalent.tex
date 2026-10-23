@@ -1,0 +1,45 @@
+\section{The four-valent multiplier}\label{app:fourvalent}
+
+This appendix proves \cref{lem:multiplier}. Notation is that of \cref{sec:fourvalent}:
+sorted spins, $A_2=j_3+j_4+1=\varpi-|j_3-j_4|$ with $\varpi=2j_4+1$, $m_>$ and $m_<$ the
+larger and smaller of $|j_1-j_2|$, $|j_3-j_4|$, $k_1=m_>+1$ the label of the first
+link, $K=j_1+j_2$ that of the last, and
+$f(k)=(k^2-m_<^2)(A_2^2-k^2)$.
+
+\begin{proof}[Proof of (F)]
+Write $B_2=|j_3-j_4|$. Then $k_1\le K\le2j_3\le j_3+j_4=\varpi-B_2-1$.
+\emph{Case $m_>=B_2\ge m_<$.} Here $k_1^2-m_<^2\ge2B_2+1$, with equality iff $m_<=B_2$,
+so $f(k_1)\ge(2B_2+1)(\varpi-2B_2-1)(\varpi+1)$, and
+$(2B_2+1)(\varpi-2B_2-1)-(\varpi-1)=2B_2(\varpi-2B_2-2)=4B_2(j_3-\frac12)\ge0$.
+\emph{Case $m_>=|j_1-j_2|>m_<=B_2$.} In $v=k_1^2$, $f$ is a concave quadratic on
+$[(B_2+1)^2,(\varpi-B_2-1)^2]$; at the left end it is at least $\varpi^2-1$ by the first case, at the
+right end it equals $2j_3(\varpi-1)(\varpi+2j_3)\ge \varpi^2-1$, so it is at least $\varpi^2-1$ throughout and
+strictly so in the interior.
+\emph{Equality} forces the first case with $m_<=B_2$ and $B_2(2j_3-1)=0$, and both branches
+give $|j_1-j_2|=|j_3-j_4|=0$; the branch $j_3=\frac12$ forces all spins $\frac12$.
+\end{proof}
+
+\begin{proof}[Proof of (C)]
+$f$ is a product of four linear factors positive on the range, hence log-concave in $k$; it is
+a concave quadratic in $v=k^2$, symmetric about $v_*=(A_2^2+m_<^2)/2$, hence unimodal, and
+$f(v')-f(v)=(v'-v)(A_2^2+m_<^2-v-v')$.
+For (C2), $f_L>f_2$, we need $(m_>+2)^2+K^2<A_2^2+m_<^2$. Put $R=j_3+j_4-K$; since $j_3\ge j_2$,
+$R-|j_1-j_2|-|j_3-j_4|=2(j_3-j_2)\ge0$, so $R\ge m_>$. With $K\ge m_>+2$ (dimension at least
+three), $A_2^2-K^2=(R+1)(2K+R+1)\ge(m_>+1)(3m_>+5)>(m_>+2)^2$. The inequality (C0), $f_2>f_1$, is the same
+with $m_>+1$ in place of $K$.
+For (C3), $f_L^2\ge f_{L-1}f_2$ (dimension at least four), put $\mathsf T=f(K)$, $p=f(K-1)-f(K)$,
+$\mathsf q=f(K)-f(m_>+2)$ and $E=A_2^2+m_<^2-K^2-(m_>+2)^2$. Then $p=(2K-1)((K-1)^2-(m_>+2)^2-E)$,
+$\mathsf q=(K^2-(m_>+2)^2)E$, $\mathsf T=(K^2-m_<^2)(E+(m_>+2)^2-m_<^2)$, and the claim is
+$\mathsf F:=p\mathsf q-\mathsf T(p-\mathsf q)\ge0$. The constraints $m_<\le m_>$, $K\ge m_>+3$ and
+$R\ge m_>$ give $E\ge E_{\min}=2K(m_>+1)-2m_>-3+m_<^2$ (indeed $E-E_{\min}=A_2^2-(K+m_>+1)^2$).
+Substituting $m_<=y$, $m_>=y+z$, $K=m_>+3+x$, $E=E_{\min}+w$ with $x,y,z,w\ge0$ turns $\mathsf F$ into
+a polynomial with $252$ terms, all with nonnegative coefficients.
+\end{proof}
+
+The polynomial certificates for (F), (C0), (C2) and (C3) were produced in two independent
+encodings (the shift variables above, and the sorted spins $j_1=\frac12+a$, $j_2=j_1+b$,
+$j_3=j_2+c$, $j_4=j_3+e$ with the dimension condition imposed as a shift). Both have no
+negative coefficient, and in the second the monomial support of (F) vanishes exactly on the
+equality locus. The sharp law itself was re-checked by exact rational $LDL^T$ factorisation of
+$B^TB-\bar\mu$ on all $3\,784\,040$ sorted tuples with spins at most $60$; the equality set is
+exactly the $120$ tuples $(\frac12,\frac12,j,j)$.

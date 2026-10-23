@@ -1,0 +1,232 @@
+\Needspace*{14\baselineskip}
+\section{Unequal weights close the gap; one product keeps it}\label{sec:closing}
+
+This section proves \cref{thm:closing-intro,thm:t0-intro}. The first is about a
+chain, the second about a four-valent operator in disguise. We start with the chain,
+because the same chain also shows why equal weights behave differently.
+
+\subsection{The guiding picture: a dimerised chain}
+
+When the distinguished edge carries spin $\frac12$ the strip $|b-c|\le\frac12$ of
+\cref{fig:grid} is a single zigzag path: from each site one link changes $b$ and one
+changes $c$. So $iA$ is a zero-diagonal Jacobi matrix whose links alternate between
+the two triple products. For such a chain with an even number of sites there is an
+exact formula for the inverse, and the smallest eigenvalue is the reciprocal of the
+norm of a lower-triangular matrix whose entries are products of ratios of
+consecutive links.
+
+\begin{boxedlemma}{Even chains}{evenchain}
+Let $J$ be a zero-diagonal Jacobi matrix of size $2K$ with links $c_1,\dots,c_{2K-1}>0$.
+Then $J$ is invertible, its eigenvalues are $\pm$ the singular values of the
+$K\times K$ lower bidiagonal matrix $B$ with diagonal $c_1,c_3,\dots$ and subdiagonal
+$c_2,c_4,\dots$, and $(B^{-1})_{ij}=(-1)^{i-j}E_{ij}$ with
+\[
+  E_{ij}=\frac1{c_{2j-1}}\prod_{l=j}^{i-1}\frac{c_{2l}}{c_{2l+1}}\quad(i\ge j),\qquad E_{ij}=0\quad(i<j).
+\]
+Hence $1/\|E\|_F\le\qm\le1/\max_{ij}E_{ij}\le1/E_{K1}$.
+\end{boxedlemma}
+
+\begin{proof}
+Reorder the sites odd-then-even; then $J=\bigl(\begin{smallmatrix}0&B\\B^T&0\end{smallmatrix}\bigr)$,
+$\det J=\pm\prod c_{\rm odd}^2\ne0$, and forward substitution in $Bx=e_j$ gives $E$.
+\end{proof}
+
+So everything depends on the ratios $c_{2l}/c_{2l+1}$ of an even link to the
+following odd one. If they are all larger than one by a fixed factor, the corner
+entry $E_{K1}$ is exponentially large and the chain has an exponentially small
+eigenvalue: this is the Su--Schrieffer--Heeger mechanism, and the eigenvector is a
+pair of edge modes. If they are all smaller than one, the entries of $E$ are bounded
+by the diagonal ones and the gap is controlled by the links themselves.
+\Cref{fig:ssh} shows the two situations.
+
+\begin{schemfigure}
+\begin{tikzpicture}[scale=0.72]
+  \def\n{12}
+  % topological chain: weak-strong-weak..., ends weak
+  \foreach \i in {1,...,11}{
+     \pgfmathtruncatemacro{\odd}{mod(\i,2)}
+     \ifnum\odd=1 \draw[esPlotInk, line width=0.6pt] (\i-1,2.2) -- (\i,2.2);
+     \else \draw[esPlotInk, line width=2.6pt] (\i-1,2.2) -- (\i,2.2); \fi}
+  \foreach \i in {0,...,11} \fill[white] (\i,2.2) circle (3.5pt);
+  \foreach \i in {0,...,11} \draw[esPlotInk] (\i,2.2) circle (3.5pt);
+  % edge modes
+  \foreach \i/\h in {0/1.0,2/0.5,4/0.25,6/0.125,8/0.0625,10/0.03}{
+     \fill[esPlotBlue!70] (\i-0.12,2.45) rectangle (\i+0.12,2.45+\h);}
+  \foreach \i/\h in {11/1.0,9/0.5,7/0.25,5/0.125,3/0.0625,1/0.03}{
+     \fill[esPlotAmber!80] (\i-0.12,2.45) rectangle (\i+0.12,2.45+\h);}
+  \node[font=\small, anchor=south] at (5.5,3.55) {bars: amplitudes $|\psi|$ of the two edge modes};
+  \node[anchor=west, align=left, font=\small, text width=5.0cm] at (11.9,2.7)
+    {$t=\frac12$, heavier pair inside: inner links twice the outer; two edge modes,
+     \mbox{$\qm\asymp N^{3/2}2^{-N}$}};
+  % trivial chain
+  \foreach \i in {1,...,11}{
+     \pgfmathtruncatemacro{\odd}{mod(\i,2)}
+     \ifnum\odd=1 \draw[esPlotInk, line width=2.0pt] (\i-1,0) -- (\i,0);
+     \else \draw[esPlotInk, line width=1.4pt] (\i-1,0) -- (\i,0); \fi}
+  \foreach \i in {0,...,11} \fill[white] (\i,0) circle (3.5pt);
+  \foreach \i in {0,...,11} \draw[esPlotInk] (\i,0) circle (3.5pt);
+  \node[anchor=west, align=left, font=\small, text width=5.0cm] at (11.9,0.1)
+    {$t=1$: inner links weaker by only $\tau/(\tau+1)$; no edge modes; the gap grows};
+  \node[font=\small, anchor=west] at (-0.3,-0.7) {first site};
+  \node[font=\small, anchor=east] at (11.3,-0.7) {last site};
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:ssh}%
+\schemcap{FIG.\ \theesfig}{The chain of the spin-$\frac12$ sector, drawn schematically:
+thick lines are strong links and thin lines weak ones. Odd links belong to the outer pair of edges, even links to
+the inner pair. With weights $4$ and $2$ and the heavier pair inside, the chain
+starts and ends weak and carries two edge modes whose amplitudes fall by about half at
+every second site (bars); their splitting is the product of the ratios, about $2^{-N}$.
+With equal weights the inner links are weaker, the chain starts and ends strong,
+and no mode is localised.}
+
+Which pair is inner is a property of the spins. Write $n_P=j_a+j_b+1$ and
+$m_P=|j_a-j_b|$ for the two pairs of the normal form. The chain runs over the pair
+spins between $\max(m_1,m_2)$ and $\min(n_1,n_2)$, and the pair that attains the
+larger lower end and the smaller upper end is \emph{inner}: its range sits inside
+the other. Its links vanish at both ends of the chain, because its Stark factor
+$(n^2-L^2)(L^2-m^2)$ does; the outer pair's do not. With equal weights this makes the
+inner links the weak ones, by a factor $\tau/(\tau+1)$ at distance $\tau$ from the
+end (\cref{lem:innerouter}). Multiplying the inner pair by $2$ against the outer one
+turns weak into strong. \Cref{fig:tplot} follows $\qm$ along the family
+$(\frac12;j-\frac12,j;j,j)$, in which the pair $(j-\frac12,j)$ is inner, as $t$ moves
+towards $1$.
+
+\begin{schemfigure}
+\begin{tikzpicture}
+\begin{axis}[es plot, width=0.92\linewidth, height=6.6cm,
+  xmin=0, xmax=42, ymin=-23, ymax=3,
+  xlabel={$N=2j$}, ylabel={$\log_{10}\qm$},
+  legend style={font=\scriptsize, draw=none, fill=none, at={(0.02,0.02)}, anchor=south west},
+  legend cell align=left]
+  \addplot[esPlotBlue, line width=1.1pt, mark=*, mark size=1.1pt] table[x=N, y=t25] {outputs/fig_t.dat};
+  \addlegendentry{$t=\frac14$}
+  \addplot[esPlotAmber, line width=1.1pt, mark=*, mark size=1.1pt] table[x=N, y=t50] {outputs/fig_t.dat};
+  \addlegendentry{$t=\frac12$}
+  \addplot[esPlotGrey, line width=1.1pt, mark=*, mark size=1.1pt] table[x=N, y=t75] {outputs/fig_t.dat};
+  \addlegendentry{$t=\frac34$}
+  \addplot[esPlotInk!60, line width=1.1pt, dashed, mark=*, mark size=1.1pt] table[x=N, y=t90] {outputs/fig_t.dat};
+  \addlegendentry{$t=\frac9{10}$}
+  \addplot[esPlotInk, line width=1.4pt, mark=*, mark size=1.1pt] table[x=N, y=t100] {outputs/fig_t.dat};
+  \addlegendentry{$t=1$}
+\end{axis}
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:tplot}%
+\schemcap{FIG.\ \theesfig}{$\qm$ on the spin-$\frac12$ chain of
+$-4i[J_1\cdot(J_2\times J_3)+t\,J_1\cdot(J_4\times J_5)]$ along
+$(\frac12;j-\frac12,j;j,j)$ (60-digit arithmetic). Every $0<t<1$ eventually decays like
+$t^N$, the closer to $1$ the later; at $t=1$ the decay never starts.}
+
+\subsection{The theorem}
+
+\begin{proposition}{The chain}{chain}
+Let $j_1=\frac12$, $\alpha\beta\ne0$ and $N=2j$. For the spins
+$(\frac12;\,j-\frac12,j;\,j,j)$ the operator $iA_{\alpha,\beta}$ is a zero-diagonal
+Jacobi matrix on $2N$ sites whose links alternate
+$D_1,X_1,D_2,\dots,X_{N-1},D_N$ with
+\[
+  D_l=|\beta|\,l\sqrt{(N+1)^2-l^2},\qquad X_l=|\alpha|\sqrt{(N-l)(N+l+1)\,l(l+1)} .
+\]
+\end{proposition}
+
+\begin{proof}
+With $s=\frac12$ the sites of \cref{prop:grid} satisfy $|b-c|=\frac12$, and ordering
+them by $u=b+c$ gives a path. Here $b\in[\frac12,N-\frac12]$ and $c\in[0,N]$, so the
+path has the $2N$ sites $u=\frac12,\frac32,\dots,2N-\frac12$ and starts and ends with
+a $D$-link. Since $F(0)=1$ and, at an $X$-link, $G(u)=4b^2-1$, the $X$-link is
+$|\alpha|\sqrt{(n_1^2-b^2)(b^2-m_1^2)}$ with $n_1=N+\frac12$, $m_1=\frac12$, which
+is $X_l$ at $b=l+\frac12$; the $D$-link is the same with $n_2=N+1$, $m_2=0$ and
+$c=l$.
+\end{proof}
+
+\begin{theorem}{Gap closing}{closing}
+In the setting of \cref{prop:chain}, with $t=\beta/\alpha$:
+\begin{enumerate}
+\item[(i)] if $0<|t|<1$, then $A$ is invertible and $\qm\le|\alpha|\,N\sqrt{2N+1}\,|t|^N$;
+  if $|t|>1$, then on the spins $(\frac12;\,j,j;\,j-\frac12,j)$, obtained by exchanging the
+  pairs $(j_2,j_3)$ and $(j_4,j_5)$, $A$ is invertible and $\qm\le|\beta|\,N\sqrt{2N+1}\,|t|^{-N}$;
+\item[(ii)] if $(\alpha,\beta)=(4,2)$, then $\frac38P_N\le\qm\le P_N$ with
+  $P_N=4N\sqrt{2N+1}\,2^{-N}$, and $\qm/P_N\to\kappa=(\frac{16}3\ln\frac43)^{-1/2}=0.80732$.
+\end{enumerate}
+For every embedding in general position whose $\sigma$ contains $\pm4$, therefore, $\inf\qm=0$ over spin
+assignments, and the smallest nonzero volume is $\ell^3\sqrt{|Z|\qm}\asymp
+N^{3/4}2^{-N/2}$.
+\end{theorem}
+
+\begin{proof}
+(i) By \cref{blem:evenchain}, $\qm\le1/E_{N1}=\prod_lD_l/\prod_lX_l$, and the products
+telescope:
+\[
+  \frac{\prod_{l=1}^ND_l}{\prod_{l=1}^{N-1}X_l}
+  =\frac{|\beta|^N}{|\alpha|^{N-1}}\cdot\frac{N!\sqrt{N!\,(2N+1)!/(N+1)!}}
+  {\sqrt{(N-1)!^2\,N!\,(2N)!/(N+1)!}}=|\alpha|\,|t|^N\,N\sqrt{2N+1}.
+\]
+For $|t|>1$ exchange the two pairs (\cref{lem:relabel}): $A_{\alpha,\beta}$ becomes
+$A_{\beta,\alpha}$ on the exchanged spins, so the same family with the pairs exchanged
+works.
+
+(ii) The upper bound is (i). For the lower bound write $E_{ij}/E_{N1}$ as a product of
+ratios over the $a=j-1$ first and $b=N-i$ last links. With $(\alpha,\beta)=(4,2)$,
+$(X_l/D_l)^2=4(N-l)(l+1)/(l(N+1-l))\ge2$ because $2(N-l)(l+1)-l(N+1-l)=l(N-l)+2N-3l>0$,
+and $(X_l/D_{l+1})^2=4l(N+l+1)/((l+1)(N+l+2))\ge\frac85$. Hence
+$E_{ij}\le E_{N1}\,(5/8)^{(a+b)/2}$, so $\|E\|_F\le E_{N1}/(1-\frac58)$ and
+$\qm\ge\frac38P_N$. For the limit, $E/E_{N1}$ has entries $f_N(a)g_N(b)$ that are
+dominated by the square-summable $(5/8)^{(a+b)/2}$ and converge to $2^{-a}(a+1)^{-1/2}$
+and $2^{-b}$; so $E/E_{N1}$ converges in Hilbert--Schmidt norm to a rank-one matrix
+of norm $\sqrt{4\ln\frac43}\sqrt{\frac43}=\kappa^{-1}$. The last statement follows from
+\cref{thm:nf-intro} and \cref{lem:relabel}: every embedding in general position whose $\sigma$ contains
+$\pm4$ is a relabelling of one with $(\alpha,\beta)=(4,2)$ and the pair $(2,3)$ inner.
+\end{proof}
+
+The family of (ii) is Brunnemann and Rideout's numerical minimiser for
+$2j_{\max}\le9$~\cite[Table~5]{BR2008b}; beyond that the minimisers have $j_1=\frac32,
+\frac52,\dots$ and decay somewhat faster (our reproduction of their Table~5 in \cref{sec:operator}). In their variables
+the family gives $\lambda_V=\sqrt{\qm}\asymp j^{3/4}e^{-(\ln2)j}$, with $\ln2=0.693$,
+against their fit $\lambda_V\approx30\,e^{-0.79\,j_{\max}}$ to the smallest eigenvalue
+over all five-valent sign vectors~\cite[Table~3]{BR2008a}. The larger fitted rate is
+consistent with the faster decay of the later minimisers; we have not fitted it
+ourselves. Over $2\le N\le400$ the
+ratio $\qm/P_N$ lies in $[0.712,0.807]$ ($N=1$ would put spin $0$ on a leg), so the constant $\frac38$ is loose and the
+limit $\kappa$ is approached at rate $O(1/N)$.
+
+\paragraph{Sorted spins.}
+In Brunnemann and Rideout's 2007 convention each $\sigma$ is attached to sorted spins.
+Theorem~\ref{thm:closing} then gives $\inf\qm=0$ for the six sorted $\sigma$
+containing $\pm4$ whose distinguished edge is the smallest spin and whose heavy pair
+contains the second smallest, namely $(4,2,2,0)$, $(4,-2,-2,0)$, $(2,\pm4,-2,0)$ and
+$(4,4,\pm2,0)$ up to sign, because the sorted tuple $(\frac12,j-\frac12,j,j,j)$
+realises the family. For the other $54$ sorted $\sigma$ with $\pm4$ we have only
+numerics: an exhaustive sorted search to $2j_{\max}=34$ finds every one of them
+decreasing, by factors between $7\times10^{-4}$ and $0.16$ between $2j_{\max}=22$ and
+$34$, including the fourteen that a shorter window had suggested were constant.
+
+\subsection{One product: the four-valent law in disguise}
+
+\begin{theorem}{One triple product}{t0}
+For $t=0$, $A=-8i\,J_1\cdot(J_2\times J_3)$, and every nonzero eigenvalue satisfies
+$q\ge2\sqrt3$, with equality exactly when $j_1=j_2=j_3=\frac12$ and $|j_4-j_5|=\frac12$.
+\end{theorem}
+
+\begin{proof}
+The product $J_1\cdot(J_2\times J_3)$ commutes with $C=J_1+J_2+J_3$, so the invariant
+space splits over the value $c$ of $|C|$ into $\Inv(j_1,j_2,j_3,c)\otimes\Inv(c,j_4,j_5)$,
+with the second factor of dimension at most one. On a block of dimension at least two,
+\cref{thm:sharp4} gives $|\lambda|\ge\frac12\sqrt{m(m+1)}$ with $m=\max(j_1,j_2,j_3,c)
+\ge\frac12$, so $q=8|\lambda|\ge4\sqrt{m(m+1)}\ge2\sqrt3$. Equality needs $m=\frac12$
+and the equality case of \cref{thm:sharp4}, that is $j_1=j_2=j_3=c=\frac12$; and
+$c=\frac12$ occurs in $j_4\otimes j_5$ exactly when $|j_4-j_5|=\frac12$.
+\end{proof}
+
+Brunnemann and Rideout observed numerically that this configuration ``leads to a
+smallest non-zero eigenvalue of $\sqrt[4]{12}$ for every $j_{\max}$'' at valences five
+to seven~\cite[p.~35]{BR2010}; that is $\lambda_V=\sqrt{2\sqrt3}$, and
+\cref{thm:t0} proves it at valence five, with the equality set. In the sorted
+convention the constant depends on $\sigma$. If the triple product involves the
+largest sorted spin, then $m\ge j_{\max}$, and $m=\frac12$ would force all five spins to
+be $\frac12$, which admit no invariant vector; so $m\ge1$ and $q\ge4\sqrt2$. This
+happens for six of the ten sorted $\sigma$ of this orbit, one for each triple through
+the largest spin, and for the other four the sorted infimum is $2\sqrt3$. An exhaustive
+sorted search over doubled spins up to $6$ finds exactly these two values, $4\sqrt2$
+attained at $(\frac12,\frac12,\frac12,\frac12,1)$ or $(\frac12,\frac12,1,1,1)$ and
+$2\sqrt3$ at $(\frac12,\frac12,\frac12,\frac12,1)$.

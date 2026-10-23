@@ -1,0 +1,1 @@
+tuples 55000 (2j1 <= 11, doubled legs 1..10): links 1162140, interior sites 614286, off-diagonal pairs 395270; mismatches 0

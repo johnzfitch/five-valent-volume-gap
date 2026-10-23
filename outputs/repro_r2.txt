@@ -1,0 +1,1 @@
+R2 BR 7-vertex, sigma of Table 10, 2j = [2, 2, 2, 2, 2, 3, 5]: dim Inv = 44, kernel = 0, q_min = 3.5751089359e-07, lambda_V = sqrt(q_min) = 0.000597922 (BR: 0.000597922)

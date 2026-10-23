@@ -1,0 +1,10 @@
+R1_numpy             3.51 s   min 8sigma 10.8735963259
+R1_torch_cpu         0.17 s   min 8sigma 10.8735963150
+R1_torch_cuda        0.38 s   min 8sigma 10.8735963150
+R2-_numpy            2.91 s   min 8sigma 4.7231027475
+R2-_torch_cpu        0.17 s   min 8sigma 4.7231027428
+R2-_torch_cuda       0.26 s   min 8sigma 4.7231027428
+memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+1478 MiB, 24564 MiB, 31 %
+{"regime": "R1", "NMAX": 500.0, "device": "cuda", "count": 247506, "seconds": 1.2487139701843262, "min_8sigma": 10.8735963149637, "argmin_n": 3.5, "argmin_a": 1.5, "F0": 0.13278463662112486, "F1": 0.19229024962539684, "W": 0.03641975312605244}
+{"regime": "R1", "NMAX": 500.0, "device": "cpu", "count": 247506, "seconds": 2.5867180824279785, "min_8sigma": 10.8735963149637, "argmin_n": 3.5, "argmin_a": 1.5, "F0": 0.13278463662112486, "F1": 0.19229024962539684, "W": 0.03641975312605244}

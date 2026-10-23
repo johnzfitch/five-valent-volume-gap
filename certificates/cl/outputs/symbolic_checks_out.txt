@@ -1,0 +1,8 @@
+S1 X-link residual: 0   D-link residual: 0
+S2 ladder rung h23^2 = 1
+S3 bottom: num-den - (-(l+1)m) = 0
+S3 top   : den-num - (2j+1)(l+1) = 0
+S3 ratio formulas match factorial CG formulas at all 2j<=13 sample points: True
+S4 -G(2) == (4/3)w1 - sum_(k>=1) 4 w_(2k+1)/((2k-1)(2k+3)) for symmetric weights, N=2..16 even: True
+S5 Wallis W_K increasing for K<=2000: True; W_2000 = 1.570600038596 < pi/2 = 1.570796326795
+S6 sign of {s c b; 1 b-1 c} equals (-1)^(s+b+c) on all 447 nonzero cases (2s,2b,2c<=12): True

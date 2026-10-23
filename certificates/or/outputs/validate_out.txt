@@ -1,0 +1,4 @@
+brute force vs closed form: 121 tuples with 2j_i<=3, max |spec| difference 1.69e-14
+exact congruence x^2 = h^2 sigma^2 sigma'^2/16 on 5151 tuples 2j<=8: 0 failures
+(3, 2, 3, 3, 3) q = 8.86723463711174 ref 8.86723463711174
+(1, 1, 2, 2, 2) q = 4.557960739249212 ref 4.557960739249212

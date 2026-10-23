@@ -1,0 +1,13 @@
+E1a  4(x^2-1/4)^2-2x^2(x^2+1/4) at x=2+y has coefficients [2, 16, 91/2, 54, 89/4] -> positive for x >= 2: True
+E1b  discrete check h(2)^2 >= h(1)h(3) for h=k^4/(4k^2-1): 256/225 >= 27/35 True
+E1c  6k^2(2k+1)^2(2k+3) - 16(k+1)^4(2k-1) at k=1+y: coeffs [16, 88, 148, 62, -16, 14] positive for k >= 1: True
+E1d  (k+1)^4(4k^2-1)-k^4(4k^2+8k+3) at k=1+y: coeffs [8, 60, 172, 234, 148, 33] positive for k >= 1: True
+E1e  (x-1)^2(x^2-B^2) - ((x-1)^2-B^2)x^2 = B**2*(2*x - 1)
+E6  d in (2,3): 30775 tuples; violations of lam^2 >= j_max(j_max+1)/4 (first chain element bound): 0; equality cases: 60, all of form (1/2,1/2,j,j): True
+E2  tuples with 2j_max <= 60: 254665; log-concavity checks 2702495, ratio checks 2935250, lower-bound checks 3183770
+E3  Sturm certificates 248520; equality (q^2 = 3/16 exactly) at: [(1, 1, 1, 1)]
+E2/E3 violations: 0  []
+     time 99.1s
+E4  exact charpoly smallest positive root vs float pipeline, 57 tuples with 2j<=6: max |diff| 4.44e-15
+E5  theta_3 = 1.207106781186547; max_(2<=d<=1e5) theta_d = 1.207106781186547 at d = 3
+E5  analytic tail bound for d >= 20: zeta(3/2) sqrt(2/d) + (2/d)(1+ln(d/2)) <= 1.1564 (decreasing in d) < theta_3

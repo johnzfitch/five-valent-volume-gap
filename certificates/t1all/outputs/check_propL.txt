@@ -1,0 +1,2 @@
+transfer steps tested 44839, steps with theta*>0 violating tau^2 = 1/theta*: 0, max |tau^2 theta* - 1| = 2.94e-13
+left inverses built 4743, failures of (LB=I and 1/||L|| <= sigma_min): 0

@@ -1,0 +1,230 @@
+\section{The six-valent ladder}\label{app:valence6}
+
+This appendix proves \cref{thm:v6}. Recall $A=-8i(X-Y)$, so $q=8\times$ the singular values of
+the real antisymmetric matrix $\mathsf K=X_r-Y_r$, where $X=iX_r$ and $Y=iY_r$ with
+$X_r$, $Y_r$ real antisymmetric in a real recoupling basis, and with spins $j_1=j_2=\frac12$, $j_3=j_4=\frac n2$,
+$j_5=j_6=\frac{n+1}2$, $\dim\Inv=4n+2$.
+
+\subsection{The ladder}
+
+Use $c=|J_1+J_3|\in\{c_-,c_+\}$, $e=|J_4+J_5|$ with $i=e-\frac12\in\{0,\dots,n\}$, and either
+$g=|J_1+J_2+J_3|$ (basis $\mathfrak B_1$) or $h=|J_2+J_4+J_5|$ (basis $\mathfrak B_2$). In
+$\mathfrak B_2$ write $L_c(i)$ for $h=e-\frac12$ and $R_c(i)$ for $h=e+\frac12$; row $c_-$ has
+$h\in[1,n]$ ($2n$ states) and row $c_+$ has $h\in[0,n+1]$ ($2n+2$ states).
+
+\begin{proposition}{The ladder}{ladder}
+Up to the signs of its entries:
+(Y) for each row $c$ and each $h=1,\dots,n$, $Y$ has the single link $R_c(h-1)$--$L_c(h)$ of
+modulus $y_h=\frac14\sqrt{(n+1-h)(n+2+h)h(h+1)}$, and its only zero rows are $L_+(0)$ and
+$R_+(n)$;
+(X) in each block $i$, $X=x(u_+u_-^T-u_-u_+^T)$ with $x=\frac14\sqrt{n(n+2)}$ and
+$u_\pm(i)=\pm|\alpha_\pm|L_\pm\pm|\beta_\pm|R_\pm$, where
+\[
+  \alpha_-^2=\frac{(n+2+i)\,i}{n(2i+2)},\quad\beta_-^2=\frac{(n-i)(i+2)}{n(2i+2)},\quad
+  \alpha_+^2=\frac{n+1-i}{2n+4},\quad\beta_+^2=\frac{n+3+i}{2n+4}.
+\]
+\end{proposition}
+
+\begin{proof}
+$X$ commutes with $g$, $e$ and legs $4$--$6$; in $\mathfrak B_1$ at fixed $(g,e)$ it is the
+four-valent operator on legs $(1,3,2,g)$ with $k=c$. Both values of $c$ occur only for
+$g=\frac n2$, where \eqref{eq:ak} gives $x^2=n(n+2)\cdot n(n+2)/(16\,n(n+2))$. $Y$ commutes with
+$c$ and $h$; at fixed $(c,h)$ it is the four-valent operator on $(4,5,2,h)$ with $k=e=h\pm\frac12$,
+and the spin-$\frac12$ cancellation of \cref{prop:chain} gives $y_h^2$; for $h=0$ and $h=n+1$
+only one $e$ is allowed. The overlap $|\langle c,e,g=\frac n2|c,e,h\rangle|^2=(2g+1)(2h+1)
+\{c\ \tfrac12\ g;\ e\ j_6\ h\}^2$ follows from Edmonds' table for $6j$ symbols with a
+spin-$\frac12$ entry~\cite[Table~5]{Edmonds}, using
+\begin{gather*}
+  \begin{Bmatrix}a&b&c\\\frac12&c-\frac12&b+\frac12\end{Bmatrix}^2=\frac{(\Sigma-2b)(\Sigma-2c+1)}{(2b+1)(2b+2)\,2c(2c+1)},\\
+  \begin{Bmatrix}a&b&c\\\frac12&c-\frac12&b-\frac12\end{Bmatrix}^2=\frac{(\Sigma+1)(\Sigma-2a)}{2b(2b+1)\,2c(2c+1)},
+\end{gather*}
+with $\Sigma=a+b+c$, after bringing each symbol to this form by its symmetries; this gives the four
+stated values for all $n$ and $i$.
+\end{proof}
+
+The magnitudes were also read off the full operator exactly for $n\le20$, and the $6j$ forms
+checked against exact symbols for $n\le30$.
+
+\subsection{The zero-energy recursion and the kernel}
+
+Write the components in block $i$ as $a_i=\psi(L_-(i))$, $b_i=\psi(R_-(i))$, $p_i=\psi(L_+(i))$,
+$r_i=\psi(R_+(i))$, and $m_i=\langle u_-(i),\psi\rangle$, $P_i=\langle u_+(i),\psi\rangle$,
+$W_i=(P_i,r_i)$, $U_i=(m_i,b_i)$. By \cref{prop:ladder}, $(X\psi)$ is $x\,m_i$ times $u_+(i)$
+minus $x\,P_i$ times $u_-(i)$ on block $i$, and $Y$ couples $R_c(h-1)$ to $L_c(h)$ with
+weight $y_h$. So, up to signs, the equations of $\mathsf K\psi=0$ read
+\begin{align*}
+  L_+(i):&\ \ x\alpha_+(i)m_i\pm y_ir_{i-1}=0, & R_+(i):&\ \ x\beta_+(i)m_i\pm y_{i+1}p_{i+1}=0,\\
+  L_-(i):&\ \ x\alpha_-(i)P_i\pm y_ib_{i-1}=0, & R_-(i):&\ \ x\beta_-(i)P_i\pm y_{i+1}a_{i+1}=0,
+\end{align*}
+with the terms involving $y_0$ or $y_{n+1}$ absent. For $i+1<n$ they solve successively,
+every coefficient nonzero, as two kinds of step (at the right end $\beta_-(n)=0$, and the
+equations there are treated separately below):
+\begin{align*}
+  W_i\mapsto U_{i+1}:&\quad m_{i+1}=\pm\tfrac{y_{i+1}}{x|\alpha_+(i+1)|}r_i,\quad a_{i+1}=\pm\tfrac{x\beta_-(i)}{y_{i+1}}P_i,\quad
+    b_{i+1}=\tfrac{m_{i+1}\mp|\alpha_-(i+1)|a_{i+1}}{\pm\beta_-(i+1)},\\
+  U_i\mapsto W_{i+1}:&\quad P_{i+1}=\pm\tfrac{y_{i+1}}{x|\alpha_-(i+1)|}b_i,\quad p_{i+1}=\pm\tfrac{x\beta_+(i)}{y_{i+1}}m_i,\quad
+    r_{i+1}=\tfrac{P_{i+1}\mp|\alpha_+(i+1)|p_{i+1}}{\pm\beta_+(i+1)}.
+\end{align*}
+The first uses the equations at $L_+(i+1)$ and $R_-(i)$ and the definition of $m_{i+1}$;
+the second those at $L_-(i+1)$ and $R_+(i)$ and the definition of $P_{i+1}$. In the
+coordinates $W=(P,r)$ and $U=(m,b)$ the steps are $U_{i+1}=M_1(i)W_i$ and
+$W_{i+1}=M_2(i)U_i$, with $2\times2$ step matrices of the pattern
+\[
+  M_1(i)=\begin{pmatrix}0&\mathsf a_1\\\mathsf b_1&\mathsf c_1\end{pmatrix},\qquad
+  M_2(i)=\begin{pmatrix}0&\mathsf a_2\\\mathsf b_2&\mathsf c_2\end{pmatrix},
+\]
+whose entries have the moduli
+\begin{align*}
+  |\mathsf a_1|&=\frac{y_{i+1}}{x\alpha_+(i+1)},& |\mathsf b_1|&=\frac{x\alpha_-(i+1)\beta_-(i)}{y_{i+1}\beta_-(i+1)},& |\mathsf c_1|&=\frac{|\mathsf a_1|}{\beta_-(i+1)},\\
+  |\mathsf a_2|&=\frac{y_{i+1}}{x\alpha_-(i+1)},& |\mathsf b_2|&=\frac{x\alpha_+(i+1)\beta_+(i)}{y_{i+1}\beta_+(i+1)},& |\mathsf c_2|&=\frac{|\mathsf a_2|}{\beta_+(i+1)},
+\end{align*}
+all at the index $i$ of the step. So the recursion splits into the chains
+$(U_0,W_1,U_2,\dots)$ and $(W_0,U_1,W_2,\dots)$. At the left end, $L_+(0)$ is a zero row
+of $Y$, which forces $m_0=0$, and $\alpha_-(0)=0$ then gives $b_0=0$: $U_0=0$ and the first
+chain vanishes. At the right end, $R_+(n)$ is a zero row, which forces $m_n=0$ and then,
+since $\alpha_-(n)=1$ and $\beta_-(n)=0$, $a_n=0$; the equations at $L_+(n)$ and $R_-(n-1)$
+then force $W_{n-1}=0$.
+
+\begin{proof}[Proof of \cref{thm:v6}(i)]
+For odd $n$, $W_{n-1}$ lies in the second chain, $W_{n-1}=\mathsf TW_0$ with
+$\mathsf T=M_2(n-2)M_1(n-3)\cdots M_2(1)M_1(0)$, a product of steps each of nonzero
+determinant; so $W_0=0$ and then every component vanishes. For even $n$, $W_{n-1}$ lies
+in the first chain and vanishes automatically, and the second chain carries a
+two-dimensional kernel.
+\end{proof}
+
+Exact characteristic polynomials of the operator built from \eqref{eq:sigma} confirm a trivial kernel for every odd
+$n\le51$ and a kernel of dimension exactly two for every even $n\le50$.
+
+\subsection{The bound}
+
+For odd $n$ group the steps in pairs, $N(i)=M_2(i+1)M_1(i)$ for even $i$, so that
+$\mathsf T=\mathsf T_{\rm rest}\mathsf T_{\rm left}$ with $\mathsf T_{\rm left}=N(0)$ and
+$\mathsf T_{\rm rest}=N(n-3)\cdots N(4)N(2)$. Two ratios measure how far each two-step
+factor is from its dominant entry:
+\begin{align*}
+  \epsilon_1(i)&=\frac{|\mathsf b_1|}{|\mathsf c_1|}=\frac{x^2\alpha_-(i+1)\alpha_+(i+1)\beta_-(i)}{y_{i+1}^2},\\
+  \epsilon_2(i)&=\frac{|\mathsf b_2\mathsf a_1|}{|\mathsf c_2\mathsf c_1|}
+  =\frac{x^2\alpha_+(i+2)\beta_+(i+1)\alpha_-(i+2)\beta_-(i+1)}{y_{i+2}^2},
+\end{align*}
+with $\mathsf a_1,\mathsf b_1,\mathsf c_1$ the entries of $M_1(i)$ and
+$\mathsf a_2,\mathsf b_2,\mathsf c_2$ those of $M_2(i+1)$. Every $\alpha_\pm$, $\beta_\pm$ is at
+most $1$, so $\epsilon_1(i)\le x^2/y_{i+1}^2$ and $\epsilon_2(i)\le x^2/y_{i+2}^2$.
+
+\begin{lemma}[Quasimode]\label{lem:quasimode}
+For odd $n$, let $v$ be a unit singular vector of $\mathsf T$ for its smaller singular value
+$|\det\mathsf T|/\|\mathsf T\|$ and build $\psi$ from $W_0=v$. All equations hold except two at block
+$n$, and $\smin(\mathsf K)\le\sqrt3\,(y_n+\frac14\sqrt n)\,|\det\mathsf T|/\|\mathsf T\|$.
+\end{lemma}
+
+\begin{proof}
+Choose $p_0$, $r_0$ with $(P_0,r_0)=v$; this is possible because $\alpha_+(0)\ne0$. Run the
+second chain from $W_0$ to $W_{n-1}=\mathsf Tv$ and set the first chain to zero. Every
+equation used by a step then holds, and so do the equations at $L_+(0)$ and $R_+(0)$,
+which involve only the first chain. At block $n$ define $a_n$ by the equation at
+$R_-(n-1)$, so $|a_n|=x\beta_-(n-1)|P_{n-1}|/y_n$, and put $p_n=r_n=0$, which is what the
+first chain gives. The equation at $L_-(n)$ holds because $P_n=0=b_{n-1}$. The two
+equations left, at $L_+(n)$ and $R_+(n)$, have residuals
+$x\alpha_+(n)m_n\pm y_nr_{n-1}$ and $x\beta_+(n)m_n$, where $m_n=\pm a_n$ because
+$\alpha_-(n)=1$ and $R_-(n)$ does not exist. Since $\alpha_+(n)^2+\beta_+(n)^2=1$,
+\[
+  \|\mathsf K\psi\|\le x|m_n|+y_n|r_{n-1}|\le\Bigl(y_n+\frac{\beta_-(n-1)x^2}{y_n}\Bigr)\|W_{n-1}\|,
+  \qquad \frac{\beta_-(n-1)x^2}{y_n}=\frac{n+2}{8\sqrt{n(n+1)}}\le\frac{\sqrt n}4 .
+\]
+On the other side $\|\psi\|^2\ge p_0^2+r_0^2$, and $P_0^2\le(\alpha_+(0)^2+\beta_+(0)^2)(p_0^2+r_0^2)
+=p_0^2+r_0^2$, so $1=\|v\|^2=P_0^2+r_0^2\le2\|\psi\|^2$. With $\|W_{n-1}\|=\|\mathsf Tv\|=
+|\det\mathsf T|/\|\mathsf T\|$ this gives $\smin(\mathsf K)\le\|\mathsf K\psi\|/\|\psi\|\le\sqrt2\,(y_n+\frac14
+\sqrt n)|\det\mathsf T|/\|\mathsf T\|$, which is stronger than stated.
+\end{proof}
+
+\begin{lemma}[Determinant]\label{lem:v6det}
+Each two-step factor has $|\det N(i)|^2=(n+3+i)/(n+5+i)$, so
+$|\det\mathsf T_{\rm rest}|=\sqrt{(n+5)/(2n+2)}\le1$.
+\end{lemma}
+
+\begin{proof}
+For the pattern $\bigl(\begin{smallmatrix}0&\mathsf a\\\mathsf b&\mathsf c\end{smallmatrix}\bigr)$,
+$|\det|=|\mathsf a\mathsf b|$, so
+\[
+  |\det N(i)|=\frac{\alpha_-(i+1)\beta_-(i)}{\alpha_+(i+1)\beta_-(i+1)}\cdot
+  \frac{\alpha_+(i+2)\beta_+(i+1)}{\alpha_-(i+2)\beta_+(i+2)} .
+\]
+From the four formulas of \cref{prop:ladder},
+$\alpha_-(i+1)^2/\alpha_-(i+2)^2=(n+3+i)(i+1)(i+3)/((i+2)^2(n+4+i))$,
+$\beta_-(i)^2/\beta_-(i+1)^2=(n-i)(i+2)^2/((i+1)(i+3)(n-i-1))$,
+$\alpha_+(i+2)^2/\alpha_+(i+1)^2=(n-i-1)/(n-i)$ and
+$\beta_+(i+1)^2/\beta_+(i+2)^2=(n+4+i)/(n+5+i)$, whose product is $(n+3+i)/(n+5+i)$. Over
+$i=2,4,\dots,n-3$ the product telescopes to $(n+5)/(2n+2)$.
+\end{proof}
+
+\begin{lemma}[Cone]\label{lem:v6cone}
+For $n\ge5$ and $3\le j\le n-1$, $y_j\ge3x$. On each two-step factor $N(i)$ of
+$\mathsf T_{\rm rest}$ the cone $|P|\le2|r|$ is invariant, and
+\[
+  \|\mathsf T_{\rm rest}\|\ \ge\ e^{-4}\prod_{j=3}^{n-1}\frac{y_j}x .
+\]
+\end{lemma}
+
+\begin{proof}
+\emph{The hypothesis.} $y_j^2/x^2=j(j+1)(n+1-j)(n+2+j)/(n(n+2))$ is a product of positive
+linear factors, hence log-concave in $j$, so its minimum over $[3,n-1]$ is at an end; there
+$12(n-2)(n+5)-9n(n+2)=3(n-4)(n+10)\ge0$ and $2(n-1)(2n+1)-9(n+2)=(n-4)(4n+5)\ge0$. So
+$\epsilon_1,\epsilon_2\le\frac19$.
+
+\emph{The cone.} Apply $N(i)$ to $(P,r)$. Up to signs,
+$P''=\mathsf a_2\mathsf c_1(r\pm\epsilon_1P)$ and
+$r''=\mathsf c_2\mathsf c_1\bigl((1\pm\epsilon_2)r\pm\epsilon_1P\bigr)$. If $|P|\le2|r|$, then
+$|P''|\le|\mathsf a_2\mathsf c_1|(1+2\epsilon_1)|r|$ and
+$|r''|\ge|\mathsf c_2\mathsf c_1|(1-\epsilon_2-2\epsilon_1)|r|$. Since
+$|\mathsf a_2|/|\mathsf c_2|=\beta_+(i+2)\le1$, the cone is invariant as soon as
+$\beta_+(1+2\epsilon_1)\le2(1-\epsilon_2-2\epsilon_1)$, and with $\epsilon_1,\epsilon_2\le\frac19$
+the left side is at most $\frac{11}9$ and the right side at least $\frac43$.
+
+\emph{The growth.} Start from $(0,1)$, which is in the cone. Each factor multiplies $|r|$ by
+at least $|\mathsf c_1\mathsf c_2|(1-\epsilon_2-2\epsilon_1)$, and
+$|\mathsf c_1\mathsf c_2|=y_{i+1}y_{i+2}/(x^2\alpha_+(i+1)\beta_-(i+1)\alpha_-(i+2)\beta_+(i+2))
+\ge y_{i+1}y_{i+2}/x^2$. The brackets satisfy
+$1-\epsilon_2-2\epsilon_1\ge1-x^2/y_{i+2}^2-2x^2/y_{i+1}^2\ge\frac23$, and
+$\ln(1-t)\ge-\frac32t$ on $[0,\frac13]$, so their product is at least $e^{-3S}$ with
+$S=\sum_{j=3}^{n-1}x^2/y_j^2$. Finally $x^2/y_j^2\le n/(j(j+1)(n+1-j))$, and the partial
+fractions $\frac1{j(n+1-j)}=\frac1{n+1}(\frac1j+\frac1{n+1-j})$ give
+$S\le\sum_{j\ge3}\frac1{j(j+1)}+\frac1{n+2}\sum_{j=3}^{n-1}\Bigl(\frac1{j+1}+\frac1{n+1-j}\Bigr)
+\le\frac13+\frac{2\ln n}{n+2}\le\frac43$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:v6}(ii)]
+We have $\|\mathsf T\|\ge\|\mathsf T_{\rm rest}\|\,\smin(\mathsf T_{\rm left})$ and
+$\smin(\mathsf T_{\rm left})\ge|\det\mathsf T_{\rm left}|/\Upsilon_0$, where
+$\Upsilon_0=\|M_1(0)\|_F\,\|M_2(1)\|_F$ bounds $\|\mathsf T_{\rm left}\|$. The step entries
+give
+\[
+  \Upsilon_0^2=\frac{(57n^2+146n-72)(649n^2+1298n-1944)}{72\,n(n-1)(n+2)(n+5)};
+\]
+substituting $n=7+k$ into $900-\Upsilon_0^2$ gives a fraction with all coefficients positive, so
+$\Upsilon_0\le30$ for $n\ge7$ (its limit is $22.67$). Since $|\det\mathsf T|=|\det\mathsf T_{\rm rest}|\,
+|\det\mathsf T_{\rm left}|$, \cref{lem:quasimode,lem:v6det,lem:v6cone} give
+$q=8\smin(\mathsf K)\le8\sqrt3\cdot30\cdot e^4\,(y_n+\frac14\sqrt n)/\prod_{j=3}^{n-1}(y_j/x)$, where
+$y_n=\frac14(n+1)\sqrt{2n}$ and $8\sqrt3\cdot30\,e^4=22696.0<22700$. Finally
+\[
+  \Bigl(\prod_{j=3}^{n-1}\frac{y_j}x\Bigr)^2=\frac{(n-1)!\,n!\,(n-2)!}{12}\cdot\frac{\prod_{k=n+5}^{2n+1}k}{(n(n+2))^{n-3}}
+  \ \ge\ \frac{((n-2)!)^3}{12\,(n+2)^{n-3}},
+\]
+because the $n-3$ factors of $\prod_{k=n+5}^{2n+1}k$ each exceed $n$ and
+$(n-1)!\,n!=(n-1)^2n\,((n-2)!)^2$. This gives the stated bound. By Stirling the logarithm of the
+product $\prod_{j=3}^{n-1}(y_j/x)$ is $n\ln n+O(n)$, and the logarithm of the lower bound
+on the right is $n\ln n+O(n)$ as well.
+\end{proof}
+
+The proof uses the moduli of the entries and the sign structure of \cref{prop:ladder}:
+independent signs for the components of $u_\pm$ and for the dimers. For arbitrary
+independent signs of the entries the rank-two form of the rungs can fail, and the proof
+does not apply. Numerically, $1\,000$ random sign patterns of the entries for each
+$n\le9$ leave the kernel dimension unchanged and move $\log_{10}\qm$ by less than $0.18$,
+never near the bound. The identities in
+these proofs were checked in exact arithmetic (\texttt{certificates/v6proofs}). The bound is
+far from sharp. Before the last display, that is with the exact product, it exceeds
+$\qm$ by a factor between $10^{4.8}$ and $10^{6.4}$ for odd $7\le n\le81$; the closed form
+of \cref{thm:v6}(ii), which drops $\prod_{k=n+5}^{2n+1}k$ and replaces $n$ by $n+2$, exceeds
+$\qm$ by a factor $8.5\times10^9$ at $n=7$, $1.9\times10^{11}$ at $n=9$ and about $10^{35}$
+at $n=51$, a factor of order
+$e^{O(n)}$ that does not affect the leading term $n\ln n$.

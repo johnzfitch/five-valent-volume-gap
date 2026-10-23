@@ -1,0 +1,18 @@
+{
+ "regime": "R4",
+ "NMAX": 4000.0,
+ "device": "cuda",
+ "count": 15999998,
+ "seconds": 441.6,
+ "nan_count": 0,
+ "nonpositive_count": 0,
+ "nonpositive_tau": 0,
+ "s2_min_lower_bound": "0.6617647058815739",
+ "min_8sigma_lower_bound": "6.5079137345558475",
+ "argmin_n": 2.0,
+ "argmin_a": 1.5,
+ "F0": 1.5111111111128892,
+ "F1": 0.0,
+ "W": 0.0,
+ "min_gap_1_minus_tau_k": "0.3867719906407772"
+}

@@ -1,0 +1,2 @@
+cases (all 2j_i<=5, integer total): 1562; entries outside the grid pattern: 0
+sign of X(b->b+1,c) D(b+1,c->c+1) / [X(b->b+1,c+1) D(b,c->c+1)] over all unit plaquettes: {1: 2968}

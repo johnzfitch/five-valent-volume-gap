@@ -1,0 +1,29 @@
+[PASS] S1a W- RC r>=1 (m2>=m1+2): 143 terms, 0 negative
+[PASS] S1a-neg (factor b+1 instead of b+3): 145 terms, 11 negative  (negative control: must have negative terms)
+[PASS] S1b W- RC r>=1 (m1=0,m2=0): 22 terms, 0 negative
+[PASS] S1b W- RC r>=1 (m1=0,m2=1): 22 terms, 0 negative
+[PASS] S2 W- CR s<=1: 88 terms, 0 negative
+[PASS] S2-neg (same-row form fails): 58 terms, 9 negative  (negative control: must have negative terms)
+[PASS] S3a W- RR r decreasing (m2>=m1+2): 1140 terms, 0 negative
+[PASS] S3b W- RR r decreasing (m1=0,m2=0): 82 terms, 0 negative
+[PASS] S3b W- RR r decreasing (m1=0,m2=1): 82 terms, 0 negative
+[PASS] S4 M+ RC rho>=1: 57 terms, 0 negative
+[PASS] S5 M+ RR rho decreasing m1=nu,m2=nu+1+x: 3754 terms, 0 negative
+[PASS] S5 M+ RR rho decreasing m1=nu+1,m2=m1+x: 3754 terms, 0 negative
+[PASS] S6a C3 W- m-part (m2=m1+2): 5 terms, 0 negative
+[PASS] S6b C3 W- m-part identity (0,1)
+[PASS] S6c C3 W- n-part identity dn=-1
+[PASS] S6c C3 W- n-part identity dn=0
+[PASS] S6c C3 W- n-part identity dn=1
+[PASS] S7a C3 M+ m-part (m2=m1+2): 20 terms, 0 negative
+[PASS] S7b C3 M+ m-part (0,1): 5 terms, 0 negative
+[PASS] S7-neg (e-1 instead of e on the right): 6 terms, 6 negative  (negative control: must have negative terms)
+[PASS] S8a C1 quartic term dominated: 4 terms, 0 negative
+[PASS] S8b C1 m-terms nonpositive: 131 terms, 0 negative
+[PASS] S9 Lambda closed form
+[PASS] S10a C3 m-terms <= 0 for n2 >= n1: 129 terms, 0 negative
+[PASS] S10b C3 m-term (dn=-1) <= (2n1-1)K: 67 terms, 0 negative
+[PASS] S10c K(c) <= 2c(c+2)^2: 3 terms, 0 negative
+[PASS] S10d 2(2c^2+4c+1)^2 <= 8(c+1)^4: 3 terms, 0 negative
+
+27 certificates, 0 failures: ALL PASS

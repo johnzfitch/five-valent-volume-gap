@@ -1,0 +1,6 @@
+H1 (CG matrix elements of J1z-J2z for j<=3): PASS
+H2 (char. polynomial identically prod(x-(N-1-2i)) in m, N=1..9): PASS
+F case 1: f(kappa)-(X^2-1) in (y,z,t)>=0 has 17 terms, negative coefficients: 0
+F case 2: terms 18, negative coefficients: 0 []
+C2: (M+1)(2K+M+1)-(M+2)^2 with K = M+2+xx: 2*M**2 + 2*M*xx + 4*M + 2*xx + 1
+C3: pq - T(p-q) in (x,y,z,w) has 252 terms, negative coefficients: 0

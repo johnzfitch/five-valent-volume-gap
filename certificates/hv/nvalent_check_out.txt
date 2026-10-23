@@ -1,0 +1,22 @@
+non-coplanar bundle extension of e5 (M<40, |u_i|<=3): none found; using tangential bundle
+N=6: tangents [(1, 3, 1), (0, -2, 0), (-2, 0, -3), (-3, 1, 0), (-3, 1, 2), (-3, 1, 2)]; coplanar triples (all contain two bundle edges): 4, all of that form: True
+N=7: tangents [(1, 3, 1), (0, -2, 0), (-2, 0, -3), (-3, 1, 0), (-3, 1, 2), (-3, 1, 2), (-3, 1, 2)]; coplanar triples (all contain two bundle edges): 13, all of that form: True
+N=8: tangents [(1, 3, 1), (0, -2, 0), (-2, 0, -3), (-3, 1, 0), (-3, 1, 2), (-3, 1, 2), (-3, 1, 2), (-3, 1, 2)]; coplanar triples (all contain two bundle edges): 28, all of that form: True
+spectral check (merging lemma), N=6, spins (1/2, j-1/2, j, j, j5', j6'):
+   spins(2j)=(1, 1, 2, 2, 1, 1): dim 6, block-union discrepancy 5.9e-16, min nonzero |q| = 3.344882e+00, 5-valent family value 3.344882e+00
+   spins(2j)=(1, 1, 2, 2, 2, 2): dim 9, block-union discrepancy 3.2e-16, min nonzero |q| = 3.344882e+00, 5-valent family value 3.344882e+00
+   spins(2j)=(1, 2, 3, 3, 2, 1): dim 10, block-union discrepancy 3.3e-16, min nonzero |q| = 2.826307e+00, 5-valent family value 2.826307e+00
+   spins(2j)=(1, 2, 3, 3, 3, 2): dim 15, block-union discrepancy 3.0e-16, min nonzero |q| = 2.826307e+00, 5-valent family value 2.826307e+00
+   spins(2j)=(1, 2, 3, 3, 1, 2): dim 10, block-union discrepancy 6.6e-16, min nonzero |q| = 2.826307e+00, 5-valent family value 2.826307e+00
+   spins(2j)=(1, 3, 4, 4, 3, 1): dim 14, block-union discrepancy 3.9e-16, min nonzero |q| = 2.158485e+00, 5-valent family value 2.158485e+00
+   spins(2j)=(1, 3, 4, 4, 4, 2): dim 21, block-union discrepancy 5.8e-16, min nonzero |q| = 2.158485e+00, 5-valent family value 2.158485e+00
+   spins(2j)=(1, 3, 4, 4, 2, 2): dim 16, block-union discrepancy 1.2e-15, min nonzero |q| = 2.158485e+00, 5-valent family value 2.158485e+00
+   spins(2j)=(1, 4, 5, 5, 4, 1): dim 18, block-union discrepancy 6.7e-16, min nonzero |q| = 1.523109e+00, 5-valent family value 1.523109e+00
+   spins(2j)=(1, 4, 5, 5, 5, 2): dim 27, block-union discrepancy 4.6e-16, min nonzero |q| = 1.523109e+00, 5-valent family value 1.523109e+00
+   spins(2j)=(1, 4, 5, 5, 3, 2): dim 22, block-union discrepancy 5.9e-16, min nonzero |q| = 1.523109e+00, 5-valent family value 1.523109e+00
+   spins(2j)=(1, 5, 6, 6, 5, 1): dim 22, block-union discrepancy 4.8e-16, min nonzero |q| = 1.011953e+00, 5-valent family value 1.011953e+00
+   spins(2j)=(1, 5, 6, 6, 6, 2): dim 33, block-union discrepancy 1.1e-15, min nonzero |q| = 1.011953e+00, 5-valent family value 1.011953e+00
+   spins(2j)=(1, 5, 6, 6, 4, 2): dim 28, block-union discrepancy 1.0e-15, min nonzero |q| = 1.011953e+00, 5-valent family value 1.011953e+00
+   worst relative discrepancy 1.16e-15
+N=7: spins(2j)=(1, 3, 4, 4, 3, 1, 2), dim 37, block-union discrepancy 9.3e-16
+N=8: spins(2j)=(1, 3, 4, 4, 3, 1, 1, 1), dim 51, block-union discrepancy 1.0e-15

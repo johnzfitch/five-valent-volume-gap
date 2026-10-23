@@ -1,0 +1,5 @@
+(1) closed-form j1=1/2 chain vs signed (b,c) operator, 2j<= 8: 1864 tuples, max rel err 3.49e-15
+(2) exhaustive 2j_2..2j_5 <= 26 (j2<=j3, j4<=j5): chains 52780, even 30758, odd 22022, violations 0
+    global min q_min = 4.5579607392 at doubled spins (1, 1, 2, 2, 2); min q/bound = (np.float64(1.3482629690817018), (1, 1, 2, 2, 2), np.float64(4.557960739249211), 3.3806170189140663)
+    random 400 with 2j <= 600: chains 341, violations 0
+(3) even-N final bound min over 4<=n<=4e5 (K=(n-1)//2): (3.3806170189140663, 5); odd-N right bound min (K=(n-2)//2): (5.116817192534651, 8); 6sqrt2/pi = 2.700949

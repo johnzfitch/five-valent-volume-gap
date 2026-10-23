@@ -1,0 +1,2 @@
+exact congruence checks: 4880 (kappa, kappa') pairs over 2s = 1..61, failures: 0
+float: singular values of B(kappa) nondecreasing on a 121-point kappa grid, 2s = 1..61: violations 0; B(kappa0) singular values = {1/2,...,s} (half-integer) / {1,...,s} (integer): ok

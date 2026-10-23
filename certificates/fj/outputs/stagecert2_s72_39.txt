@@ -1,0 +1,2 @@
+2j1=7 2j_max=39: 4825 tuples, 4823 certified at q0=4.5579607, 2 not; max float stage value found (chains: the search target 1.02*lam0) 4.603  (135s)  uncertified: [(35, 36, 37, 39), (35, 37, 38, 39)]
+TOTAL 2j1=7 levels 39..39: 4825 tuples, 2 uncertified

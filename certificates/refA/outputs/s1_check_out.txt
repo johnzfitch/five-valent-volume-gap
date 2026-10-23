@@ -1,0 +1,12 @@
+(S1a) j1 = 1, legs <= 16 (doubled; pairs unordered): 2189 closed even-sum classes; 2174 are the diagonal; 15 are NOT the diagonal
+      e.g. tuple (2, 1, 2, 1, 2), closed colour 1, sites [(1, 3), (3, 1)]
+      e.g. tuple (2, 1, 3, 1, 3), closed colour 0, sites [(2, 4), (4, 2)]
+      e.g. tuple (2, 1, 4, 1, 4), closed colour 1, sites [(3, 5), (5, 3)]
+      e.g. tuple (2, 1, 5, 1, 5), closed colour 0, sites [(4, 6), (6, 4)]
+      e.g. tuple (2, 1, 6, 1, 6), closed colour 1, sites [(5, 7), (7, 5)]
+      e.g. tuple (2, 1, 7, 1, 7), closed colour 0, sites [(6, 8), (8, 6)]
+(S1b) Prop. S1 Q vs 2-D block B^T B on the diagonal classes: max eigenvalue difference 2.84e-13
+(S1c) n1 <= n2 <= 200, equal parity, m1 = m2 = 0: lambda_min(Q) >= 1 + 1/(2hi) violations 0; min ratio 1.004322 at (200, 200, np.float64(1.006845671803823))
+      min of c_b - c_(b+1) - (b + 1/2): 1.259e-03 at (200, 200, 199);  min of (Qg)_b/g_b - (1 + 1/(2b)): 6.329e-06 at (200, 200)
+total 4s
+(S1a, extended to legs <= 32) non-diagonal closed even-sum classes: 31; of these without a spin-1/2 leg: 0; all of the form (2;1,x,1,x): True

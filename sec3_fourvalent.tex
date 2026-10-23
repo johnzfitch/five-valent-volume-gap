@@ -1,0 +1,169 @@
+\section{The four-valent law}\label{sec:fourvalent}
+
+This section proves the sharp lower bound for the four-valent operator. It is
+needed for $t=0$ in \cref{sec:closing}, and its proof introduces the object that
+carries the rest of the paper: the hydrogen Stark matrix.
+
+\begin{theorem}{Sharp four-valent law}{sharp4}
+Let $j_1,\dots,j_4\ge\frac12$ with $\dim\Inv(j_1\otimes\cdots\otimes j_4)\ge2$.
+Every nonzero eigenvalue $\lambda$ of $J_1\cdot(J_2\times J_3)$ on the invariant space
+satisfies
+\[
+  \lambda^2\ \ge\ \tfrac14\,j_{\max}(j_{\max}+1),
+\]
+with equality exactly when the sorted spins are $(\frac12,\frac12,j,j)$.
+\end{theorem}
+
+The constant and the minimisers are not new: Brunnemann and Thiemann found
+numerically that the lowest eigenvalue series of $\hat q_{123}$ is $2\sqrt{j(j+1)}$, at
+the spins $(\frac12,\frac12,j,j)$, for all spins up to $50$~\cite[table on
+p.~38]{BT2006}, which is \cref{thm:sharp4} in their normalisation. What is new is the
+proof, and the Stark structure it exposes. In particular $|\lambda|\ge\sqrt3/4$, with equality only at four spins $\frac12$.
+The eigenvalues of $\hat q_{123}=-4iJ_1\cdot(J_2\times J_3)$ have modulus at least
+$2\sqrt{j_{\max}(j_{\max}+1)}>2j_{\max}$, twice the bound that Brunnemann and Rideout
+derived at leading order in $j_{\max}$ under assumptions on the scaling of the
+spins~\cite[(7.56)]{BR2008b};
+and
+$\frac{\sqrt2}3\sqrt{\sqrt3/4}=0.3102$ is Bianchi and Haggard's smallest
+volume~\cite{BH2011}.
+
+\subsection{The picture: a hydrogen atom in an electric field}
+
+The matrix entries \eqref{eq:ak} are a product of two triangle factors, one for each
+pair of edges. Each triangle factor, divided by $4k^2-1$, is a matrix element that
+every student of the Stark effect has met. In the shell of principal quantum number
+$n$ of hydrogen, the component $A_z$ of the Runge--Lenz vector connects the states
+$|L,m\rangle$ and $|L-1,m\rangle$ with squared modulus
+$(n^2-L^2)(L^2-m^2)/(4L^2-1)$, and its eigenvalues are Pauli's parabolic quantum
+numbers, the integers $n_1-n_2$, equally spaced by two. So one pair of edges
+contributes a matrix whose spectrum we know exactly and whose smallest positive
+eigenvalue is $1$ or $2$, and the other pair contributes a slowly varying
+multiplier. The four-valent operator is a Stark matrix with stretched links. The
+question becomes how much the stretching can lower the bottom of the spectrum, and
+the answer is: by no more than the stretch at the first link.
+
+\begin{definition}[Stark matrix]\label{def:stark}
+For real $m\ge0$ and an integer $N\ge1$ put $n=m+N$. The \emph{Stark matrix}
+$H(n,m)$ is the $N\times N$ zero-diagonal Jacobi matrix on the labels
+$L=m,m+1,\dots,n-1$ whose link between $L-1$ and $L$ has
+\begin{equation}\label{eq:stark}
+  h_L^2=\frac{(n^2-L^2)(L^2-m^2)}{4L^2-1}.
+\end{equation}
+\end{definition}
+
+\begin{boxedlemma}{The Stark spectrum}{starkspec}
+The eigenvalues of $H(n,m)$ are $N-1,N-3,\dots,-(N-1)$, for every real $m\ge0$.
+Its smallest positive eigenvalue is $1$ if $N$ is even and $2$ if $N\ge3$ is odd.
+\end{boxedlemma}
+
+\begin{proof}
+For integer $m$, take two spins $j\otimes j$ with $2j+1=n$, and the sector of total
+$J_z=m$. In the coupled basis $|L,m\rangle$ ($L=m,\dots,2j$) the operator
+$S_z:=J_z^{(1)}-J_z^{(2)}$ is tridiagonal; its diagonal vanishes because $S_z$ is odd
+under exchanging the two equal spins while $|L,m\rangle$ has parity $(-1)^{2j-L}$;
+and its off-diagonal elements are the standard ones,
+$|\langle L,m|S_z|L-1,m\rangle|^2=(L^2-m^2)(n^2-L^2)/(4L^2-1)$~\cite{Edmonds}. In
+the product basis $|m_1,m-m_1\rangle$ the same operator is diagonal with eigenvalues
+$2m_1-m$, which are the $N=n-m$ integers $N-1,N-3,\dots$. For real $m$, fix $N$:
+the coefficients of the characteristic polynomial are polynomials in the $h_L^2$,
+hence rational functions of $m$ with no pole on $m\ge0$, and they agree with those
+of $\prod_k(x-(N-1-2k))$ at every integer $m\ge0$. So they agree identically.
+\end{proof}
+
+\subsection{The proof}
+
+Sort the spins, $j_1\le j_2\le j_3\le j_4=j_{\max}$, and couple edges $1,2$. Write
+$n=j_1+j_2+1$, $m_>=\max(|j_1-j_2|,|j_3-j_4|)$, $m_<=\min(|j_1-j_2|,|j_3-j_4|)$ and
+$\varpi=2j_4+1$, so that $\bar\mu:=\frac14j_4(j_4+1)=(\varpi^2-1)/16$.
+
+\begin{lemma}[Factorisation]\label{lem:fact}
+The links of the four-valent chain are $a_k=h_k\,w_k$ for $m_><k\le n-1$, where $h$
+is the Stark matrix $H(n,m_>)$ on exactly the range of the chain, and
+\[
+  w_k^2=\tfrac1{16}f(k),\qquad f(k)=(k^2-m_<^2)\bigl((j_3+j_4+1)^2-k^2\bigr).
+\]
+\end{lemma}
+
+\begin{proof}
+$\{|j_1-j_2|,|j_3-j_4|\}=\{m_>,m_<\}$, so the four factors of \eqref{eq:ak} regroup;
+sorting gives $k_{\max}=j_1+j_2=n-1$ and $k_{\min}=m_>$.
+\end{proof}
+
+The regrouping is the point: putting the larger of the two differences into the
+Stark factor makes the Stark matrix live on exactly the range of the four-valent
+chain. With the natural grouping by pairs it would not.
+
+\begin{lemma}[Site scaling]\label{lem:sitescale}
+Let $c_1,\dots,c_L>0$ be the links of a zero-diagonal Jacobi matrix $J(c)$ and
+$g_1,\dots,g_L>0$. Choose $\gamma_1>0$ and $\gamma_{s+1}=g_s^2/\gamma_s$. Then $J(cg)=SJ(c)S$ with
+$S=\diag(\sqrt{\gamma_i})$, and the smallest positive eigenvalue satisfies
+$\lambda(cg)\ge\sqrt{\min_{\mathrm{odd}}\gamma\cdot\min_{\mathrm{even}}\gamma}\;\lambda(c)$.
+\end{lemma}
+
+\begin{proof}
+$\sqrt{\gamma_s\gamma_{s+1}}=g_s$, so $SJ(c)S$ has links $g_sc_s$. In the bipartite form
+$J=\bigl(\begin{smallmatrix}0&B\\B^T&0\end{smallmatrix}\bigr)$ (odd sites against
+even sites) the nonzero eigenvalues are $\pm$ the singular values of $B$, $B$ has full
+column rank, and $B(cg)=S_{\mathrm{odd}}B(c)S_{\mathrm{even}}$, so
+$\smin(B(cg))\ge\smin(S_{\mathrm{odd}})\smin(B(c))\smin(S_{\mathrm{even}})$. The free
+constant $\gamma_1$ cancels in the product.
+\end{proof}
+
+Unwinding the recursion, $\min_{\rm odd}\gamma\cdot\min_{\rm even}\gamma$ is a minimum over
+alternating products of ratios $g_{s+1}/g_s$, so the lemma needs no monotonicity of
+$g$. It needs two facts about the multiplier $f$: that it is large enough at the
+first link, and that it does not dip later in a way the alternating products can
+see. Both are elementary and are proved in \cref{app:fourvalent}.
+
+\begin{lemma}[The multiplier]\label{lem:multiplier}
+Write $f_s=f(m_>+s)$, $s=1,\dots,L=N-1$, where $N=n-m_>$ is the dimension.
+\textup{(F)} $f_1\ge \varpi^2-1$, that is $w_1^2\ge\bar\mu$, with equality iff $j_1=j_2$ and
+$j_3=j_4$.
+\textup{(C)} $f$ is log-concave and unimodal along the chain, and
+\textup{(C0)} $f_2>f_1$ if $N\ge3$; \textup{(C2)} $f_L>f_2$ if $N\ge4$;
+\textup{(C3)} $f_L^2\ge f_{L-1}f_2$ if $N\ge4$.
+\end{lemma}
+
+\begin{proof}[Proof of \cref{thm:sharp4}]
+Apply \cref{lem:sitescale} to $c=h$ and $g=w$. By \cref{blem:starkspec},
+\[
+  \lambda\ \ge\ \sqrt{\textstyle\min_{\rm odd}\gamma\cdot\min_{\rm even}\gamma}\;\lambda_H,
+\]
+with $\lambda_H=1$ for even $N$ and $2$ for odd $N$. For $N=2$ the Stark link is $h=1$ and
+$\lambda^2=f_1/16\ge\bar\mu$, with equality iff $j_1=j_2=\frac12$ and $j_3=j_4$.
+
+For $N\ge3$ write $r_s=\log(f_{s+1}/f_s)$, which is nonincreasing by log-concavity.
+With $\gamma_1=1$ the weights are $\gamma_{2i+1}=\omega_i:=\prod_{l\le i}f_{2l}/f_{2l-1}$ at the
+odd sites and $\gamma_{2i}=\eta_i:=\frac{f_1}{16}\prod_{l<i}f_{2l+1}/f_{2l}$ at the even
+sites. Pairing each odd step with the following even one gives
+$\log\omega_i\ge\frac12\log(f_{2i+1}/f_1)$, or $\frac12\log(f_L^2/(f_{L-1}f_1))$ at the
+last site; pairing each even step with the following odd one gives
+$\log(\eta_i/\eta_1)\ge\frac12\log(f_{2i}/f_2)$, or $\frac12\log(f_L^2/(f_{L-1}f_2))$ at
+the last site. By unimodality, (C0) and (C2), $f_t\ge f_1$ for all $t$ and $f_t\ge f_2$
+for $t\ge2$, and the end terms are at least $1$ by (C3) (for $L=2$ by (C0)). So $\min\omega\ge1$ and $\min\eta\ge f_1/16$, and $\lambda^2\ge(f_1/16)\lambda_H^2\ge\bar\mu\lambda_H^2$. For odd
+$N$ this is at least $4\bar\mu$.
+
+It remains to show strictness for even $N\ge4$. Suppose $\lambda^2=\bar\mu$. Then every
+inequality in the chain is an equality. In particular, for a minimising vector $x$, equality in $\|S_{\rm odd}BS_{\rm even}x\|\ge\smin(S_{\rm odd})
+\smin(B)\smin(S_{\rm even})\|x\|$ forces $S_{\rm even}x$ to be supported on the even
+sites where $\gamma$ is minimal, and $BS_{\rm even}x$ on the odd sites where $\gamma$ is
+minimal. The eigenvector $u$ of the Stark matrix at its smallest positive eigenvalue
+has nonzero components at sites $1$, $2$, $N-1$ and $N$, because $u_1\ne0$ for any
+eigenvector of an irreducible Jacobi matrix and then $u_2=\lambda u_1/h_1\ne0$, and
+likewise at the other end. So $\gamma$ is minimal at sites $1$ and $N-1$ and at $2$ and
+$N$, which gives $\omega_{(L-1)/2}=1$ and $\eta_{(L+1)/2}=\eta_1$, whose product is $f_L/f_1=1$.
+This contradicts $f_L>f_2>f_1$.
+\end{proof}
+
+\begin{remark}[A cruder route, not used]
+For even dimension the inverse of the bipartite block is the lower-triangular matrix
+of \cref{blem:evenchain}, whose entries factor as $u_iv_j$ for $i\ge j$: a discrete
+Hardy operator. Muckenhoupt's weighted Hardy inequality~\cite{Muckenhoupt1972} then
+places its norm between $\mathsf A$ and $2\mathsf A$, with
+$\mathsf A=\max_k(\sum_{i\ge k}u_i^2)^{1/2}(\sum_{j\le k}v_j^2)^{1/2}$, for every chain
+with positive links. Evaluating $\mathsf A$ for the four-valent links relates the gap
+to the harmonic sum $\sum_k1/a_k$, the discrete form of the zero-volume period of the
+classical tetrahedron, which is the Bohr--Sommerfeld scaling of Bianchi and
+Haggard~\cite{BH2012}. We do not carry this out; it would give only an unspecified
+constant where the Stark factorisation gives the sharp one.
+\end{remark}

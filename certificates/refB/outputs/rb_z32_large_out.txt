@@ -1,0 +1,101 @@
+R1   n1=  4000.0 a=  2000.0: 8sigma bound  723.9625
+R1   n1=  4000.0 a=  3997.0: 8sigma bound 1020.9872
+R1   n1=  4000.0 a=  3998.0: 8sigma bound 1169.2927
+R1   n1=  4000.5 a=     1.5: 8sigma bound 1063.6941
+R1   n1=  4000.5 a=     2.5: 8sigma bound 1156.8491
+R1   n1=  4000.5 a=     3.5: 8sigma bound 1180.1999
+R1   n1=  4000.5 a=     6.5: 8sigma bound 1172.6888
+R1   n1=  4000.5 a=    21.5: 8sigma bound 1063.4449
+R1   n1=  4000.5 a=   400.5: 8sigma bound  794.2041
+R1   n1=  4000.5 a=  2000.5: 8sigma bound  724.0049
+R1   n1=  4000.5 a=  3997.5: 8sigma bound 1021.0511
+R1   n1=  4000.5 a=  3998.5: 8sigma bound 1169.3660
+R1   n1= 10000.0 a=  5000.0: 8sigma bound 1145.3063
+R1   n1= 10000.0 a=  9997.0: 8sigma bound 1615.4748
+R1   n1= 10000.0 a=  9998.0: 8sigma bound 1850.3250
+R1   n1= 30000.5 a=     1.5: 8sigma bound 5483.4274
+R1   n1= 30000.5 a=     2.5: 8sigma bound 5724.7793
+R1   n1= 30000.5 a=     3.5: 8sigma bound 5692.2197
+R1   n1= 30000.5 a=     6.5: 8sigma bound 5387.6979
+R1   n1= 30000.5 a=    21.5: 8sigma bound 4436.7109
+R1   n1= 30000.5 a=  3000.5: 8sigma bound 2184.8223
+R1   n1= 30000.5 a= 15000.5: 8sigma bound 1984.2231
+R1   n1= 30000.5 a= 29997.5: 8sigma bound 2798.9959
+R1   n1= 30000.5 a= 29998.5: 8sigma bound 3206.0486
+R2+  n1=  4000.0 a=  2000.0: 8sigma bound 3420.5396
+R2+  n1=  4000.0 a=  3997.0: 8sigma bound 16222.2796
+R2+  n1=  4000.0 a=  3998.0: 8sigma bound 24783.9938
+R2+  n1=  4000.5 a=     0.5: 8sigma bound   99.5509
+R2+  n1=  4000.5 a=     1.5: 8sigma bound  134.6629
+R2+  n1=  4000.5 a=     2.5: 8sigma bound  158.9191
+R2+  n1=  4000.5 a=     5.5: 8sigma bound  211.2829
+R2+  n1=  4000.5 a=    20.5: 8sigma bound  363.4037
+R2+  n1=  4000.5 a=   400.5: 8sigma bound 1565.3796
+R2+  n1=  4000.5 a=  2000.5: 8sigma bound 3421.1688
+R2+  n1=  4000.5 a=  3997.5: 8sigma bound 16224.3080
+R2+  n1=  4000.5 a=  3998.5: 8sigma bound 24787.0922
+R2+  n1= 10000.0 a=  5000.0: 8sigma bound 8043.5189
+R2+  n1= 10000.0 a=  9997.0: 8sigma bound 40562.7229
+R2+  n1= 10000.0 a=  9998.0: 8sigma bound 61964.6347
+R2+  n1= 30000.5 a=     0.5: 8sigma bound  248.1171
+R2+  n1= 30000.5 a=     1.5: 8sigma bound  334.5544
+R2+  n1= 30000.5 a=     2.5: 8sigma bound  393.4401
+R2+  n1= 30000.5 a=     5.5: 8sigma bound  519.0868
+R2+  n1= 30000.5 a=    20.5: 8sigma bound  875.5729
+R2+  n1= 30000.5 a=  3000.5: 8sigma bound 10230.4839
+R2+  n1= 30000.5 a= 15000.5: 8sigma bound 22619.0854
+R2+  n1= 30000.5 a= 29997.5: 8sigma bound 121699.5600
+R2+  n1= 30000.5 a= 29998.5: 8sigma bound 185903.2005
+R2-  n1=  4000.0 a=     1.0: 8sigma bound   66.9409
+R2-  n1=  4000.0 a=     2.0: 8sigma bound   91.9571
+R2-  n1=  4000.0 a=     3.0: 8sigma bound  110.4051
+R2-  n1=  4000.0 a=     6.0: 8sigma bound  151.6407
+R2-  n1=  4000.0 a=    21.0: 8sigma bound  275.5792
+R2-  n1=  4000.0 a=   400.0: 8sigma bound 1292.9081
+R2-  n1=  4000.0 a=  2000.0: 8sigma bound 3228.5516
+R2-  n1=  4000.0 a=  3997.0: 8sigma bound 12012.9501
+R2-  n1=  4000.0 a=  3998.0: 8sigma bound 14754.7429
+R2-  n1=  4000.5 a=  2000.5: 8sigma bound 3229.1724
+R2-  n1=  4000.5 a=  3997.5: 8sigma bound 12014.4523
+R2-  n1=  4000.5 a=  3998.5: 8sigma bound 14756.5878
+R2-  n1= 10000.0 a=     1.0: 8sigma bound  100.3286
+R2-  n1= 10000.0 a=     2.0: 8sigma bound  136.9861
+R2-  n1= 10000.0 a=     3.0: 8sigma bound  163.9793
+R2-  n1= 10000.0 a=     6.0: 8sigma bound  223.9889
+R2-  n1= 10000.0 a=    21.0: 8sigma bound  402.2850
+R2-  n1= 10000.0 a=  1000.0: 8sigma bound 3045.5810
+R2-  n1= 10000.0 a=  5000.0: 8sigma bound 7626.0342
+R2-  n1= 10000.0 a=  9997.0: 8sigma bound 30040.1418
+R2-  n1= 10000.0 a=  9998.0: 8sigma bound 36893.4270
+R2-  n1= 30000.5 a= 15000.5: 8sigma bound 21535.1399
+R2-  n1= 30000.5 a= 29997.5: 8sigma bound 90132.2811
+R2-  n1= 30000.5 a= 29998.5: 8sigma bound 110690.8840
+R4   n1=  4000.0 a=     1.5: 8sigma bound  152.6449
+R4   n1=  4000.0 a=     2.5: 8sigma bound  196.2018
+R4   n1=  4000.0 a=     3.5: 8sigma bound  224.6790
+R4   n1=  4000.0 a=     6.5: 8sigma bound  284.0060
+R4   n1=  4000.0 a=    21.5: 8sigma bound  444.2228
+R4   n1=  4000.0 a=   399.5: 8sigma bound 1438.5684
+R4   n1=  4000.0 a=  3999.5: 8sigma bound 19594.6925
+R4   n1=  4000.0 a=  4000.5: 8sigma bound 252982.2128
+R4   n1=  4000.5 a=  4000.0: 8sigma bound 19597.1420
+R4   n1=  4000.5 a=  4001.0: 8sigma bound 252982.2128
+R4   n1= 10000.0 a=     1.5: 8sigma bound  241.4039
+R4   n1= 10000.0 a=     2.5: 8sigma bound  310.3309
+R4   n1= 10000.0 a=     3.5: 8sigma bound  355.4067
+R4   n1= 10000.0 a=     6.5: 8sigma bound  449.3417
+R4   n1= 10000.0 a=    21.5: 8sigma bound  703.1664
+R4   n1= 10000.0 a=   999.5: 8sigma bound 3360.5450
+R4   n1= 10000.0 a=  9999.5: 8sigma bound 48988.5698
+R4   n1= 10000.0 a= 10000.5: 8sigma bound 252982.2128
+R4   n1= 30000.5 a= 30000.0: 8sigma bound 146970.6092
+R4   n1= 30000.5 a= 30001.0: 8sigma bound 252982.2128
+R1c  n1= 100000.5: 8sigma bound 23869.0007
+R1c  n1= 300000.5: 8sigma bound 63566.2828
+R4c  n1= 100000.0: 8sigma bound  568.7633
+R4c  n1= 300000.0: 8sigma bound  985.1344
+Tp   n1= 100000.0: 8sigma bound  319.2328
+Tp   n1= 300000.0: 8sigma bound  533.8662
+Tm   n1= 100000.0: 8sigma bound  250.1300
+Tm   n1= 300000.0: 8sigma bound  416.5637
+minimum over the samples: 66.9409 at ('R2-', 4000.0, 1.0) (claim: >= 3.7)   (164s)

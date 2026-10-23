@@ -1,0 +1,31 @@
+PASS  S1 R4  Lambda<=0 (c in [m2-1/2, n1-1], n2>=n1+3/2, m2>=m1+3/2): vars ['a', 'w', 'x', 'y', 'z'], numerator 431 terms, denominator 35 terms
+PASS  S1 R4c Lambda<=0 (m1=0,m2=1/2, c in [1,n1-1], n2>=n1+3/2): vars ['x', 'y', 'z'], numerator 36 terms, denominator 5 terms
+PASS  S2 zz1 R2+ (m2=m1+1/2; rows t,t+1 in [m1+2, n1-2]): vars ['a', 'x', 'y', 'z'], numerator 521 terms, denominator 796 terms
+PASS  S2 zz1 R2- (m2=m1-1/2>=1/2; rows t,t+1 in [m1+1, n1-2]): vars ['a', 'x', 'y', 'z'], numerator 521 terms, denominator 796 terms
+PASS  S2 zz1 R4  (rows in [m2+3/2, n1-2]): vars ['a', 'w', 'x', 'y', 'z'], numerator 2197 terms, denominator 2998 terms
+PASS  S2 zz0 R4  (rows in [m2-1/2, n1-2]): vars ['a', 'w', 'x', 'y', 'z'], numerator 2197 terms, denominator 2998 terms
+PASS  S2 zz1 R4c (rows in [2, n1-2]): vars ['x', 'y', 'z'], numerator 82 terms, denominator 121 terms
+PASS  S2 zz0 R4c (rows in [1, n1-2]): vars ['x', 'y', 'z'], numerator 106 terms, denominator 151 terms
+PASS  S2 zz1 Tp  (n2=n1+1/2; rows in [2, n1-2]): vars ['x', 'y'], numerator 35 terms, denominator 42 terms
+PASS  S2 zz1 Tm  (n2=n1-1/2; rows in [2, n1-2]): vars ['x', 'y'], numerator 35 terms, denominator 42 terms
+PASS  S3 R1  zz0 s<=1 (worst n2=n1+3/2, m2=m1-3/2; t in [m1, n1-2], m1>=3/2): vars ['a', 'x', 'y'], numerator 40 terms, denominator 54 terms
+PASS  S3 R1  zz1 s<=1 (worst n2=n1+3/2, m2=m1-3/2; t in [m1, n1-2]): vars ['a', 'x', 'y'], numerator 45 terms, denominator 54 terms
+PASS  S3 R1c zz0 s<=1 (m1=1/2,m2=0, worst n2=n1+3/2; t in [1/2, n1-2]): vars ['x', 'y'], numerator 11 terms, denominator 14 terms
+PASS  S3 R1c zz1 s<=1 (t in [3/2, n1-2]): vars ['x', 'y'], numerator 15 terms, denominator 17 terms
+PASS  S3 R2+ zz0 s<=1 (m2=m1+1/2, m1>=1/2, worst n2=n1+3/2; t in [m1, n1-2]): vars ['a', 'x', 'y'], numerator 40 terms, denominator 54 terms
+PASS  S3 R2- zz0 s<=1 (m2=m1-1/2, m1>=1, worst n2=n1+3/2; t in [m1, n1-2]): vars ['a', 'x', 'y'], numerator 40 terms, denominator 54 terms
+PASS  S4 Tp zz0 r>=1 (n2=n1+1/2; rows t in [1, n1-2]): vars ['x', 'y'], numerator 14 terms, denominator 17 terms
+PASS  S4 Tm zz0 r>=1 (n2=n1-1/2; rows t in [1, n1-3]): vars ['x', 'y'], numerator 15 terms, denominator 17 terms
+PASS  S5 dLambda2/d(n2^2) <= 0 for c>=1: vars ['w', 'x'], numerator 6 terms, denominator 3 terms
+PASS  S5 dLambda2/d(m2^2) <= 0 for c>=1 and n2^2 >= 1: vars ['x', 'z'], numerator 6 terms, denominator 3 terms
+PASS  S6 Lambda <= Lambdahat (c>=1, n1>=c+1, n2=n1+3/2+z, m2>=0, m1>=0): vars ['w', 'x', 'y', 'z'], numerator 63 terms, denominator 5 terms
+PASS  S7 R1 zz0  s <= T/(T+1)  (worst n2=n1+3/2, m2=m1-3/2): vars ['a', 'x', 'y'], numerator 53 terms, denominator 68 terms
+PASS  S7 R1 zz1  s <= T/(T+1): vars ['a', 'x', 'y'], numerator 54 terms, denominator 68 terms
+PASS  S7 R2- zz0 s <= T/(T+1) psi(t)/psi(t+1): vars ['a', 'x', 'y'], numerator 36 terms, denominator 68 terms
+PASS  S7 R2- psi(c)/psi(k) <= 5/4 for k >= c >= m1 >= 1: vars ['a', 'x', 'y'], numerator 30 terms, denominator 31 terms
+PASS  S7 R2+ zz0 s <= T/(T+1) phi(t)/phi(t+1): vars ['a', 'x', 'y'], numerator 50 terms, denominator 91 terms
+PASS  S7 R2+ phi nonincreasing: vars ['a', 'x'], numerator 9 terms, denominator 15 terms
+PASS  S7 R2+ phi > 1/2: vars ['a', 'x'], numerator 5 terms, denominator 6 terms
+PASS  S8 (4c+9)/(4(2c+1)(2c+3)) <= 1.016/(4c) for c >= 1: univariate root count on (1, oo)
+PASS  S8 c(4c^2+11c+8)/(4(2c+1)(2c+3)) <= (c+1)/4 for c >= 0: vars ['x'], numerator 3 terms, denominator 3 terms
+ALL PASS

@@ -1,0 +1,107 @@
+% =============================================================================
+\section{How the results were reached}
+\label{app:provenance}
+
+The work was kept in a running findings ledger and a task log, with corrections recorded as
+they happened. The question about tetrahedra was put to a Claude session on 12~October~2026:
+does the tetrahedron connect to Jordan algebras? The answer was that it marks where the
+exceptional algebra stops. Four orthogonal idempotents force associative coordinates, so
+there is no octonionic algebra of rank four, and the session knew of no natural tetrahedron
+inside the Albert algebra. Two days later a ChatGPT session exhibited one. Four primitive
+idempotents with pairwise overlaps $\frac13$, the overlaps of the qubit tetrahedron of
+quantum measurement theory, generate all $27$ dimensions, as an integer determinant of
+$-256$ certifies.
+
+Between 17 and 19~October the quantum tetrahedron was worked out over all four rank-three
+Jordan algebras, with $\mathrm{SO}(3)$, $\mathrm{SU}(3)$, $\mathrm{Sp}(6)$ and $F_4$ on the
+faces, and with the $\mathrm{SU}(2)$ case of Barbieri and of Baez and Barrett reproduced as a
+calibration~\cite{Barbieri1998,BaezBarrett1999}. Several tools shared the work. In claude.ai
+sessions Claude computed the four rows, their channel decompositions, recoupling matrices and
+volume-type spectra, the sixteen-dimensional spin-closure quotient of the exceptional case,
+and the bridge between the tetrahedron and the attention layer, in exact rational Python,
+python-flint, PARI/GP and LiE built from source. A parallel session checked the exceptional
+case again in GAP with a different octonion convention and wrote a thirteen-page draft. GPT
+ran long exact-arithmetic computations for two reports, on measurement and spin closure and
+on quantum-shape observables in the rank-three Jordan family, with an archive of
+certificates. An agent on my own machine extended the $F_4$ sweep to level $140$. The
+four-face invariant spaces have dimensions $5$, $8$, $5$ and $5$. For $F_4$, opening one leg
+of a four-face invariant gives exactly one of the attention layer's equivariant value maps,
+so the shapes of the exceptional tetrahedron are the five channels the layer already used.
+One correction from that stage set the habit of keeping a cumulative record. An assembled
+``complete'' package turned out to have dropped two of the four earlier write-ups. They had
+to be restored from the original archives, and the build scripts showed how the omission had
+happened.
+
+The turn to dynamics, described in \cref{sec:history}, led to a second Claude chat, which
+opened with a request to prove loop quantum gravity. Claude's first answer was that a
+physical theory cannot be proved, and it listed what is open. My next message attached a
+statement of a closure target and a criticism, and with reviews I supplied the chat
+narrowed to one checkable claim: on Varadarajan's off-shell space~\cite{Varadarajan2022}, can
+a correction $T$ make $H-2T$ close with the Lorentzian sign? The chat ended with a no-go
+theorem for Lorentzian corrections that preserve the vertices, which an AI referee checked
+and which went into my research ledger on 20~October. A Codex session continued the
+calculation on the evening of 19~October, and it then moved to Claude Code, with a second Claude
+Code session working alongside. The tetrahedron came back twice. On the intertwiner space of
+the parent vertex, one candidate correction acted as a real multiple of
+$i\,J_1\cdot(J_2\times J_3)$. And a tangent-sensitive four-valent volume carries the sign
+factor $\epsilon_{123}-\epsilon_{124}+\epsilon_{134}-\epsilon_{234}$, which equals $\pm4$
+exactly at positively spanning vertices. Two days of campaigns found no closure. Several
+apparent successes took their sign from conventions the test states cannot see, or diverged
+in the ordered limits. An internal referee overturned a headline result, ``memoryless
+corrections close with the Euclidean sign'', with a counterexample, and it was retracted.
+Early in this work I had set myself the goal of a large new result. A general law whose
+constant could be predicted in advance did not count.
+
+The work turned to quantum geometry through the volume. In self-dual variables, with
+$\mathrm{SU}(1,1)$ labels, the four-valent volume becomes an infinite zero-diagonal Jacobi
+matrix that is not essentially self-adjoint. That observation, the Bohr--Sommerfeld rule it
+led to, and their generalisation are the subject of~\cite{FitchLimitCircle}. A search of
+the literature for named open problems on which these tools could act then found Bianchi
+and Haggard's question~\cite{BH2011}. On 21~October, within a day, came a uniform
+four-valent gap; the sharp four-valent law, through the observation that the four-valent
+matrix is a hydrogen Stark matrix times a smooth multiplier (\cref{thm:sharp4}); an
+explicit five-valent family on which the gap closes, through a dimerised chain; the
+six-valent ladder; the Rovelli--Smolin contrast; and the normal form of
+\cref{thm:nf-intro}. A referee of the six-valent result found its rate wrong: the exponent
+is $n\ln n$, not $\frac32\,n\ln n$. Another check found that a briefing had confused the
+normalisations $4T$ and $8T$. When I asked what structural property separates the families
+that keep a gap from those that lose it, the answer was already in the normal form: the
+ratio $t$ of the two weights.
+
+The equal-weight case took most of the remaining time. The slice $j_1=\frac32$ was first
+closed with a floating-point sweep that allowed for rounding. An independent referee found
+that this was not rigorous as written and that a tail estimate was missing. The tail lemmas
+were then written out, and the finite box was re-run on a GPU in outward-rounded interval
+arithmetic over $64\,352\,004$ parameter sets, with smallest certified bound $3.777422$
+against the constant $3.7$ of \cref{thm:z32} (\cref{app:z32}). The slices $j_1=1$ and $2$
+were proved, and every tuple with spins at most $19$ was certified. One strategy for large
+spins was refuted by its own test vector, which became \cref{thm:N1}. Three further rounds
+aimed at $j_1\ge\frac52$ (a layer decomposition, wall modes and an $\mathfrak{su}(2)$
+ladder) did not succeed, and a fourth was stopped at its start. I ended the campaign on
+22~October. That case is \cref{conj:B}, and the ladder picture is in \cref{subsec:ladder}.
+
+The paper was written from the primary sources from 21~October. It was then read by an
+independent Claude referee, by Gemini, by a Claude session on claude.ai and by GPT, and each
+report was triaged against the source and checked with our own code before anything was
+adopted. The Claude referee asked for written proofs of two lemmas of \cref{app:valence6}
+that had only been stated, for a full proof of the three-spin pencil
+(\cref{thm:pencil}), which had only been sketched, and for a fairer attribution of the
+four-valent law to the numerics of Brunnemann and Thiemann~\cite{BT2006}. It also asked us to
+remove an unverified assumption about how the runtime library rounds square roots, and the
+rigorous-float certificates were re-run with every square root checked in exact arithmetic,
+with identical minima on all $2\,274\,052$ tuples. Writing out one of the missing proofs
+exposed an inequality slip in the argument it came from, which was repaired with no change
+to the theorem. Gemini had read the text layer of the PDF, and nine of its typographical
+findings were artefacts of the extraction; its points of wording were adopted. The
+claude.ai referee showed that \cref{thm:nf-intro}, as then worded for non-coplanar tangents,
+was false, because $1\,680$ sign vectors have a coplanar triple. The theorem is now stated
+for tangents in general position, with the remaining case described in
+\cref{rem:nongeneric}. The same referee showed that a heuristic limit stated in
+\cref{sec:large} was contradicted by larger computations, and it asked for a statement of how
+AI was used, which is \cref{sec:history}. GPT found that the reciprocal clause of
+\cref{thm:closing} holds only after the two pairs of spins are exchanged. It found that the
+tail certificate for $j_1=\frac32$ had entered its decimal constants as binary64 numbers
+before enclosing them; re-run with the constants as exact rationals, it passes in all eight
+regimes. And it proposed the exact slope $8\nu_0=4\sqrt{10-6\sqrt2}$ for the linear law on
+three bounded legs, which \cref{thm:C6} now states and \cref{thm:slope} shows cannot be
+improved.

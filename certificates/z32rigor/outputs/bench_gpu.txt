@@ -1,0 +1,6 @@
+GPU/CPU assessment (bounded real workload: interval box, regime R1, NMAX = 300, 88,506 parameter sets; RTX 4090 shared,
+100% utilisation and 12.4 GB used by another process at the time):
+  torch CPU (interval, this code)     545.5 s
+  torch CUDA (interval, this code)     15.6 s     same certified minimum 10.873596325921113
+  reference float box on CUDA           8.0 s     (original code, for the interval overhead)
+Choice: CUDA for the full box (about 35x faster than CPU even on a shared GPU); interval overhead about 2x.

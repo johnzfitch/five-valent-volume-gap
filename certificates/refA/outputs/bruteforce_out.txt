@@ -1,0 +1,4 @@
+(B1) brute force vs closed form, all valid doubled tuples <= 4: 512 tuples with Inv != 0; max | |spec T| - |spec W| | = 2.49e-14
+(B2) on Inv: max |T + E|, |T + i[A,B]| entries = 2.66e-15  (7s)
+(B3) 300 random tuples <= 16, all 24 permutations of legs 2-5: max | |spec| difference | = 1.82e-12
+(B4) 6j sign {s c b; 1 b-1 c} = (-1)^(s+b+c): 3522 nonzero cases with 2s,2b,2c <= 24, 0 exceptions

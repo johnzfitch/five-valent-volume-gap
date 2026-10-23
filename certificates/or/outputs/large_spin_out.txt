@@ -1,0 +1,37 @@
+Family A_s = (2s; a, a+1, a+1, a+1)   [columns: 2jmax, q, dim, method, q/2jmax^(1/2), bG (if dim<=1500)]
+  (3, 8, 9, 9, 9): 2jmax=9 q=15.9376 dim=33 dense q/sqrt(2jmax)=5.3125 bG=14.7123
+  (3, 16, 17, 17, 17): 2jmax=17 q=23.8531 dim=65 dense q/sqrt(2jmax)=5.7852 bG=21.9839
+  (3, 32, 33, 33, 33): 2jmax=33 q=37.6331 dim=129 dense q/sqrt(2jmax)=6.5511 bG=34.6546
+  (3, 64, 65, 65, 65): 2jmax=65 q=61.7127 dim=257 dense q/sqrt(2jmax)=7.6545 bG=56.8138
+  (3, 128, 129, 129, 129): 2jmax=129 q=104.1186 dim=513 dense q/sqrt(2jmax)=9.1671 bG=95.8660
+  (3, 256, 257, 257, 257): 2jmax=257 q=179.4794 dim=1025 dense q/sqrt(2jmax)=11.1956 bG=165.3118
+  (3, 512, 513, 513, 513): 2jmax=513 q=314.6196 dim=2049 dense q/sqrt(2jmax)=13.8908 bG=nan
+  (3, 2000, 2001, 2001, 2001): 2jmax=2001 q=984.2171 dim=8001 sparse(k=24,ker>=1) q/sqrt(2jmax)=22.0023 bG=nan
+  (5, 8, 9, 9, 9): 2jmax=9 q=21.3250 dim=45 dense q/sqrt(2jmax)=7.1083 bG=17.8155
+  (5, 16, 17, 17, 17): 2jmax=17 q=30.8927 dim=93 dense q/sqrt(2jmax)=7.4926 bG=25.6265
+  (5, 32, 33, 33, 33): 2jmax=33 q=47.3788 dim=189 dense q/sqrt(2jmax)=8.2476 bG=39.1411
+  (5, 64, 65, 65, 65): 2jmax=65 q=75.7958 dim=381 dense q/sqrt(2jmax)=9.4013 bG=62.4991
+  (5, 128, 129, 129, 129): 2jmax=129 q=125.1509 dim=765 dense q/sqrt(2jmax)=11.0189 bG=103.1453
+  (5, 256, 257, 257, 257): 2jmax=257 q=211.7401 dim=1533 dense q/sqrt(2jmax)=13.2080 bG=nan
+  (5, 512, 513, 513, 513): 2jmax=513 q=365.2330 dim=3069 sparse(k=24,ker>=1) q/sqrt(2jmax)=16.1254 bG=nan
+  (5, 2000, 2001, 2001, 2001): 2jmax=2001 q=1113.8044 dim=11997 sparse(k=24,ker>=1) q/sqrt(2jmax)=24.8992 bG=nan
+  (7, 8, 9, 9, 9): 2jmax=9 q=27.2848 dim=54 dense q/sqrt(2jmax)=9.0949 bG=21.0821
+  (7, 16, 17, 17, 17): 2jmax=17 q=38.2291 dim=118 dense q/sqrt(2jmax)=9.2719 bG=29.0806
+  (7, 32, 33, 33, 33): 2jmax=33 q=57.1140 dim=246 dense q/sqrt(2jmax)=9.9423 bG=43.0278
+  (7, 64, 65, 65, 65): 2jmax=65 q=89.4314 dim=502 dense q/sqrt(2jmax)=11.0926 bG=67.0378
+  (7, 128, 129, 129, 129): 2jmax=129 q=145.0020 dim=1014 dense q/sqrt(2jmax)=12.7667 bG=108.4740
+  (7, 256, 257, 257, 257): 2jmax=257 q=241.5181 dim=2038 dense q/sqrt(2jmax)=15.0655 bG=nan
+  (7, 512, 513, 513, 513): 2jmax=513 q=411.0273 dim=4086 sparse(k=24,ker>=2) q/sqrt(2jmax)=18.1473 bG=nan
+  (7, 2000, 2001, 2001, 2001): 2jmax=2001 q=1227.1648 dim=15990 sparse(k=24,ker>=2) q/sqrt(2jmax)=27.4334 bG=nan
+Family B = (2s; 2j, 2j, 2j, 2j+1) with 2s = odd nearest 0.8*2j  (fat strips)
+  (7, 8, 8, 8, 9): q=39.0215 dim=50 dense q/2s=5.5745
+  (13, 16, 16, 16, 17): q=89.8169 dim=168 dense q/2s=6.9090
+  (27, 32, 32, 32, 33): q=253.4927 dim=637 dense q/2s=9.3886
+  (39, 48, 48, 48, 49): q=454.0872 dim=1370 dense q/2s=11.6433
+  (51, 64, 64, 64, 65): q=701.1057 dim=2379 dense q/2s=13.7472
+  (77, 96, 96, 96, 97): q=1374.5293 dim=5304 sparse(k=24,ker>=20) q/2s=17.8510
+  (103, 128, 128, 128, 129): q=2239.4806 dim=9386 sparse(k=72,ker>=26) q/2s=21.7425
+  (161, 200, 200, 200, 201): q=4822.4269 dim=22761 sparse(k=72,ker>=41) q/2s=29.9530
+Random open tuples, 2j_i <= 200 (seed 20261021): 
+  400 random open tuples evaluated; smallest q = 539.1470 at (3, 6, 31, 37, 59) (dim 28)
+total time 299.7s

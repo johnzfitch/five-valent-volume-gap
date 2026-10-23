@@ -1,0 +1,11 @@
+mode=half M=2j_max=20: tuples with dim>=1: 4004, dim>=2: 3800, dim=1: 204; 16.3s on 8 CPU processes
+dim=1: max |q_T| entry 0.00e+00 (Q_RS = 0)
+min lambda(Q_RS) over dim>=2 = 15.932511 at (1, 1, 1, 1, 2); max kernel dim of Q_RS = 0
+tuples with nontrivial ker Q_RS: 0
+min positive eigenvalue of Q_RS = 15.932511 at (1, 1, 1, 1, 2)
+min lambda(sum_T sqrt|q_T|) = 7.842652 at (1, 2, 2, 2, 3)  (3*3^(1/4) = 3.948222)
+min |eig| of unsigned sum_T q_T = 0.000e+00 at (1, 2, 8, 11, 20)
+min lambda(sum_(T contains leg 1)|q_T|) = 7.129392 at (1, 1, 1, 1, 2)  (3 sqrt3 = 5.196152)
+min nonzero |eig| of q_T, T contains leg 1 = 1.732050807569 (sqrt3 = 1.732050807569); count within 1e-9 of sqrt3: 19
+max kernel dim of a leg-1 triple = 2; max ||Pi_JK Pi_LM|| = 8.68e-14
+per 2j_max: min lambda(Q_RS) [argmin]: 2: 15.933 (1, 1, 1, 1, 2); 3: 16.553 (1, 2, 2, 2, 3); 4: 21.900 (1, 2, 2, 3, 4); 5: 26.699 (1, 2, 2, 4, 5); 6: 31.360 (1, 2, 2, 5, 6); 7: 35.967 (1, 2, 2, 6, 7); 8: 40.546 (1, 2, 2, 7, 8); 9: 45.110 (1, 2, 2, 8, 9); 10: 49.665 (1, 2, 2, 9, 10); 11: 54.214 (1, 2, 2, 10, 11); 12: 58.758 (1, 2, 2, 11, 12); 13: 63.299 (1, 2, 2, 12, 13); 14: 67.838 (1, 2, 2, 13, 14); 15: 72.375 (1, 2, 2, 14, 15); 16: 76.911 (1, 2, 2, 15, 16); 17: 81.445 (1, 2, 2, 16, 17); 18: 85.979 (1, 2, 2, 17, 18); 19: 90.511 (1, 2, 2, 18, 19); 20: 95.043 (1, 2, 2, 19, 20)

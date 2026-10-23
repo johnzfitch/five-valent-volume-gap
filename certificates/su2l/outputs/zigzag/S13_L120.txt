@@ -1,0 +1,4 @@
+NO ADMISSIBLE READING 13 (74, 79, 81, 83) open q=406.808
+NO ADMISSIBLE READING 13 (95, 98, 99, 103) open q=434.144
+NO ADMISSIBLE READING 13 (18, 22, 24, 25) open q=173.506
+2s=13 tuples=1000 no-admissible=3 min ratio bound/q=0.3346 median=1.0000 worst=(np.float64(0.3345906914973304), (46, 47, 47, 59), 'open', np.float64(282.95247181507466), np.float64(94.67326320548472), ((46, 59), (47, 47), 'even-down'))  time 223.9s

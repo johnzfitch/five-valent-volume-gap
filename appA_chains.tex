@@ -1,0 +1,95 @@
+\section{Chains at \texorpdfstring{$j_1=\frac12$}{j1 = 1/2}}\label{app:chains}
+
+This appendix proves \cref{lem:innerouter} and \cref{thm:B2}. Throughout, the weight
+ratio is $t=1$, and we use doubled units, in which the links below are those of $8T$: for the pair $X=(j_2,j_3)$ put $m_X=2|j_2-j_3|$ and $n_X=2(j_2+j_3+1)$,
+likewise $m_D,n_D$ for $(j_4,j_5)$, and $m=\max(m_X,m_D)$, $n=\min(n_X,n_D)$. A type
+\emph{owns} $m$ (or $n$) if its $m_P$ (or $n_P$) attains it. By \cref{prop:grid} with
+$s=\frac12$ and $\alpha=\beta=2$, a link of type $P$ at doubled label $l$ has squared
+weight
+\[
+  c^2=\tfrac14\,(n_P^2-l^2)(l^2-m_P^2).
+\]
+
+\begin{lemma}[Shape of the chain]\label{lem:shape}
+If $\dim\Inv\ge2$, the links carry the labels $l=m+1,\dots,n-1$ in order, so the chain
+has $N=n-m$ sites; their types alternate; $m_X\not\equiv m_D$ and $n_X\not\equiv n_D$
+modulo $2$; the first link has the type that does not own $m$, and the last link the
+type that does not own $n$.
+\end{lemma}
+
+\begin{proof}
+Since $j_1=\frac12$ and the total spin is an integer, $j_2+j_3$ and $j_4+j_5$ differ by
+a half-odd integer, which gives both parity statements. If $X$ owns $m$, so that
+$B_0=|j_2-j_3|>|j_4-j_5|$, the lowest site is $(b,c)=(B_0,B_0-\frac12)$, and the link
+leaving it changes $c$; it is of type $D$, at doubled label $m+1$. Each link raises the
+doubled label by one and the sites form one interval of $u$ (\cref{prop:chain}). The top
+end is symmetric.
+\end{proof}
+
+\begin{proof}[Proof of \cref{lem:innerouter}]
+There are $N-1$ links of alternating type. If $N$ is even, the first and last links are
+both odd-numbered, so they have one type $O$, which by \cref{lem:shape} owns neither $m$
+nor $n$; the parities then give $m_O\le m-1$ and $n_O\ge n+1$. For an even link (type
+$E$) at $L=m+2\tau$ followed by an odd link at $L+1$,
+\[
+  \frac{c_{2\tau}^2}{c_{2\tau+1}^2}=\frac{(n^2-L^2)(L^2-m^2)}{(n_O^2-(L+1)^2)((L+1)^2-m_O^2)}
+  \le\frac{(n-L)(n+L)}{(n-L)(n+L+2)}\cdot\frac{(L-m)(L+m)}{(L-m+2)(L+m)}\le\frac{\tau}{\tau+1}.
+\]
+If $N$ is odd, the first and last link types differ, which forces the stated ownership.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:B2}, $N$ even]
+Write $K=N/2$. By \cref{blem:evenchain} and the ratio bound, the products telescope:
+$E_{ij}^2\le c_{2j-1}^{-2}\prod_{k=j}^{i-1}\frac k{k+1}=\frac ji\,c_{2j-1}^{-2}$. The odd
+link at $l=m+2j-1\le n-1$ has type $O$ with $n_O\ge n+1$ and $m_O\le m-1$, so
+\[
+  c_{2j-1}^2\ge\tfrac14\bigl((n+1)^2-l^2\bigr)\bigl(l^2-(m-1)^2\bigr)\ge\tfrac14\cdot4n\cdot4j(m+j-1)\ge4nj^2,
+\]
+using $(n+1)^2-l^2\ge4n$ for $l\le n-1$, $l^2-(m-1)^2=2j(2m+2j-2)$, and $m\ge1$, which
+holds because $m\ge m_O+1$. Therefore
+\[
+  \qm^{-2}\le\|E\|_F^2\le\sum_{1\le j\le i\le K}\frac1{4n\,ij}=\frac{H_K^2+H_K^{(2)}}{8n},
+\]
+with $K\le(n-1)/2$ and $n\ge3$. The right side of $\qm\ge\sqrt{8n/(H_K^2+H_K^{(2)})}$ has
+minimum $3.3806$ (at $n=5$) over $3\le n\le2\times10^4$ in interval arithmetic
+(\texttt{code/b2\_constants.py}); for larger $n$, $H_K\le1+\ln n$ and $H_K^{(2)}\le\pi^2/6$
+give an increasing lower bound that is already $36.4$ at $n=2\times10^4$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:B2}, $N$ odd]
+Write $K=(N-1)/2$; the bipartite block $B$ is $(K+1)\times K$. The odd links have the type
+$Q$ owning $n$ and the even links the type $P$ owning $m$, with $m_Q\le m-1$ and
+$n_P\ge n+1$, so $m\ge1$ again. Put $\rho_k=c_{2k}^2/c_{2k+1}^2$, the squared $P$-link at $L=m+2k$ over the squared $Q$-link at
+$L+1$, $k=1,\dots,K-1$. It is strictly increasing in $k$, because both
+$(n_P^2-L^2)/(n^2-(L+1)^2)$ and $(L^2-m^2)/((L+1)^2-m_Q^2)$ increase in $L$; the derivative
+of the second has numerator $2[L(L+1)+L(m^2-m_Q^2)+m^2]>0$. Let $r-1$ be the number of
+$k$ with $\rho_k\le1$.
+
+Delete the odd site $2r+1$. The remaining matrix is $B'=B_L\oplus B_R$, the blocks of the
+even chains on sites $1,\dots,2r$ and $2r+2,\dots,N$, and $B^TB=B'^TB'+vv^T$, so
+$\smin(B)\ge\min(\smin(B_L),\smin(B_R))$ and $B$ has full column rank.
+
+On the left chain every ratio is at most $1$, so each entry of $E_L$ is at most
+$c_{2j-1}^{-1}$ and the column of $j$ has $r-j+1$ entries:
+$\|E_L\|_F^2\le\sum_{j\le r}(r-j+1)/c_{2j-1}^2$. The odd link at $l=m+2j-1$ has type $Q$, and
+$n-l=2(K-j+1)\ge2(r-j+1)$, $l-m+1=2j$, $l+m-1\ge2j$ (by $m\ge1$), so
+$c^2\ge2(r-j+1)(n+l)j^2$ and
+\[
+  \|E_L\|_F^2\le\sum_j\frac1{2(n+l)j^2}\le\frac{\pi^2}{12(n+m+1)}\le\frac{\pi^2}{72},
+\]
+since $n\ge m+3\ge4$. Read the right chain from its right end. Its odd links are then
+the $P$-links at $l=m+2k$, $k=K,\dots,r+1$, its ratios are $1/\rho_k<1$, and the column of
+the link at $k$ has $k-r$ entries, each at most $1/c$. With $n+1-l\ge2(K-k+1)$,
+$c^2\ge\frac14(n+1-l)(n+1+l)(l-m)(l+m)\ge2(K-k+1)(n+m+3)\,k\,(m+1)$, and $(k-r)/k\le1$,
+\[
+  \|E_R\|_F^2\le\sum_k\frac{1}{2(K-k+1)(n+m+3)(m+1)}\le\frac{H_K}{2(n+m+3)(m+1)}\le\frac{H_K}{4(n+4)},
+\]
+the last step by $m\ge1$. So $\qm\ge\min(6\sqrt2/\pi,\sqrt{4(n+4)/H_K})$, and the second
+term has minimum $4.899$ over $3\le n\le2\times10^4$ (interval arithmetic) and is
+increasing beyond.
+\end{proof}
+
+The link inequalities of these two proofs were also checked in exact rational arithmetic
+on all $52\,780$ chains with spins at most $13$ and $341$ random chains with spins up to
+$300$; against $\qm$ computed in floating point, the smallest ratio of $\qm$ to the bound
+is $1.35$.

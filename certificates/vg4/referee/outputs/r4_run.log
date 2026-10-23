@@ -1,0 +1,11 @@
+R4 structured families (350 chains): min f = 1.000000 at n=2, r=1.0, geom_up; max g (even n) = 0.781483 at n=200, r=1.0, geom_up
+   constant chain n=2: lambda*S = 1.000000, f = 1.000000
+   constant chain n=4: lambda*S = 1.854102, f = 1.854102
+   constant chain n=10: lambda*S = 2.561667, f = 2.561667
+   constant chain n=50: lambda*S = 3.017916, f = 3.017916
+   constant chain n=200: lambda*S = 3.110301, f = 3.110301
+R4 optimisation, 1500 starts, 3<=n<=30: min f found = 1.854101966 (n=4); max g found = 0.739375 (n=16)  (40s)
+   best-f chain (rounded): [1.0, 1.0, 1.0]
+   mpmath 50-digit re-evaluation: f = 1.85410196624969, g = 0.739374833559402
+R4 random log-concave chains, dynamic range up to e^60: 19967 chains, min f = 1.000000 (n=2); mpmath: 1.0
+R4 non-log-concave dimerised (1,1e3,1,...,1), n=10: f = 5.004e-9  (hypothesis violated; f<1 shows log-concavity is needed)

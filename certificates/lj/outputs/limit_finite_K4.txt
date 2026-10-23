@@ -1,0 +1,3 @@
+K=4: sigma_K = 0.61536891, C_K = 453
+finite part: 2101 tuples inside the 2j_max<=38 certificate; 185 certified directly here; failures 0
+Linear law on the class: q >= 4.922951 j1 - 453 for all tuples with three of legs 2-5 at 2j <= 4

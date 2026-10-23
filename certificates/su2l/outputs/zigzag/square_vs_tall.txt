@@ -1,0 +1,4 @@
+2s=5: 400 tuples; best reading square in 175 (ratio exactly 1 in 175); tall in 225, worst ratio among tall 0.7821
+2s=6: 400 tuples; best reading square in 179 (ratio exactly 1 in 0); tall in 221, worst ratio among tall 0.7355
+2s=9: 400 tuples; best reading square in 131 (ratio exactly 1 in 131); tall in 269, worst ratio among tall 0.5806
+2s=15: 300 tuples; best reading square in 101 (ratio exactly 1 in 101); tall in 199, worst ratio among tall 0.5960

@@ -1,0 +1,2 @@
+Form A (legs fixed, no leg 1/2, legs<=6, 2j1>=5 at both ends): pairs 10252 violations 912 worst (np.float64(0.47473686827242306), (8, 10, (2, 11, 11, 12), np.float64(148.70190172972), np.float64(70.59427513332088)))
+Form B (fixed j2,j3,j4,M; no leg 1/2, legs<=4 (j5 any), 5<=2j1<=24): pairs 19498 violations 490 worst (np.float64(0.43222218624205694), ((10, 2, 8, 8, 2), (11, 2, 8, 8, 3), np.float64(146.45790362776086), np.float64(63.30235529841928)))

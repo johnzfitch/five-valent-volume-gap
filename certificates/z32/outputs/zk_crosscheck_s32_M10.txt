@@ -1,0 +1,1 @@
+zk_core vs oc_fast, 2j1=3, all ordered pairings 2j<=10: 2004 cases; max rel. singular-value diff 9.62e-16; max rel. deviation of N^T N - kappa D^T D from diag(Lambda) 2.84e-14

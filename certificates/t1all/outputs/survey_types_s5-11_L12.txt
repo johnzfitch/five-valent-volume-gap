@@ -1,0 +1,25 @@
+2j1=  5 W2         n=    59 qmin=  20.0959 at (3, 3, 3, 4)  bestlamW0min=1.1040 at (4, 4, 4, 7)
+2j1=  5 closed-odd n=   119 qmin=  12.8129 at (2, 3, 3, 3)  bestlamW0min=1000000000.0000 at None
+2j1=  5 ladder     n=   167 qmin=  13.2665 at (1, 2, 2, 4)  bestlamW0min=1000000000.0000 at None
+2j1=  5 open       n=   310 qmin=  14.3622 at (3, 4, 4, 4)  bestlamW0min=0.7718 at (11, 12, 12, 12)
+2j1=  6 W2         n=   195 qmin=  25.2532 at (2, 4, 4, 4)  bestlamW0min=1.0357 at (8, 12, 12, 12)
+2j1=  6 closed-odd n=   315 qmin=  16.7750 at (2, 3, 3, 4)  bestlamW0min=1000000000.0000 at None
+2j1=  6 ladder     n=   171 qmin=  15.8792 at (1, 2, 2, 5)  bestlamW0min=1000000000.0000 at None
+2j1=  7 W2         n=    81 qmin=  29.0450 at (4, 4, 4, 5)  bestlamW0min=1.0734 at (6, 6, 6, 11)
+2j1=  7 closed-odd n=   175 qmin=  19.4736 at (3, 4, 4, 4)  bestlamW0min=1000000000.0000 at None
+2j1=  7 ladder     n=   173 qmin=  18.4397 at (1, 2, 2, 6)  bestlamW0min=1000000000.0000 at None
+2j1=  7 open       n=   234 qmin=  21.1192 at (4, 5, 5, 5)  bestlamW0min=0.7674 at (11, 12, 12, 12)
+2j1=  8 W2         n=   195 qmin=  29.3776 at (2, 4, 4, 4)  bestlamW0min=1.0341 at (6, 12, 12, 12)
+2j1=  8 closed-odd n=   315 qmin=  23.2855 at (2, 3, 3, 6)  bestlamW0min=1000000000.0000 at None
+2j1=  8 ladder     n=   173 qmin=  20.9713 at (1, 2, 2, 7)  bestlamW0min=1000000000.0000 at None
+2j1=  9 W2         n=    99 qmin=  35.3921 at (2, 4, 4, 5)  bestlamW0min=1.0723 at (2, 8, 8, 9)
+2j1=  9 closed-odd n=   227 qmin=  26.3498 at (2, 3, 3, 7)  bestlamW0min=1000000000.0000 at None
+2j1=  9 ladder     n=   172 qmin=  23.4853 at (1, 2, 2, 8)  bestlamW0min=1000000000.0000 at None
+2j1=  9 open       n=   163 qmin=  29.1477 at (5, 6, 6, 6)  bestlamW0min=0.7704 at (11, 12, 12, 12)
+2j1= 10 W2         n=   194 qmin=  39.3047 at (3, 5, 5, 5)  bestlamW0min=1.0332 at (4, 12, 12, 12)
+2j1= 10 closed-odd n=   314 qmin=  29.3632 at (2, 3, 3, 8)  bestlamW0min=1000000000.0000 at None
+2j1= 10 ladder     n=   168 qmin=  25.9876 at (1, 2, 2, 9)  bestlamW0min=1000000000.0000 at None
+2j1= 11 W2         n=   113 qmin=  46.0613 at (3, 5, 5, 6)  bestlamW0min=1.0589 at (2, 10, 10, 11)
+2j1= 11 closed-odd n=   269 qmin=  32.3452 at (2, 3, 3, 9)  bestlamW0min=1000000000.0000 at None
+2j1= 11 ladder     n=   165 qmin=  28.4818 at (1, 2, 2, 10)  bestlamW0min=1000000000.0000 at None
+2j1= 11 open       n=   104 qmin=  38.4184 at (6, 7, 7, 7)  bestlamW0min=0.7790 at (11, 12, 12, 12)

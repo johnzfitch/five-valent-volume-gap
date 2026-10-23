@@ -1,0 +1,10 @@
+N=5: certified=True with 26 m-intervals
+N=7: certified=True with 25 m-intervals
+N=9: certified=True with 24 m-intervals
+N=11: certified=True with 24 m-intervals
+N=13: certified=True with 23 m-intervals
+N=15: certified=True with 22 m-intervals
+N=17: certified=True with 22 m-intervals
+N=19: certified=True with 21 m-intervals
+N=21: certified=True with 21 m-intervals
+all odd N in [5,21] certified: True; wall 0s

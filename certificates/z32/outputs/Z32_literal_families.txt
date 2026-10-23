@@ -1,0 +1,14 @@
+thin (3/2; a/2,(a+1)/2,(a+1)/2,(a+1)/2)
+  2j=   4: plan 8*bound=   6.359  8*sigma(B')=   8.235  8*min sigma(D_k)=  14.223  coupling used=1.4639  min coupling over configs=1.1831  (3, 3, 4, 4, 4) low [-1, 0]
+  2j=   8: plan 8*bound=   8.715  8*sigma(B')=  13.660  8*min sigma(D_k)=  15.394  coupling used=1.2022  min coupling over configs=1.2022  (3, 7, 8, 8, 8) high [-1, 0]
+  2j=  16: plan 8*bound=  13.286  8*sigma(B')=  21.473  8*min sigma(D_k)=  23.735  coupling used=1.2202  min coupling over configs=1.2202  (3, 15, 16, 16, 16) high [-1, 0]
+  2j=  32: plan 8*bound=  21.303  8*sigma(B')=  35.108  8*min sigma(D_k)=  38.620  coupling used=1.2384  min coupling over configs=1.2384  (3, 31, 32, 32, 32) high [-1, 0]
+  2j=  64: plan 8*bound=  35.376  8*sigma(B')=  58.973  8*min sigma(D_k)=  65.137  coupling used=1.2575  min coupling over configs=1.2575  (3, 63, 64, 64, 64) high [-1, 0]
+  2j= 128: plan 8*bound=  60.254  8*sigma(B')= 101.050  8*min sigma(D_k)= 112.657  coupling used=1.2771  min coupling over configs=1.2771  (3, 127, 128, 128, 128) high [-1, 0]
+equal (3/2; a/2,a/2,a/2,(a+1)/2)
+  2j=   4: plan 8*bound=   6.432  8*sigma(B')=   9.456  8*min sigma(D_k)=  10.699  coupling used=1.2897  min coupling over configs=1.2409  (3, 3, 4, 3, 3) low [-1, 0]
+  2j=   8: plan 8*bound=   8.826  8*sigma(B')=  12.723  8*min sigma(D_k)=  15.914  coupling used=1.4126  min coupling over configs=1.4126  (3, 7, 7, 7, 8) low [0, 1]
+  2j=  16: plan 8*bound=  12.975  8*sigma(B')=  18.469  8*min sigma(D_k)=  25.101  coupling used=1.5236  min coupling over configs=1.5236  (3, 15, 15, 15, 16) low [0, 1]
+  2j=  32: plan 8*bound=  20.115  8*sigma(B')=  28.427  8*min sigma(D_k)=  41.361  coupling used=1.6219  min coupling over configs=1.6219  (3, 31, 32, 31, 31) low [-1, 0]
+  2j=  64: plan 8*bound=  32.464  8*sigma(B')=  45.741  8*min sigma(D_k)=  70.366  coupling used=1.7083  min coupling over configs=1.7083  (3, 63, 63, 63, 64) low [0, 1]
+  2j= 128: plan 8*bound=  54.024  8*sigma(B')=  76.126  8*min sigma(D_k)= 122.566  coupling used=1.7847  min coupling over configs=1.7847  (3, 127, 128, 127, 127) low [-1, 0]

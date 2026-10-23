@@ -1,0 +1,647 @@
+t=(1, 1, 1) M2=-3: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 1) M2= -1 assign=(1, 1, 1) sigma_inf>=0.86602454  s0=   4.5  E(s0)=  2.6984
+t=(1, 1, 1) M2=  1 assign=(1, 1, 1) sigma_inf>=0.86602454  s0=   2.0  E(s0)=  0.7818
+t=(1, 1, 1) M2=3: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 2) M2=-4: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 2) M2= -2 assign=(1, 1, 2) sigma_inf>=1.11803287  s0=   5.0  E(s0)=  4.5671
+t=(1, 1, 2) M2=  0 assign=(1, 1, 2) sigma_inf>=1.49999850  s0=   3.0  E(s0)=  3.8490
+t=(1, 1, 2) M2=  2 assign=(1, 2, 1) sigma_inf>=1.11803287  s0=   2.5  E(s0)=  0.9478
+t=(1, 1, 2) M2=4: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 3) M2=-5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 3) M2= -3 assign=(1, 1, 3) sigma_inf>=1.32287433  s0=   5.5  E(s0)=  6.4493
+t=(1, 1, 3) M2= -1 assign=(1, 1, 3) sigma_inf>=1.93648974  s0=   4.0  E(s0)=  5.7529
+t=(1, 1, 3) M2=  1 assign=(1, 1, 3) sigma_inf>=1.93648974  s0=   3.0  E(s0)=  2.3879
+t=(1, 1, 3) M2=  3 assign=(1, 3, 1) sigma_inf>=1.32287433  s0=   3.0  E(s0)=  2.4173
+t=(1, 1, 3) M2=5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 4) M2=-6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 4) M2= -4 assign=(1, 1, 4) sigma_inf>=1.49999850  s0=   6.0  E(s0)=  8.3717
+t=(1, 1, 4) M2= -2 assign=(1, 1, 4) sigma_inf>=2.29128556  s0=   4.5  E(s0)=  8.4101
+t=(1, 1, 4) M2=  0 assign=(1, 1, 4) sigma_inf>=2.49999750  s0=   3.0  E(s0)=  6.2845
+t=(1, 1, 4) M2=  2 assign=(1, 1, 4) sigma_inf>=2.29128556  s0=   4.0  E(s0)=  1.7148
+t=(1, 1, 4) M2=  4 assign=(1, 4, 1) sigma_inf>=1.49999850  s0=   4.0  E(s0)=  4.7399
+t=(1, 1, 4) M2=6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 5) M2=-7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 5) M2= -5 assign=(1, 1, 5) sigma_inf>=1.65831074  s0=   7.0  E(s0)=  9.8810
+t=(1, 1, 5) M2= -3 assign=(1, 1, 5) sigma_inf>=2.59807361  s0=   5.0  E(s0)= 11.1752
+t=(1, 1, 5) M2= -1 assign=(1, 1, 5) sigma_inf>=2.95803693  s0=   4.0  E(s0)=  8.3668
+t=(1, 1, 5) M2=  1 assign=(1, 1, 5) sigma_inf>=2.95803693  s0=   4.0  E(s0)=  4.5229
+t=(1, 1, 5) M2=  3 assign=(1, 1, 5) sigma_inf>=2.59807361  s0=   5.0  E(s0)=  3.8210
+t=(1, 1, 5) M2=  5 assign=(1, 5, 1) sigma_inf>=1.65831074  s0=   5.5  E(s0)=  7.3755
+t=(1, 1, 5) M2=7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 6) M2=-8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 1, 6) M2= -6 assign=(1, 1, 6) sigma_inf>=1.80277383  s0=   7.5  E(s0)= 11.8874
+t=(1, 1, 6) M2= -4 assign=(1, 1, 6) sigma_inf>=2.87227845  s0=   6.0  E(s0)= 13.3809
+t=(1, 1, 6) M2= -2 assign=(1, 1, 6) sigma_inf>=3.35409861  s0=   5.0  E(s0)= 10.8734
+t=(1, 1, 6) M2=  0 assign=(1, 1, 6) sigma_inf>=3.49999650  s0=   4.0  E(s0)=  8.1489
+t=(1, 1, 6) M2=  2 assign=(1, 1, 6) sigma_inf>=3.35409861  s0=   5.0  E(s0)=  3.3866
+t=(1, 1, 6) M2=  4 assign=(1, 1, 6) sigma_inf>=2.87227845  s0=   6.0  E(s0)=  5.9660
+t=(1, 1, 6) M2=  6 assign=(1, 6, 1) sigma_inf>=1.80277383  s0=   7.0  E(s0)= 10.3448
+t=(1, 1, 6) M2=8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 2) M2=-5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 2) M2= -3 assign=(1, 2, 2) sigma_inf>=1.41421215  s0=   6.5  E(s0)=  7.9576
+t=(1, 2, 2) M2= -1 assign=(2, 2, 1) sigma_inf>=0.61536891  s0=   8.0  E(s0)=  4.1717
+t=(1, 2, 2) M2=  1 assign=(2, 2, 1) sigma_inf>=0.61536891  s0=   4.5  E(s0)=  1.9549
+t=(1, 2, 2) M2=  3 assign=(2, 2, 1) sigma_inf>=1.41421215  s0=   3.0  E(s0)=  2.4230
+t=(1, 2, 2) M2=5: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 3) M2=-6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 3) M2= -4 assign=(1, 2, 3) sigma_inf>=1.65831074  s0=   7.0  E(s0)= 10.8520
+t=(1, 2, 3) M2= -2 assign=(2, 3, 1) sigma_inf>=0.81914422  s0=  10.0  E(s0)=  7.1944
+t=(1, 2, 3) M2=  0 assign=(2, 3, 1) sigma_inf>=0.86602454  s0=   6.0  E(s0)=  4.2082
+t=(1, 2, 3) M2=  2 assign=(1, 3, 2) sigma_inf>=0.81914422  s0=   4.0  E(s0)=  2.0529
+t=(1, 2, 3) M2=  4 assign=(1, 3, 2) sigma_inf>=1.65831074  s0=   4.0  E(s0)=  3.1793
+t=(1, 2, 3) M2=6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 4) M2=-7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 4) M2= -5 assign=(1, 2, 4) sigma_inf>=1.87082682  s0=   8.0  E(s0)= 13.0336
+t=(1, 2, 4) M2= -3 assign=(1, 2, 4) sigma_inf>=0.97034846  s0=  12.0  E(s0)= 10.7695
+t=(1, 2, 4) M2= -1 assign=(2, 4, 1) sigma_inf>=1.05750521  s0=   8.0  E(s0)=  7.4430
+t=(1, 2, 4) M2=  1 assign=(2, 4, 1) sigma_inf>=1.05750521  s0=   4.5  E(s0)=  4.1530
+t=(1, 2, 4) M2=  3 assign=(1, 4, 2) sigma_inf>=0.97034846  s0=   5.0  E(s0)=  4.1043
+t=(1, 2, 4) M2=  5 assign=(1, 4, 2) sigma_inf>=1.87082682  s0=   5.0  E(s0)=  7.0290
+t=(1, 2, 4) M2=7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 5) M2=-8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 5) M2= -6 assign=(1, 2, 5) sigma_inf>=2.06155075  s0=   8.5  E(s0)= 15.8849
+t=(1, 2, 5) M2= -4 assign=(1, 2, 5) sigma_inf>=1.09712601  s0=  13.5  E(s0)= 14.1375
+t=(1, 2, 5) M2= -2 assign=(2, 5, 1) sigma_inf>=1.21866798  s0=  10.5  E(s0)= 11.7415
+t=(1, 2, 5) M2=  0 assign=(2, 5, 1) sigma_inf>=1.41421215  s0=   6.0  E(s0)=  7.4557
+t=(1, 2, 5) M2=  2 assign=(1, 5, 2) sigma_inf>=1.21866798  s0=   5.0  E(s0)=  4.4504
+t=(1, 2, 5) M2=  4 assign=(2, 5, 1) sigma_inf>=1.09712601  s0=   6.5  E(s0)=  5.9998
+t=(1, 2, 5) M2=  6 assign=(2, 5, 1) sigma_inf>=2.06155075  s0=   6.5  E(s0)= 11.7864
+t=(1, 2, 5) M2=8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 6) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 2, 6) M2= -7 assign=(1, 2, 6) sigma_inf>=2.23606574  s0=   9.0  E(s0)= 18.7809
+t=(1, 2, 6) M2= -5 assign=(1, 2, 6) sigma_inf>=1.20898663  s0=  15.5  E(s0)= 17.5497
+t=(1, 2, 6) M2= -3 assign=(1, 2, 6) sigma_inf>=1.36056975  s0=  12.5  E(s0)= 16.2967
+t=(1, 2, 6) M2= -1 assign=(2, 6, 1) sigma_inf>=1.63142669  s0=   7.5  E(s0)= 11.6547
+t=(1, 2, 6) M2=  1 assign=(2, 6, 1) sigma_inf>=1.63142669  s0=   5.0  E(s0)=  7.2530
+t=(1, 2, 6) M2=  3 assign=(2, 6, 1) sigma_inf>=1.36056975  s0=   6.0  E(s0)=  6.9592
+t=(1, 2, 6) M2=  5 assign=(1, 2, 6) sigma_inf>=1.20898663  s0=   8.0  E(s0)=  8.8489
+t=(1, 2, 6) M2=  7 assign=(1, 2, 6) sigma_inf>=2.23606574  s0=   7.5  E(s0)=  6.6100
+t=(1, 2, 6) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 3) M2=-7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 3) M2= -5 assign=(1, 3, 3) sigma_inf>=1.93648974  s0=   9.0  E(s0)= 15.1151
+t=(1, 3, 3) M2= -3 assign=(3, 3, 1) sigma_inf>=1.11198188  s0=  11.0  E(s0)= 11.5990
+t=(1, 3, 3) M2= -1 assign=(3, 3, 1) sigma_inf>=1.20437969  s0=   7.5  E(s0)=  8.0288
+t=(1, 3, 3) M2=  1 assign=(3, 3, 1) sigma_inf>=1.20437969  s0=   4.5  E(s0)=  4.5447
+t=(1, 3, 3) M2=  3 assign=(3, 3, 1) sigma_inf>=1.11198188  s0=   4.5  E(s0)=  4.2891
+t=(1, 3, 3) M2=  5 assign=(3, 3, 1) sigma_inf>=1.93648974  s0=   5.0  E(s0)=  8.8267
+t=(1, 3, 3) M2=7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 4) M2=-8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 4) M2= -6 assign=(1, 3, 4) sigma_inf>=2.17944729  s0=   9.5  E(s0)= 18.9365
+t=(1, 3, 4) M2= -4 assign=(3, 4, 1) sigma_inf>=1.33057835  s0=  13.0  E(s0)= 16.2538
+t=(1, 3, 4) M2= -2 assign=(3, 4, 1) sigma_inf>=1.46029291  s0=   9.5  E(s0)= 13.1482
+t=(1, 3, 4) M2=  0 assign=(1, 3, 4) sigma_inf>=2.17944729  s0=   6.0  E(s0)= 11.3004
+t=(1, 3, 4) M2=  2 assign=(3, 4, 1) sigma_inf>=1.46029291  s0=   4.5  E(s0)=  5.5256
+t=(1, 3, 4) M2=  4 assign=(1, 3, 4) sigma_inf>=1.33057835  s0=   5.5  E(s0)=  6.6650
+t=(1, 3, 4) M2=  6 assign=(1, 4, 3) sigma_inf>=2.17944729  s0=   5.5  E(s0)= 10.2454
+t=(1, 3, 4) M2=8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 5) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 5) M2= -7 assign=(1, 3, 5) sigma_inf>=2.39791336  s0=  10.0  E(s0)= 22.7555
+t=(1, 3, 5) M2= -5 assign=(3, 5, 1) sigma_inf>=1.51363462  s0=  15.0  E(s0)= 21.4213
+t=(1, 3, 5) M2= -3 assign=(3, 5, 1) sigma_inf>=1.67500173  s0=  12.0  E(s0)= 18.9226
+t=(1, 3, 5) M2= -1 assign=(1, 3, 5) sigma_inf>=2.59609300  s0=   7.5  E(s0)= 17.2241
+t=(1, 3, 5) M2=  1 assign=(1, 3, 5) sigma_inf>=2.59609300  s0=   5.0  E(s0)= 11.4759
+t=(1, 3, 5) M2=  3 assign=(3, 5, 1) sigma_inf>=1.67500173  s0=   5.5  E(s0)=  8.0689
+t=(1, 3, 5) M2=  5 assign=(1, 3, 5) sigma_inf>=1.51363462  s0=   7.0  E(s0)=  9.2406
+t=(1, 3, 5) M2=  7 assign=(1, 3, 5) sigma_inf>=2.39791336  s0=   7.0  E(s0)=  8.6637
+t=(1, 3, 5) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 6) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 3, 6) M2= -8 assign=(1, 3, 6) sigma_inf>=2.59807361  s0=  10.5  E(s0)= 26.5926
+t=(1, 3, 6) M2= -6 assign=(1, 3, 6) sigma_inf>=1.67479982  s0=  16.5  E(s0)= 26.7635
+t=(1, 3, 6) M2= -4 assign=(3, 6, 1) sigma_inf>=1.86387772  s0=  14.5  E(s0)= 25.3770
+t=(1, 3, 6) M2= -2 assign=(1, 3, 6) sigma_inf>=2.95208408  s0=   9.0  E(s0)= 23.9834
+t=(1, 3, 6) M2=  0 assign=(1, 3, 6) sigma_inf>=3.27871598  s0=   6.0  E(s0)= 18.4970
+t=(1, 3, 6) M2=  2 assign=(1, 3, 6) sigma_inf>=2.95208408  s0=   5.0  E(s0)= 11.3286
+t=(1, 3, 6) M2=  4 assign=(3, 6, 1) sigma_inf>=1.86387772  s0=   7.0  E(s0)= 12.0204
+t=(1, 3, 6) M2=  6 assign=(1, 3, 6) sigma_inf>=1.67479982  s0=   8.0  E(s0)= 12.5180
+t=(1, 3, 6) M2=  8 assign=(1, 3, 6) sigma_inf>=2.59807361  s0=   8.0  E(s0)= 10.7595
+t=(1, 3, 6) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 4) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 4) M2= -7 assign=(1, 4, 4) sigma_inf>=2.44948729  s0=  11.0  E(s0)= 25.5578
+t=(1, 4, 4) M2= -5 assign=(4, 4, 1) sigma_inf>=1.60085632  s0=  14.5  E(s0)= 22.1228
+t=(1, 4, 4) M2= -3 assign=(4, 4, 1) sigma_inf>=1.76328807  s0=  12.0  E(s0)= 19.4527
+t=(1, 4, 4) M2= -1 assign=(4, 4, 1) sigma_inf>=0.92212310  s0=  15.0  E(s0)= 12.7593
+t=(1, 4, 4) M2=  1 assign=(4, 4, 1) sigma_inf>=0.92212310  s0=   9.0  E(s0)=  7.1826
+t=(1, 4, 4) M2=  3 assign=(4, 4, 1) sigma_inf>=1.76328807  s0=   5.5  E(s0)=  8.2373
+t=(1, 4, 4) M2=  5 assign=(1, 4, 4) sigma_inf>=1.60085632  s0=   7.5  E(s0)= 10.3450
+t=(1, 4, 4) M2=  7 assign=(1, 4, 4) sigma_inf>=2.44948729  s0=   6.5  E(s0)= 12.5074
+t=(1, 4, 4) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 5) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 5) M2= -8 assign=(1, 4, 5) sigma_inf>=2.69257971  s0=  12.0  E(s0)= 29.2736
+t=(1, 4, 5) M2= -6 assign=(4, 5, 1) sigma_inf>=1.82729364  s0=  16.0  E(s0)= 28.6392
+t=(1, 4, 5) M2= -4 assign=(4, 5, 1) sigma_inf>=2.01712274  s0=  14.0  E(s0)= 26.8117
+t=(1, 4, 5) M2= -2 assign=(4, 5, 1) sigma_inf>=1.16429575  s0=  17.5  E(s0)= 19.5790
+t=(1, 4, 5) M2=  0 assign=(4, 5, 1) sigma_inf>=1.19225936  s0=  11.5  E(s0)= 12.9403
+t=(1, 4, 5) M2=  2 assign=(1, 4, 5) sigma_inf>=1.16429575  s0=   7.0  E(s0)=  7.5460
+t=(1, 4, 5) M2=  4 assign=(4, 5, 1) sigma_inf>=2.01712274  s0=   7.0  E(s0)= 12.5173
+t=(1, 4, 5) M2=  6 assign=(1, 4, 5) sigma_inf>=1.82729364  s0=   8.5  E(s0)= 14.5267
+t=(1, 4, 5) M2=  8 assign=(1, 4, 5) sigma_inf>=2.69257971  s0=   7.5  E(s0)= 14.9337
+t=(1, 4, 5) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 6) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 4, 6) M2= -9 assign=(1, 4, 6) sigma_inf>=2.91547303  s0=  12.5  E(s0)= 34.0295
+t=(1, 4, 6) M2= -7 assign=(4, 6, 1) sigma_inf>=2.02653911  s0=  18.0  E(s0)= 35.1715
+t=(1, 4, 6) M2= -5 assign=(4, 6, 1) sigma_inf>=2.24035817  s0=  16.0  E(s0)= 34.9994
+t=(1, 4, 6) M2= -3 assign=(4, 6, 1) sigma_inf>=1.33711937  s0=  21.5  E(s0)= 27.4720
+t=(1, 4, 6) M2= -1 assign=(4, 6, 1) sigma_inf>=1.39106248  s0=  15.0  E(s0)= 20.0586
+t=(1, 4, 6) M2=  1 assign=(4, 6, 1) sigma_inf>=1.39106248  s0=   9.5  E(s0)= 11.8668
+t=(1, 4, 6) M2=  3 assign=(4, 6, 1) sigma_inf>=1.33711937  s0=   9.0  E(s0)= 11.1823
+t=(1, 4, 6) M2=  5 assign=(4, 6, 1) sigma_inf>=2.24035817  s0=   8.5  E(s0)= 18.0077
+t=(1, 4, 6) M2=  7 assign=(1, 4, 6) sigma_inf>=2.02653911  s0=  10.0  E(s0)= 18.6651
+t=(1, 4, 6) M2=  9 assign=(1, 4, 6) sigma_inf>=2.91547303  s0=   8.5  E(s0)= 17.5084
+t=(1, 4, 6) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 5, 5) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 5, 5) M2= -9 assign=(1, 5, 5) sigma_inf>=2.95803693  s0=  13.5  E(s0)= 37.3959
+t=(1, 5, 5) M2= -7 assign=(5, 5, 1) sigma_inf>=2.09024719  s0=  18.0  E(s0)= 35.4928
+t=(1, 5, 5) M2= -5 assign=(5, 5, 1) sigma_inf>=2.30350109  s0=  16.0  E(s0)= 35.5741
+t=(1, 5, 5) M2= -3 assign=(5, 5, 1) sigma_inf>=1.49782144  s0=  19.5  E(s0)= 28.5999
+t=(1, 5, 5) M2= -1 assign=(5, 5, 1) sigma_inf>=1.55521745  s0=  14.0  E(s0)= 21.0920
+t=(1, 5, 5) M2=  1 assign=(5, 5, 1) sigma_inf>=1.55521745  s0=   9.0  E(s0)= 12.6529
+t=(1, 5, 5) M2=  3 assign=(5, 5, 1) sigma_inf>=1.49782144  s0=   8.5  E(s0)= 11.8158
+t=(1, 5, 5) M2=  5 assign=(5, 5, 1) sigma_inf>=2.30350109  s0=   8.5  E(s0)= 18.3179
+t=(1, 5, 5) M2=  7 assign=(1, 5, 5) sigma_inf>=2.09024719  s0=  10.5  E(s0)= 21.1737
+t=(1, 5, 5) M2=  9 assign=(1, 5, 5) sigma_inf>=2.95803693  s0=   8.5  E(s0)= 22.2443
+t=(1, 5, 5) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 5, 6) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 5, 6) M2=-10 assign=(1, 5, 6) sigma_inf>=3.20155892  s0=  14.0  E(s0)= 43.1740
+t=(1, 5, 6) M2= -8 assign=(5, 6, 1) sigma_inf>=2.32159418  s0=  19.5  E(s0)= 43.4253
+t=(1, 5, 6) M2= -6 assign=(5, 6, 1) sigma_inf>=2.55533783  s0=  18.0  E(s0)= 45.1506
+t=(1, 5, 6) M2= -4 assign=(5, 6, 1) sigma_inf>=1.73692944  s0=  23.0  E(s0)= 38.4793
+t=(1, 5, 6) M2= -2 assign=(5, 6, 1) sigma_inf>=1.82044175  s0=  17.5  E(s0)= 30.7612
+t=(1, 5, 6) M2=  0 assign=(1, 5, 6) sigma_inf>=2.80862649  s0=  10.0  E(s0)= 26.4711
+t=(1, 5, 6) M2=  2 assign=(1, 5, 6) sigma_inf>=1.82044175  s0=   8.0  E(s0)= 13.2878
+t=(1, 5, 6) M2=  4 assign=(5, 6, 1) sigma_inf>=1.73692944  s0=  11.0  E(s0)= 18.0335
+t=(1, 5, 6) M2=  6 assign=(5, 6, 1) sigma_inf>=2.55533783  s0=  10.5  E(s0)= 25.5020
+t=(1, 5, 6) M2=  8 assign=(1, 5, 6) sigma_inf>=2.32159418  s0=  12.0  E(s0)= 26.5192
+t=(1, 5, 6) M2= 10 assign=(1, 5, 6) sigma_inf>=3.20155892  s0=   9.0  E(s0)= 26.5019
+t=(1, 5, 6) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 6, 6) M2=-13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(1, 6, 6) M2=-11 assign=(1, 6, 6) sigma_inf>=3.46409815  s0=  15.5  E(s0)= 53.0310
+t=(1, 6, 6) M2= -9 assign=(6, 6, 1) sigma_inf>=2.58118741  s0=  21.0  E(s0)= 52.2490
+t=(1, 6, 6) M2= -7 assign=(6, 6, 1) sigma_inf>=2.83232265  s0=  20.0  E(s0)= 56.0623
+t=(1, 6, 6) M2= -5 assign=(6, 6, 1) sigma_inf>=2.02490967  s0=  25.5  E(s0)= 50.4566
+t=(1, 6, 6) M2= -3 assign=(6, 6, 1) sigma_inf>=2.13320797  s0=  21.0  E(s0)= 43.1253
+t=(1, 6, 6) M2= -1 assign=(6, 6, 1) sigma_inf>=1.20254044  s0=  25.5  E(s0)= 29.7619
+t=(1, 6, 6) M2=  1 assign=(6, 6, 1) sigma_inf>=1.20254044  s0=  15.0  E(s0)= 17.1799
+t=(1, 6, 6) M2=  3 assign=(6, 6, 1) sigma_inf>=2.13320797  s0=   9.5  E(s0)= 19.3737
+t=(1, 6, 6) M2=  5 assign=(6, 6, 1) sigma_inf>=2.02490967  s0=  13.5  E(s0)= 26.1695
+t=(1, 6, 6) M2=  7 assign=(6, 6, 1) sigma_inf>=2.83232265  s0=  12.5  E(s0)= 34.3889
+t=(1, 6, 6) M2=  9 assign=(1, 6, 6) sigma_inf>=2.58118741  s0=  14.5  E(s0)= 36.1356
+t=(1, 6, 6) M2= 11 assign=(1, 6, 6) sigma_inf>=3.46409815  s0=  10.5  E(s0)= 34.5416
+t=(1, 6, 6) M2=13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 2) M2=-6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 2) M2= -4 assign=(2, 2, 2) sigma_inf>=1.73204908  s0=   8.0  E(s0)= 12.0056
+t=(2, 2, 2) M2= -2 assign=(2, 2, 2) sigma_inf>=1.07046520  s0=   9.5  E(s0)=  9.1407
+t=(2, 2, 2) M2=  0 assign=(2, 2, 2) sigma_inf>=0.99999900  s0=   6.0  E(s0)=  4.8927
+t=(2, 2, 2) M2=  2 assign=(2, 2, 2) sigma_inf>=1.07046520  s0=   3.5  E(s0)=  2.6772
+t=(2, 2, 2) M2=  4 assign=(2, 2, 2) sigma_inf>=1.73204908  s0=   4.0  E(s0)=  3.1817
+t=(2, 2, 2) M2=6: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 3) M2=-7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 3) M2= -5 assign=(2, 2, 3) sigma_inf>=1.99999800  s0=   8.5  E(s0)= 16.0026
+t=(2, 2, 3) M2= -3 assign=(2, 2, 3) sigma_inf>=1.32536033  s0=  11.0  E(s0)= 13.5775
+t=(2, 2, 3) M2= -1 assign=(2, 2, 3) sigma_inf>=1.28063580  s0=   8.5  E(s0)= 10.0928
+t=(2, 2, 3) M2=  1 assign=(2, 2, 3) sigma_inf>=1.28063580  s0=   5.0  E(s0)=  5.5402
+t=(2, 2, 3) M2=  3 assign=(2, 2, 3) sigma_inf>=1.32536033  s0=   4.5  E(s0)=  4.3833
+t=(2, 2, 3) M2=  5 assign=(2, 3, 2) sigma_inf>=1.99999800  s0=   4.5  E(s0)=  8.1929
+t=(2, 2, 3) M2=7: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 4) M2=-8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 4) M2= -6 assign=(2, 2, 4) sigma_inf>=2.23606574  s0=   9.5  E(s0)= 18.9629
+t=(2, 2, 4) M2= -4 assign=(2, 2, 4) sigma_inf>=1.52162312  s0=  12.5  E(s0)= 18.0450
+t=(2, 2, 4) M2= -2 assign=(2, 2, 4) sigma_inf>=1.51235221  s0=  10.5  E(s0)= 15.2243
+t=(2, 2, 4) M2=  0 assign=(2, 2, 4) sigma_inf>=2.23606574  s0=   6.0  E(s0)= 11.3928
+t=(2, 2, 4) M2=  2 assign=(2, 2, 4) sigma_inf>=1.51235221  s0=   4.5  E(s0)=  5.4669
+t=(2, 2, 4) M2=  4 assign=(2, 2, 4) sigma_inf>=1.52162312  s0=   5.5  E(s0)=  6.7474
+t=(2, 2, 4) M2=  6 assign=(2, 4, 2) sigma_inf>=2.23606574  s0=   6.0  E(s0)= 12.0664
+t=(2, 2, 4) M2=8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 5) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 5) M2= -7 assign=(2, 2, 5) sigma_inf>=2.44948729  s0=  10.0  E(s0)= 22.7775
+t=(2, 2, 5) M2= -5 assign=(2, 2, 5) sigma_inf>=1.68862815  s0=  14.0  E(s0)= 22.6562
+t=(2, 2, 5) M2= -3 assign=(2, 2, 5) sigma_inf>=1.71403328  s0=  12.5  E(s0)= 20.6747
+t=(2, 2, 5) M2= -1 assign=(2, 2, 5) sigma_inf>=2.63334200  s0=   7.5  E(s0)= 17.2842
+t=(2, 2, 5) M2=  1 assign=(2, 2, 5) sigma_inf>=2.63334200  s0=   5.0  E(s0)= 11.5678
+t=(2, 2, 5) M2=  3 assign=(2, 2, 5) sigma_inf>=1.71403328  s0=   6.0  E(s0)=  8.8557
+t=(2, 2, 5) M2=  5 assign=(2, 2, 5) sigma_inf>=1.68862815  s0=   6.5  E(s0)=  9.5919
+t=(2, 2, 5) M2=  7 assign=(2, 2, 5) sigma_inf>=2.44948729  s0=   7.0  E(s0)=  8.6640
+t=(2, 2, 5) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 6) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 2, 6) M2= -8 assign=(2, 2, 6) sigma_inf>=2.64574867  s0=  10.5  E(s0)= 26.6114
+t=(2, 2, 6) M2= -6 assign=(2, 2, 6) sigma_inf>=1.83734848  s0=  15.5  E(s0)= 27.4475
+t=(2, 2, 6) M2= -4 assign=(2, 2, 6) sigma_inf>=1.89489013  s0=  14.5  E(s0)= 26.5099
+t=(2, 2, 6) M2= -2 assign=(2, 2, 6) sigma_inf>=2.97842979  s0=   9.0  E(s0)= 24.0264
+t=(2, 2, 6) M2=  0 assign=(2, 2, 6) sigma_inf>=3.31662147  s0=   6.0  E(s0)= 18.5536
+t=(2, 2, 6) M2=  2 assign=(2, 2, 6) sigma_inf>=2.97842979  s0=   5.0  E(s0)= 11.4216
+t=(2, 2, 6) M2=  4 assign=(2, 2, 6) sigma_inf>=1.89489013  s0=   7.5  E(s0)= 12.9945
+t=(2, 2, 6) M2=  6 assign=(2, 2, 6) sigma_inf>=1.83734848  s0=   7.5  E(s0)= 12.8289
+t=(2, 2, 6) M2=  8 assign=(2, 2, 6) sigma_inf>=2.64574867  s0=   8.0  E(s0)= 10.7596
+t=(2, 2, 6) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 3) M2=-8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 3) M2= -6 assign=(2, 3, 3) sigma_inf>=2.29128556  s0=  10.0  E(s0)= 21.7942
+t=(2, 3, 3) M2= -4 assign=(3, 3, 2) sigma_inf>=1.63167451  s0=  13.0  E(s0)= 20.6384
+t=(2, 3, 3) M2= -2 assign=(3, 3, 2) sigma_inf>=0.72145061  s0=  19.0  E(s0)= 13.0869
+t=(2, 3, 3) M2=  0 assign=(3, 3, 2) sigma_inf>=0.70871144  s0=  12.5  E(s0)=  8.1784
+t=(2, 3, 3) M2=  2 assign=(2, 3, 3) sigma_inf>=0.72145061  s0=   7.0  E(s0)=  4.1945
+t=(2, 3, 3) M2=  4 assign=(2, 3, 3) sigma_inf>=1.63167451  s0=   5.5  E(s0)=  7.5500
+t=(2, 3, 3) M2=  6 assign=(2, 3, 3) sigma_inf>=2.29128556  s0=   5.5  E(s0)= 10.2599
+t=(2, 3, 3) M2=8: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 4) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 4) M2= -7 assign=(2, 3, 4) sigma_inf>=2.54950721  s0=  11.0  E(s0)= 25.6189
+t=(2, 3, 4) M2= -5 assign=(2, 3, 4) sigma_inf>=1.87082682  s0=  14.5  E(s0)= 25.9533
+t=(2, 3, 4) M2= -3 assign=(3, 4, 2) sigma_inf>=0.92222337  s0=  22.0  E(s0)= 19.5036
+t=(2, 3, 4) M2= -1 assign=(3, 4, 2) sigma_inf>=0.96104537  s0=  15.5  E(s0)= 13.8834
+t=(2, 3, 4) M2=  1 assign=(2, 3, 4) sigma_inf>=0.96104537  s0=   9.5  E(s0)=  8.3480
+t=(2, 3, 4) M2=  3 assign=(3, 4, 2) sigma_inf>=0.92222337  s0=   8.5  E(s0)=  7.0487
+t=(2, 3, 4) M2=  5 assign=(2, 3, 4) sigma_inf>=1.87082682  s0=   6.5  E(s0)= 11.3535
+t=(2, 3, 4) M2=  7 assign=(2, 3, 4) sigma_inf>=2.54950721  s0=   6.5  E(s0)= 12.5181
+t=(2, 3, 4) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 5) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 5) M2= -8 assign=(2, 3, 5) sigma_inf>=2.78387940  s0=  11.5  E(s0)= 30.4562
+t=(2, 3, 5) M2= -6 assign=(2, 3, 5) sigma_inf>=2.07501812  s0=  16.0  E(s0)= 31.8760
+t=(2, 3, 5) M2= -4 assign=(2, 3, 5) sigma_inf>=1.06708506  s0=  25.5  E(s0)= 26.6253
+t=(2, 3, 5) M2= -2 assign=(3, 5, 2) sigma_inf>=1.14886353  s0=  19.0  E(s0)= 21.1997
+t=(2, 3, 5) M2=  0 assign=(3, 5, 2) sigma_inf>=1.21979903  s0=  12.0  E(s0)= 13.9203
+t=(2, 3, 5) M2=  2 assign=(2, 3, 5) sigma_inf>=1.14886353  s0=   7.5  E(s0)=  7.6033
+t=(2, 3, 5) M2=  4 assign=(3, 5, 2) sigma_inf>=1.06708506  s0=  11.0  E(s0)= 10.4599
+t=(2, 3, 5) M2=  6 assign=(2, 3, 5) sigma_inf>=2.07501812  s0=   8.0  E(s0)= 15.0001
+t=(2, 3, 5) M2=  8 assign=(2, 3, 5) sigma_inf>=2.78387940  s0=   7.5  E(s0)= 14.9419
+t=(2, 3, 5) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 6) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 3, 6) M2= -9 assign=(2, 3, 6) sigma_inf>=2.99999700  s0=  12.0  E(s0)= 35.2787
+t=(2, 3, 6) M2= -7 assign=(2, 3, 6) sigma_inf>=2.25701327  s0=  17.5  E(s0)= 37.9380
+t=(2, 3, 6) M2= -5 assign=(2, 3, 6) sigma_inf>=1.18791012  s0=  29.0  E(s0)= 33.8141
+t=(2, 3, 6) M2= -3 assign=(3, 6, 2) sigma_inf>=1.30572697  s0=  23.5  E(s0)= 29.8244
+t=(2, 3, 6) M2= -1 assign=(3, 6, 2) sigma_inf>=1.40041064  s0=  16.0  E(s0)= 21.1489
+t=(2, 3, 6) M2=  1 assign=(2, 3, 6) sigma_inf>=1.40041064  s0=  10.0  E(s0)= 13.2877
+t=(2, 3, 6) M2=  3 assign=(3, 6, 2) sigma_inf>=1.30572697  s0=  10.0  E(s0)= 12.3982
+t=(2, 3, 6) M2=  5 assign=(3, 6, 2) sigma_inf>=1.18791012  s0=  14.0  E(s0)= 15.9549
+t=(2, 3, 6) M2=  7 assign=(2, 3, 6) sigma_inf>=2.25701327  s0=   9.0  E(s0)= 19.5106
+t=(2, 3, 6) M2=  9 assign=(2, 3, 6) sigma_inf>=2.99999700  s0=   8.5  E(s0)= 17.5149
+t=(2, 3, 6) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 4) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 4) M2= -8 assign=(2, 4, 4) sigma_inf>=2.82842430  s0=  12.5  E(s0)= 32.9343
+t=(2, 4, 4) M2= -6 assign=(4, 4, 2) sigma_inf>=2.14655210  s0=  17.0  E(s0)= 35.3336
+t=(2, 4, 4) M2= -4 assign=(4, 4, 2) sigma_inf>=1.21173813  s0=  23.5  E(s0)= 27.7719
+t=(2, 4, 4) M2= -2 assign=(4, 4, 2) sigma_inf>=1.31403781  s0=  17.5  E(s0)= 22.0927
+t=(2, 4, 4) M2=  0 assign=(4, 4, 2) sigma_inf>=1.37227995  s0=  11.5  E(s0)= 14.6364
+t=(2, 4, 4) M2=  2 assign=(2, 4, 4) sigma_inf>=1.31403781  s0=   7.5  E(s0)=  8.3261
+t=(2, 4, 4) M2=  4 assign=(2, 4, 4) sigma_inf>=1.21173813  s0=  10.0  E(s0)= 11.4591
+t=(2, 4, 4) M2=  6 assign=(2, 4, 4) sigma_inf>=2.14655210  s0=   8.5  E(s0)= 17.0679
+t=(2, 4, 4) M2=  8 assign=(2, 4, 4) sigma_inf>=2.82842430  s0=   7.5  E(s0)= 19.3118
+t=(2, 4, 4) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 5) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 5) M2= -9 assign=(2, 4, 5) sigma_inf>=3.08220392  s0=  13.0  E(s0)= 38.8509
+t=(2, 4, 5) M2= -7 assign=(2, 4, 5) sigma_inf>=2.38279199  s0=  18.0  E(s0)= 42.3076
+t=(2, 4, 5) M2= -5 assign=(4, 5, 2) sigma_inf>=1.42357366  s0=  26.5  E(s0)= 36.6523
+t=(2, 4, 5) M2= -3 assign=(4, 5, 2) sigma_inf>=1.57391873  s0=  21.0  E(s0)= 31.8086
+t=(2, 4, 5) M2= -1 assign=(2, 4, 5) sigma_inf>=1.64846986  s0=  15.5  E(s0)= 24.6519
+t=(2, 4, 5) M2=  1 assign=(2, 4, 5) sigma_inf>=1.64846986  s0=  10.0  E(s0)= 14.8582
+t=(2, 4, 5) M2=  3 assign=(2, 5, 4) sigma_inf>=1.57391873  s0=   9.5  E(s0)= 13.3073
+t=(2, 4, 5) M2=  5 assign=(2, 4, 5) sigma_inf>=1.42357366  s0=  12.5  E(s0)= 16.9450
+t=(2, 4, 5) M2=  7 assign=(2, 4, 5) sigma_inf>=2.38279199  s0=  10.0  E(s0)= 21.7742
+t=(2, 4, 5) M2=  9 assign=(2, 4, 5) sigma_inf>=3.08220392  s0=   8.0  E(s0)= 23.5828
+t=(2, 4, 5) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 6) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 4, 6) M2=-10 assign=(2, 4, 6) sigma_inf>=3.31662147  s0=  14.0  E(s0)= 43.2521
+t=(2, 4, 6) M2= -8 assign=(2, 4, 6) sigma_inf>=2.59358822  s0=  19.5  E(s0)= 49.6989
+t=(2, 4, 6) M2= -6 assign=(4, 6, 2) sigma_inf>=1.60040500  s0=  29.5  E(s0)= 46.4204
+t=(2, 4, 6) M2= -4 assign=(4, 6, 2) sigma_inf>=1.78872408  s0=  24.5  E(s0)= 42.8933
+t=(2, 4, 6) M2= -2 assign=(2, 4, 6) sigma_inf>=1.88049016  s0=  19.5  E(s0)= 35.3279
+t=(2, 4, 6) M2=  0 assign=(2, 4, 6) sigma_inf>=2.90916793  s0=  10.0  E(s0)= 27.3562
+t=(2, 4, 6) M2=  2 assign=(2, 4, 6) sigma_inf>=1.88049016  s0=   8.0  E(s0)= 14.3303
+t=(2, 4, 6) M2=  4 assign=(4, 6, 2) sigma_inf>=1.78872408  s0=  11.5  E(s0)= 18.9414
+t=(2, 4, 6) M2=  6 assign=(2, 4, 6) sigma_inf>=1.60040500  s0=  15.0  E(s0)= 23.3146
+t=(2, 4, 6) M2=  8 assign=(2, 4, 6) sigma_inf>=2.59358822  s0=  11.0  E(s0)= 27.6602
+t=(2, 4, 6) M2= 10 assign=(2, 4, 6) sigma_inf>=3.31662147  s0=   9.0  E(s0)= 26.5230
+t=(2, 4, 6) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 5, 5) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 5, 5) M2=-10 assign=(2, 5, 5) sigma_inf>=3.35409861  s0=  14.5  E(s0)= 47.9066
+t=(2, 5, 5) M2= -8 assign=(2, 5, 5) sigma_inf>=2.64731047  s0=  20.5  E(s0)= 53.0703
+t=(2, 5, 5) M2= -6 assign=(5, 5, 2) sigma_inf>=1.68691617  s0=  28.5  E(s0)= 47.3840
+t=(2, 5, 5) M2= -4 assign=(5, 5, 2) sigma_inf>=1.88560063  s0=  24.0  E(s0)= 43.7866
+t=(2, 5, 5) M2= -2 assign=(5, 5, 2) sigma_inf>=1.03578050  s0=  32.0  E(s0)= 32.1277
+t=(2, 5, 5) M2=  0 assign=(5, 5, 2) sigma_inf>=1.02079627  s0=  22.0  E(s0)= 21.3731
+t=(2, 5, 5) M2=  2 assign=(2, 5, 5) sigma_inf>=1.03578050  s0=  12.0  E(s0)= 11.5103
+t=(2, 5, 5) M2=  4 assign=(5, 5, 2) sigma_inf>=1.88560063  s0=  11.0  E(s0)= 19.6108
+t=(2, 5, 5) M2=  6 assign=(5, 5, 2) sigma_inf>=1.68691617  s0=  15.5  E(s0)= 24.7213
+t=(2, 5, 5) M2=  8 assign=(2, 5, 5) sigma_inf>=2.64731047  s0=  12.0  E(s0)= 31.0766
+t=(2, 5, 5) M2= 10 assign=(2, 5, 5) sigma_inf>=3.35409861  s0=   9.5  E(s0)= 30.9294
+t=(2, 5, 5) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 5, 6) M2=-13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 5, 6) M2=-11 assign=(2, 5, 6) sigma_inf>=3.60554767  s0=  15.5  E(s0)= 53.1464
+t=(2, 5, 6) M2= -9 assign=(2, 5, 6) sigma_inf>=2.88361651  s0=  22.0  E(s0)= 61.8472
+t=(2, 5, 6) M2= -7 assign=(5, 6, 2) sigma_inf>=1.90709788  s0=  31.5  E(s0)= 58.5729
+t=(2, 5, 6) M2= -5 assign=(5, 6, 2) sigma_inf>=2.14232577  s0=  27.0  E(s0)= 57.1478
+t=(2, 5, 6) M2= -3 assign=(5, 6, 2) sigma_inf>=1.28029067  s0=  36.0  E(s0)= 45.0216
+t=(2, 5, 6) M2= -1 assign=(5, 6, 2) sigma_inf>=1.29561697  s0=  26.0  E(s0)= 32.8444
+t=(2, 5, 6) M2=  1 assign=(2, 5, 6) sigma_inf>=1.29561697  s0=  16.0  E(s0)= 19.9160
+t=(2, 5, 6) M2=  3 assign=(2, 6, 5) sigma_inf>=1.28029067  s0=  15.0  E(s0)= 18.3949
+t=(2, 5, 6) M2=  5 assign=(5, 6, 2) sigma_inf>=2.14232577  s0=  13.5  E(s0)= 28.1188
+t=(2, 5, 6) M2=  7 assign=(2, 5, 6) sigma_inf>=1.90709788  s0=  18.0  E(s0)= 32.6058
+t=(2, 5, 6) M2=  9 assign=(2, 5, 6) sigma_inf>=2.88361651  s0=  13.5  E(s0)= 37.5582
+t=(2, 5, 6) M2= 11 assign=(2, 5, 6) sigma_inf>=3.60554767  s0=  10.5  E(s0)= 34.5853
+t=(2, 5, 6) M2=13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 6, 6) M2=-14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(2, 6, 6) M2=-12 assign=(2, 6, 6) sigma_inf>=3.87297947  s0=  17.0  E(s0)= 63.7119
+t=(2, 6, 6) M2=-10 assign=(6, 6, 2) sigma_inf>=3.14299055  s0=  24.5  E(s0)= 74.9671
+t=(2, 6, 6) M2= -8 assign=(6, 6, 2) sigma_inf>=2.16385694  s0=  33.5  E(s0)= 71.7384
+t=(2, 6, 6) M2= -6 assign=(6, 6, 2) sigma_inf>=2.43329143  s0=  30.5  E(s0)= 72.2900
+t=(2, 6, 6) M2= -4 assign=(6, 6, 2) sigma_inf>=1.61664398  s0=  38.5  E(s0)= 61.0587
+t=(2, 6, 6) M2= -2 assign=(6, 6, 2) sigma_inf>=1.66919363  s0=  29.5  E(s0)= 47.9232
+t=(2, 6, 6) M2=  0 assign=(6, 6, 2) sigma_inf>=1.71890688  s0=  19.5  E(s0)= 32.8856
+t=(2, 6, 6) M2=  2 assign=(2, 6, 6) sigma_inf>=1.66919363  s0=  12.0  E(s0)= 19.3539
+t=(2, 6, 6) M2=  4 assign=(6, 6, 2) sigma_inf>=1.61664398  s0=  17.5  E(s0)= 27.4390
+t=(2, 6, 6) M2=  6 assign=(6, 6, 2) sigma_inf>=2.43329143  s0=  16.5  E(s0)= 39.2164
+t=(2, 6, 6) M2=  8 assign=(2, 6, 6) sigma_inf>=2.16385694  s0=  21.0  E(s0)= 44.1892
+t=(2, 6, 6) M2= 10 assign=(2, 6, 6) sigma_inf>=3.14299055  s0=  16.0  E(s0)= 48.3953
+t=(2, 6, 6) M2= 12 assign=(2, 6, 6) sigma_inf>=3.87297947  s0=  12.0  E(s0)= 43.9356
+t=(2, 6, 6) M2=14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 3) M2=-9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 3) M2= -7 assign=(3, 3, 3) sigma_inf>=2.59807361  s0=  11.5  E(s0)= 28.2036
+t=(3, 3, 3) M2= -5 assign=(3, 3, 3) sigma_inf>=1.97013413  s0=  15.0  E(s0)= 27.7552
+t=(3, 3, 3) M2= -3 assign=(3, 3, 3) sigma_inf>=1.27003708  s0=  18.0  E(s0)= 22.2091
+t=(3, 3, 3) M2= -1 assign=(3, 3, 3) sigma_inf>=1.12956238  s0=  14.0  E(s0)= 15.0851
+t=(3, 3, 3) M2=  1 assign=(3, 3, 3) sigma_inf>=1.12956238  s0=   9.0  E(s0)=  9.1588
+t=(3, 3, 3) M2=  3 assign=(3, 3, 3) sigma_inf>=1.27003708  s0=   7.0  E(s0)=  7.9991
+t=(3, 3, 3) M2=  5 assign=(3, 3, 3) sigma_inf>=1.97013413  s0=   7.0  E(s0)= 12.7723
+t=(3, 3, 3) M2=  7 assign=(3, 3, 3) sigma_inf>=2.59807361  s0=   7.0  E(s0)= 15.0802
+t=(3, 3, 3) M2=9: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 4) M2=-10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 4) M2= -8 assign=(3, 3, 4) sigma_inf>=2.87227845  s0=  12.5  E(s0)= 32.9684
+t=(3, 3, 4) M2= -6 assign=(3, 3, 4) sigma_inf>=2.23869632  s0=  16.5  E(s0)= 35.0843
+t=(3, 3, 4) M2= -4 assign=(3, 3, 4) sigma_inf>=1.52997611  s0=  20.5  E(s0)= 30.7758
+t=(3, 3, 4) M2= -2 assign=(3, 3, 4) sigma_inf>=1.44878867  s0=  17.5  E(s0)= 24.1890
+t=(3, 3, 4) M2=  0 assign=(3, 3, 4) sigma_inf>=1.43351175  s0=  11.5  E(s0)= 15.7890
+t=(3, 3, 4) M2=  2 assign=(3, 3, 4) sigma_inf>=1.44878867  s0=   7.0  E(s0)=  9.2381
+t=(3, 3, 4) M2=  4 assign=(3, 3, 4) sigma_inf>=1.52997611  s0=   9.0  E(s0)= 12.1962
+t=(3, 3, 4) M2=  6 assign=(3, 3, 4) sigma_inf>=2.23869632  s0=   8.5  E(s0)= 17.0801
+t=(3, 3, 4) M2=  8 assign=(3, 3, 4) sigma_inf>=2.87227845  s0=   7.5  E(s0)= 19.3221
+t=(3, 3, 4) M2=10: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 5) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 5) M2= -9 assign=(3, 3, 5) sigma_inf>=3.12249588  s0=  13.0  E(s0)= 38.8799
+t=(3, 3, 5) M2= -7 assign=(3, 3, 5) sigma_inf>=2.46930031  s0=  18.0  E(s0)= 42.3827
+t=(3, 3, 5) M2= -5 assign=(3, 3, 5) sigma_inf>=1.72044387  s0=  23.5  E(s0)= 39.4067
+t=(3, 3, 5) M2= -3 assign=(3, 3, 5) sigma_inf>=1.67500662  s0=  21.0  E(s0)= 33.9877
+t=(3, 3, 5) M2= -1 assign=(3, 3, 5) sigma_inf>=1.68590241  s0=  15.5  E(s0)= 24.8422
+t=(3, 3, 5) M2=  1 assign=(3, 3, 5) sigma_inf>=1.68590241  s0=  10.0  E(s0)= 15.1800
+t=(3, 3, 5) M2=  3 assign=(3, 3, 5) sigma_inf>=1.67500662  s0=   9.0  E(s0)= 14.1587
+t=(3, 3, 5) M2=  5 assign=(3, 3, 5) sigma_inf>=1.72044387  s0=  11.0  E(s0)= 17.8425
+t=(3, 3, 5) M2=  7 assign=(3, 3, 5) sigma_inf>=2.46930031  s0=   9.5  E(s0)= 22.4480
+t=(3, 3, 5) M2=  9 assign=(3, 3, 5) sigma_inf>=3.12249588  s0=   8.0  E(s0)= 23.5910
+t=(3, 3, 5) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 6) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 3, 6) M2=-10 assign=(3, 3, 6) sigma_inf>=3.35409861  s0=  14.0  E(s0)= 43.2781
+t=(3, 3, 6) M2= -8 assign=(3, 3, 6) sigma_inf>=2.67541289  s0=  19.5  E(s0)= 49.7628
+t=(3, 3, 6) M2= -6 assign=(3, 3, 6) sigma_inf>=1.87970945  s0=  26.5  E(s0)= 48.4422
+t=(3, 3, 6) M2= -4 assign=(3, 3, 6) sigma_inf>=1.86920790  s0=  24.5  E(s0)= 44.5513
+t=(3, 3, 6) M2= -2 assign=(3, 3, 6) sigma_inf>=1.90615440  s0=  19.5  E(s0)= 35.4596
+t=(3, 3, 6) M2=  0 assign=(3, 3, 6) sigma_inf>=2.94283641  s0=  10.0  E(s0)= 27.5323
+t=(3, 3, 6) M2=  2 assign=(3, 3, 6) sigma_inf>=1.90615440  s0=   8.0  E(s0)= 14.6700
+t=(3, 3, 6) M2=  4 assign=(3, 3, 6) sigma_inf>=1.86920790  s0=  11.5  E(s0)= 20.5860
+t=(3, 3, 6) M2=  6 assign=(3, 3, 6) sigma_inf>=1.87970945  s0=  13.5  E(s0)= 24.0776
+t=(3, 3, 6) M2=  8 assign=(3, 3, 6) sigma_inf>=2.67541289  s0=  11.0  E(s0)= 27.6669
+t=(3, 3, 6) M2= 10 assign=(3, 3, 6) sigma_inf>=3.35409861  s0=   9.0  E(s0)= 26.5301
+t=(3, 3, 6) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 4) M2=-11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 4) M2= -9 assign=(3, 4, 4) sigma_inf>=3.16227450  s0=  14.0  E(s0)= 40.9314
+t=(3, 4, 4) M2= -7 assign=(3, 4, 4) sigma_inf>=2.53442110  s0=  18.5  E(s0)= 45.2577
+t=(3, 4, 4) M2= -5 assign=(4, 4, 3) sigma_inf>=1.84660445  s0=  23.5  E(s0)= 41.8437
+t=(3, 4, 4) M2= -3 assign=(4, 4, 3) sigma_inf>=0.82418362  s0=  38.5  E(s0)= 30.9807
+t=(3, 4, 4) M2= -1 assign=(4, 4, 3) sigma_inf>=0.79643518  s0=  29.0  E(s0)= 22.4315
+t=(3, 4, 4) M2=  1 assign=(4, 4, 3) sigma_inf>=0.79643518  s0=  18.5  E(s0)= 14.1377
+t=(3, 4, 4) M2=  3 assign=(3, 4, 4) sigma_inf>=0.82418362  s0=  15.0  E(s0)= 11.3559
+t=(3, 4, 4) M2=  5 assign=(4, 4, 3) sigma_inf>=1.84660445  s0=  11.0  E(s0)= 19.4665
+t=(3, 4, 4) M2=  7 assign=(3, 4, 4) sigma_inf>=2.53442110  s0=  10.5  E(s0)= 24.9215
+t=(3, 4, 4) M2=  9 assign=(3, 4, 4) sigma_inf>=3.16227450  s0=   9.0  E(s0)= 25.6977
+t=(3, 4, 4) M2=11: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 5) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 5) M2=-10 assign=(3, 4, 5) sigma_inf>=3.42782387  s0=  14.5  E(s0)= 47.9704
+t=(3, 4, 5) M2= -8 assign=(3, 4, 5) sigma_inf>=2.78962673  s0=  20.0  E(s0)= 54.0137
+t=(3, 4, 5) M2= -6 assign=(3, 4, 5) sigma_inf>=2.08215581  s0=  26.0  E(s0)= 52.5497
+t=(3, 4, 5) M2= -4 assign=(4, 5, 3) sigma_inf>=1.02261883  s0=  42.5  E(s0)= 42.4972
+t=(3, 4, 5) M2= -2 assign=(4, 5, 3) sigma_inf>=1.04634306  s0=  33.0  E(s0)= 33.5224
+t=(3, 4, 5) M2=  0 assign=(3, 5, 4) sigma_inf>=1.08768344  s0=  22.0  E(s0)= 22.8532
+t=(3, 4, 5) M2=  2 assign=(3, 4, 5) sigma_inf>=1.04634306  s0=  13.0  E(s0)= 12.3129
+t=(3, 4, 5) M2=  4 assign=(4, 5, 3) sigma_inf>=1.02261883  s0=  18.0  E(s0)= 17.1942
+t=(3, 4, 5) M2=  6 assign=(3, 4, 5) sigma_inf>=2.08215581  s0=  13.0  E(s0)= 26.2177
+t=(3, 4, 5) M2=  8 assign=(3, 4, 5) sigma_inf>=2.78962673  s0=  12.0  E(s0)= 31.1149
+t=(3, 4, 5) M2= 10 assign=(3, 4, 5) sigma_inf>=3.42782387  s0=   9.5  E(s0)= 30.9545
+t=(3, 4, 5) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 6) M2=-13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 4, 6) M2=-11 assign=(3, 4, 6) sigma_inf>=3.67423094  s0=  15.5  E(s0)= 53.2040
+t=(3, 4, 6) M2= -9 assign=(3, 4, 6) sigma_inf>=3.01826139  s0=  21.5  E(s0)= 62.7758
+t=(3, 4, 6) M2= -7 assign=(3, 4, 6) sigma_inf>=2.27955659  s0=  28.5  E(s0)= 63.7215
+t=(3, 4, 6) M2= -5 assign=(3, 4, 6) sigma_inf>=1.16184635  s0=  48.0  E(s0)= 55.1813
+t=(3, 4, 6) M2= -3 assign=(4, 6, 3) sigma_inf>=1.22927921  s0=  39.0  E(s0)= 46.7212
+t=(3, 4, 6) M2= -1 assign=(3, 4, 6) sigma_inf>=1.30348210  s0=  27.0  E(s0)= 34.3176
+t=(3, 4, 6) M2=  1 assign=(3, 4, 6) sigma_inf>=1.30348210  s0=  16.5  E(s0)= 20.5571
+t=(3, 4, 6) M2=  3 assign=(3, 4, 6) sigma_inf>=1.22927921  s0=  16.0  E(s0)= 18.8885
+t=(3, 4, 6) M2=  5 assign=(4, 6, 3) sigma_inf>=1.16184635  s0=  22.5  E(s0)= 25.0028
+t=(3, 4, 6) M2=  7 assign=(3, 4, 6) sigma_inf>=2.27955659  s0=  15.5  E(s0)= 34.2062
+t=(3, 4, 6) M2=  9 assign=(3, 4, 6) sigma_inf>=3.01826139  s0=  13.0  E(s0)= 38.3789
+t=(3, 4, 6) M2= 11 assign=(3, 4, 6) sigma_inf>=3.67423094  s0=  10.5  E(s0)= 34.6071
+t=(3, 4, 6) M2=13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 5, 5) M2=-13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 5, 5) M2=-11 assign=(3, 5, 5) sigma_inf>=3.70809554  s0=  16.0  E(s0)= 57.6827
+t=(3, 5, 5) M2= -9 assign=(3, 5, 5) sigma_inf>=3.06730709  s0=  22.0  E(s0)= 66.6903
+t=(3, 5, 5) M2= -7 assign=(3, 5, 5) sigma_inf>=2.35535809  s0=  29.0  E(s0)= 66.7836
+t=(3, 5, 5) M2= -5 assign=(5, 5, 3) sigma_inf>=1.30737800  s0=  44.0  E(s0)= 56.5472
+t=(3, 5, 5) M2= -3 assign=(5, 5, 3) sigma_inf>=1.40514847  s0=  35.0  E(s0)= 48.0378
+t=(3, 5, 5) M2= -1 assign=(5, 5, 3) sigma_inf>=1.47856688  s0=  24.5  E(s0)= 35.2729
+t=(3, 5, 5) M2=  1 assign=(3, 5, 5) sigma_inf>=1.47856688  s0=  16.0  E(s0)= 22.8089
+t=(3, 5, 5) M2=  3 assign=(3, 5, 5) sigma_inf>=1.40514847  s0=  15.0  E(s0)= 19.8376
+t=(3, 5, 5) M2=  5 assign=(5, 5, 3) sigma_inf>=1.30737800  s0=  20.5  E(s0)= 25.8125
+t=(3, 5, 5) M2=  7 assign=(3, 5, 5) sigma_inf>=2.35535809  s0=  16.0  E(s0)= 36.5259
+t=(3, 5, 5) M2=  9 assign=(3, 5, 5) sigma_inf>=3.06730709  s0=  14.0  E(s0)= 41.6085
+t=(3, 5, 5) M2= 11 assign=(3, 5, 5) sigma_inf>=3.70809554  s0=  11.0  E(s0)= 39.5201
+t=(3, 5, 5) M2=13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 5, 6) M2=-14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 5, 6) M2=-12 assign=(3, 5, 6) sigma_inf>=3.96862300  s0=  17.0  E(s0)= 63.8060
+t=(3, 5, 6) M2=-10 assign=(3, 5, 6) sigma_inf>=3.31662147  s0=  23.5  E(s0)= 76.9017
+t=(3, 5, 6) M2= -8 assign=(3, 5, 6) sigma_inf>=2.58537789  s0=  31.5  E(s0)= 79.8903
+t=(3, 5, 6) M2= -6 assign=(5, 6, 3) sigma_inf>=1.51176695  s0=  48.0  E(s0)= 71.6639
+t=(3, 5, 6) M2= -4 assign=(5, 6, 3) sigma_inf>=1.66639230  s0=  39.5  E(s0)= 64.5012
+t=(3, 5, 6) M2= -2 assign=(3, 5, 6) sigma_inf>=1.76333445  s0=  30.0  E(s0)= 51.9961
+t=(3, 5, 6) M2=  0 assign=(3, 5, 6) sigma_inf>=1.81559556  s0=  20.0  E(s0)= 35.1966
+t=(3, 5, 6) M2=  2 assign=(3, 5, 6) sigma_inf>=1.76333445  s0=  12.5  E(s0)= 20.8622
+t=(3, 5, 6) M2=  4 assign=(5, 6, 3) sigma_inf>=1.66639230  s0=  18.0  E(s0)= 29.0393
+t=(3, 5, 6) M2=  6 assign=(3, 5, 6) sigma_inf>=1.51176695  s0=  25.0  E(s0)= 36.8392
+t=(3, 5, 6) M2=  8 assign=(3, 5, 6) sigma_inf>=2.58537789  s0=  18.5  E(s0)= 46.2147
+t=(3, 5, 6) M2= 10 assign=(3, 5, 6) sigma_inf>=3.31662147  s0=  15.5  E(s0)= 49.3678
+t=(3, 5, 6) M2= 12 assign=(3, 5, 6) sigma_inf>=3.96862300  s0=  12.0  E(s0)= 43.9788
+t=(3, 5, 6) M2=14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 6, 6) M2=-15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(3, 6, 6) M2=-13 assign=(3, 6, 6) sigma_inf>=4.24263644  s0=  18.5  E(s0)= 75.0445
+t=(3, 6, 6) M2=-11 assign=(3, 6, 6) sigma_inf>=3.58503266  s0=  26.0  E(s0)= 90.9975
+t=(3, 6, 6) M2= -9 assign=(6, 6, 3) sigma_inf>=2.84402958  s0=  34.5  E(s0)= 96.5853
+t=(3, 6, 6) M2= -7 assign=(6, 6, 3) sigma_inf>=1.76653520  s0=  51.0  E(s0)= 89.1120
+t=(3, 6, 6) M2= -5 assign=(6, 6, 3) sigma_inf>=1.98386435  s0=  43.0  E(s0)= 84.2068
+t=(3, 6, 6) M2= -3 assign=(6, 6, 3) sigma_inf>=1.14612578  s0=  59.0  E(s0)= 66.8262
+t=(3, 6, 6) M2= -1 assign=(6, 6, 3) sigma_inf>=1.11752127  s0=  44.5  E(s0)= 49.1489
+t=(3, 6, 6) M2=  1 assign=(6, 6, 3) sigma_inf>=1.11752127  s0=  30.0  E(s0)= 32.9321
+t=(3, 6, 6) M2=  3 assign=(3, 6, 6) sigma_inf>=1.14612578  s0=  24.5  E(s0)= 26.9530
+t=(3, 6, 6) M2=  5 assign=(6, 6, 3) sigma_inf>=1.98386435  s0=  21.0  E(s0)= 40.7666
+t=(3, 6, 6) M2=  7 assign=(3, 6, 6) sigma_inf>=1.76653520  s0=  29.0  E(s0)= 50.3470
+t=(3, 6, 6) M2=  9 assign=(3, 6, 6) sigma_inf>=2.84402958  s0=  21.5  E(s0)= 60.5119
+t=(3, 6, 6) M2= 11 assign=(3, 6, 6) sigma_inf>=3.58503266  s0=  18.0  E(s0)= 61.4479
+t=(3, 6, 6) M2= 13 assign=(3, 6, 6) sigma_inf>=4.24263644  s0=  13.5  E(s0)= 54.1198
+t=(3, 6, 6) M2=15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 4) M2=-12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 4) M2=-10 assign=(4, 4, 4) sigma_inf>=3.46409815  s0=  15.0  E(s0)= 51.3281
+t=(4, 4, 4) M2= -8 assign=(4, 4, 4) sigma_inf>=2.85052204  s0=  20.5  E(s0)= 56.5103
+t=(4, 4, 4) M2= -6 assign=(4, 4, 4) sigma_inf>=2.20560544  s0=  25.5  E(s0)= 55.0041
+t=(4, 4, 4) M2= -4 assign=(4, 4, 4) sigma_inf>=1.46671700  s0=  32.0  E(s0)= 46.1186
+t=(4, 4, 4) M2= -2 assign=(4, 4, 4) sigma_inf>=1.25618956  s0=  28.5  E(s0)= 35.1588
+t=(4, 4, 4) M2=  0 assign=(4, 4, 4) sigma_inf>=1.26112612  s0=  19.5  E(s0)= 23.8929
+t=(4, 4, 4) M2=  2 assign=(4, 4, 4) sigma_inf>=1.25618956  s0=  12.5  E(s0)= 14.6039
+t=(4, 4, 4) M2=  4 assign=(4, 4, 4) sigma_inf>=1.46671700  s0=  14.0  E(s0)= 19.1316
+t=(4, 4, 4) M2=  6 assign=(4, 4, 4) sigma_inf>=2.20560544  s0=  13.5  E(s0)= 27.6491
+t=(4, 4, 4) M2=  8 assign=(4, 4, 4) sigma_inf>=2.85052204  s0=  12.5  E(s0)= 34.1010
+t=(4, 4, 4) M2= 10 assign=(4, 4, 4) sigma_inf>=3.46409815  s0=  10.5  E(s0)= 33.1300
+t=(4, 4, 4) M2=12: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 5) M2=-13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 5) M2=-11 assign=(4, 4, 5) sigma_inf>=3.74165365  s0=  16.0  E(s0)= 57.7173
+t=(4, 4, 5) M2= -9 assign=(4, 4, 5) sigma_inf>=3.12489783  s0=  22.0  E(s0)= 66.7892
+t=(4, 4, 5) M2= -7 assign=(4, 4, 5) sigma_inf>=2.47573799  s0=  28.0  E(s0)= 67.8541
+t=(4, 4, 5) M2= -5 assign=(4, 4, 5) sigma_inf>=1.73331522  s0=  35.5  E(s0)= 60.7209
+t=(4, 4, 5) M2= -3 assign=(4, 4, 5) sigma_inf>=1.61835161  s0=  32.0  E(s0)= 50.4751
+t=(4, 4, 5) M2= -1 assign=(4, 4, 5) sigma_inf>=1.57421078  s0=  24.0  E(s0)= 36.4477
+t=(4, 4, 5) M2=  1 assign=(4, 4, 5) sigma_inf>=1.57421078  s0=  15.5  E(s0)= 23.6638
+t=(4, 4, 5) M2=  3 assign=(4, 4, 5) sigma_inf>=1.61835161  s0=  13.5  E(s0)= 21.2494
+t=(4, 4, 5) M2=  5 assign=(4, 4, 5) sigma_inf>=1.73331522  s0=  17.0  E(s0)= 28.0471
+t=(4, 4, 5) M2=  7 assign=(4, 4, 5) sigma_inf>=2.47573799  s0=  15.5  E(s0)= 37.0758
+t=(4, 4, 5) M2=  9 assign=(4, 4, 5) sigma_inf>=3.12489783  s0=  14.0  E(s0)= 41.6405
+t=(4, 4, 5) M2= 11 assign=(4, 4, 5) sigma_inf>=3.74165365  s0=  11.0  E(s0)= 39.5364
+t=(4, 4, 5) M2=13: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 6) M2=-14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 4, 6) M2=-12 assign=(4, 4, 6) sigma_inf>=3.99999600  s0=  17.0  E(s0)= 63.8373
+t=(4, 4, 6) M2=-10 assign=(4, 4, 6) sigma_inf>=3.37144919  s0=  23.5  E(s0)= 76.9875
+t=(4, 4, 6) M2= -8 assign=(4, 4, 6) sigma_inf>=2.70226880  s0=  30.5  E(s0)= 80.9589
+t=(4, 4, 6) M2= -6 assign=(4, 4, 6) sigma_inf>=1.92015347  s0=  40.0  E(s0)= 75.7781
+t=(4, 4, 6) M2= -4 assign=(4, 4, 6) sigma_inf>=1.83832520  s0=  37.0  E(s0)= 67.0592
+t=(4, 4, 6) M2= -2 assign=(4, 4, 6) sigma_inf>=1.82572465  s0=  29.5  E(s0)= 52.4389
+t=(4, 4, 6) M2=  0 assign=(4, 4, 6) sigma_inf>=1.84808513  s0=  20.0  E(s0)= 35.6460
+t=(4, 4, 6) M2=  2 assign=(4, 4, 6) sigma_inf>=1.82572465  s0=  12.5  E(s0)= 21.5472
+t=(4, 4, 6) M2=  4 assign=(4, 4, 6) sigma_inf>=1.83832520  s0=  17.0  E(s0)= 30.5998
+t=(4, 4, 6) M2=  6 assign=(4, 4, 6) sigma_inf>=1.92015347  s0=  20.5  E(s0)= 38.6289
+t=(4, 4, 6) M2=  8 assign=(4, 4, 6) sigma_inf>=2.70226880  s0=  18.0  E(s0)= 46.7165
+t=(4, 4, 6) M2= 10 assign=(4, 4, 6) sigma_inf>=3.37144919  s0=  15.5  E(s0)= 49.3940
+t=(4, 4, 6) M2= 12 assign=(4, 4, 6) sigma_inf>=3.99999600  s0=  12.0  E(s0)= 43.9932
+t=(4, 4, 6) M2=14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 5, 5) M2=-14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 5, 5) M2=-12 assign=(4, 5, 5) sigma_inf>=4.03112484  s0=  17.5  E(s0)= 68.0537
+t=(4, 5, 5) M2=-10 assign=(4, 5, 5) sigma_inf>=3.41740608  s0=  24.0  E(s0)= 80.5643
+t=(4, 5, 5) M2= -8 assign=(5, 5, 4) sigma_inf>=2.77608875  s0=  31.0  E(s0)= 84.6145
+t=(4, 5, 5) M2= -6 assign=(4, 5, 5) sigma_inf>=2.06051121  s0=  38.5  E(s0)= 78.6576
+t=(4, 5, 5) M2= -4 assign=(4, 5, 5) sigma_inf>=0.92574256  s0=  69.0  E(s0)= 63.2657
+t=(4, 5, 5) M2= -2 assign=(5, 5, 4) sigma_inf>=0.88208405  s0=  57.0  E(s0)= 49.5055
+t=(4, 5, 5) M2=  0 assign=(5, 5, 4) sigma_inf>=0.87056022  s0=  40.5  E(s0)= 34.4316
+t=(4, 5, 5) M2=  2 assign=(5, 5, 4) sigma_inf>=0.88208405  s0=  26.5  E(s0)= 22.4363
+t=(4, 5, 5) M2=  4 assign=(5, 5, 4) sigma_inf>=0.92574256  s0=  29.5  E(s0)= 26.3145
+t=(4, 5, 5) M2=  6 assign=(5, 5, 4) sigma_inf>=2.06051121  s0=  20.0  E(s0)= 40.0777
+t=(4, 5, 5) M2=  8 assign=(4, 5, 5) sigma_inf>=2.77608875  s0=  18.5  E(s0)= 49.5864
+t=(4, 5, 5) M2= 10 assign=(4, 5, 5) sigma_inf>=3.41740608  s0=  16.0  E(s0)= 53.5334
+t=(4, 5, 5) M2= 12 assign=(4, 5, 5) sigma_inf>=4.03112484  s0=  12.5  E(s0)= 48.8915
+t=(4, 5, 5) M2=14: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 5, 6) M2=-15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 5, 6) M2=-13 assign=(4, 5, 6) sigma_inf>=4.30115833  s0=  18.5  E(s0)= 75.1120
+t=(4, 5, 6) M2=-11 assign=(4, 5, 6) sigma_inf>=3.68096814  s0=  25.5  E(s0)= 92.2658
+t=(4, 5, 6) M2= -9 assign=(4, 5, 6) sigma_inf>=3.02904687  s0=  33.5  E(s0)= 98.8286
+t=(4, 5, 6) M2= -7 assign=(4, 5, 6) sigma_inf>=2.29371807  s0=  42.5  E(s0)= 96.4668
+t=(4, 5, 6) M2= -5 assign=(5, 6, 4) sigma_inf>=1.12301528  s0=  73.5  E(s0)= 81.7722
+t=(4, 5, 6) M2= -3 assign=(4, 6, 5) sigma_inf>=1.12733404  s0=  61.5  E(s0)= 68.6959
+t=(4, 5, 6) M2= -1 assign=(4, 6, 5) sigma_inf>=1.16291320  s0=  44.5  E(s0)= 50.5542
+t=(4, 5, 6) M2=  1 assign=(4, 6, 5) sigma_inf>=1.16291320  s0=  29.5  E(s0)= 33.3937
+t=(4, 5, 6) M2=  3 assign=(4, 5, 6) sigma_inf>=1.12733404  s0=  25.5  E(s0)= 27.9602
+t=(4, 5, 6) M2=  5 assign=(5, 6, 4) sigma_inf>=1.12301528  s0=  34.5  E(s0)= 37.8264
+t=(4, 5, 6) M2=  7 assign=(4, 5, 6) sigma_inf>=2.29371807  s0=  23.5  E(s0)= 53.0850
+t=(4, 5, 6) M2=  9 assign=(4, 5, 6) sigma_inf>=3.02904687  s0=  21.0  E(s0)= 61.1741
+t=(4, 5, 6) M2= 11 assign=(4, 5, 6) sigma_inf>=3.68096814  s0=  17.5  E(s0)= 62.6035
+t=(4, 5, 6) M2= 13 assign=(4, 5, 6) sigma_inf>=4.30115833  s0=  13.5  E(s0)= 54.1549
+t=(4, 5, 6) M2=15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 6, 6) M2=-16: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(4, 6, 6) M2=-14 assign=(4, 6, 6) sigma_inf>=4.58257111  s0=  20.0  E(s0)= 86.9940
+t=(4, 6, 6) M2=-12 assign=(4, 6, 6) sigma_inf>=3.96054410  s0=  28.0  E(s0)=107.3287
+t=(4, 6, 6) M2=-10 assign=(6, 6, 4) sigma_inf>=3.30565497  s0=  36.5  E(s0)=119.4959
+t=(4, 6, 6) M2= -8 assign=(6, 6, 4) sigma_inf>=2.56475453  s0=  46.5  E(s0)=117.6129
+t=(4, 6, 6) M2= -6 assign=(6, 6, 4) sigma_inf>=1.40309607  s0=  74.5  E(s0)=103.9605
+t=(4, 6, 6) M2= -4 assign=(6, 6, 4) sigma_inf>=1.48503856  s0=  62.5  E(s0)= 91.4979
+t=(4, 6, 6) M2= -2 assign=(4, 6, 6) sigma_inf>=1.56928375  s0=  46.5  E(s0)= 72.3673
+t=(4, 6, 6) M2=  0 assign=(4, 6, 6) sigma_inf>=1.62252947  s0=  31.5  E(s0)= 50.4166
+t=(4, 6, 6) M2=  2 assign=(4, 6, 6) sigma_inf>=1.56928375  s0=  21.0  E(s0)= 32.0243
+t=(4, 6, 6) M2=  4 assign=(4, 6, 6) sigma_inf>=1.48503856  s0=  28.5  E(s0)= 41.5332
+t=(4, 6, 6) M2=  6 assign=(6, 6, 4) sigma_inf>=1.40309607  s0=  38.5  E(s0)= 52.8448
+t=(4, 6, 6) M2=  8 assign=(4, 6, 6) sigma_inf>=2.56475453  s0=  27.5  E(s0)= 69.6829
+t=(4, 6, 6) M2= 10 assign=(4, 6, 6) sigma_inf>=3.30565497  s0=  24.0  E(s0)= 77.5620
+t=(4, 6, 6) M2= 12 assign=(4, 6, 6) sigma_inf>=3.96054410  s0=  20.0  E(s0)= 75.7153
+t=(4, 6, 6) M2= 14 assign=(4, 6, 6) sigma_inf>=4.58257111  s0=  15.0  E(s0)= 64.9913
+t=(4, 6, 6) M2=16: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 5, 5) M2=-15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 5, 5) M2=-13 assign=(5, 5, 5) sigma_inf>=4.33012269  s0=  19.0  E(s0)= 78.9871
+t=(5, 5, 5) M2=-11 assign=(5, 5, 5) sigma_inf>=3.72454226  s0=  26.0  E(s0)= 95.3981
+t=(5, 5, 5) M2= -9 assign=(5, 5, 5) sigma_inf>=3.10139971  s0=  33.5  E(s0)=101.7154
+t=(5, 5, 5) M2= -7 assign=(5, 5, 5) sigma_inf>=2.43939091  s0=  41.0  E(s0)= 99.1932
+t=(5, 5, 5) M2= -5 assign=(5, 5, 5) sigma_inf>=1.66128231  s0=  52.5  E(s0)= 86.5293
+t=(5, 5, 5) M2= -3 assign=(5, 5, 5) sigma_inf>=1.38048942  s0=  51.5  E(s0)= 70.3389
+t=(5, 5, 5) M2= -1 assign=(5, 5, 5) sigma_inf>=1.36292310  s0=  39.0  E(s0)= 51.9061
+t=(5, 5, 5) M2=  1 assign=(5, 5, 5) sigma_inf>=1.36292310  s0=  26.5  E(s0)= 34.9290
+t=(5, 5, 5) M2=  3 assign=(5, 5, 5) sigma_inf>=1.38048942  s0=  23.0  E(s0)= 30.4924
+t=(5, 5, 5) M2=  5 assign=(5, 5, 5) sigma_inf>=1.66128231  s0=  25.0  E(s0)= 40.9150
+t=(5, 5, 5) M2=  7 assign=(5, 5, 5) sigma_inf>=2.43939091  s0=  23.0  E(s0)= 54.7498
+t=(5, 5, 5) M2=  9 assign=(5, 5, 5) sigma_inf>=3.10139971  s0=  21.5  E(s0)= 64.2050
+t=(5, 5, 5) M2= 11 assign=(5, 5, 5) sigma_inf>=3.72454226  s0=  18.5  E(s0)= 65.2863
+t=(5, 5, 5) M2= 13 assign=(5, 5, 5) sigma_inf>=4.33012269  s0=  14.0  E(s0)= 58.8789
+t=(5, 5, 5) M2=15: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 5, 6) M2=-16: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 5, 6) M2=-14 assign=(5, 5, 6) sigma_inf>=4.60976762  s0=  20.0  E(s0)= 87.0299
+t=(5, 5, 6) M2=-12 assign=(5, 5, 6) sigma_inf>=4.00214198  s0=  27.5  E(s0)=108.6556
+t=(5, 5, 6) M2=-10 assign=(5, 5, 6) sigma_inf>=3.37642845  s0=  36.0  E(s0)=118.8660
+t=(5, 5, 6) M2= -8 assign=(5, 5, 6) sigma_inf>=2.71185571  s0=  44.5  E(s0)=119.9634
+t=(5, 5, 6) M2= -6 assign=(5, 5, 6) sigma_inf>=1.93585437  s0=  57.0  E(s0)=109.5335
+t=(5, 5, 6) M2= -4 assign=(5, 5, 6) sigma_inf>=1.79074562  s0=  53.5  E(s0)= 94.5544
+t=(5, 5, 6) M2= -2 assign=(5, 5, 6) sigma_inf>=1.71749130  s0=  43.5  E(s0)= 73.4417
+t=(5, 5, 6) M2=  0 assign=(5, 5, 6) sigma_inf>=1.69928835  s0=  31.0  E(s0)= 51.3218
+t=(5, 5, 6) M2=  2 assign=(5, 5, 6) sigma_inf>=1.71749130  s0=  20.0  E(s0)= 33.4391
+t=(5, 5, 6) M2=  4 assign=(5, 5, 6) sigma_inf>=1.79074562  s0=  25.0  E(s0)= 43.4123
+t=(5, 5, 6) M2=  6 assign=(5, 6, 5) sigma_inf>=1.93585437  s0=  29.5  E(s0)= 56.4163
+t=(5, 5, 6) M2=  8 assign=(5, 5, 6) sigma_inf>=2.71185571  s0=  26.5  E(s0)= 70.5058
+t=(5, 5, 6) M2= 10 assign=(5, 5, 6) sigma_inf>=3.37642845  s0=  23.5  E(s0)= 78.3388
+t=(5, 5, 6) M2= 12 assign=(5, 5, 6) sigma_inf>=4.00214198  s0=  19.5  E(s0)= 77.0237
+t=(5, 5, 6) M2= 14 assign=(5, 5, 6) sigma_inf>=4.60976762  s0=  15.0  E(s0)= 65.0118
+t=(5, 5, 6) M2=16: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 6, 6) M2=-17: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(5, 6, 6) M2=-15 assign=(5, 6, 6) sigma_inf>=4.89897459  s0=  21.0  E(s0)=102.1090
+t=(5, 6, 6) M2=-13 assign=(5, 6, 6) sigma_inf>=4.29323323  s0=  29.5  E(s0)=126.0179
+t=(5, 6, 6) M2=-11 assign=(5, 6, 6) sigma_inf>=3.67156514  s0=  38.5  E(s0)=140.3513
+t=(5, 6, 6) M2= -9 assign=(6, 6, 5) sigma_inf>=3.01697338  s0=  48.5  E(s0)=144.4758
+t=(5, 6, 6) M2= -7 assign=(6, 6, 5) sigma_inf>=2.27398293  s0=  60.5  E(s0)=136.1989
+t=(5, 6, 6) M2= -5 assign=(6, 6, 5) sigma_inf>=1.02681341  s0= 113.0  E(s0)=115.0430
+t=(5, 6, 6) M2= -3 assign=(6, 6, 5) sigma_inf>=0.96787073  s0=  99.5  E(s0)= 95.3027
+t=(5, 6, 6) M2= -1 assign=(6, 6, 5) sigma_inf>=0.94392493  s0=  76.5  E(s0)= 71.3639
+t=(5, 6, 6) M2=  1 assign=(6, 6, 5) sigma_inf>=0.94392493  s0=  53.0  E(s0)= 49.4123
+t=(5, 6, 6) M2=  3 assign=(6, 6, 5) sigma_inf>=0.96787073  s0=  45.5  E(s0)= 42.9885
+t=(5, 6, 6) M2=  5 assign=(5, 6, 6) sigma_inf>=1.02681341  s0=  54.0  E(s0)= 54.8172
+t=(5, 6, 6) M2=  7 assign=(6, 6, 5) sigma_inf>=2.27398293  s0=  34.0  E(s0)= 75.5961
+t=(5, 6, 6) M2=  9 assign=(5, 6, 6) sigma_inf>=3.01697338  s0=  30.5  E(s0)= 90.0405
+t=(5, 6, 6) M2= 11 assign=(5, 6, 6) sigma_inf>=3.67156514  s0=  26.5  E(s0)= 96.3303
+t=(5, 6, 6) M2= 13 assign=(5, 6, 6) sigma_inf>=4.29323323  s0=  22.0  E(s0)= 91.0753
+t=(5, 6, 6) M2= 15 assign=(5, 6, 6) sigma_inf>=4.89897459  s0=  16.5  E(s0)= 76.5078
+t=(5, 6, 6) M2=17: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(6, 6, 6) M2=-18: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+t=(6, 6, 6) M2=-16 assign=(6, 6, 6) sigma_inf>=5.19614723  s0=  22.5  E(s0)=115.4022
+t=(6, 6, 6) M2=-14 assign=(6, 6, 6) sigma_inf>=4.59566648  s0=  32.0  E(s0)=142.9197
+t=(6, 6, 6) M2=-12 assign=(6, 6, 6) sigma_inf>=3.98394734  s0=  41.5  E(s0)=162.5869
+t=(6, 6, 6) M2=-10 assign=(6, 6, 6) sigma_inf>=3.35119950  s0=  51.5  E(s0)=171.1896
+t=(6, 6, 6) M2= -8 assign=(6, 6, 6) sigma_inf>=2.67194005  s0=  63.0  E(s0)=167.0419
+t=(6, 6, 6) M2= -6 assign=(6, 6, 6) sigma_inf>=1.85400391  s0=  81.5  E(s0)=149.9342
+t=(6, 6, 6) M2= -4 assign=(6, 6, 6) sigma_inf>=1.50275696  s0=  85.0  E(s0)=127.0031
+t=(6, 6, 6) M2= -2 assign=(6, 6, 6) sigma_inf>=1.46730973  s0=  68.5  E(s0)= 99.7142
+t=(6, 6, 6) M2=  0 assign=(6, 6, 6) sigma_inf>=1.47816950  s0=  49.5  E(s0)= 71.8735
+t=(6, 6, 6) M2=  2 assign=(6, 6, 6) sigma_inf>=1.46730973  s0=  35.0  E(s0)= 50.2688
+t=(6, 6, 6) M2=  4 assign=(6, 6, 6) sigma_inf>=1.50275696  s0=  40.5  E(s0)= 59.5638
+t=(6, 6, 6) M2=  6 assign=(6, 6, 6) sigma_inf>=1.85400391  s0=  43.0  E(s0)= 78.2037
+t=(6, 6, 6) M2=  8 assign=(6, 6, 6) sigma_inf>=2.67194005  s0=  37.5  E(s0)= 98.9253
+t=(6, 6, 6) M2= 10 assign=(6, 6, 6) sigma_inf>=3.35119950  s0=  34.0  E(s0)=112.7213
+t=(6, 6, 6) M2= 12 assign=(6, 6, 6) sigma_inf>=3.98394734  s0=  29.5  E(s0)=115.7547
+t=(6, 6, 6) M2= 14 assign=(6, 6, 6) sigma_inf>=4.59566648  s0=  24.0  E(s0)=107.5722
+t=(6, 6, 6) M2= 16 assign=(6, 6, 6) sigma_inf>=5.19614723  s0=  18.0  E(s0)= 88.6341
+t=(6, 6, 6) M2=18: limit operator has no links (Inv dim <= 1 or empty): no nonzero spectrum
+cases certified 532, failures 0: []
+smallest certified slope sigma_inf = 0.61536891 at t=(1, 2, 2) M2=-1;  8*sigma = 4.922951
+largest s0 = 113.0

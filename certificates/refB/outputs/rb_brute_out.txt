@@ -1,0 +1,1 @@
+brute force vs rb_core: 640 tuples (2j1<=5, 2j_i<=4), dim mismatches 0, antisymmetry failures (exact) 0, max |spec diff|/norm 2.36e-15, brute Hermiticity defect 5.3e-15 (11s)

@@ -1,0 +1,15 @@
+{
+ "regime": "R4c",
+ "NMAX": 100000.0,
+ "device": "cuda",
+ "count": 99999,
+ "seconds": 88.84554505348206,
+ "nan_count": 0,
+ "nonpositive_count": 0,
+ "min_8sigma": 4.621864033187266,
+ "argmin_n": 3.0,
+ "argmin_a": 0.0,
+ "F0": 1.2841269854111113,
+ "F1": 0.898765432997531,
+ "W": 0.0
+}

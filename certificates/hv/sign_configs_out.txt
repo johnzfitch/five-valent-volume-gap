@@ -1,0 +1,5 @@
+5-valent: 2000000 sprinkles -> 384 eps-configs, 171 sigma-configs (BR Table 1: 384, 171)
+          nonzero sigma up to overall sign: 85 (BR: 85)
+          chain-type sigma (alpha, beta, beta, 0) realizable: [(2, -4, -4, 0), (2, -2, -2, 0), (2, 0, 0, 0), (2, 2, 2, 0), (2, 4, 4, 0), (4, -2, -2, 0), (4, 2, 2, 0)]
+          (alpha, beta, -beta, 0): [(2, 0, 0, 0), (2, 2, -2, 0)]
+6-valent: 20000000 sprinkles -> 23808 eps-configs, 16413 sigma-configs (BR Table 1: 23,808, 16,413)

@@ -1,0 +1,3 @@
+W1: 4860 (N,m,end) cases; max of G_end(2) = -5.557099e-04 at N=60, m=0, bottom (<= 0 required): PASS
+W2: min sigma_min((H-1) restricted to psi(end)=0) over N<=40 = 1.010241447818  (>= 1 required): PASS
+W3: end weights symmetric and nonincreasing for lambda>=1: True

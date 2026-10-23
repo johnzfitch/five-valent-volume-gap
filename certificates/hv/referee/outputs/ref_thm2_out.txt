@@ -1,0 +1,2 @@
+Theorem 1: closed-form D_l, X_l equal Prop-1 couplings exactly for N=2..60: True
+Theorem 2 grid M<= 40, 2Delta <= 40 (1600 pairs): closed forms match Prop 1: 1600/1600; product identity exact: 1600/1600; ratio inequalities hold: 1600/1600; q/P in [0.676928, 0.800612]

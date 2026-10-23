@@ -1,0 +1,16 @@
+2j_max=1: tuples 0, nonempty 0, NOT certified 0, min q nan, wall 0.0s
+2j_max=2: tuples 5, nonempty 5, NOT certified 0, min q 4.557961, wall 0.6s
+2j_max=3: tuples 16, nonempty 16, NOT certified 0, min q 5.564316, wall 0.7s
+2j_max=4: tuples 49, nonempty 47, NOT certified 0, min q 6.512489, wall 0.6s
+2j_max=5: tuples 102, nonempty 99, NOT certified 0, min q 7.418031, wall 0.6s
+2j_max=6: tuples 206, nonempty 198, NOT certified 0, min q 8.290426, wall 0.7s
+2j_max=7: tuples 352, nonempty 339, NOT certified 0, min q 9.135988, wall 0.7s
+2j_max=8: tuples 590, nonempty 566, NOT certified 0, min q 9.959187, wall 0.7s
+2j_max=9: tuples 900, nonempty 865, NOT certified 0, min q 10.763331, wall 0.8s
+2j_max=10: tuples 1355, nonempty 1299, NOT certified 0, min q 11.550953, wall 0.8s
+2j_max=11: tuples 1920, nonempty 1843, NOT certified 0, min q 12.324048, wall 0.9s
+2j_max=12: tuples 2695, nonempty 2583, NOT certified 0, min q 13.084223, wall 1.0s
+2j_max=13: tuples 3626, nonempty 3478, NOT certified 0, min q 13.832794, wall 1.1s
+2j_max=14: tuples 4844, nonempty 4642, NOT certified 0, min q 14.570861, wall 1.4s
+2j_max=15: tuples 6272, nonempty 6014, NOT certified 0, min q 15.299348, wall 1.4s
+2j_max=16: tuples 8076, nonempty 7738, NOT certified 0, min q 16.019047, wall 1.6s

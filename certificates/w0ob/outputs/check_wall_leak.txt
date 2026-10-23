@@ -1,0 +1,1 @@
+tuples 12900: (W1) violations 0; (W2) colour-1 cut sites off the odd wall 0; (W3) diagonal 21588 checks, 0 mismatches; off-diagonal 12972 checks, 0 mismatches

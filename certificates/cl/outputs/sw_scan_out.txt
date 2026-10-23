@@ -1,0 +1,4 @@
+SW scan: 637140 windows, N<=36, m<=20.0
+  minimum sigma_min = 0.926565539884 at (N, m, a, b, orientation) = (3, 0.0, 0, 1, 'up')
+  (R1) fixed a: minimum over b attained at b=N-2: True
+  (R2) number of (N,m) where the anchored minimum is not at a=0: 0

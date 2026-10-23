@@ -1,0 +1,135 @@
+\section{The computer-assisted steps}\label{sec:computer}
+
+Several proofs end in a finite computation. This section says what each computation
+decides, in which arithmetic, and where its script is. The scripts and outputs are at
+\url{https://github.com/johnzfitch/five-valent-volume-gap} (release \texttt{v1.0}, which
+also carries the outputs too large for the repository): \texttt{code/} holds the code
+written for this paper, \texttt{certificates/} the certificates on which the proofs rest,
+each subfolder with the checksums of its source, and \texttt{SHA256SUMS.txt} the
+checksums of everything.
+
+\subsection{Three kinds of certificate}
+
+An \emph{exact} certificate decides a statement in rational arithmetic: the signs of the
+pivots of an $LDL^T$ factorisation (Sylvester's law of inertia), the rank of a rational
+matrix, or the signs of the coefficients of a polynomial after substituting nonnegative
+shift variables that encode the constraints. An \emph{interval} certificate evaluates
+an inequality with outward rounding (mpmath's interval type or Arb balls, or binary64
+with every operation followed by one step of \texttt{nextafter} in the safe direction)
+and checks it strictly. A \emph{rigorous-float} certificate computes in binary64 and
+bounds the error a priori: the matrix is perturbed by the rounding of square roots
+(Weyl's inequality), a congruence $X^T(\widehat A-tI)X$ is formed and its entrywise error
+bounded with Higham's $\gamma_k$~\cite[Lemma~3.5]{Higham}, and strict Gershgorin
+separation of the computed matrix then fixes the inertia of $A-tI$ by Sylvester's law;
+the kernel dimension it is compared with is computed exactly.
+
+The error model of the rigorous-float certificates needs each floating-point entry
+$y$ of the matrix to approximate the exact square root of its rational squared link $r$
+with relative error at most $2.0001u$, where $u=2^{-53}$ is the unit roundoff. The certificates of \cref{thm:tone}(h) verify
+this rather than assume it: each entry is computed as \texttt{math.sqrt} of the
+rational, and is then checked in exact rational arithmetic,
+$r(1-E)^2\le y^2\le r(1+E)^2$ with $E=2.0001\cdot2^{-53}$, before it is used; the run
+stops if any check fails. All $1\,843\,571$ tuples with spins at most $19$ and the
+$430\,481$ tuples with $j_1=\frac52$ and $39\le2j_{\max}\le70$ pass, with the same
+kernel dimensions and level minima as an earlier run that computed the square roots
+differently.
+
+
+\subsection{The list}
+
+The first table lists the computations on which a proof rests; the last column names an
+independent computation of the same statement, which is a check and not part of the
+proof. All of them ran on a CPU except the interval box for $j_1=\frac32$, which ran on a
+GPU with the same outward rounding.
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}p{4.4cm}>{\raggedright\arraybackslash}p{4.3cm}}
+\toprule
+\estabhead{statement} & \estabhead{kind} & \estabhead{what the proof uses} & \estabhead{independent check}\\
+\midrule
+\endfirsthead
+\toprule
+\estabhead{statement} & \estabhead{kind} & \estabhead{what the proof uses} & \estabhead{independent check}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\Cref{prop:orbits} (orbits) & exact & all $2^{10}$ sign vectors, relabellings, $\sigma$ & a separate implementation\\[4pt]
+\Cref{lem:multiplier} (four-valent) & exact & coefficient signs of the polynomials (F), (C0), (C2), (C3) & a second encoding; exact $LDL^T$ of the law on $3.78\times10^6$ tuples with spins $\le60$\\[4pt]
+\Cref{thm:B2} ($j_1=\frac12$) & interval & two explicit constants for $n\le2\times10^4$, analytic beyond & exact rational checks of the link inequalities on all chains with spins $\le13$, with floating-point spectral cross-checks\\[4pt]
+\Cref{thm:SW} (windows) & interval, exact & odd $5\le N\le149$ (interval, all $m\ge0$); inequality \eqref{eq:gammaN} for even $N\le400$ (exact; the analytic argument covers $N\ge200$) & exact $LDL^T$ for $N\le151$ at $15$ values of $m$, and at four values for $N=51$, $75$, $101$, $149$, $151$, $201$\\[4pt]
+\Cref{thm:jone} ($j_1=1$) & exact & $LDL^T$ of the pencil for all $164\,176$ pairs of pairs with $n_1,n_2\le32$, and the $10\,416$ with $\max=32.5$ & exhaustive exact certificate of $j_1=1$, spins $\le19$\\[4pt]
+\Cref{thm:z32} ($j_1=\frac32$) & exact; interval & $30$ polynomial certificates; the box of $6.4\times10^7$ parameter sets; $50$ tail certificates & exact $LDL^T$ of the $54\,019$ tuples with spins $\le20$ (legs $2$--$5$ sorted, $\dim\Inv\ge2$)\\[4pt]
+\Cref{thm:jtwo} ($j_1=2$) & exact; interval & $24$ polynomial certificates; the box of $1\,489\,059$ configurations & exhaustive exact certificate, spins $\le19$; stage certificates for $39\le2j_{\max}\le44$\\[4pt]
+\Cref{thm:C6} ($\Cl_6$) & exact; interval & exact error bounds; interval Cholesky of $532$ limits and $6\,137$ finite tuples; exact certificates of the $17\,376$ finite tuples with spins $\le19$; exact comparison of each certified limit bound with $\nu_0$; exact characteristic polynomials of the two limits below it & ---\\[4pt]
+\Cref{thm:tone}(h), spins $\le19$ & rigorous float & $1\,843\,571$ tuples, kernels and every square root checked exactly & exact $LDL^T$ on $7\,860$ tuples at four thresholds ($31\,440$ cases) and on $369$ sampled tuples\\[4pt]
+\Cref{thm:tone}(h), $j_1=\frac52$ & exact & stage certificates of $430\,481$ tuples & rigorous-float certificate of the same tuples\\
+\end{longtable}}
+
+\noindent Both finite boxes are certified in outward-rounded interval arithmetic. For
+$j_1=2$ the smallest margin is $3.2356$ (truncated), at $(n_1,m_1,n_2,m_2)=(21,0,22,1)$; for
+$j_1=\frac32$ the smallest certified cancellation margin $1-\tau(\frac43+C_\Lambda)$ is
+$3.02\times10^{-5}$ (truncated), at the regime Tm, and the smallest certified value of the
+bound is $3.7774$. Here and below, certified lower bounds are printed truncated and
+certified upper bounds rounded up. Tuples are counted in two conventions: \cref{thm:z32}'s $54\,019$ are leg
+multisets (legs $2$--$5$ sorted, $\dim\Inv\ge2$), while the exhaustive certificates of
+\texttt{certificates/refB} enumerate pairings, with $j_2\le j_3$, $j_4\le j_5$ and
+$(j_2,j_3)$ not after $(j_4,j_5)$, which gives $147\,480$ tuples with nonzero spectrum
+for the same range.
+
+The second table lists computations that only check statements proved by hand.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}p{8.9cm}}
+\toprule
+\estabhead{statement} & \estabhead{kind} & \estabhead{what is checked}\\
+\midrule
+\Cref{thm:pencil} (pencil) & float & the pencil against the full tensor product, $15$ tuples\\[4pt]
+\Cref{thm:v6}(i) (valence six) & exact & characteristic polynomials of the full twenty-triple operator for $n\le6$, and of the exact $\sigma$-reduced operator for $n\le51$\\[4pt]
+\Cref{lem:quasimode,lem:v6det,lem:v6cone} & exact & the identities of their proofs (symbolic in $n$, $i$); the bound against the full operator for odd $n\le81$\\[4pt]
+\Cref{rem:nongeneric} & exact & sign vectors off general position, their orbits and two-product presentations\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Our own code}
+
+The constructions of \cref{sec:operator} were written for this paper and import
+nothing from the certificate folders: \texttt{code/su2.py} builds the operators from
+the Hermitian generators on the tensor product, with the invariant space realised as
+the highest-weight vectors of weight $j_N$ in the first $N-1$ legs, and evaluates
+Racah's formula for $6j$ symbols in exact rationals; \texttt{code/grid.py} builds the
+grid of \cref{prop:grid}. \texttt{code/validate.py} checks the four-valent closed form
+against brute force and against Racah recoupling, the identity
+$\hat q_{IJK}=-4iJ_I\cdot(J_J\times J_K)$, the reduction \eqref{eq:sigma}, and the grid
+against the full ten-triple operator built from integer tangents of each orbit
+($1\,332$ cases, relative agreement $3\times10^{-15}$). \texttt{code/checks.py} checks
+the identities and constants quoted in the text, \texttt{code/reproduce.py} the
+published numbers of \cref{sec:operator}, and \texttt{code/nongeneric.py} the counts of
+\cref{rem:nongeneric}.
+
+\subsection{Related work and priority}\label{subsec:related}
+
+Besides the papers discussed in \cref{sec:intro}, the volume spectrum has been studied
+through closed formulas and recoupling theory~\cite{Thiemann1998,DPR1996,Meissner2006,
+MajorSeifert2002,CCM2002,AMM2013,MMA2014,Sherif2026,BRprelim}, through quantum and
+semiclassical tetrahedra and polyhedra~\cite{Barbieri1998,BaezBarrett1999,BDS2011,
+Haggard2013,BM2017a,BM2017b}, and for the Rovelli--Smolin form~\cite{RS1995,Kis2021}. The
+operator $J_1\cdot(J_2\times J_3)$ is older than loop quantum gravity: Chakrabarti
+proposed its eigenvalues, in place of a pair Casimir, as labels for the states of three
+coupled angular momenta~\cite[p.~301]{Chakrabarti1964}, and L\'evy-Leblond and
+L\'evy-Nahas~\cite{LLLN1965} studied the symmetric coupling scheme it generates.
+
+We read in full the papers on the volume operator and on the mixed product cited in this
+paragraph and in \cref{sec:intro} (for Rovelli and Smolin, the arXiv version), with these
+exceptions: of L\'evy-Leblond and L\'evy-Nahas~\cite{LLLN1965}, Aquilanti, Caligiana and
+Cavalli~\cite{ACC2003} and Bendjoudi and Mebarki~\cite{BM2017a,BM2017b} we have read only
+the abstracts, and the two-page erratum to Rovelli and Smolin~\cite{RS1995} we could not
+obtain. We also screened by title and abstract the records on INSPIRE that cite
+Brunnemann and Rideout, Brunnemann and Thiemann, and Bianchi and Haggard. In none of this
+did we find a proof of a volume gap or of its absence beyond numerics, a statement of the
+normal form, or the identification of the four-valent matrix with a hydrogen Stark matrix.
+The priority statements of \cref{sec:intro} are limited accordingly: the two papers we
+know only in abstract, \cite{LLLN1965} and \cite{ACC2003}, are where an earlier
+appearance of the Stark structure would be most likely, and our statements do not cover
+them.

@@ -1,0 +1,1 @@
+85777 C3 configurations: max W_C3 / Wbar = 0.0514 at (999, 0, 999, 1)  (OK)

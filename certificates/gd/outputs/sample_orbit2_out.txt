@@ -1,0 +1,6 @@
+uniform                n= 192 maxdim= 4927  min q=283.6118 at (1, 17, 5, 47, 36);  min q/(2j1+2)=12.9558 at (28, 4, 5, 37, 6)
+big_j1_small_pairs     n= 148 maxdim=   81  min q=236.5066 at (60, 4, 2, 3, 61);  min q/(2j1+2)=3.8146 at (60, 4, 2, 3, 61)
+pair_big_pair_small    n= 105 maxdim=   48  min q=244.3644 at (1, 85, 86, 5, 3);  min q/(2j1+2)=42.3161 at (8, 67, 62, 2, 3)
+near_symmetric         n= 200 maxdim= 3262  min q=59.1657 at (5, 28, 28, 28, 25);  min q/(2j1+2)=8.1212 at (19, 27, 26, 27, 23)
+spinhalf_j1            n= 179 maxdim=  193  min q=109.8807 at (1, 15, 16, 34, 32);  min q/(2j1+2)=36.6269 at (1, 15, 16, 34, 32)
+total 19s

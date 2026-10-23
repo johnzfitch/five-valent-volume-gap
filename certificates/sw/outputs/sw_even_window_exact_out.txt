@@ -1,0 +1,4 @@
+(a) even N = 2..400: Gamma_N >= RHS for all: True; equality at N = [2]; smallest ratio elsewhere 1.125000 at N = 4
+(b) 100 <= P <= 200: rho_i <= 1/2 for i >= ceil(sqrt P), Gamma_N > L > 1/(2k+1) > 4/P > RHS, and P > 8 sqrt P + 12: True
+(c) R_2 = 2 and R_(N+2)/R_N = 4P(P+1)/(2P+1)^2 < 1 for P = 1..1000: True
+ALL PASS

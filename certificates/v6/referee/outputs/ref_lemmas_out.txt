@@ -1,0 +1,46 @@
+6J  Edmonds spin-1/2 formulas vs sympy wigner_6j: 180 random cases, mismatches 0
+6J  alpha/beta closed forms vs exact sympy 6j, n=1..30, all e: 1920 entries, mismatches 0
+DET two-step |det M2(i+1)M1(i)|^2 = (i + n + 3)/(i + n + 5); equals (n+3+i)/(n+5+i): True
+DET |det T_rest|^2 = (n+5)/(2n+2) exactly for all odd n in [5,401]: True
+DET |det T_left|^2 = (n + 3)/(n + 5)
+PHI Phi0^2 = (57*n**2 + 146*n - 72)*(649*n**2 + 1298*n - 1944)/(72*n*(n - 1)*(n + 2)*(n + 5))
+PHI 900 - Phi0^2 = num/den; with n = 7+m, coefficient signs of num: {1}, of den: {1} (all one sign each => Phi0 <= 30 for every n >= 7)
+PHI lim Phi0^2 = 12331/24 (Phi0 -> sqrt(73986)/12 = 22.6670); Phi0(7) = 21.1262, Phi0(3)=19.9076, Phi0(5)=20.7178
+CONE y_j^2/x^2 = -j*(j + 1)*(j - n - 1)*(j + n + 2)/(n*(n + 2)); endpoint j=3: 12(n-2)(n+5)-9n(n+2) = 3*(n - 4)*(n + 10); j=n-1: 2(n-1)(2n+1)-9(n+2) = (n - 4)*(4*n + 5) (both >= 0 for n >= 4)
+CONE invariance of |P|<=2|r| needs beta+ (1+2e1) <= 2(1-e2-2e1) with e<=1/9: 1.2222 <= 1.3333
+CONE ln(1-t)+1.5t at t=1/3: 0.0945 (>=0, concave => >=0 on [0,1/3])
+CONE S = sum_{j=3}^{n-1} x^2/y_j^2: max over odd n<=2001 and 20001 = 0.3461; max(S - (1/3+2(1+ln n)/(n+2))) = 0.0000 (<0 means bound holds)
+SIGN n=7: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-5.323, -5.186]; log10 B(n) = -0.375; all <= B: True
+SIGN n=9: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-7.709, -7.619]; log10 B(n) = -2.609; all <= B: True
+SIGN n=11: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-10.332, -10.210]; log10 B(n) = -5.075; all <= B: True
+SIGN n=13: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-13.093, -12.991]; log10 B(n) = -7.724; all <= B: True
+SIGN n=15: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-15.985, -15.838]; log10 B(n) = -10.524; all <= B: True
+SIGN n=21: 6 random sign patterns: det K != 0 in all: True; log10(8 sigma_min) range [-25.302, -25.191]; log10 B(n) = -19.631; all <= B: True
+B   n=5: log10 q_min(exact) =    -3.163; log10 B =     1.537; log10 Bweak =     2.394; log10 B2(as stated) =     5.333; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = -0.348; (ln q + n ln n)/n = 0.1526; (ln q + 1.5 n ln n)/n = 0.9573
+B   n=7: log10 q_min(exact) =    -5.332; log10 B =    -0.375; log10 Bweak =     1.220; log10 B2(as stated) =     4.614; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = -0.256; (ln q + n ln n)/n = 0.1920; (ln q + 1.5 n ln n)/n = 1.1649
+B   n=9: log10 q_min(exact) =    -7.747; log10 B =    -2.609; log10 Bweak =    -0.243; log10 B2(as stated) =     3.531; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = -0.175; (ln q + n ln n)/n = 0.2153; (ln q + 1.5 n ln n)/n = 1.3139
+B   n=11: log10 q_min(exact) =   -10.353; log10 B =    -5.075; log10 Bweak =    -1.918; log10 B2(as stated) =     2.190; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = -0.102; (ln q + n ln n)/n = 0.2307; (ln q + 1.5 n ln n)/n = 1.4297
+B   n=13: log10 q_min(exact) =   -13.117; log10 B =    -7.724; log10 Bweak =    -3.762; log10 B2(as stated) =     0.650; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = -0.034; (ln q + n ln n)/n = 0.2417; (ln q + 1.5 n ln n)/n = 1.5242
+B   n=15: log10 q_min(exact) =   -16.013; log10 B =   -10.524; log10 Bweak =    -5.748; log10 B2(as stated) =    -1.053; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.029; (ln q + n ln n)/n = 0.2499; (ln q + 1.5 n ln n)/n = 1.6039
+B   n=17: log10 q_min(exact) =   -19.026; log10 B =   -13.452; log10 Bweak =    -7.854; log10 B2(as stated) =    -2.893; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.088; (ln q + n ln n)/n = 0.2563; (ln q + 1.5 n ln n)/n = 1.6729
+B   n=19: log10 q_min(exact) =   -22.140; log10 B =   -16.492; log10 Bweak =   -10.067; log10 B2(as stated) =    -4.851; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.144; (ln q + n ln n)/n = 0.2614; (ln q + 1.5 n ln n)/n = 1.7336
+B   n=21: log10 q_min(exact) =   -25.345; log10 B =   -19.631; log10 Bweak =   -12.374; log10 B2(as stated) =    -6.912; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.198; (ln q + n ln n)/n = 0.2655; (ln q + 1.5 n ln n)/n = 1.7878
+B   n=23: log10 q_min(exact) =   -28.633; log10 B =   -22.858; log10 Bweak =   -14.767; log10 B2(as stated) =    -9.067; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.249; (ln q + n ln n)/n = 0.2690; (ln q + 1.5 n ln n)/n = 1.8367
+B   n=25: log10 q_min(exact) =   -31.996; log10 B =   -26.167; log10 Bweak =   -17.237; log10 B2(as stated) =   -11.306; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.298; (ln q + n ln n)/n = 0.2719; (ln q + 1.5 n ln n)/n = 1.8813
+B   n=27: log10 q_min(exact) =   -35.429; log10 B =   -29.549; log10 Bweak =   -19.778; log10 B2(as stated) =   -13.622; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.345; (ln q + n ln n)/n = 0.2744; (ln q + 1.5 n ln n)/n = 1.9223
+B   n=29: log10 q_min(exact) =   -38.926; log10 B =   -32.999; log10 Bweak =   -22.386; log10 B2(as stated) =   -16.008; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.391; (ln q + n ln n)/n = 0.2766; (ln q + 1.5 n ln n)/n = 1.9602
+B   n=31: log10 q_min(exact) =   -42.483; log10 B =   -36.512; log10 Bweak =   -25.054; log10 B2(as stated) =   -18.459; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.435; (ln q + n ln n)/n = 0.2785; (ln q + 1.5 n ln n)/n = 1.9955
+B   n=33: log10 q_min(exact) =   -46.096; log10 B =   -40.084; log10 Bweak =   -27.780; log10 B2(as stated) =   -20.970; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.478; (ln q + n ln n)/n = 0.2802; (ln q + 1.5 n ln n)/n = 2.0284
+B   n=35: log10 q_min(exact) =   -49.761; log10 B =   -43.711; log10 Bweak =   -30.559; log10 B2(as stated) =   -23.539; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.520; (ln q + n ln n)/n = 0.2816; (ln q + 1.5 n ln n)/n = 2.0593
+B   n=37: log10 q_min(exact) =   -53.476; log10 B =   -47.390; log10 Bweak =   -33.389; log10 B2(as stated) =   -26.160; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.561; (ln q + n ln n)/n = 0.2830; (ln q + 1.5 n ln n)/n = 2.0884
+B   n=39: log10 q_min(exact) =   -57.238; log10 B =   -51.118; log10 Bweak =   -36.267; log10 B2(as stated) =   -28.831; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.600; (ln q + n ln n)/n = 0.2842; (ln q + 1.5 n ln n)/n = 2.1159
+B   n=41: log10 q_min(exact) =   -61.045; log10 B =   -54.892; log10 Bweak =   -39.190; log10 B2(as stated) =   -31.550; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.639; (ln q + n ln n)/n = 0.2852; (ln q + 1.5 n ln n)/n = 2.1420
+B   n=43: log10 q_min(exact) =   -64.894; log10 B =   -58.709; log10 Bweak =   -42.156; log10 B2(as stated) =   -34.314; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.677; (ln q + n ln n)/n = 0.2862; (ln q + 1.5 n ln n)/n = 2.1668
+B   n=45: log10 q_min(exact) =   -68.783; log10 B =   -62.569; log10 Bweak =   -45.163; log10 B2(as stated) =   -37.120; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.714; (ln q + n ln n)/n = 0.2871; (ln q + 1.5 n ln n)/n = 2.1905
+B   n=47: log10 q_min(exact) =   -72.711; log10 B =   -66.469; log10 Bweak =   -48.209; log10 B2(as stated) =   -39.967; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.750; (ln q + n ln n)/n = 0.2880; (ln q + 1.5 n ln n)/n = 2.2130
+B   n=49: log10 q_min(exact) =   -76.676; log10 B =   -70.406; log10 Bweak =   -51.292; log10 B2(as stated) =   -42.853; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.785; (ln q + n ln n)/n = 0.2887; (ln q + 1.5 n ln n)/n = 2.2346
+B   n=51: log10 q_min(exact) =   -80.676; log10 B =   -74.380; log10 Bweak =   -54.412; log10 B2(as stated) =   -45.776; q<=B<=Bweak: True; (y_n+sqrt2 x^2/y_n)-(y_n+1) = +0.820; (ln q + n ln n)/n = 0.2894; (ln q + 1.5 n ln n)/n = 2.2553
+B   least-squares fit ln q_min = -a n ln n + b n + c ln n + d over odd n in [15,51]: a=1.0016 b=0.3163 c=-0.0993 d=-0.6628
+B   n=101: ln prod_(j=3)^(n-1) y_j/x divided by n ln n = 0.7235 (tends to 1, not 3/2)
+B   n=1001: ln prod_(j=3)^(n-1) y_j/x divided by n ln n = 0.8115 (tends to 1, not 3/2)
+B   n=10001: ln prod_(j=3)^(n-1) y_j/x divided by n ln n = 0.8582 (tends to 1, not 3/2)

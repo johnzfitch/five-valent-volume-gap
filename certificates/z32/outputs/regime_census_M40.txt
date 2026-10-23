@@ -1,0 +1,2 @@
+regime census, all j1=3/2 multiset tuples 2j<=40: R1: 25270, R1c: 741, R2+: 4750, R2-: 4750, R4: 17689, R4c: 741, Tm: 39, Tp: 39, dim<2: 7581
+type/imbalance/ratio-hypothesis failures: 0

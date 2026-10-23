@@ -1,0 +1,2 @@
+2j1=7 2j_max=39: 4825 tuples, 4815 certified at q0=4.5579607, 10 not; min float stage bound 4.603  (103s)  uncertified: [(27, 27, 38, 39), (27, 30, 37, 39), (28, 28, 34, 39), (28, 32, 32, 39), (29, 32, 37, 39), (30, 32, 36, 39), (33, 36, 37, 39), (35, 35, 38, 39)]
+TOTAL 2j1=7 levels 39..39: 4825 tuples, 10 uncertified

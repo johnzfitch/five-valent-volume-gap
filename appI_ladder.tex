@@ -1,0 +1,66 @@
+\section{The \texorpdfstring{$\mathfrak{su}(2)$}{su(2)} ladder}\label{app:ladder}
+
+This appendix proves \cref{prop:Tladder} and \cref{thm:ladderA}. Write
+$G^+_d=M_d^TM_d$ on $V_d$ for $d\le s-1$ and $G^-_d=M_{d-1}M_{d-1}^T$ on $V_d$ for
+$d\ge-s+1$; $J(\kappa)$ is the zero-diagonal Jacobi matrix on $d=-s,\dots,s$ with links
+$\ell_d(\kappa)=\sqrt{\kappa-c_d}$, $c_d=d(d+1)/4$.
+
+\begin{proof}[Proof of \cref{prop:Tladder}]
+By \cref{prop:grid} the link from $(b,c-1)$ or $(b-1,c)$ to $(b,c)$ is
+$\frac14h\sqrt{F(d'\pm\frac12)G(u)}$, where $F$ is evaluated at the midpoint between the
+two diagonals it joins, and $F(d+\frac12)=(s-d)(s+d+1)=4\ell_s(d)^2$. Dividing the plaquette
+identity of \cref{lem:rowdiag} by $\ell_s(d)^2$ gives the defect, since the ratio
+$F(d+\frac12)/F(d-\frac12)$ there equals $\ell_s(d)^2/\ell_s(d-1)^2$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:ladderA}]
+\emph{A conserved Casimir.} Put $C_d=G^+_d+c_d$ for $d\le s-1$ and $C_s=G^-_s+s(s-1)/4$. By
+hypothesis $C_d=G^-_d+c_{d-1}$ also for $-s<d<s$, since $c_d-c_{d-1}=d/2$. Then
+\[
+  M_dC_d=M_dM_d^TM_d+c_dM_d=(G^-_{d+1}+c_d)M_d=C_{d+1}M_d
+\]
+for $d\le s-1$, using the second form of $C_{d+1}$. So $C=\bigoplus_dC_d$ commutes with
+$M=\bigoplus_dM_d$, hence with $M^T$ and with $W=M+M^T$, and it preserves each $V_d$.
+
+\emph{Splitting.} On the $\kappa$-eigenspace $E_\kappa$ of $C$, with $E_{\kappa,d}=E_\kappa\cap V_d$,
+$G^+_d=a_d$ and $G^-_{d+1}=a_d$ with $a_d=\kappa-c_d$, scalars, nonnegative wherever the space
+they act on is nonzero. If $a_d>0$, then $a_d^{-1/2}M_d$ is an isometry of $E_{\kappa,d}$ onto
+$E_{\kappa,d+1}$; if $a_d=0$, $M_d$ vanishes on $E_{\kappa,d}$ and $M_d^T$ on $E_{\kappa,d+1}$. Split
+$\{d:E_{\kappa,d}\ne0\}$ into maximal runs joined by links with $a_d>0$. A run cannot end at
+an interior $d_1>-s$ unless $a_{d_1-1}=0$, because $G^-_{d_1}=a_{d_1-1}>0$ on $E_{\kappa,d_1}\ne0$
+forces $E_{\kappa,d_1-1}\ne0$; likewise at the top. Transporting an orthonormal basis along
+a run shows that $W$ on the run is the chain with links $\sqrt{a_d}$ tensored with an
+identity.
+
+\emph{The two kinds of run.} If a run contains $d=s$, the wall hypothesis gives
+$a_{s-1}\ge s/2$, that is $\kappa\ge s(s+1)/4$; the same follows at $d=-s$, where
+$a_{-s}=\kappa-s(s-1)/4$. An interior end $d_2<s$ forces $\kappa=c_{d_2}\le s(s-1)/4$, so a run
+with an interior end has both ends interior, $c_{d_2}=c_{d_1-1}$, that is
+$(d_1+d_2)(d_2-d_1+1)=0$, so $d_1=-d_2=:-S$ and $\kappa=S(S+1)/4$: the links are
+$\frac12\sqrt{(S-d)(S+d+1)}$, the chain is $J_x(S)$, and $S\le s-1$, $S\equiv s\pmod1$. Every
+other run is the full range with $\kappa\ge s(s+1)/4$, the chain $J(\kappa)$.
+
+\emph{Monotonicity in $\kappa$.} Let $s(s-1)/4<\kappa<\kappa'$, so all links are positive. The
+ratios $\rho_d=\ell_d(\kappa')/\ell_d(\kappa)=\sqrt{1+(\kappa'-\kappa)/(\kappa-c_d)}$ depend on $d$
+only through $|d+\frac12|$ and increase with it. Define $\vartheta$ on the sites
+$j=d+s\in\{0,\dots,2s\}$ by $\vartheta_0=1$, $\vartheta_{j+1}=\rho_j/\vartheta_j$; then
+$J(\kappa')=\Theta J(\kappa)\Theta$ with $\Theta=\diag(\vartheta)$, and the bipartite blocks satisfy
+$B(\kappa')=\Theta_EB(\kappa)\Theta_O$. Since $\vartheta_{j+2}/\vartheta_j=\rho_{j+1}/\rho_j$, each
+colour's $\vartheta$ decreases up to the first site $j>s-1$ and increases after it, so the two
+colour minima sit at the neighbouring sites $j_*$, $j_*+1$, where $j_*$ is the least integer
+above $s-1$, and their product is $\vartheta_{j_*}\vartheta_{j_*+1}=\rho_{j_*}\ge1$, the ratio at a middle
+link. By Ostrowski's bound $\sigma_k(XBY)\ge\smin(X)\smin(Y)\sigma_k(B)$ for invertible diagonal
+$X$, $Y$, every singular value of $B(\kappa')$ is at least the corresponding one of $B(\kappa)$.
+
+\emph{The constants.} At $\kappa=s(s+1)/4$ the links are those of $J_x(s)$, whose nonzero
+eigenvalues are $\pm\frac12,\pm\frac32,\dots$ (half-integer $s$) or $\pm1,\pm2,\dots$ (integer $s$).
+For integer $s$ the bipartite block of $J(\kappa)$ is $(s+1)\times s$ of full column rank, so
+there is exactly one zero eigenvalue. The pieces $J_x(S)$ with $S\equiv s$ have the same
+nonzero eigenvalues. Equality holds for $W=J_x(s)$.
+\end{proof}
+
+The \emph{flat} version used after \cref{prop:Tladder} has the same proof with
+$C_d=N_d^TN_d$: if $N_d^TN_d=N_{d-1}N_{d-1}^T$ on every interior diagonal, then $N_dC_d=C_{d+1}N_d$,
+on the $g$-eigenspace every $g^{-1/2}N_d$ ($g>0$) is an isometry across the whole strip, and
+$T=\sum_d\ell_s(d)(N_d+N_d^T)$ is $J_x(s)\otimes\sqrt g$ there; the walls impose nothing,
+because $\ell_s$ vanishes beyond them.

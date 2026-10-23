@@ -1,0 +1,212 @@
+\section{The normal form}\label{sec:normalform}
+
+This section proves \cref{thm:nf-intro} and sets up the lattice on which all later
+proofs live. The argument is short: relabelling acts on the sign configurations,
+there are four orbits, and one operator identity on the invariant space collapses
+each orbit to two triple products.
+
+\subsection{Orbits of sign configurations}
+
+Five tangent directions in general position, that is with no three of them coplanar,
+define ten nonzero signs $\epsilon(IJK)$, $I<J<K\le5$; such a sign vector is a uniform
+chirotope of rank three, so it satisfies the three-term Grassmann--Pl\"ucker relations.
+This is the hypothesis of \cref{thm:nf-intro}; \cref{rem:nongeneric} says what
+changes without it.
+
+\begin{lemma}[Relabelling]\label{lem:relabel}
+Let $\pi$ permute the edges. The unitary that permutes the tensor factors maps the
+operator of $(\epsilon;j_1,\dots,j_5)$ to the operator of
+$(\epsilon^\pi;j_{\pi(1)},\dots,j_{\pi(5)})$, where $\epsilon^\pi$ is the relabelled
+chirotope. Moreover $A_{-\epsilon}=-A_\epsilon$.
+\end{lemma}
+
+\begin{proof}
+$A_\epsilon=\frac16\sum\chi_\epsilon(I,J,K)\,\hat q_{IJK}$ over ordered triples of
+distinct edges, where $\chi_\epsilon$ is the alternating extension of $\epsilon$; the
+operator $\hat q_{IJK}=-4iJ_I\cdot(J_J\times J_K)$ is alternating because the three
+vector operators commute. This expression is covariant under relabelling.
+\end{proof}
+
+So the set of spectra over all spin assignments is an invariant of the relabelling
+orbit. The orbits are found by an exact finite computation (\cref{sec:computer}).
+
+\begin{proposition}{Orbits}{orbits}
+Exactly $384$ of the $2^{10}$ sign vectors satisfy the three-term
+Grassmann--Pl\"ucker relations, and each is realised by integer tangent vectors with
+entries in $[-4,4]$. Under relabelling they form four orbits, of sizes $24$, $120$,
+$120$ and $120$, each closed under $\epsilon\mapsto-\epsilon$. Through
+\eqref{eq:sigma} they produce $1$, $20$, $30$ and $120$ distinct reduced vectors
+$\sigma$, $171$ in all ($85$ nonzero up to sign), and no $\sigma$ occurs in two orbits.
+Every $\sigma$ of the last orbit contains $\pm4$, and no other $\sigma$ does.
+\end{proposition}
+
+These counts are Brunnemann and Rideout's: $384$ configurations and $171$ reduced
+vectors at valence five~\cite[Table~1]{BR2008b}, and four classes under
+permutation~\cite[Table~3]{BR2010}, whose representatives $(2,0,0,0)$, $(2,2,2,0)$ and
+$(2,2,4,0)$ lie in the second, third and fourth orbit.
+
+\subsection{Two triple products}
+
+\begin{lemma}\label{lem:collapse}
+On $\Inv(j_1\otimes\cdots\otimes j_5)$, $J_1\cdot\bigl((J_2+J_3)\times J_4\bigr)=
+J_1\cdot(J_4\times J_5)$.
+\end{lemma}
+
+\begin{proof}
+Write $B=J_2+J_3$. On invariant vectors $J_5=-(J_1+B+J_4)$, acting first. The terms
+$J_1\cdot(J_4\times J_1)=-iJ_4\cdot J_1$ and $J_1\cdot(J_4\times J_4)=iJ_1\cdot J_4$
+cancel, so $J_1\cdot(J_4\times J_5)=-J_1\cdot(J_4\times B)=J_1\cdot(B\times J_4)$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:nf-intro}]
+For each orbit we exhibit a labelling with $\sigma=(\alpha,\beta,\beta,0)$: the orbits
+give $(\alpha,\beta)=(2,0)$, $(2,2)$ and $(4,2)$ up to signs (the computation of
+\cref{prop:orbits}). Then by \eqref{eq:sigma}
+\[
+  A=\alpha\hat q_{123}+\beta(\hat q_{124}+\hat q_{134})
+   =-4i\bigl[\alpha J_1\cdot(J_2\times J_3)+\beta J_1\cdot\bigl((J_2+J_3)\times J_4\bigr)\bigr],
+\]
+which is \eqref{eq:nf} by \cref{lem:collapse}. The signs of $\alpha$ and $\beta$ do not
+affect the spectrum: in the basis of the next subsection the first product preserves
+$c=|J_4+J_5|$ and the second shifts it by $\pm1$, so the diagonal unitary $(-1)^c$
+reverses the sign of $\beta$ alone, and $(-1)^b$ that of $\alpha$. Finally, $|\beta/\alpha|$
+takes the value $\frac12$ only on the last orbit, which is the orbit of the $\sigma$
+containing $\pm4$.
+\end{proof}
+
+For each $\epsilon$ we also solved the linear equation
+$\sum\epsilon(IJK)\,J_I\cdot(J_J\times J_K)=\lambda J_a\cdot(J_b\times J_c)+\mu J_a\cdot
+(J_d\times J_e)$ on the invariant space over all choices of the leg $a$ and of the
+split of the other four. In the last two orbits exactly one leg $a$ admits a
+solution with $\lambda\mu\ne0$; this is the \emph{distinguished edge}. In the third
+orbit the split into pairs is not unique, because on the invariant space
+\begin{equation}\label{eq:twosplits}
+  J_1\cdot(J_2\times J_3+J_4\times J_5)=J_1\cdot(J_3\times J_4-J_2\times J_5),
+\end{equation}
+by the computation of \cref{lem:collapse} applied to
+$J_1\cdot((J_2+J_4)\times(J_3+J_5))$. This is one face of a larger symmetry of the
+$t=1$ operator, \cref{prop:S4} below.
+
+\begin{remark}[Tangents not in general position]\label{rem:nongeneric}
+If some three tangents are coplanar but not all five, some signs $\epsilon(IJK)$ vanish
+and \cref{thm:nf-intro} does not apply. The same exact enumeration, run over
+$\{0,\pm1\}^{10}$, finds $1\,680$ such sign vectors with pairwise non-parallel tangents
+(each satisfies the chirotope axioms and is realised by integer tangents with entries in
+$[-4,4]$), in $16$ relabelling orbits, and their reduced signs take every value from $-4$
+to $4$. In $9$ orbits the operator still has the form \eqref{eq:nf}, now with
+$|t|\in\{0,\frac13,\frac12,\frac23,1\}$ and $|\alpha|\in\{1,2,3\}$, so the results of
+\cref{sec:closing,sec:tone} apply to it after rescaling $q$ by $|\alpha|/2$; in particular
+\cref{thm:closing}(i) closes the gap on the four orbits with $|t|\in\{\frac13,\frac12,\frac23\}$.
+In the other $7$ orbits ($780$ sign vectors) the operator is not of the form
+\eqref{eq:nf}: in one of them it is a combination of two triple products that share two
+edges, in the other six no two triple products suffice, and we do not treat them. Edges with parallel tangents are
+the degenerate case of the remark at the end of \cref{sec:v6}.
+\end{remark}
+
+\subsection{The recoupling grid}
+
+Fix the normal form \eqref{eq:nf} and write $s=j_1$ for the distinguished spin. The
+basis adapted to it couples the two pairs,
+\[
+  |b,c\rangle,\qquad b=|J_2+J_3|,\quad c=|J_4+J_5|,\qquad |b-c|\le s\le b+c .
+\]
+For a pair $P=(j_a,j_b)$ put $n_P=j_a+j_b+1$ and $m_P=|j_a-j_b|$, so that the pair
+spin ranges over $[m_P,n_P-1]$, and write $h_P(L)$ for the Stark links
+\eqref{eq:stark} of $H(n_P,m_P)$. The sites $(b,c)$ fill a rectangle cut by the
+strip $|d|\le s$ and the corner $u\ge s$, where
+\[
+  d=b-c,\qquad u=b+c,\qquad F(x)=(s+\tfrac12)^2-x^2,\qquad G(u)=(u+s+1)(u-s).
+\]
+The product $X=J_1\cdot(J_2\times J_3)$ commutes with $c$ and moves $b$ by one; on
+fixed $c$ it is the four-valent operator of $\Inv(j_2,j_3,s,c)$. The product
+$D=J_1\cdot(J_4\times J_5)$ commutes with $b$ and moves $c$.
+
+\begin{proposition}{The grid}{grid}
+A diagonal unitary gauge carries $iA_{\alpha,\beta}$, up to an overall sign, to the real
+symmetric, entrywise nonnegative matrix on the sites with links
+\begin{align*}
+  (b-1,c)\text{--}(b,c):\quad &|\alpha|\,h_1(b)\sqrt{F(d-\tfrac12)\,G(u)},\\
+  (b,c-1)\text{--}(b,c):\quad &|\beta|\,h_2(c)\sqrt{F(d+\tfrac12)\,G(u)},
+\end{align*}
+where $(b,c)$ is the upper end of the link and $d,u$ are taken there. In particular the
+eigenvalue moduli of $A_{\alpha,\beta}$ are those of this matrix.
+\end{proposition}
+
+\begin{proof}
+By \eqref{eq:ak} applied to $\Inv(j_2,j_3,s,c)$, the $X$-link has squared modulus
+$\frac1{16}h_1(b)^2P(b;s,c)$ with $P(b;s,c)=((s+c+1)^2-b^2)(b^2-(s-c)^2)$, and the
+polynomial identity
+\begin{equation}\label{eq:heron}
+  P(b;s,c)=F(d-\tfrac12)\,G(u),\qquad P(c;s,b)=F(d+\tfrac12)\,G(u)
+\end{equation}
+gives the stated form after multiplying by $4|\alpha|$; the $D$-links are the same with
+the pairs exchanged. It remains to remove the signs. On invariant vectors
+$X=-L\cdot(J_2\times J_3)$ with $L=J_4+J_5$, and by the Wigner--Eckart theorem for
+a scalar product of tensor operators on two subsystems~\cite[(7.1.6)]{Edmonds},
+\[
+  \langle b-1,c|X|b,c\rangle=(-1)^{b+c+s}\begin{Bmatrix}s&c&b-1\\1&b&c\end{Bmatrix}
+  \langle b-1\|J_2\times J_3\|b\rangle\,\langle c\|L\|c\rangle .
+\]
+The $6j$ symbol equals $\{s\ c\ b;\,1\ b-1\ c\}$, whose sign is $(-1)^{s+b+c}$
+\cite[Table~5]{Edmonds}; the two $c$-dependent signs cancel, $\langle c\|L\|c\rangle>0$,
+and the remaining factor does not involve $c$. So the phase of an $X$-link depends on
+$b$ alone, and likewise the phase of a $D$-link depends on $c$ alone. A diagonal
+unitary depending on $(b,c)$ then makes every link positive.
+\end{proof}
+
+The identity \eqref{eq:heron} is where the Heron factors of the $6j$ coefficient
+split: the $s$-dependence of every link is a function of the diagonal $d$ times a
+function of the antidiagonal $u$. It is the source of the congruence in
+\cref{thm:heron-stark}. The sites carry a natural two-colouring, the parity of
+$u-s$, and every link joins the two colours, so the matrix is bipartite and its
+nonzero spectrum is $\pm$ the nonzero singular values of the block $B$ from one colour
+to the other. \Cref{fig:grid} draws a small example.
+
+\begin{schemfigure}
+\begin{tikzpicture}[scale=0.78]
+  \fill[esPlotGrid!70] (-0.45,-0.45) rectangle (6.45,6.45);
+  \draw[esPlotGrey, densely dotted] (-0.45,-0.45) rectangle (6.45,6.45);
+  \fill[esPlotBlue!12] (-0.45,0.85) -- (5.15,6.45) -- (6.45,6.45) -- (6.45,5.15) -- (0.85,-0.45) -- (-0.45,-0.45) -- cycle;
+  \draw[esPlotBlue!70, dashed] (-0.45,0.55) -- (5.45,6.45);
+  \draw[esPlotBlue!70, dashed] (0.55,-0.45) -- (6.45,5.45);
+  \foreach \a/\b/\c/\d in {0/1/1/1,1/1/2/1,1/2/2/2,2/2/3/2,2/3/3/3,3/3/4/3,3/4/4/4,4/4/5/4,4/5/5/5,5/5/6/5,5/6/6/6} \draw[esPlotBlue, line width=1.1pt, shorten >=4pt, shorten <=4pt] (\a,\b) -- (\c,\d);
+  \foreach \a/\b/\c/\d in {1/0/1/1,1/1/1/2,2/1/2/2,2/2/2/3,3/2/3/3,3/3/3/4,4/3/4/4,4/4/4/5,5/4/5/5,5/5/5/6,6/5/6/6} \draw[esPlotAmber, line width=1.1pt, shorten >=4pt, shorten <=4pt] (\a,\b) -- (\c,\d);
+  \foreach \a/\b in {0/1,1/0,1/2,2/1,2/3,3/2,3/4,4/3,4/5,5/4,5/6,6/5} \fill[esPlotInk] (\a,\b) circle (3.4pt);
+  \foreach \a/\b in {1/1,2/2,3/3,4/4,5/5,6/6} \draw[esPlotInk, fill=white, line width=0.9pt] (\a,\b) circle (3.4pt);
+  \draw[esPlotInk, line width=0.8pt] (-0.15,-0.15) -- (0.15,0.15) (-0.15,0.15) -- (0.15,-0.15);
+  \draw[->] (-0.45,-0.9) -- (7.0,-0.9) node[right] {$b$};
+  \draw[->] (-0.9,-0.45) -- (-0.9,7.0) node[above] {$c$};
+  \node[font=\small, text=esPlotBlue!85!black, anchor=west] at (4.6,7.0) {wall $d=-s$};
+  \node[font=\small, text=esPlotBlue!85!black, anchor=west] at (6.6,5.3) {wall $d=s$};
+  \node[font=\small, anchor=west, align=left] at (8.0,2.3)
+     {\textcolor{esPlotBlue!85!black}{horizontal links: $X=J_1\cdot(J_2\times J_3)$,}\\
+      \textcolor{esPlotBlue!85!black}{\quad Stark link $h_1(b)$ times Heron factors}\\[2pt]
+      \textcolor{esPlotAmber!85!black}{vertical links: $D=J_1\cdot(J_4\times J_5)$,}\\
+      \textcolor{esPlotAmber!85!black}{\quad Stark link $h_2(c)$ times Heron factors}\\[2pt]
+      filled and open: the two colours,\\ the parity of $u-s$};
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:grid}%
+\schemcap{FIG.\ \theesfig}{The recoupling grid for $s=j_1=1$ and two pairs whose spins
+range over $0,\dots,6$; the cross marks the corner site $(0,0)$, excluded because
+$b+c<s$. The states fill the rectangle of the two pair spins $(b,c)$, cut
+to the strip $|b-c|\le s$ and above the corner $b+c\ge s$. The first triple product moves horizontally, the second
+vertically, and every link joins the two colours. For $s=\frac12$ the strip is a
+single zigzag path: the chain of \cref{sec:closing}.}
+
+\begin{proposition}{Symmetry at equal weights}{S4}
+At $t=1$, with $T=J_1\cdot(J_2\times J_3+J_4\times J_5)$, the moduli of the
+spectrum of $T$ are invariant under every permutation of $j_2,j_3,j_4,j_5$. On the
+invariant space $T=-\sum_{2\le a<b<c\le5}J_a\cdot(J_b\times J_c)$ and
+$T=-i\,[J_2\cdot J_3-J_4\cdot J_5,\;J_3\cdot J_4-J_2\cdot J_5]$.
+\end{proposition}
+
+\begin{proof}
+On invariant vectors $T=-V\cdot L$ with $V=J_2\times J_3+J_4\times J_5$ and
+$L=J_2+\cdots+J_5$, because $J_1$ commutes with $V$; and $(J_2\times J_3)\cdot(J_2+J_3)=0$
+since $J_2\cdot(J_2\times J_3)=iJ_2\cdot J_3=-J_3\cdot(J_2\times J_3)$. What remains are
+the four triple products of the other legs, a cyclically symmetric expression; the
+commutator form follows from $J_a\cdot(J_b\times J_c)=\frac i4[(J_a+J_b)^2,(J_b+J_c)^2]$.
+The transposition of legs $2,3$ maps $T$ to $-X+D$, which the gauge $(-1)^b$ maps back
+to $X+D$. A transposition and the four-cycle generate the symmetric group.
+\end{proof}

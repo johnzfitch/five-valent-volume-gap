@@ -1,0 +1,194 @@
+\section{Large spins at equal weights}\label{sec:large}
+
+The slices of \cref{sec:tone} fix $j_1$. This section asks how the gap at $t=1$ grows,
+and in which spin. The answer is that it grows linearly in the distinguished spin
+$j_1$, with a sharp slope that we compute exactly, but only like $M/\ln M$ in the
+largest spin $M=2j_{\max}$ when $j_1$ is fixed. The first statement is proved on the
+class where three of the other legs are bounded; the second is proved as an upper bound.
+
+\subsection{The guiding picture}
+
+\Cref{fig:growth} shows the two growth laws. Along $(\frac12;j-\frac12,j,j,j)$, the
+per-level minimisers of the exhaustive surveys, $\qm\ln M/M$ rises slowly, from $2.97$ at
+$M=60$ to $3.13$ at $M=4096$.
+Along $(s;\frac12,1,1,s-\frac12)$, the per-$j_1$ minimisers, $\qm$ is a line of slope
+$4\sqrt{10-6\sqrt2}$ in $s$ up to a bounded correction.
+
+Both laws have a structural explanation. When $j_1$ is large and three of the other
+legs are small, the fourth leg is forced to within a bounded distance of $j_1$, and
+$T/j_1$ converges spectrally to an operator of the three small spins alone: minus the
+$z$-component of $U=J_2\times J_3+J_2\times J_4+J_3\times J_4$ on one weight space. Its smallest
+nonzero eigenvalue is the slope. When $j_1$ is fixed and the other spins are large,
+the low modes sit in the corner $u\approx s$ of the grid, where the links
+$\frac14h\sqrt{F}\sqrt G$ look like $\frac n8$ times the matrix elements of $J_x$ in
+spin $s$ (the $\sqrt F$) times those of a non-compact $\mathfrak{su}(1,1)$ generator
+$K_1$ (the $\sqrt{G}$, with Bargmann index $s+1$). The generalised eigenfunctions of
+$K_1$ are $u^{-1/2+i\varkappa}$, and cutting $u$ to $[s,n]$ quantises
+$\varkappa\approx\pi/(2\ln n)$; with the smallest $|J_x|$-eigenvalue $\frac12$ (half-integer
+$s$) or $1$ (integer $s$) this predicts growth like $\pi M/\ln M$ or $2\pi M/\ln M$. The
+data confirm the order $M/\ln M$, and at the sizes we can compute the constants are close
+to $\pi$ and $2\pi$, but they do not settle them (see the end of this section). This is
+a heuristic, but it is also where the upper bound of
+\cref{thm:N1} comes from: on the chain of $j_1=\frac12$ the site index $i$ plays the role
+of $u$, and the test vector there is $i^{-1/2}\sin(\varkappa\ln i)$ with
+$\varkappa=\pi/(2\ln K)$, the real form of the generalised eigenfunction, up to a
+slowly varying weight.
+
+\begin{schemfigure}
+\begin{tikzpicture}
+\begin{axis}[es plot, width=0.46\linewidth, height=6.0cm, xmode=log, ymode=log,
+  log basis x=2, xlabel={$M=2j_{\max}$}, ylabel={$\qm$}, xmin=3, xmax=5000,
+  legend style={font=\scriptsize, draw=none, fill=none, at={(0.02,0.98)}, anchor=north west},
+  legend cell align=left]
+  \addplot[esPlotBlue, line width=1.2pt, mark=*, mark size=1.2pt] table[x=M, y=q_G1] {outputs/fig_growth.dat};
+  \addlegendentry{$(\frac12;j-\frac12,j,j,j)$}
+  \addplot[esPlotAmber, line width=1.0pt, dashed] table[x=M, y=piMlnM] {outputs/fig_growth.dat};
+  \addlegendentry{$\pi M/\ln M$}
+\end{axis}
+\end{tikzpicture}\hfill
+\begin{tikzpicture}
+\begin{axis}[es plot, width=0.46\linewidth, height=6.0cm,
+  xlabel={$2j_1$}, ylabel={$\qm$}, xmin=0, xmax=82,
+  legend style={font=\scriptsize, draw=none, fill=none, at={(0.02,0.98)}, anchor=north west},
+  legend cell align=left]
+  \addplot[esPlotBlue, line width=1.2pt, mark=*, mark size=1.0pt] table[x=twos, y=q] {outputs/fig_slope.dat};
+  \addlegendentry{$(s;\frac12,1,1,s-\frac12)$}
+  \addplot[esPlotAmber, line width=1.0pt, dashed] table[x=twos, y=slope] {outputs/fig_slope.dat};
+  \addlegendentry{$4\sqrt{10-6\sqrt2}\,s$}
+\end{axis}
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:growth}%
+\schemcap{FIG.\ \theesfig}{The two growth laws at $t=1$. Left: at fixed $j_1=\frac12$
+the gap grows only like $M/\ln M$ in the largest spin ($M$ up to $4096$); the dashed line
+$\pi M/\ln M$ is the heuristic of the text, which the data cross near $M=2^{14}$, beyond
+the plot. Right: along
+the per-$j_1$ minimisers it grows linearly in $j_1$, with the slope
+$4\sqrt{10-6\sqrt2}=4.92296$ of \cref{thm:slope}.}
+
+\subsection{The three-spin pencil}
+
+The idea is to remove the distinguished leg altogether. Removing it turns $T$ into an
+operator on the other four legs, restricted to the highest-weight vectors of weight
+$s=j_1$; removing a fifth leg as well leaves an operator on three spins. The price is
+the projector onto highest-weight vectors, the extremal projector of
+$\mathfrak{su}(2)$, which is an explicit series in the lowering and raising operators;
+its matrix elements are the alternating Pochhammer sums below. The result is a
+generalised eigenvalue problem on a space whose size does not depend on $j_1$.
+
+Single out one of the legs $2$--$5$ and call it leg $5$. Write $V=j_2\otimes j_3\otimes
+j_4$, $\mathsf G=J_2+J_3+J_4$, $U=J_2\times J_3+J_2\times J_4+J_3\times J_4$,
+$M_0=s-j_5$, and $V[M_0]$ for the weight space $\mathsf G_z=M_0$. Put
+$\chi_k=(-1)^k/(k!(2s+2)_k)$, $\chi_k'=(-1)^k/(k!(2s+3)_k)$,
+$\mathsf X=sU_z+\frac12(U_+\mathsf G_-+U_-\mathsf G_+)$ and
+\[
+  \mathsf B=\sum_k\chi_k\mathsf G_-^k\mathsf G_+^k,\qquad \mathsf B'=\sum_k\chi'_k\mathsf G_-^k\mathsf G_+^k,\qquad
+  \mathsf A=\mathsf X^*\mathsf B-\frac{j_5}{2s+2}\,U_-\mathsf B'\mathsf G_+ .
+\]
+
+\begin{theorem}{Three-spin pencil}{pencil}
+$\mathsf A$ is Hermitian and $\mathsf B\succeq0$ on $V[M_0]$, and there
+$\mathsf A=(sU_z+\frac12U_+\mathsf G_-)\mathsf B$. On the part of $V[M_0]$ with
+$\mathsf G^2=g(g+1)$, $\mathsf B$ is the scalar
+$\beta_g=(s+j_5+1-g)_{g-M_0}/(2s+2)_{g-M_0}\in[0,1]$, positive exactly when
+$|s-j_5|\le g\le s+j_5$. The spectrum of $T$ on $\Inv(j_1,\dots,j_5)$, with
+multiplicities, is the spectrum of $-\mathsf B^{-1/2}\mathsf A\mathsf B^{-1/2}$ on the
+range of $\mathsf B$.
+\end{theorem}
+
+The proof is in \cref{app:bounded}; the theorem was also checked against the full
+tensor-product construction on $15$ tuples (\cref{sec:computer}).
+
+As $s\to\infty$ with the three spins and $M_0$ fixed, $\chi_k=O(s^{-k})$ for $k\ge1$, so
+$\mathsf B\to1$ and, by the second form of $\mathsf A$, $\mathsf A/s\to U_z$. So the
+spectrum of $T/j_1$ converges to that of $-U_z$, where $U_z$ is the \emph{three-spin
+chirality} on $(j_2\otimes j_3\otimes j_4)_{M_0}$; the sign does not matter for the
+moduli, because the spectrum of $U_z$ is symmetric.
+
+\begin{theorem}{The sharp slope}{slope}
+On $(\frac12\otimes1\otimes1)_{M_0=1/2}$, $U_z$ has characteristic polynomial
+$x(4x^4-20x^2+7)/4$ up to sign, so its smallest nonzero eigenvalue modulus is
+$\nu_0=\sqrt{(5-3\sqrt2)/2}=0.61537$. For every $s\ge\frac32$ the nonzero spectrum of $T$
+at $(s;\frac12,1,1,s-\frac12)$ is $\pm x_-,\pm x_+$ with
+\[
+  x_\pm^2=\tfrac52s^2+\tfrac32s-\tfrac94\pm\tfrac14(3s+4)\sqrt{8s^2-12s+5},
+\]
+so $\qm=8x_-=8\nu_0\,s+O(1)$. Consequently no bound $q\ge c\,j_1-C$ valid for all
+spins can have $c>8\nu_0=4\sqrt{10-6\sqrt2}=4.92296$.
+\end{theorem}
+
+\begin{proof}
+For $s\ge\frac32$ the grid has five sites and a single plaquette whose product is a
+perfect square of a polynomial in $s$; its characteristic polynomial is
+$x(16x^4-(80s^2+48s-72)x^2+28s^4+36s^3-29s^2-36s+1)/16$, identically in $s$, and the
+stated roots follow. The value at $s=\frac32$ is $7.4763$ and at $s=2$ is $10.5410$, the
+minima of these two slices over all spins at most $19$.
+\end{proof}
+
+\subsection{Three bounded legs}
+
+Let $\Cl_K$ be the set of tuples in which three of the legs $2$--$5$ have $2j\le K$, with
+$j_1$ and the fourth leg arbitrary. By \cref{prop:S4} the bounded legs may be taken to
+be $2,3,4$.
+
+\begin{theorem}{Linear law on three bounded legs}{C6}
+On $\Cl_6$, every nonzero eigenvalue of $8T$ satisfies $q\ge4.5579607$ and
+\[
+  q\ \ge\ 8\nu_0\,j_1-1370,\qquad 8\nu_0=4\sqrt{10-6\sqrt2}=4.9229562\ldots
+\]
+The same holds on $\Cl_2$ and $\Cl_4$ with $1370$ replaced by $97$ and $453$. By
+\cref{thm:slope} the slope cannot be larger.
+\end{theorem}
+
+So on these classes the gap grows linearly in $j_1$ with the sharp slope; the additive
+constants are crude. The proof (\cref{app:bounded}) has a picture behind it: for $s$
+beyond an explicit threshold the grid of a tuple in $\Cl_6$ has a fixed shape, its links
+are $s$ times a limit matrix plus a correction bounded in Frobenius norm, and the limit
+matrix is injective with smallest singular value at least $\nu_0$. For all but two limit
+matrices this is certified in interval arithmetic with room to spare; the two exceptions
+are the extremal triple $(1,1,\frac12)$ of \cref{thm:slope}, where the smallest singular
+value is exactly $\nu_0$. Weyl's inequality does the rest. Below the threshold there are
+finitely many tuples, certified individually, and there the linear bound is negative
+anyway.
+
+\subsection{The largest spin}
+
+\begin{theorem}{Sublinear growth in the largest spin}{N1}
+Along $(\frac12;j-\frac12,j,j,j)$, with $K=2j\ge2$,
+\[
+  \qm\ \le\ 2\pi\,\frac{\sqrt{2j(4j+1)(\ln K+\pi^2/6)}}{(\ln K)^{3/2}},
+\]
+so $\qm\ln M/M$ is bounded and $\qm/j_{\max}\to0$. Along $(1;j,j,j,j)$, with
+$n=2j+1$, $\qm\le8\pi n\sqrt{(\ln n+\pi^2/6)/(2\ln^3(n-1))}$.
+\end{theorem}
+
+\begin{proof}
+By \cref{lem:innerouter} and \cref{prop:grid} the chain has $4j$ sites with
+$a_{2i-1}^2=4(2j+1-i)(2j+1+i)i^2$ and $a_{2i-2}^2=4(2j+1-i)(2j+i)(i-1)i$, and $B$ is
+$K\times K$ lower bidiagonal and invertible, so $\qm=\min\|Bx\|/\|x\|$. Take
+$x_i=(-1)^iz_i\varphi_i$ with $z_i^2=\prod_{2\le l\le i}a_{2l-2}^2/a_{2l-1}^2=(2j+2)/(i(2j+1+i))$. Then
+\[
+  \|Bx\|^2=a_1^2\varphi_1^2+\sum_{i\ge2}4(2j+2)(2j+1-i)\,i\,(\varphi_i-\varphi_{i-1})^2,\qquad
+  \|x\|^2=\sum_i\frac{(2j+2)\varphi_i^2}{i(2j+1+i)}.
+\]
+Choose $\varphi_i=\sin(\pi\ln i/(2\ln K))$, so $\varphi_1=0$ and $|\Delta\varphi_i|\le
+\frac{\pi}{2\ln K}\ln\frac{i}{i-1}$. Since $\ln\frac i{i-1}\le\frac1{i-1}$,
+$i\ln^2\frac i{i-1}\le\ln\frac i{i-1}+\frac1{(i-1)^2}$, and the sum over $2\le i\le K$
+is at most $\ln K+\pi^2/6$. This bounds $\|Bx\|^2\le2\pi^2j(2j+2)(\ln K+\pi^2/6)/\ln^2K$,
+while $\varphi_i^2/i\ge\frac12\int_{i-1}^i\varphi^2/x\,dx$ gives $\|x\|^2\ge(2j+2)\ln K/(4(4j+1))$.
+The second family is the same computation on the pencil of \cref{prop:pencil1} with
+identical pairs, where $A^-_e=0$ and the corner end is Dirichlet.
+\end{proof}
+
+Numerically both families grow like $M/\ln M$, but the constants are not settled by the
+sizes we can reach. On the first family $\qm\ln M/M$ is $2.97$ at $M=60$ and $3.13$ at
+$M=4096$, the end of \cref{fig:growth}; it passes $\pi$ near $M=2^{14}$ and is $3.151$ at
+$M=2^{16}$ and $3.154$ at $M=2^{18}$, still rising. On the second family it is $5.52$ at
+$M=60$, $5.87$ at $M=4096$, $5.97$ at $M=2^{16}$ and $6.00$ at $M=2^{18}$, below $2\pi$ and
+still rising. So the heuristic constants $\pi$ and $2\pi$ are the right size, and we do not
+know whether they are the limits. The test vector of the proof overestimates the first
+family's $\qm$ by a factor $1.31$ at $M=60$, $1.15$ at $M=4096$ and $1.11$ at $M=2^{16}$. For half-integer $j_1\ge\frac52$ the same corner mechanism is visible in a single
+one-dimensional chain at the wall: if some ordered pairing has an injective block, then
+$\lambda(T)$ is at most the smallest singular value of the chain on the rows $d=j_1-1$
+and the columns $d=j_1$, because the wall columns meet no other rows. We know the
+decay rate of that chain only numerically.

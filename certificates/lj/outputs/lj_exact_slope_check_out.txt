@@ -1,0 +1,22 @@
+K=2: cases 14, exceptions 2, min other sigma 0.8660245, max s0 9.5, max 8E(s0) 96.045, C_K recomputed 97, 8nu0*maxs0 - C_K = -50.23 (negative: True)
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=-1/2 sigma_inf=0.6153689129956302 s0=8.0 sites=[(0, 0), (1, 0), (1, 1), (2, 0), (2, 1)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=1/2 sigma_inf=0.6153689129956302 s0=4.5 sites=[(0, 0), (1, -1), (1, 0), (2, -1), (2, 0)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+K=4: cases 130, exceptions 2, min other sigma 0.7087114, max s0 38.5, max 8E(s0) 452.082, C_K recomputed 453, 8nu0*maxs0 - C_K = -263.47 (negative: True)
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=-1/2 sigma_inf=0.6153689129956302 s0=8.0 sites=[(0, 0), (1, 0), (1, 1), (2, 0), (2, 1)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=1/2 sigma_inf=0.6153689129956302 s0=4.5 sites=[(0, 0), (1, -1), (1, 0), (2, -1), (2, 0)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+K=6: cases 532, exceptions 2, min other sigma 0.7087114, max s0 113.0, max 8E(s0) 1369.517, C_K recomputed 1370, 8nu0*maxs0 - C_K = -813.71 (negative: True)
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=-1/2 sigma_inf=0.6153689129956302 s0=8.0 sites=[(0, 0), (1, 0), (1, 1), (2, 0), (2, 1)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+   exception t=[1, 2, 2] assign=(2, 2, 1) M0=1/2 sigma_inf=0.6153689129956302 s0=4.5 sites=[(0, 0), (1, -1), (1, 0), (2, -1), (2, 0)] Y (3, 2) charpoly x*(4*x**4 - 20*x**2 + 7)/4
+     singular values of Y_inf: [0.615369528365158, 2.14972564378798]; smin - nu0 = 0
+nu0 = 0.61536952836515834975  8nu0 = 4.9229562269212667980  4sqrt(10-6sqrt2) = 4.9229562269212667980
+U_z order (1/2, 1, 1) weight 1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4
+U_z order (1/2, 1, 1) weight -1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4
+U_z order (1, 1/2, 1) weight 1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4
+U_z order (1, 1/2, 1) weight -1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4
+U_z order (1, 1, 1/2) weight 1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4
+U_z order (1, 1, 1/2) weight -1/2 charpoly x*(4*x**4 - 20*x**2 + 7)/4

@@ -1,0 +1,4 @@
+row k=2: J_x ratio 0.8729  flat transfer ||N^+N^T|| 1.2936 (theta^-1/2)  smin(solving N) 37.258
+row k=4: J_x ratio 0.9798  flat transfer ||N^+N^T|| 1.2959 (theta^-1/2)  smin(solving N) 37.587
+row k=6: J_x ratio 1.0690  flat transfer ||N^+N^T|| 1.2982 (theta^-1/2)  smin(solving N) 37.919
+row k=8: J_x ratio 1.3333  flat transfer ||N^+N^T|| 1.3003 (theta^-1/2)  smin(solving N) 38.235

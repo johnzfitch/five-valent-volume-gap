@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or these certificates, please cite the paper below."
+title: "Code and certificates for: The Volume Gap at Five-Valent Vertices"
+abstract: >-
+  The paper's LaTeX sources, its own code, and the exact, interval and rigorously
+  bounded floating-point certificates behind its computer-assisted proofs, with
+  stored outputs and SHA-256 checksums.
+type: software
+authors:
+  - family-names: Fitch
+    given-names: John Zachary
+    email: zack@internetuniverse.org
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0007-7953-1531"
+version: 1.0.0
+date-released: 2026-10-22
+repository-code: "https://github.com/johnzfitch/five-valent-volume-gap"
+license: MIT
+keywords:
+  - loop quantum gravity
+  - volume operator
+  - spectral gap
+  - Ashtekar-Lewandowski volume
+  - Jacobi matrix
+  - Stark matrix
+  - computer-assisted proof
+preferred-citation:
+  type: article
+  title: "The Volume Gap at Five-Valent Vertices"
+  authors:
+    - family-names: Fitch
+      given-names: John Zachary
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0007-7953-1531"
+  year: 2026
+  url: "https://github.com/johnzfitch/five-valent-volume-gap/blob/main/lqg_volume_gap.pdf"

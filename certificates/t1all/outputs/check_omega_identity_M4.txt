@@ -1,0 +1,1 @@
+tuples 512; max rel. residuals: O1 6.25e-16  O2 4.97e-15  O3 5.11e-15

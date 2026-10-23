@@ -1,0 +1,156 @@
+\Needspace*{20\baselineskip}
+\section{The operator and its normalisation}\label{sec:operator}
+
+This section fixes the operator once, from its definition by Ashtekar and
+Lewandowski, in the normalisation in which Brunnemann and Rideout published their
+numbers, and checks the normalisation against those numbers.
+
+\subsection{From the definition to a matrix}
+
+Throughout, $J_I=(J_I^1,J_I^2,J_I^3)$ is the Hermitian angular momentum operator of
+edge $I$, with $[J_I^a,J_I^b]=i\epsilon^{abc}J_I^c$, acting in the spin-$j_I$
+representation; operators on different edges commute. Every edge carries a positive
+spin, $j_I\ge\frac12$, and all statements below assume this: an edge of spin $0$ carries
+$J_I=0$, so it is not an edge of the vertex, and a five-valent tuple with a spin-$0$ entry
+is really a vertex of lower valence. (Allowing such entries would change the constants:
+at $t=1$ the tuple $(\frac12;\frac12,\frac12;0,\frac12)$ is the four-valent vertex with
+four spins $\frac12$ and has $\qm=2\sqrt3$, below the equal-weight constant of
+\cref{sec:tone}.) A \emph{half-integer} is an odd multiple of $\frac12$; when we contrast
+integer and half-integer spins, ``half-integer'' excludes the integers. The volume of a region acts
+on a spin network through its vertices. At a vertex with edges $e_1,\dots,e_N$,
+Ashtekar and Lewandowski~\cite[eq.~(4.13)]{AL1998} define
+\[
+  \hat V=\kappa_0\sqrt{|\hat q_v|},\qquad
+  \hat q_v=\frac1{48}\,\epsilon_{ijk}\sum_{e,e',e''}\epsilon(e,e',e'')\,J^i_eJ^j_{e'}J^k_{e''},
+\]
+with the sum over ordered triples of edges at the vertex, $\epsilon(e,e',e'')$ the
+sign of the determinant of their tangent vectors ($0$ if they are linearly
+dependent), and $\kappa_0$ an undetermined constant. Brunnemann and
+Rideout~\cite[eqs.~(2.24)--(2.26)]{BR2008b} write the same operator with the
+building block
+\begin{equation}\label{eq:qhat}
+  \hat q_{IJK}:=\bigl[(J_I+J_J)^2,(J_J+J_K)^2\bigr]=-4i\,J_I\cdot(J_J\times J_K)
+\end{equation}
+and the matrix $Q:=\sum_{I<J<K\le N}\epsilon(IJK)\,\hat q_{IJK}$. Since the summand of
+$\hat q_v$ is symmetric under permutations of the three edges,
+\[
+  \hat q_v=\frac18\sum_{I<J<K}\epsilon(IJK)\,J_I\cdot(J_J\times J_K)
+  =\frac18\sum_{I<J<K}\epsilon(IJK)\,\frac i4\,\hat q_{IJK}=\frac{i}{32}\,Q,
+\]
+and $\hat V=\ell^3\sqrt{|Z|\,|Q|}$ with all constants (including $\kappa_0$, the
+Immirzi parameter and $\frac1{32}$) collected in $Z$.
+Brunnemann and Rideout set $Z=1$ and publish $\lambda_V:=\sqrt{|\lambda_Q|}$, where
+$\lambda_Q$ runs over the eigenvalues of $Q$.
+
+\paragraph{Normalisation used in this paper.}
+We write $q$ for an eigenvalue modulus of $Q$ (equivalently of the Hermitian matrix
+$iQ$) and $\qm$ for the smallest nonzero one. So $\lambda_V=\sqrt q$, and the
+volume eigenvalue is $\ell^3\sqrt{|Z|q}$. A volume gap means $\inf\qm>0$, the
+infimum taken, with the embedding fixed, over the assignments of positive spins for which
+the operator is not zero on the invariant space.
+
+\subsection{Gauge invariance and the reduced signs}
+
+On gauge-invariant states $\sum_IJ_I=0$, so the last edge can be eliminated:
+$J_N=-\sum_{L<N}J_L$ acting on $\Inv(j_1\otimes\cdots\otimes j_N)$, and since $J_N$
+commutes with the other edges, $J_I\cdot(J_J\times J_N)=-\sum_{L\ne I,J,N}J_I\cdot
+(J_J\times J_L)$. Collecting terms gives Brunnemann and Rideout's
+formula~\cite[eq.~(4.12)]{BR2008b},
+\begin{equation}\label{eq:sigma}
+  Q=\sum_{I<J<K<N}\sigma(IJK)\,\hat q_{IJK},\qquad
+  \sigma(IJK)=\epsilon(IJK)-\epsilon(IJN)+\epsilon(IKN)-\epsilon(JKN).
+\end{equation}
+When no three tangents are coplanar, each $\sigma$ lies in $\{0,\pm2,\pm4\}$. At valence five we list
+$\sigma=(\sigma_{123},\sigma_{124},\sigma_{134},\sigma_{234})$ in their order.
+In a real recoupling basis each $\hat q_{IJK}$ is a real antisymmetric matrix, so the
+spectrum of $iQ$ is symmetric under $q\mapsto-q$ and only moduli matter.
+
+\paragraph{Labelled and sorted spins.}
+An embedding fixes $\epsilon$, and we may assign any positive spins to its edges; this is the
+\emph{labelled} convention, and statements ``for all spins'' are statements over all
+assignments. It is the convention in which a statement about an embedded vertex is a
+statement about the spin-network states on that one embedded graph, whatever spins
+they carry. Brunnemann and Rideout's 2007 papers instead sort the spins,
+$j_1\le\dots\le j_5$, label the edges accordingly, and attach each $\sigma$ to the
+sorted tuple~\cite{BR2008b}. A relabelling that sorts the spins permutes the signs,
+so one embedding's spectrum is spread over several sorted $\sigma$; their 2010
+paper regroups the data by relabelling classes~\cite{BR2010}. The infimum over sorted
+spins with $\sigma$ fixed is never smaller than the labelled infimum of the same
+embedding, and we note below the two places where they differ.
+
+\subsection{The four-valent matrix}
+
+At valence four only $\sigma(123)\in\{0,\pm2,\pm4\}$ survives and
+$Q=-4i\sigma(123)\,J_1\cdot(J_2\times J_3)$. In the basis $|k\rangle$ in which edges
+$1$ and $2$ couple to spin $k$, the operator $J_1\cdot(J_2\times J_3)$ is a
+zero-diagonal Jacobi matrix with $|\langle k-1|\,J_1\cdot(J_2\times J_3)\,|k\rangle|=a_k$,
+\begin{equation}\label{eq:ak}
+  a_k^2=\frac{\Delta(j_1,j_2;k)\,\Delta(j_3,j_4;k)}{16\,(4k^2-1)},\qquad
+  \Delta(a,b;k)=\bigl((a+b+1)^2-k^2\bigr)\bigl(k^2-(a-b)^2\bigr),
+\end{equation}
+for $\max(|j_1-j_2|,|j_3-j_4|)<k\le\min(j_1+j_2,j_3+j_4)$. The operator
+$J_1\cdot(J_2\times J_3)$ was proposed by Chakrabarti~\cite{Chakrabarti1964} as an operator
+whose eigenvalues label the states of three coupled angular momenta, noting that its classical
+analogue is the volume generated by the three angular momentum vectors~\cite[p.~302]{Chakrabarti1964}; he wrote it as $\frac i4$
+times a commutator of two pair Casimirs, as in \eqref{eq:qhat}~\cite[eq.~(2.4)]{Chakrabarti1964},
+and, following a remark of Racah, gave its matrix elements in the coupled basis as a
+product of a $6j$ and a $9j$ symbol~\cite[p.~327]{Chakrabarti1964}. L\'evy-Leblond and
+L\'evy-Nahas~\cite{LLLN1965} studied it as the generator of a symmetric coupling scheme.
+The closed product form \eqref{eq:ak} of the matrix elements is in Brunnemann and
+Thiemann~\cite[eq.~(67)]{BT2006}, and, in the form of
+a product of two Heron areas
+($\Delta=16\,\mathrm{area}^2$ of the triangle with sides $a+\frac12,b+\frac12,k$),
+Aquilanti, Marinelli and Marzuoli~\cite[eq.~(2)]{AMM2013}. We recomputed it twice:
+by brute force from the generators on the invariant subspace of the tensor product,
+and from Racah's formula for the $6j$ symbols in exact arithmetic
+(\cref{sec:computer}).
+
+The same four-valent blocks reappear at every valence, because a triple product
+$J_I\cdot(J_J\times J_K)$ commutes with the total spin of the three edges and with
+every coupling of the remaining ones; on each block it is the four-valent matrix
+\eqref{eq:ak} with the fourth spin replaced by the total.
+
+\subsection{Reproduction of published numbers}
+
+With our own code (two independent constructions, \cref{sec:computer}) we
+reproduce the numbers that pin down the normalisation, listed in the table below. For
+Bianchi and Haggard's column the eigenvalues are those of $J_1\cdot(J_2\times J_3)$,
+written $\lambda$ as in \cref{sec:fourvalent}; elsewhere they are the $q$ just
+defined.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{4.8cm}>{\raggedright\arraybackslash}p{7.5cm}}
+\toprule
+\estabhead{source} & \estabhead{published} & \estabhead{reproduced}\\
+\midrule
+Bianchi--Haggard~\cite{BH2011}, ``loop gravity'' & $\frac{\sqrt2}3\sqrt{|\lambda|}$, four-valent &
+  all printed digits: $0.310$ at $(\frac12,\frac12,\frac12,\frac12)$, $0.396$ at
+  $(\frac12,\frac12,1,1)$, $0.464$ at $(\frac12,\frac12,\frac32,\frac32)$, $0.498$ at
+  $(\frac12,1,1,\frac32)$, $0$ and $0.620$ at $(1,1,1,1)$, $0.522$ at $(\frac12,\frac12,2,2)$,
+  $0.577$ at $(\frac12,1,\frac32,2)$, $0.620$ at $(1,1,1,2)$, and the six values
+  $1.828,\dots,6.817$ at $(6,6,6,7)$\\
+Brunnemann--Rideout~\cite[\S6.5]{BR2008b} & seven-valent $\lambda_V=0.000597922$, $\sigma$ of their
+  Table~10, spins $(1,1,1,1,1,\frac32,\frac52)$ & $\sqrt{\qm}=0.000597922$ ($\qm=3.5751089\times10^{-7}$,
+  $\dim\Inv=44$)\\
+Brunnemann--Rideout~\cite[Table~5]{BR2008b} & minimising sorted spins of $\sigma=(4,2,2,0)$ at each
+  $2j_{\max}$ & all $29$ rows, $2\le2j_{\max}\le30$, by exhaustive sorted search\\
+Brunnemann--Rideout~\cite[Table~9]{BR2008b} & six-valent minimisers for
+  $\sigma=(2,0,0,0,0,0,0,0,-2,0)$ & every level $2j_{\max}\le9$; e.g.\ $\lambda_V=0.0261984$ at
+  $(\frac12,\frac12,\frac52,\frac52,3,3)$, where their fit gives $0.0282$\\
+Kisielowski~\cite[Table~2]{Kis2021}, Rovelli--Smolin & e.g.\ $1.201406$ six times at valence five,
+  spin one; a zero at spin two & all printed digits, with $V=\sqrt{Q_{RS}/32}$ ($\kappa_0=1$
+  in~\cite{AL1998})\\
+\bottomrule
+\end{tabular}
+\end{center}
+\noindent Four remarks on the table. At $2j_{\max}=30$ the Table~5 minimum is
+already $2.5\times10^{-12}$ of the norm of the matrix, where double precision can no
+longer rank the candidates, so we stopped there; some text extractions of the published
+PDF misalign the rows of that table from $2j_{\max}=10$ on, so we compare against the page
+image. Brunnemann and Rideout later reported a code bug that affected all their
+seven-valent results~\cite[\S5]{BR2010}; we use their seven-valent value only as a check
+of the normalisation at the stated $\sigma$ and spins, where our own code reproduces it. Brunnemann and
+Rideout print no eigenvalues at valence six, only minimising spins (their Table~9 and
+Figs.~29--32), and their fit $\lambda_V\approx e^{3.72}e^{-1.215\cdot2j_{\max}}$ cannot be
+extrapolated (\cref{sec:v6}). At odd $2j_{\max}$ their six-valent minimisers differ
+from the family of \cref{sec:v6}.

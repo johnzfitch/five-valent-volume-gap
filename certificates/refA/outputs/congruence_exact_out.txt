@@ -1,0 +1,12 @@
+sympy: P(b;s,c) == F(d-1/2)G(u): True;  P(c;s,b) == F(d+1/2)G(u): True
+all valid ordered tuples with doubled spins <= 10: 48520 nonempty (dim>=2) checked exactly; T3a, T3b, Lemma 5 all hold; min mu/((2s+2)Phi_s) = 1.000000 at (1, 1, 1, 1, 2)  (52s)
+random tuples with doubled spins <= 38: 400 nonempty checked exactly; all hold; min mu/((2s+2)Phi_s) = 1.000000 at (18, 38, 27, 5, 6)  (4s)
+  large-rectangle tuple (1, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (2, 40, 40, 40, 40): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (3, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (4, 40, 40, 40, 40): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (5, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (7, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (9, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (12, 40, 40, 40, 40): mu/((2s+2)Phi_s) = 1.000000
+  large-rectangle tuple (15, 40, 40, 40, 41): mu/((2s+2)Phi_s) = 1.000000

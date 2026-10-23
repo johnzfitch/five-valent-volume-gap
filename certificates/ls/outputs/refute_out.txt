@@ -1,0 +1,66 @@
+N1: G1 = (1/2; j-1/2, j, j, j).  closed forms exact; q_chain = q(T); test bound; analytic bound
+  closed forms exact for 2j=2: True
+  closed forms exact for 2j=3: True
+  closed forms exact for 2j=4: True
+  closed forms exact for 2j=8: True
+  closed forms exact for 2j=16: True
+  2j=     4: q=      6.5125 chain=      6.5125 test=     11.5376 analytic=     40.2121  test/q=1.7716  q lnM/M=2.2571  test lnM/M=3.9986  ok=True
+  2j=     8: q=      9.9592 chain=      9.9592 test=     15.7572 analytic=     47.1581  test/q=1.5822  q lnM/M=2.5887  test lnM/M=4.0958  ok=True
+  2j=    16: q=     16.0190 chain=     16.0190 test=     23.3308 analytic=     65.7292  test/q=1.4564  q lnM/M=2.7759  test lnM/M=4.0429  ok=True
+  2j=    32: q=     26.7151 chain=     26.7151 test=     36.5900 analytic=    100.4054  test/q=1.3696  q lnM/M=2.8934  test lnM/M=3.9629  ok=True
+  2j=    64: q=     45.7315 chain=     45.7315 test=     59.7891 analytic=    162.1648  test/q=1.3074  q lnM/M=2.9717  test lnM/M=3.8852  ok=True
+  2j=   128: q=     79.8213 chain=     79.8213 test=    100.6810 analytic=    271.7824  test/q=1.2613  q lnM/M=3.0257  test lnM/M=3.8165  ok=True
+  2j=   256: q=    141.4316 chain=    141.4316 test=    173.4389 analytic=    467.5770  test/q=1.2263  q lnM/M=3.0635  test lnM/M=3.7568  ok=True
+  2j=   512: q=    253.6236 chain=    253.6236 test=    304.1052 analytic=    820.2150  test/q=1.1990  q lnM/M=3.0902  test lnM/M=3.7053  ok=True
+  2j=  1024: q=    459.3219 chain=    459.3219 test=    540.7858 analytic=   1460.5462  test/q=1.1774  q lnM/M=3.1092  test lnM/M=3.6606  ok=True
+  2j=  2048: q=    838.7640 chain=    838.7640 test=    972.7848 analytic=   2631.9644  test/q=1.1598  q lnM/M=3.1227  test lnM/M=3.6216  ok=True
+  2j=  4096: q=   1542.5092 chain=         nan test=   1766.6369 analytic=   4789.1649  test/q=1.1453  q lnM/M=3.1324  test lnM/M=3.5875  ok=True
+  2j=  8192: q=   2854.0522 chain=         nan test=   3234.1685 analytic=   8784.9408  test/q=1.1332  q lnM/M=3.1394  test lnM/M=3.5575  ok=True
+  2j= 16384: q=   5308.8801 chain=         nan test=   5961.4140 analytic=  16224.4462  test/q=1.1229  q lnM/M=3.1444  test lnM/M=3.5309  ok=True
+N1': E1 = (1; j, j, j, j).  test bound (8 sqrt(Rayleigh)) and analytic bound
+  2j=     4: q=     13.3405 test=     23.4404 analytic=     98.2076  test/q=1.7571  q lnM/M=4.6235  ok=True
+  2j=     8: q=     19.5308 test=     30.3121 analytic=    104.5526  test/q=1.5520  q lnM/M=5.0766  ok=True
+  2j=    16: q=     30.5345 test=     43.4431 analytic=    138.4825  test/q=1.4228  q lnM/M=5.2912  ok=True
+  2j=    32: q=     50.0977 test=     67.0301 analytic=    206.1048  test/q=1.3380  q lnM/M=5.4258  ok=True
+  2j=    64: q=     85.0632 test=    108.8639 analytic=    328.5559  test/q=1.2798  q lnM/M=5.5276  ok=True
+  2j=   128: q=    148.0194 test=    183.2611 analytic=    547.0720  test/q=1.2381  q lnM/M=5.6109  ok=True
+  2j=   256: q=    262.2514 test=    316.5367 analytic=    938.1458  test/q=1.2070  q lnM/M=5.6806  ok=True
+  2j=   512: q=    471.0406 test=    557.2562 analytic=   1643.0353  test/q=1.1830  q lnM/M=5.7393  ok=True
+  2j=  1024: q=    855.1939 test=    995.4732 analytic=   2923.3978  test/q=1.1640  q lnM/M=5.7888  ok=True
+  2j=  2048: q=   1566.1864 test=   1798.9398 analytic=   5265.9949  test/q=1.1486  q lnM/M=5.8308  ok=True
+  2j=  4096: q=   2888.9955 test=   3281.4640 analytic=   9580.2009  test/q=1.1358  q lnM/M=5.8667  ok=True
+  2j=  8192: q=   5361.5282 test=   6032.3273 analytic=  17571.5908  test/q=1.1251  q lnM/M=5.8975  ok=True
+  2j= 16384: q=  10002.1347 test=  11161.9416 analytic=  32450.4650  test/q=1.1160  q lnM/M=5.9242  ok=True
+N2: wall chain, A_s = (s; j, j, j-1/2, j) in pairing (j,j | j-1/2, j)
+  2s=5 2j=   16: q=    29.765  8 smin(wall)=    80.292  8 test=   148.458  col-injective=True  wall shape=(15, 14)  8test lnM/M=25.726  q<=8smin: True
+  2s=5 2j=   32: q=    46.412  8 smin(wall)=   128.850  8 test=   281.795  col-injective=True  wall shape=(31, 30)  8test lnM/M=30.520  q<=8smin: True
+  2s=5 2j=   64: q=    74.962  8 smin(wall)=   214.581  8 test=   554.125  col-injective=True  wall shape=(63, 62)  8test lnM/M=36.008  q<=8smin: True
+  2s=5 2j=  128: q=   124.424  8 smin(wall)=   367.312  8 test=  1106.757  col-injective=True  wall shape=(127, 126)  8test lnM/M=41.953  q<=8smin: True
+  2s=5 2j=  256: q=   211.100  8 smin(wall)=   641.931  8 test=  2225.367  col-injective=True  wall shape=(255, 254)  8test lnM/M=48.203  q<=8smin: True
+  2s=5 2j=  512: q=   364.663  8 smin(wall)=  1140.006  8 test=  4485.722  col-injective=True  wall shape=(511, 510)  8test lnM/M=54.655  q<=8smin: True
+  2s=5 2j= 1024: q=   639.467  8 smin(wall)=  2050.410  8 test=  9046.869  col-injective=n/a  wall shape=(1023, 1022)  8test lnM/M=61.238  q<=8smin: True
+  2s=5 2j= 2048: q=  1135.646  8 smin(wall)=  3725.967  8 test= 18240.183  col-injective=n/a  wall shape=(2047, 2046)  8test lnM/M=67.907  q<=8smin: True
+  2s=7 2j=   16: q=    36.936  8 smin(wall)=   113.321  8 test=   262.664  col-injective=True  wall shape=(14, 13)  8test lnM/M=45.516  q<=8smin: True
+  2s=7 2j=   32: q=    56.010  8 smin(wall)=   177.269  8 test=   624.058  col-injective=True  wall shape=(30, 29)  8test lnM/M=67.588  q<=8smin: True
+  2s=7 2j=   64: q=    88.487  8 smin(wall)=   289.311  8 test=  1556.234  col-injective=True  wall shape=(62, 61)  8test lnM/M=101.128  q<=8smin: True
+  2s=7 2j=  128: q=   144.188  8 smin(wall)=   487.370  8 test=  3986.093  col-injective=True  wall shape=(126, 125)  8test lnM/M=151.099  q<=8smin: True
+  2s=7 2j=  256: q=   240.808  8 smin(wall)=   840.927  8 test= 10388.019  col-injective=True  wall shape=(254, 253)  8test lnM/M=225.013  q<=8smin: True
+  2s=7 2j=  512: q=   410.401  8 smin(wall)=  1478.022  8 test= 27402.775  col-injective=True  wall shape=(510, 509)  8test lnM/M=333.882  q<=8smin: True
+  2s=7 2j= 1024: q=   711.378  8 smin(wall)=  2635.873  8 test= 72940.015  col-injective=n/a  wall shape=(1022, 1021)  8test lnM/M=493.732  q<=8smin: True
+  2s=7 2j= 2048: q=  1250.842  8 smin(wall)=  4756.105  8 test=195498.437  col-injective=n/a  wall shape=(2046, 2045)  8test lnM/M=727.833  q<=8smin: True
+  2s=9 2j=   16: q=    44.694  8 smin(wall)=   148.774  8 test=   420.631  col-injective=True  wall shape=(13, 12)  8test lnM/M=72.890  q<=8smin: True
+  2s=9 2j=   32: q=    65.882  8 smin(wall)=   227.459  8 test=  1177.072  col-injective=True  wall shape=(29, 28)  8test lnM/M=127.482  q<=8smin: True
+  2s=9 2j=   64: q=   101.953  8 smin(wall)=   364.646  8 test=  3467.735  col-injective=True  wall shape=(61, 60)  8test lnM/M=225.342  q<=8smin: True
+  2s=9 2j=  128: q=   163.410  8 smin(wall)=   605.739  8 test= 10380.576  col-injective=True  wall shape=(125, 124)  8test lnM/M=393.491  q<=8smin: True
+  2s=9 2j=  256: q=   269.161  8 smin(wall)=  1033.655  8 test= 30966.997  col-injective=True  wall shape=(253, 252)  8test lnM/M=670.771  q<=8smin: True
+  2s=9 2j=  512: q=   453.341  8 smin(wall)=  1800.712  8 test= 91307.299  col-injective=True  wall shape=(509, 508)  8test lnM/M=1112.509  q<=8smin: True
+  2s=9 2j= 1024: q=   777.906  8 smin(wall)=  3188.272  8 test=265828.667  col-injective=n/a  wall shape=(1021, 1020)  8test lnM/M=1799.398  q<=8smin: True
+  2s=9 2j= 2048: q=  1356.015  8 smin(wall)=  5718.737  8 test=765961.675  col-injective=n/a  wall shape=(2045, 2044)  8test lnM/M=2851.644  q<=8smin: True
+  2s=11 2j=   16: q=    53.254  8 smin(wall)=   187.005  8 test=   560.839  col-injective=True  wall shape=(12, 11)  8test lnM/M=97.186  q<=8smin: True
+  2s=11 2j=   32: q=    76.234  8 smin(wall)=   279.891  8 test=  1794.747  col-injective=True  wall shape=(28, 27)  8test lnM/M=194.379  q<=8smin: True
+  2s=11 2j=   64: q=   115.582  8 smin(wall)=   441.406  8 test=  5717.032  col-injective=True  wall shape=(60, 59)  8test lnM/M=371.507  q<=8smin: True
+  2s=11 2j=  128: q=   182.423  8 smin(wall)=   724.009  8 test= 17539.260  col-injective=True  wall shape=(124, 123)  8test lnM/M=664.852  q<=8smin: True
+  2s=11 2j=  256: q=   296.729  8 smin(wall)=  1223.257  8 test= 51926.140  col-injective=True  wall shape=(252, 251)  8test lnM/M=1124.764  q<=8smin: True
+  2s=11 2j=  512: q=   494.499  8 smin(wall)=  2114.245  8 test=150317.413  col-injective=n/a  wall shape=(508, 507)  8test lnM/M=1831.502  q<=8smin: True
+  2s=11 2j= 1024: q=   840.875  8 smin(wall)=  3719.623  8 test=430019.077  col-injective=n/a  wall shape=(1020, 1019)  8test lnM/M=2910.806  q<=8smin: True
+  2s=11 2j= 2048: q=  1454.442  8 smin(wall)=  6637.111  8 test=1223016.419  col-injective=n/a  wall shape=(2044, 2043)  8test lnM/M=4553.239  q<=8smin: True

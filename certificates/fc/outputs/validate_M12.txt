@@ -1,0 +1,2 @@
+tuples with 2j_max <= 12: 7860; thresholds q = [4.5579607, 5.0, 9.0, 14.0]
+agreement float certificate vs exact LDL: 31440; float certified but exact fails (UNSOUND): 0; float inconclusive but exact certifies: 0; exact zero pivot (skipped): 0

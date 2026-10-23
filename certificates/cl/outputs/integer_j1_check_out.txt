@@ -1,0 +1,4 @@
+integer j1, 2j<= 20: 42812 tuples; uncovered 11798
+ (i) closed pairing exists (half-integers grouped): failures 0 []
+ (ii) covered <=> not(all integer or all half-integer >=3/2): failures 0 []
+ (iii) min lam(T0) over closed even-N-sum pairings of uncovered tuples: (np.float64(1.0197690124154382), (20, 2, 20, 20, 20))

@@ -1,0 +1,1 @@
+[LJ] Theorem A pencil vs Racah T: 1562 tuples (all 2j <= 5); dimension mismatches 0; max rel spectral diff 5.36e-13; max |A - A*| 7.0e-12; min eig B -4.54e-13 (>= -1e-12 expected); max |B - beta_g| on g-parts 4.1e-13  (15s)

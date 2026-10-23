@@ -1,0 +1,16 @@
+sign vectors satisfying 3-term GP: 384
+realised by integer tangents in [-4,4]: 384 (all GP vectors realised: True)
+BR (4.12) agrees with the elimination identity on all chirotopes
+orbit 0: size 24, closed under -eps: True, distinct sigma 1, sigma with +-4: 0/1
+   normal forms of a representative: |lam|,|mu| in [('0', '0')], |mu/lam| in [], legs carrying both terms: []
+   example sigma (BR order 123,124,134,234): (0, 0, 0, 0)
+orbit 1: size 120, closed under -eps: True, distinct sigma 20, sigma with +-4: 0/20
+   normal forms of a representative: |lam|,|mu| in [('0', '2'), ('2', '0')], |mu/lam| in ['0'], legs carrying both terms: []
+   example sigma (BR order 123,124,134,234): (-2, -2, 0, 0)
+orbit 2: size 120, closed under -eps: True, distinct sigma 30, sigma with +-4: 0/30
+   normal forms of a representative: |lam|,|mu| in [('2', '2')], |mu/lam| in ['1'], legs carrying both terms: [4]
+   example sigma (BR order 123,124,134,234): (-2, -2, -2, -2)
+orbit 3: size 120, closed under -eps: True, distinct sigma 120, sigma with +-4: 120/120
+   normal forms of a representative: |lam|,|mu| in [('2', '4'), ('4', '2')], |mu/lam| in ['1/2', '2'], legs carrying both terms: [4]
+   example sigma (BR order 123,124,134,234): (-4, -4, -2, -2)
+total distinct sigma: 171; nonzero up to sign: 85

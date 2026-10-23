@@ -1,0 +1,1 @@
+188465 exact comparisons (W- links, M+ links, Lambda on diagonal -1), 0 mismatches

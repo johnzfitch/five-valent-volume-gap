@@ -1,0 +1,6 @@
+2s=5 pairing (63, 64)|(64, 64) cut colours: corner 0, wall+s 0, wall-s 1  ->  strip: 0.7148; wall +s & corner: 1.0000; wall -s & corner: 1.0000; two walls, no corner cut: 0.7100
+2s=5 pairing (64, 63)|(64, 64) cut colours: corner 0, wall+s 0, wall-s 1  ->  strip: 0.7148; wall +s & corner: 1.0000; wall -s & corner: 1.0000; two walls, no corner cut: 0.7100
+2s=9 pairing (63, 64)|(64, 64) cut colours: corner 0, wall+s 0, wall-s 1  ->  strip: 0.6832; wall +s & corner: 1.0000; wall -s & corner: 1.0000; two walls, no corner cut: 0.6769
+2s=21 pairing (63, 64)|(64, 64) cut colours: corner 0, wall+s 0, wall-s 1  ->  strip: 0.6531; wall +s & corner: 1.0000; wall -s & corner: 1.0000; two walls, no corner cut: 0.6476
+2s=7 pairing (40, 41)|(42, 42) cut colours: corner 0, wall+s 0, wall-s 1  ->  strip: 0.7488; wall +s & corner: 1.0226; wall -s & corner: 0.8958; two walls, no corner cut: 0.8846
+2s=6 pairing (40, 42)|(42, 42) cut colours: corner 0, wall+s 0, wall-s 0  ->  strip: 1.0189; wall +s & corner: 1.0172; wall -s & corner: 1.0048; two walls, no corner cut: 1.5331

@@ -1,0 +1,6 @@
+2954 spin-1/2 tuples with 41 <= 2j_max <= 80 and dim>=2 (families + random); 100s on 8 CPU processes
+min lambda(Q_RS) = 190.1587 at (1, 2, 2, 40, 41); any kernel: False
+min lambda(sum_(T contains 1)|q_T|) = 90.4329 at (1, 1, 20, 21, 41) (3 sqrt3 = 5.1962)
+min lambda(Q_RS)/(2j_max) = 4.5842 at (1, 2, 2, 79, 80)
+min nonzero leg-1 |eig| = 2.828427124746; max leg-1 kernel dim = 2; max ||Pi Pi|| = 2.41e-13
+max dim Inv in sample = 160

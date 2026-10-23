@@ -1,0 +1,1 @@
+2s=10 tuples=1000 no-admissible=0 min ratio bound/q=0.7570 median=0.9986 worst=(np.float64(0.7570285273227414), (92, 94, 102, 110), 'W2', np.float64(596.5003964278759), np.float64(451.56781665522635), ((92, 110), (94, 102), 'odd-down'))  time 205.2s

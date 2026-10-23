@@ -1,0 +1,159 @@
+Certificates for "The Volume Gap at Five-Valent Vertices"
+==========================================================
+
+Each subfolder holds the scripts and outputs of one computer-assisted step. Folders
+marked "copied" were copied from the research folder named below;
+SOURCE_SHA256SUMS.txt in such a folder is the checksum list of its source, verified on
+21 October 2026 (the 2026-10-22 folders on 22 October 2026), 0 failures. On 22 October
+2026 the path strings of 17 copied scripts were changed so that they find their inputs
+inside this tree instead of in the research folders; PATH_FIXES.md lists every change
+(file, old string, new string), and the per-folder lists carry the new hashes of those
+scripts. The stored outputs were produced by the scripts before that change; the
+replays listed in PATH_FIXES.md reproduce them. Folders marked "new" were written for
+the final revision of the paper and carry their own SHA256SUMS.txt. A per-folder list
+may name files that are not shipped (large per-tuple outputs); these are said below.
+Revision pass 2b (22 October 2026) added five files: sw/scripts/sw_even_window_exact.py,
+z32rigor/scripts/tail_certify_exact.py and lj/scripts/lj_exact_slope_check.py, with their outputs; each is appended to its folder's checksum list.
+The paper's own code is in ../code. The checksums of everything shipped are in
+../SHA256SUMS.txt.
+
+Kinds:
+  EXACT      rational arithmetic (python-flint fmpq or Fractions), or sympy polynomial
+             coefficient signs after substituting nonnegative shift variables
+  INTERVAL   mpmath iv / Arb balls, or binary64 with one nextafter step outward per op
+  RFLOAT     binary64 with an a priori error bound (Weyl + Higham gamma_k + Gershgorin
+             + Sylvester); kernels computed exactly. The bound needs every float entry
+             to approximate the exact square root of its rational squared link with
+             relative error at most 2.0001u, u = 2^-53 (the unit roundoff).
+             The certificates of Theorem 6.1(h) are those in rfloat_sqrt/, which compute
+             each entry with math.sqrt and check this bound for it in exact rational
+             arithmetic before use, so no property of the C runtime is assumed. (The
+             original fc/ and rr/ runs used float(Fraction)**0.5; refA/ bounds that
+             error exhaustively, worst 1.446 ulp. They are kept as the earlier runs.)
+
+HOW TO RUN. Run every script from its own scripts/ directory, for example
+    cd certificates/sl4/scripts && python vs_symbolic.py
+(for a referee/ subfolder: cd <folder>/referee/scripts; for hv/, vg4/, pencil71/ and
+v6proofs/, which have no scripts/ directory: cd <folder>). Many scripts write to
+../outputs relative to the working directory, so running them from elsewhere fails or
+writes to the wrong place. Use the interpreter that has numpy, scipy, sympy, mpmath and
+python-flint (torch with CUDA only for z32rigor/scripts/run_all.sh). Scripts read no
+downloaded data. Every command below was run in this form on a scratch copy on 22 October
+2026 and exited with status 0; commands marked [tested smaller] were run with the
+smaller arguments shown in brackets, because the full run takes long.
+
+Appendix letters refer to the compiled paper: A four-valent multiplier, B Stark windows,
+C chains at j1 = 1/2, D slice j1 = 1, E slice j1 = 3/2, F slice j1 = 2, G pencil and three
+bounded legs, H valence six, I the su(2) ladder.
+
+folder      kind              paper statement                  source research folder
+----------  ----------------  -------------------------------  ---------------------------------
+vg4         EXACT             background (Section 3 remark)    volume_gap_4valent_20261021 (copied)
+    survey_N200/pertuple_J4le60.npz (8.6 MB, read by referee/scripts/r6_survey.py) shipped 22 Oct 2026
+sl4         EXACT             Lemma 3.5 (App. A)               volume_sharp_law_4valent_20261021 (copied)
+    python vs_symbolic.py                       (F, C2, C3 certificates, about 2 min)
+    python vs_verify.py 80                      [tested smaller: 20]
+    referee: python r2_exhaustive.py 120        (exact LDL, 3.78e6 tuples) [tested smaller: 16]
+hv          EXACT/float       Theorem 5.3 (checks)             volume_gap_higher_valence_20261021 (copied)
+    survey_M22/summary.jsonl and survey_summary.txt (read by gd/scripts/classes_table.py) shipped 22 Oct 2026
+gd          EXACT             Prop 4.2, Thm 5.3, Thm 6.10      al_gap_dichotomy_20261021 (copied)
+    python orbits.py ../outputs/orbits.json
+    python chain_t1.py 24                       [tested smaller: 12]
+    referee: python ref_b2.py 26 8 400 600 ../outputs/ref_b2_out.txt   [tested smaller: 10 4 20 30]
+    sorted-sigma data for Section 5 ("6 of the 60"): outputs/survey_sorted_orbit3_M34_patterns.json
+cl          EXACT             Thms 6.2, 6.5, Lemma 6.6         al_dichotomy_closing_20261021 (copied)
+    python symbolic_checks.py ; python lemmaW_check.py
+sw          INTERVAL + EXACT  Theorem 6.7 (App. B)             dichotomy_sw_w2_20261021 (copied)
+    python sw_odd_cert.py 5 151                 [tested smaller: 5 9]
+    python sw_even_lemma.py                     (inequality (9) for even N <= 400; earlier check)
+    python sw_even_window_exact.py              (added in revision pass 2b: inequality (9) exactly for
+                                                 even N <= 400, and every step of the analytic argument
+                                                 now printed in App. B checked exactly on 100 <= P <= 200;
+                                                 output outputs/sw_even_window_exact_out.txt, ALL PASS)
+w2c         EXACT checks      Section 11 (s = 1, equal pairs)  dichotomy_w2_campaign_20261021 (copied)
+or          EXACT checks      Prop 6.13 (zigzags)              dichotomy_open_regions_20261021 (copied)
+ls          EXACT             Thm 6.12 (App. D), Thm 7.4       dichotomy_large_spin_20261021 (copied)
+    python ls_j1.py                             (exact LDL, 164,176 pair-pairs n <= 32)
+    python ../../refB/scripts/rb_thmP.py 20 33  (the nu = 32.5 repair)
+z32         EXACT             Thm 6.14 (App. E)                dichotomy_z32_20261021 (copied)
+    python z32_symbolic.py ../outputs/symbolic_out.txt
+    python z32_exact_cert.py 40 ../outputs/exact_cert_M40.txt   [tested smaller: 12]
+    float box (superseded by z32rigor): z32_box_torch.py
+z32rigor    INTERVAL + EXACT  Thm 6.14 (App. E)                dichotomy_z32_rigor_20261021 (copied)
+    python tail_symbolic.py ; python tail_certify_exact.py > ../outputs/tail_certificate_exact_out.txt
+    tail_certify_exact.py (added in revision pass 2b) is the tail certificate of record. It replaces
+    tail_certify.py, which is kept unchanged with its output as the earlier run, because that script
+    (1) entered the decimal constants 4.22, 2.67, 12.6, 9.3 and 3.52 as binary64 floats, so its
+    intervals enclosed the nearest binary64 points rather than the decimals, and (2) did the
+    derivative (monotonicity) test in default-precision mpf rather than in intervals. The repaired
+    script builds every constant from an exact rational and does the test in intervals; all eight
+    regimes pass with the same verdicts (C(n0) <= 0.764395, 0.795919, 0.51885, 0.00091411,
+    0.00000290869, 0.0000702789, 0.0207904, 0.0207904, upper ends rounded upward).
+    bash run_all.sh                             (CUDA, about 4 GPU-hours; not re-run)
+    STATUS: all eight regimes finished. outputs/ibox_{R1,R2+,R2-,R4}_N4000.json and
+    ibox_{R1c,R4c,Tp,Tm}_N100000.json: 64,352,004 parameter sets, 0 NaN, 0 non-positive;
+    certified lower bounds for the minima as printed in App. E (truncated; smallest 3.777422 at Tm, n1 = 4).
+    SHA256SUMS.txt: the 22 files copied from the source folder (all 22 hashes equal those of the source
+    folder's list), plus the two files added in pass 2b (tail_certify_exact.py and its output).
+fj          EXACT             Thm 6.15 (App. F), Thm 6.1(h)    dichotomy_fixed_j1_20261021 (copied)
+    python s2_symbolic.py ; python s2_proof.py
+    python fj_stagecert.py 5 39 70              (j1 = 5/2, about 1.8 h) [tested smaller: 5 39 39]
+rr          INTERVAL; RFLOAT  Thm 6.15 box; Thm 6.1(h) check   dichotomy_rigor_recheck_20261021 (copied)
+    python box_interval.py 8                    (argument: processes)
+    python run52.py 39 70 8                     (arguments: first level, last level, processes) [tested smaller: 39 40 4]
+    python summary52.py                         (reads ../outputs/cert52_M*.jsonl and ../../fj/outputs)
+    per-tuple outputs cert52_M039..M070.jsonl (50 MB) shipped in outputs/; they verify against
+    LARGE_OUTPUTS_SHA256.txt (run sha256sum -c from outputs/)
+fc          RFLOAT, kernels EXACT  Thm 6.1(h), spins <= 19 (first run)  dichotomy_finite_cert_20261021 (copied)
+    python run_cert.py 1 38 8                   (arguments: first level, last level, processes) [tested smaller: 1 10 4]
+    python summarize.py                         (needs all levels 1..38 in ../outputs)
+    validation: python validate.py 12           (exact LDL, 31,440 cases) [tested smaller: 6]
+    per-tuple outputs: levels 1..20 shipped; levels 21..38 (about 195 MB) are too large for the
+    repository and are attached to release v1.0 as fc-outputs-M021-M038.zip (unzip into fc/outputs/),
+    checksums in LARGE_OUTPUTS_SHA256.txt. summarize.py, lj/scripts/lj_fc_minima.py and
+    refA/scripts/cert_ldl_sample.py read them; or regenerate with: python run_cert.py 21 38 8
+rfloat_sqrt RFLOAT, kernels and square roots EXACT   Thm 6.1(h), the certificate cited   (new)
+    python run_sqrt.py all 1 38 6               (about 22 min on 6 CPU processes) [tested smaller: all 1 10 4]
+    python run_sqrt.py j52 39 70 6              (j1 = 5/2 cross-check, about 3 min)
+    python summarize_sqrt.py all 38 ; python summarize_sqrt.py j52 39 70
+    Result (outputs/summary_all.txt, summary_j52.txt): all 1,843,571 tuples with spins
+    <= 19 and all 430,481 tuples with j1 = 5/2, 39 <= 2j_max <= 70 certified; level
+    minima equal to the first runs; 88,550 per-tuple records compared with fc, 0
+    differing. GPU/CPU: CPU. The exact parts were not ported to the GPU, and the existing
+    measurement (fc/outputs/bench_gpu_M20.txt) has CUDA slower than numpy for this
+    workload. Per-tuple outputs for levels 21..38 and the j52 run (245 MB) are attached to
+    release v1.0 as rfloat_sqrt-outputs-large.zip (unzip into rfloat_sqrt/outputs/), checksums
+    in LARGE_OUTPUTS_SHA256.txt.
+lj          EXACT + INTERVAL  Thms 7.2, 7.3 (App. G)           dichotomy_large_j1_20261021 (copied)
+    python lj_limit_cert.py 6 ; python lj_limit_finite.py 6   [tested smaller: 2]
+    python lj_exact_slope_check.py              (added in revision pass 2b, about 1 min: exact comparison of
+                                                 every certified sigma_inf with nu0, C_K recomputed, and the exact
+                                                 limit matrices of the two cases below nu0; output
+                                                 outputs/lj_exact_slope_check_out.txt)
+    (lj_limit_finite.py reads no fc file: it counts the tuples with 2j_max <= 38 as covered by
+    the certificate of Thm 6.1(h) and certifies the others itself)
+pencil71    float check       Theorem 7.1 (App. G)             (new)
+    python pencil_check.py                      (15 tuples against the full tensor product); SHA256SUMS.txt
+v6          EXACT checks      Thm 8.1 (App. H)                 volume_gap_valence6_20261021 (copied)
+    python v6_validate.py ; python v6_bound.py  (v6_bound about 4 min)
+    referee: python ref_full_exact.py 6 51 ../outputs/ref_full_exact_out.txt   [tested smaller: 6 11]
+v6proofs    EXACT (sympy)     Lemmas H.2-H.4                   (new)
+    python v6_lemma_algebra.py ; SHA256SUMS.txt
+rs          float checks      Thm 9.1                          rs_volume_gap_valence5_20261021 (copied)
+refA        EXACT             independent checks; **0.5 bound  dichotomy_referee_A_20261021 (copied)
+refB        EXACT             independent exact certificates   dichotomy_referee_B_20261021 (copied)
+    python rb_cert_all.py 4 38 45579607 10000000   [tested smaller: 4 10 45579607 10000000]
+t1all       EXACT + float     Section 11 (Lemmas O, U)         dichotomy_t1_all_j1_20261022 (copied)
+    python check_omega_identity.py 4 ; python check_layer_identity.py 6 11   [tested smaller: 4 7]
+    python mono_nonladder.py                    (the monotonicity counterexamples)
+su2l        EXACT + float     Section 11, App. I (Prop 11.1, Thm 11.2)   dichotomy_su2_ladder_20261022 (copied)
+    python check_scalar_exact.py ; python check_theoremA.py ; python check_tflat_exact.py 10
+    python check_corner_defect.py ; python measure_defects.py
+w0ob        EXACT + float     Section 11 (Lemmas S, L, W, Q; the (RO) survey)  dichotomy_w0_obligation_20261022 (copied)
+    python check_identities.py ; python check_wall_leak.py
+    survey, for each seed in 11 12 13 14 (about 10 min each):
+      python search_RO.py 11 2500 200 ../outputs/search/search_seed11.txt   [tested smaller: 11 5 200]
+    then: python merge_search.py ../outputs/search        (-> merged summary, printed)
+    large-j1 families: python scan_large_s.py   (about 8 min; not re-run for this revision)
+
+Theorem and appendix numbers refer to the compiled paper of this folder.

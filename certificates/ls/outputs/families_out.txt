@@ -1,0 +1,101 @@
+R:\quantum-tetrahedra\research\dichotomy_large_spin_20261021\scripts\ls_core.py:50: RuntimeWarning: invalid value encountered in divide
+  hX2 = (n1 ** 2 - b ** 2) * (b ** 2 - m1 ** 2) / (4 * b ** 2 - 1)
+== G1  (1/2; j-1/2, j, j, j)      [GD per-level minimiser]
+  (1, 15, 16, 16, 16)  dim     32 ker    0  q =      16.0190  q/M = 1.0012  q*lnM/M = 2.7759
+  (1, 31, 32, 32, 32)  dim     64 ker    0  q =      26.7151  q/M = 0.8348  q*lnM/M = 2.8934  local exponent 0.738
+  (1, 63, 64, 64, 64)  dim    128 ker    0  q =      45.7315  q/M = 0.7146  q*lnM/M = 2.9717  local exponent 0.776
+  (1, 127, 128, 128, 128)  dim    256 ker    0  q =      79.8213  q/M = 0.6236  q*lnM/M = 3.0257  local exponent 0.804
+  (1, 255, 256, 256, 256)  dim    512 ker    0  q =     141.4316  q/M = 0.5525  q*lnM/M = 3.0635  local exponent 0.825
+  (1, 511, 512, 512, 512)  dim   1024 ker    0  q =     253.6236  q/M = 0.4954  q*lnM/M = 3.0902  local exponent 0.843
+  (1, 1023, 1024, 1024, 1024)  dim   2048 ker    0  q =     459.3219  q/M = 0.4486  q*lnM/M = 3.1092  local exponent 0.857
+  (1, 2047, 2048, 2048, 2048)  dim   4096 ker    0  q =     838.7640  q/M = 0.4096  q*lnM/M = 3.1227  local exponent 0.869
+  (1, 4095, 4096, 4096, 4096)  dim   8192 ker    0  q =    1542.5092  q/M = 0.3766  q*lnM/M = 3.1324  local exponent 0.879
+  (1, 8191, 8192, 8192, 8192)  dim  16384 ker    0  q =    2854.0522  q/M = 0.3484  q*lnM/M = 3.1394  local exponent 0.888
+  (1, 16383, 16384, 16384, 16384)  dim  32768 ker    0  q =    5308.8801  q/M = 0.3240  q*lnM/M = 3.1444  local exponent 0.895
+== A3  (3/2; j-1/2, j, j, j)      [OR thin family]
+  (3, 15, 16, 16, 16)  dim     61 ker    1  q =      22.9174  q/M = 1.4323  q*lnM/M = 3.9713
+  (3, 31, 32, 32, 32)  dim    125 ker    1  q =      36.8208  q/M = 1.1506  q*lnM/M = 3.9878  local exponent 0.684
+  (3, 63, 64, 64, 64)  dim    253 ker    1  q =      61.0019  q/M = 0.9532  q*lnM/M = 3.9641  local exponent 0.728
+  (3, 127, 128, 128, 128)  dim    509 ker    1  q =     103.4906  q/M = 0.8085  q*lnM/M = 3.9230  local exponent 0.763
+  (3, 255, 256, 256, 256)  dim   1021 ker    1  q =     178.9193  q/M = 0.6989  q*lnM/M = 3.8755  local exponent 0.790
+  (3, 511, 512, 512, 512)  dim   2045 ker    1  q =     314.1155  q/M = 0.6135  q*lnM/M = 3.8273  local exponent 0.812
+  (3, 1023, 1024, 1024, 1024)  dim   4093 ker    1  q =     558.5457  q/M = 0.5455  q*lnM/M = 3.7808  local exponent 0.830
+  (3, 2047, 2048, 2048, 2048)  dim   8189 ker    1  q =    1003.8924  q/M = 0.4902  q*lnM/M = 3.7374  local exponent 0.846
+  (3, 4095, 4096, 4096, 4096)  dim  16381 ker    1  q =    1820.8756  q/M = 0.4445  q*lnM/M = 3.6977  local exponent 0.859
+  (3, 8191, 8192, 8192, 8192)  dim  32765 ker    1  q =    3328.7284  q/M = 0.4063  q*lnM/M = 3.6615  local exponent 0.870
+== A5  (5/2; j-1/2, j, j, j)
+  (5, 15, 16, 16, 16)  dim     87 ker    1  q =      29.7652  q/M = 1.8603  q*lnM/M = 5.1579
+  (5, 31, 32, 32, 32)  dim    183 ker    1  q =      46.4125  q/M = 1.4504  q*lnM/M = 5.0267  local exponent 0.641
+  (5, 63, 64, 64, 64)  dim    375 ker    1  q =      74.9622  q/M = 1.1713  q*lnM/M = 4.8712  local exponent 0.692
+  (5, 127, 128, 128, 128)  dim    759 ker    1  q =     124.4244  q/M = 0.9721  q*lnM/M = 4.7165  local exponent 0.731
+  (5, 255, 256, 256, 256)  dim   1527 ker    1  q =     211.1000  q/M = 0.8246  q*lnM/M = 4.5726  local exponent 0.763
+  (5, 511, 512, 512, 512)  dim   3063 ker    1  q =     364.6632  q/M = 0.7122  q*lnM/M = 4.4431  local exponent 0.789
+  (5, 1023, 1024, 1024, 1024)  dim   6135 ker    1  q =     639.4670  q/M = 0.6245  q*lnM/M = 4.3286  local exponent 0.810
+  (5, 2047, 2048, 2048, 2048)  dim  12279 ker    1  q =    1135.6463  q/M = 0.5545  q*lnM/M = 4.2280  local exponent 0.829
+  (5, 4095, 4096, 4096, 4096)  dim  24567 ker    1  q =    2038.6528  q/M = 0.4977  q*lnM/M = 4.1399  local exponent 0.844
+  (5, 8191, 8192, 8192, 8192)  dim  49143 ker    1  q =    3693.5781  q/M = 0.4509  q*lnM/M = 4.0628  local exponent 0.857
+== A7  (7/2; j-1/2, j, j, j)
+  (7, 15, 16, 16, 16)  dim    110 ker    2  q =      36.9360  q/M = 2.3085  q*lnM/M = 6.4005
+  (7, 31, 32, 32, 32)  dim    238 ker    2  q =      56.0095  q/M = 1.7503  q*lnM/M = 6.0661  local exponent 0.601
+  (7, 63, 64, 64, 64)  dim    494 ker    2  q =      88.4874  q/M = 1.3826  q*lnM/M = 5.7501  local exponent 0.660
+  (7, 127, 128, 128, 128)  dim   1006 ker    2  q =     144.1878  q/M = 1.1265  q*lnM/M = 5.4657  local exponent 0.704
+  (7, 255, 256, 256, 256)  dim   2030 ker    2  q =     240.8077  q/M = 0.9407  q*lnM/M = 5.2161  local exponent 0.740
+  (7, 511, 512, 512, 512)  dim   4078 ker    2  q =     410.4006  q/M = 0.8016  q*lnM/M = 5.0004  local exponent 0.769
+  (7, 1023, 1024, 1024, 1024)  dim   8174 ker    2  q =     711.3780  q/M = 0.6947  q*lnM/M = 4.8153  local exponent 0.794
+  (7, 2047, 2048, 2048, 2048)  dim  16366 ker    2  q =    1250.8424  q/M = 0.6108  q*lnM/M = 4.6568  local exponent 0.814
+  (7, 4095, 4096, 4096, 4096)  dim  32750 ker    2  q =    2226.2986  q/M = 0.5435  q*lnM/M = 4.5210  local exponent 0.832
+== E1  (1; j, j, j, j)            [integer j1]
+  (2, 16, 16, 16, 16)  dim     48 ker   16  q =      30.5345  q/M = 1.9084  q*lnM/M = 5.2912
+  (2, 32, 32, 32, 32)  dim     96 ker   32  q =      50.0977  q/M = 1.5656  q*lnM/M = 5.4258  local exponent 0.714
+  (2, 64, 64, 64, 64)  dim    192 ker   64  q =      85.0632  q/M = 1.3291  q*lnM/M = 5.5276  local exponent 0.764
+  (2, 128, 128, 128, 128)  dim    384 ker  128  q =     148.0194  q/M = 1.1564  q*lnM/M = 5.6109  local exponent 0.799
+  (2, 256, 256, 256, 256)  dim    768 ker  256  q =     262.2514  q/M = 1.0244  q*lnM/M = 5.6806  local exponent 0.825
+  (2, 512, 512, 512, 512)  dim   1536 ker  512  q =     471.0406  q/M = 0.9200  q*lnM/M = 5.7393  local exponent 0.845
+  (2, 1024, 1024, 1024, 1024)  dim   3072 ker 1024  q =     855.1939  q/M = 0.8352  q*lnM/M = 5.7888  local exponent 0.860
+  (2, 2048, 2048, 2048, 2048)  dim   6144 ker 2048  q =    1566.1864  q/M = 0.7647  q*lnM/M = 5.8308  local exponent 0.873
+  (2, 4096, 4096, 4096, 4096)  dim  12288 ker 4096  q =    2888.9955  q/M = 0.7053  q*lnM/M = 5.8667  local exponent 0.883
+  (2, 8192, 8192, 8192, 8192)  dim  24576 ker 8192  q =    5361.5282  q/M = 0.6545  q*lnM/M = 5.8975  local exponent 0.892
+  (2, 16384, 16384, 16384, 16384)  dim  49152 ker 16384  q =   10002.1347  q/M = 0.6105  q*lnM/M = 5.9242  local exponent 0.900
+== E2  (2; j, j, j, j)
+  (4, 16, 16, 16, 16)  dim     76 ker   16  q =      41.3484  q/M = 2.5843  q*lnM/M = 7.1651
+  (4, 32, 32, 32, 32)  dim    156 ker   32  q =      64.8936  q/M = 2.0279  q*lnM/M = 7.0282  local exponent 0.650
+  (4, 64, 64, 64, 64)  dim    316 ker   64  q =     106.3688  q/M = 1.6620  q*lnM/M = 6.9121  local exponent 0.713
+  (4, 128, 128, 128, 128)  dim    636 ker  128  q =     180.0061  q/M = 1.4063  q*lnM/M = 6.8234  local exponent 0.759
+  (4, 256, 256, 256, 256)  dim   1276 ker  256  q =     311.9153  q/M = 1.2184  q*lnM/M = 6.7564  local exponent 0.793
+  (4, 512, 512, 512, 512)  dim   2556 ker  512  q =     550.2730  q/M = 1.0748  q*lnM/M = 6.7047  local exponent 0.819
+  (4, 1024, 1024, 1024, 1024)  dim   5116 ker 1024  q =     984.4334  q/M = 0.9614  q*lnM/M = 6.6636  local exponent 0.839
+  (4, 2048, 2048, 2048, 2048)  dim  10236 ker 2048  q =    1780.9000  q/M = 0.8696  q*lnM/M = 6.6302  local exponent 0.855
+  (4, 4096, 4096, 4096, 4096)  dim  20476 ker 4096  q =    3251.2502  q/M = 0.7938  q*lnM/M = 6.6023  local exponent 0.868
+  (4, 8192, 8192, 8192, 8192)  dim  40956 ker 8192  q =    5980.7624  q/M = 0.7301  q*lnM/M = 6.5786  local exponent 0.879
+== L1  (1/2; 1/2, j, j, j+1/2)?   [ladder-type]
+  (1, 1, 16, 17, 17)  dim      4 ker    0  q =     249.4380  q/M = 14.6728  q*lnM/M = 41.5712
+  (1, 1, 32, 33, 33)  dim      4 ker    0  q =     942.2480  q/M = 28.5530  q*lnM/M = 99.8357  local exponent 2.004
+  (1, 1, 64, 65, 65)  dim      4 ker    0  q =    3658.0978  q/M = 56.2784  q*lnM/M = 234.9279  local exponent 2.001
+  (1, 1, 128, 129, 129)  dim      4 ker    0  q =   14410.6660  q/M = 111.7106  q*lnM/M = 542.8925  local exponent 2.000
+  (1, 1, 256, 257, 257)  dim      4 ker    0  q =   57199.2475  q/M = 222.5652  q*lnM/M = 1235.0310  local exponent 2.000
+  (1, 1, 512, 513, 513)  dim      4 ker    0  q =  227910.1743  q/M = 444.2693  q*lnM/M = 2772.3633  local exponent 2.000
+  (1, 1, 1024, 1025, 1025)  dim      4 ker    0  q =  909867.0742  q/M = 887.6752  q*lnM/M = 6153.7620  local exponent 2.000
+  (1, 1, 2048, 2049, 2049)  dim      4 ker    0  q = 3635921.0555  q/M = 1774.4856  q*lnM/M = 13530.6431  local exponent 2.000
+  (1, 1, 4096, 4097, 4097)  dim      4 ker    0  q = 14536589.7410  q/M = 3548.1059  q*lnM/M = 29513.1811  local exponent 2.000
+  (1, 1, 8192, 8193, 8193)  dim      4 ker    0  q = 58132170.0034  q/M = 7095.3460  q*lnM/M = 63936.4143  local exponent 2.000
+  (1, 1, 16384, 16385, 16385)  dim      4 ker    0  q = 232500302.0929  q/M = 14189.8262  q*lnM/M = 137699.7983  local exponent 2.000
+== K1  (j; 1/2, j, 1, 1)          [large-j1 minimiser]
+  (16, 1, 17, 2, 2)  dim      5 ker    1  q =      42.4296  q/M = 2.4959  q*lnM/M = 7.0713
+  (32, 1, 33, 2, 2)  dim      5 ker    1  q =      81.8927  q/M = 2.4816  q*lnM/M = 8.6769  local exponent 0.991
+  (64, 1, 65, 2, 2)  dim      5 ker    1  q =     160.7038  q/M = 2.4724  q*lnM/M = 10.3206  local exponent 0.995
+  (128, 1, 129, 2, 2)  dim      5 ker    1  q =     318.2615  q/M = 2.4671  q*lnM/M = 11.9899  local exponent 0.997
+  (256, 1, 257, 2, 2)  dim      5 ker    1  q =     633.3426  q/M = 2.4644  q*lnM/M = 13.6750  local exponent 0.998
+  (512, 1, 513, 2, 2)  dim      5 ker    1  q =    1263.4870  q/M = 2.4629  q*lnM/M = 15.3694  local exponent 0.999
+  (1024, 1, 1025, 2, 2)  dim      5 ker    1  q =    2523.7668  q/M = 2.4622  q*lnM/M = 17.0692  local exponent 1.000
+  (2048, 1, 2049, 2, 2)  dim      5 ker    1  q =    5044.3219  q/M = 2.4618  q*lnM/M = 18.7718  local exponent 1.000
+  (4096, 1, 4097, 2, 2)  dim      5 ker    1  q =   10085.4298  q/M = 2.4617  q*lnM/M = 20.4761  local exponent 1.000
+  (8192, 1, 8193, 2, 2)  dim      5 ker    1  q =   20167.6446  q/M = 2.4616  q*lnM/M = 22.1813  local exponent 1.000
+  (16384, 1, 16385, 2, 2)  dim      5 ker    1  q =   40332.0735  q/M = 2.4615  q*lnM/M = 23.8869  local exponent 1.000
+== F   (j; j, j, j, j)            [fat]
+  (16, 16, 16, 16, 16)  dim    181 ker   13  q =     138.2491  q/M = 8.6406  q*lnM/M = 23.9567
+  (32, 32, 32, 32, 32)  dim    681 ker   25  q =     429.1345  q/M = 13.4105  q*lnM/M = 46.4771  local exponent 1.634
+  (64, 64, 64, 64, 64)  dim   2641 ker   49  q =    1417.2043  q/M = 22.1438  q*lnM/M = 92.0935  local exponent 1.724
+  (128, 128, 128, 128, 128)  dim  10401 ker   97  q =    4856.8711  q/M = 37.9443  q*lnM/M = 184.1069  local exponent 1.777
+  (256, 256, 256, 256, 256)  dim  41281 ker  193  q =   17058.8651  q/M = 66.6362  q*lnM/M = 369.5095  local exponent 1.812
+== H   (j/2; j, j, j, j)
+time 39.4s

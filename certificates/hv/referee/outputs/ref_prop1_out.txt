@@ -1,0 +1,24 @@
+control: correct chain matches: True
+control: alpha=3 chain matches (should be False): False
+control: sigma234=1 operator matches chain (should be False): False
+Prop 1 general: 8832/8832 (tuple,alpha,beta) cases exact charpoly match, 2j_i<=6, j1=1/2  [43s]
+zero link weights among all tuples 2j<=8 with alpha=beta=1: 0
+Thm2 M=1 2D=1: dimInv=4 sites=4 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=1 2D=2: dimInv=4 sites=4 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=1 2D=3: dimInv=4 sites=4 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=2 2D=1: dimInv=6 sites=6 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=2 2D=2: dimInv=6 sites=6 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=2 2D=3: dimInv=6 sites=6 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=3 2D=1: dimInv=8 sites=8 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=3 2D=2: dimInv=8 sites=8 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=3 2D=3: dimInv=8 sites=8 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=4 2D=1: dimInv=10 sites=10 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=4 2D=2: dimInv=10 sites=10 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+Thm2 M=4 2D=3: dimInv=10 sites=10 charpoly match=True p(0)!=0=True prodID=True startsD/endsD=True
+distinct non-coplanar eps realising sigma=(4,2,2,0) among 400000 random integer tangent sets: 1
+embedding tangents: [(-1, -1, 0), (2, 2, 1), (-2, 4, -1), (0, -5, -4), (6, -3, 1)] eps: [1, -1, -1, 1, 1, 1, -1, -1, -1, -1] (author's eps)
+   2j=2: all-ten-eps charpoly == chain: True
+   2j=3: all-ten-eps charpoly == chain: True
+   2j=4: all-ten-eps charpoly == chain: True
+   2j=5: all-ten-eps charpoly == chain: True
+eps of author's embedding: [1, -1, -1, 1, 1, 1, -1, -1, -1, -1]

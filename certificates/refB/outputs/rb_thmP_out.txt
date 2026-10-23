@@ -1,0 +1,13 @@
+[R] Prop. R pencil vs Racah operator: 19700 j1=1 tuples (legs 2j<=20), max rel diff 2.68e-14  (17s)
+[C] exact LDL certificate of q >= 4.558 for all pair-pairs with n1,n2 <= 33.0:
+     max(n1,n2) <=32: 164176 pair-pairs, outcomes {'pd': 163246, 'kernel1': 930}
+     max(n1,n2) =32.5: 10416 pair-pairs, outcomes {'pd': 10385, 'kernel1': 31}
+     max(n1,n2) =33.0: 11440 pair-pairs, outcomes {'pd': 11409, 'kernel1': 31}
+     failures: 0 []  (111s)
+[A] case nu > n, all n < nu, m, with nu = 32.5..60 (half-integer grid): max F = 0.4949 at (n,m,nu) = (20.5, 0.5, 32.5); need <= 0.7701
+    nu = 32.5 alone (outside both parts of the written proof): max F = 0.4949 at (n,m) = (20.5, 0.5)
+    second bound alone at nu=32.5, n=24.5: 8 H_24 (4+2 ln 49)/(32.5^2-24.5^2) = 0.7806  (> 0.7701: the n<=24 line does not extend; the min with the first bound is needed)
+    8(H_n+1)(4+2ln2n)/n^2 nonincreasing on n = 25..2000 (step 1/2): True;  value at 25: 0.7289, at 24.5 (H_24): 0.7501
+    8(H_n+2)(4+2ln2n)/n^2 at n=28: 0.7288;  8H_n(4+2ln2n)/n^2 at 28: 0.4829 (need <= 1.5403)
+[S] float pencil q for 600 random pair-pairs with max(n1,n2) >= 33 (n up to 3000): min q = 128.9374 at (34.5, 7.5, 34.5, 5.5)
+total 162s

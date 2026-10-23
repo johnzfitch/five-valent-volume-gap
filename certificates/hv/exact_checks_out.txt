@@ -1,0 +1,22 @@
+X1. family charpoly identity:
+   2j= 2: dim 4, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 3: dim 6, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 4: dim 8, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 5: dim 10, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 6: dim 12, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 7: dim 14, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 8: dim 16, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j= 9: dim 18, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j=10: dim 20, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j=11: dim 22, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j=12: dim 24, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j=13: dim 26, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+   2j=14: dim 28, exact charpoly(full) == charpoly(chain): True, kernel dim 0
+X2. all tuples with 2j<=5, chain-type sigma:
+   936/936 exact charpoly identities
+X3. 6-valent non-coplanar sigma=(2,0,0,0,0,0,0,0,-2,0), spins 2j=(1,1,n,n,n+1,n+1):
+   n=1: dim 6, exact kernel dim 0, smallest nonzero q^2 in [0.707073936096 +/- 2.27e-13]  (q = [0.84087689 +/- 4.79e-9])
+   n=3: dim 14, exact kernel dim 0, smallest nonzero q^2 in [0.00210703416824 +/- 2.05e-15]  (q = [0.045902442 +/- 1.46e-10])
+   n=5: dim 22, exact kernel dim 0, smallest nonzero q^2 in [4.71081583293e-7 +/- 4.62e-19]  (q = [0.00068635383 +/- 2.44e-12])
+   n=7: dim 30, exact kernel dim 0, smallest nonzero q^2 in [2.16703713846e-11 +/- 8.49e-24]  (q = [4.6551446e-6 +/- 1.48e-14])
+   n=9: dim 38, exact kernel dim 0, smallest nonzero q^2 in [3.21099427043e-16 +/- 2.84e-28]  (q = [1.7919247e-8 +/- 3.91e-16])

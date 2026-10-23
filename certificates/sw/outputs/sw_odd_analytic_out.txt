@@ -1,0 +1,8 @@
+N=3: sqrt(Xi) product 10.418240744, closed form 10.418240744
+N=5: sqrt(Xi) product 11.5079852498, closed form 11.5079852498
+N=9: sqrt(Xi) product 12.3702231447, closed form 12.3702231447
+N=31: sqrt(Xi) product 13.2505942191, closed form 13.2505942191
+N=151: sqrt(Xi) product 13.5643534001, closed form 13.5643534001
+N=401: sqrt(Xi) product 13.6162765779, closed form 13.6162765779
+sin(pi t*/2) = 0.9933544953495649 ; N/(N+1) >= that for N >= 149.4776616076144
+weak constant for all odd N: t0 = (2/pi) asin(3/4) = 0.5398930876747682

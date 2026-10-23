@@ -1,0 +1,203 @@
+\section{What remains open}\label{sec:open}
+
+The classification of \cref{thm:nf-intro} reduces the five-valent problem in general position to one
+operator, $T=J_1\cdot(J_2\times J_3+J_4\times J_5)$, and what is not proved about it can
+be stated precisely.
+
+\begin{conjecture}[The equal-weight gap]\label{conj:B}
+Every nonzero eigenvalue of $8T$ satisfies
+\[
+  q\ \ge\ 2\sqrt{18-2\sqrt{41}}=4.5579607\ldots,
+\]
+with equality only at $(\frac12;\frac12,1;1,1)$ up to the symmetries of \cref{prop:S4}.
+\end{conjecture}
+
+For $j_1=1$ the conjecture is proved, since \cref{thm:jone} gives
+$q\ge4.558>2\sqrt{18-2\sqrt{41}}$, which also excludes equality on that slice. For
+$j_1=2$, for all spins at most $19$ and for $j_1=\frac52$ with spins at most $35$ the
+proofs give $q\ge4.5579607$, short of the conjectured constant by less than
+$4\times10^{-8}$; a second certified pass at a threshold between $4.5579608$ and $5.56$
+that excludes the minimiser would give the sharp form on the finite ranges. For
+$j_1=\frac12$ and $\frac32$ only the weaker constants $2.70$ and $3.7$ are proved. With
+\cref{thm:closing,thm:t0} the conjecture would complete the labelled dichotomy for
+tangents in general position: such an embedding has a gap exactly when its $\sigma$ does
+not contain $\pm4$.
+
+\begin{conjecture}[The growth law]\label{conj:L}
+There are constants $c_2,C>0$ such that every nonzero eigenvalue of $8T$ satisfies
+\[
+  q\ \ge\ \max\Bigl(4\sqrt{10-6\sqrt2}\;j_1,\ c_2\,\frac{M}{\ln M}\Bigr)-C,\qquad M=2j_{\max}.
+\]
+\end{conjecture}
+
+Both terms are sharp in form: the slope in $j_1$ cannot be larger (\cref{thm:slope}) and
+the growth in $M$ cannot be faster than $M/\ln M$ (\cref{thm:N1}). Numerically the lower
+envelope in $M$ is about $1.5\,M/\ln M$. Along the two families of \cref{thm:N1},
+$\qm\ln M/M$ is $3.151$ and $5.97$ at $M=2^{16}$, close to the heuristic values $\pi$ and
+$2\pi$ of \cref{sec:large} but still rising, so its limits are not established. The linear part, with exactly this slope, is proved on $\Cl_6$ (\cref{thm:C6}); for
+unrestricted tuples it is open. Behind it is a
+statement about three spins alone: the smallest nonzero eigenvalue modulus $\nu$ of
+$U_z$ on any weight space of any $j_2\otimes j_3\otimes j_4$ is at least
+$\nu_0=\sqrt{(5-3\sqrt2)/2}$, attained only at $(\frac12,1,1)$ with weight $\pm\frac12$.
+This holds for all triples with $2j\le12$ and is open in general. The second route to
+large $j_1$, the pencil of \cref{thm:pencil} for triples of unbounded size, would need
+the next-order structure of $\mathsf A$ rather than norm bounds.
+
+\subsection{Equal weights at large \texorpdfstring{$j_1$}{j1}: a spin-\texorpdfstring{$j_1$}{j1} ladder}\label{subsec:ladder}
+
+The rest of this section describes what we know about the open case,
+$j_1\ge\frac52$, beyond the theorems of \cref{sec:tone}. None of it closes the case.
+
+\paragraph{The reduced obligation.}
+By \cref{lem:mu}, $q\ge2\sqrt\mu\,\lambda(W_0)$ with $2\sqrt\mu\ge4\sqrt{2s(s+1)/\pi}$, a
+factor that grows linearly in $s=j_1$. So a much weaker statement about the compressed
+Kronecker sum than a uniform gap would already suffice:
+\begin{quote}
+\textup{(RO)} There is $c>0$ such that every tuple with $j_1\ge\frac52$ that is not
+covered by \cref{thm:tone} has a pairing with $\lambda(W_0)\ge c/(j_1+1)$.
+\end{quote}
+Then $q\ge4c\sqrt{2s/(\pi(s+1))}\ge2.697\,c$ on those tuples, and
+\cref{conj:B} would hold with a weaker constant. The evidence for (RO) is strong. A
+random search over $10\,000$ uncovered tuples with $5\le2j_1\le41$ and doubled leg spins
+up to $200$, drawn from six regimes (nearly equal legs, two large legs, two small legs,
+unbalanced pairs, large gaps, legs near $j_1$), found no counterexample: the smallest
+$\lambda(W_0)$, in the best pairing, is $0.614$ for half-integer $j_1$ and $1.0033$ for
+integer $j_1$, and the smallest $\lambda(W_0)(j_1+1)$ is $2.46$. Every half-integer minimiser
+has four nearly equal legs, and along such families $\lambda(W_0)$ decreases slowly with the
+legs, to $0.583$, $0.567$ and $0.549$ at $2j_1=41$, $81$ and $161$ with doubled legs up to
+$2048$, consistent with a limit of $\frac12$. So the factor $1/(j_1+1)$ in (RO) is never
+close to being needed; the data suggest $\lambda(W_0)\ge\frac12$.
+
+\paragraph{The picture: the low modes are a spin-$j_1$ channel.}
+One might expect the low singular vectors of $W_0$ to be edge states on the two walls
+$d=\pm s$, where the cut acts. They are not. Along the extremal family
+$(s;n-\frac12,n,n,n)$, the weight of the lowest mode on each diagonal matches, to within
+$0.05$, the weights $|\langle m|m_x=\frac12\rangle|^2$ of the eigenvector of $J_x$ in spin
+$s$ with eigenvalue $\frac12$, for $2s=5$, $9$ and $21$; along the antidiagonal $u$ the mode
+is spread evenly over the whole strip. Keeping only one wall gives $\lambda(W_0)$ between
+$0.90$ and $1.03$, and the interior strip $|d|\le s-1$ is only $6$--$30\%$ better than the
+full one. The low modes are the $m_x=\pm\frac12$ channel of a spin-$s$ representation of
+$\mathfrak{su}(2)$ acting across the diagonals, and they need both walls.
+
+The $\mathfrak{su}(2)$ is visible in the operator itself. Between the diagonals $d$ and $d+1$ the
+factor $\sqrt{F(d+\frac12)}=2\ell_s(d)$ of every link is twice the link
+$\ell_s(d)=\frac12\sqrt{(s-d)(s+d+1)}$ of $J_x$ in spin $s$, and \cref{prop:grid} gives at
+once:
+
+\begin{proposition}{$T$ is a $J_x(s)$ ladder with a diagonal defect}{Tladder}
+For every tuple and the pairing $(23|45)$, every link of $T$ between the diagonals $d$
+and $d+1$ is $\ell_s(d)\,\nu$, with $\nu=\frac12h_1(b)\sqrt{G(u)}$ for an $X$-link and
+$\nu=\frac12h_2(c)\sqrt{G(u)}$ for a $D$-link, $(b,c)$ its upper end. So
+$T=\sum_d\ell_s(d)(N_d+N_d^T)$, with $N_d$ the block of $\nu$-links from diagonal $d$ to
+$d+1$, and on every interior diagonal $N_d^TN_d-N_{d-1}N_{d-1}^T$ is diagonal, with entry
+$\frac14[G(u+1)P(b+1,c+1)-G(u)P(b,c)]$ at $(b,c)$, where $P(b,c)=h_1(b)^2-h_2(c)^2$.
+\end{proposition}
+
+If that diagonal defect vanished, $T$ would be exactly $J_x(s)\otimes P\oplus0$ for some
+$P\succeq0$, by the argument of \cref{thm:ladderA} below with the Gram matrices
+$N_d^TN_d$ in place of its Casimir (\cref{app:ladder}), and its smallest nonzero
+eigenvalue would be $\frac12$ or $1$ times the smallest nonzero eigenvalue of $P$. In
+the frame of $W_0$ the same structure appears with an absolute constant: the plaquette
+argument of \cref{prop:zigzag} gives, for $W_0$, $M_d^TM_d-M_{d-1}M_{d-1}^T=-\frac d2+\Delta_d$
+on every interior diagonal, with $M_d$ the block of $W_0$ from diagonal $d$ to $d+1$ and
+$\Delta_d$ diagonal; and $-\frac d2$ is exactly the relation
+$\ell_s(d)^2-\ell_s(d-1)^2=-\frac d2$ of $J_x$. With no defect this structure forces a
+gap, uniformly in the sizes of the blocks:
+
+\begin{theorem}{The su(2) ladder without defect}{ladderA}
+Let $V_{-s},\dots,V_s$ be finite-dimensional real inner-product spaces, $M_d:V_d\to V_{d+1}$
+linear, and $W=\sum_d(M_d+M_d^T)$ on $\bigoplus_dV_d$. Suppose
+$M_d^TM_d-M_{d-1}M_{d-1}^T=-\frac d2$ on $V_d$ for every $-s<d<s$, and
+$M_{s-1}M_{s-1}^T\succeq\frac s2$ on $V_s$, $M_{-s}^TM_{-s}\succeq\frac s2$ on $V_{-s}$. Then
+$W$ is an orthogonal sum of copies of $J_x(S)$ with $S\le s-1$, $S\equiv s\pmod1$, and of
+the chains $J(\kappa)$ on $-s\le d\le s$ with links $\sqrt{\kappa-d(d+1)/4}$ and
+$\kappa\ge s(s+1)/4$. Every singular value of the bipartite block of $J(\kappa)$ is
+nondecreasing in $\kappa$, and $J(s(s+1)/4)=J_x(s)$. Consequently every eigenvalue of $W$
+has modulus at least $\frac12$ if $s$ is a half-integer, and every nonzero eigenvalue has
+modulus at least $1$ if $s$ is an integer. Both bounds are sharp.
+\end{theorem}
+
+The proof (\cref{app:ladder}) is algebra: $C_d=M_d^TM_d+\frac{d(d+1)}4$ is intertwined by
+the blocks, $M_dC_d=C_{d+1}M_d$, so $W$ commutes with a Casimir and splits into its
+eigenspaces, on which every block is a scalar multiple of an isometry. The constants
+$\frac12$ and $1$ are the bulk limits seen in the data.
+
+\paragraph{Why the theorem does not apply.}
+For the real $W_0$ the defect is
+\[
+  \Delta=\tfrac12\bigl(\varepsilon_1(b)-\varepsilon_2(c)\bigr)+[u=s]\bigl(h_1(b)^2-h_2(c)^2\bigr),
+  \qquad \varepsilon(L)=\frac{(4n^2-1)(4m^2-1)}{2(2L-1)(2L+1)(2L+3)},
+\]
+with $\varepsilon_1$, $\varepsilon_2$ formed with the parameters of the two pairs, and with
+the convention $\varepsilon(\frac12)=(4n^2-1)/8$ at the bottom label of a pair with
+$m=\frac12$; the last term is present only at the corner sites $u=s$. It vanishes only
+for two pairs with $m=\frac12$ away from their bottom labels and from the corner, which
+no real tuple achieves everywhere. And it is not small. On eight tuples near the
+minimisers its largest entry is $112$ to $1\,110$ in the band $u\le2s+2$ at the corner,
+against at most $53$ elsewhere, and its size relative to the Gram matrices is between
+$0.74$ and $11$. On the tuples with nearly equal legs the lowest mode's Casimir has its
+mean within about one sector of the bottom value $s(s+1)/4$, but a spread of several
+sectors that grows with the legs. In the
+frame of $T$ the defect of \cref{prop:Tladder} is at most $9.4\%$ of the Gram diagonal
+entry by entry on the two tuples measured, but it is still of order one as an operator, because the small
+singular values of each $N_d$ come from cancellation along $u$. So a perturbation of
+\cref{thm:ladderA} cannot reach the real operator.
+
+\paragraph{What fails, and what a proof needs.}
+Two simpler routes are false. The gap is not monotone in $j_1$ with legs $2$--$5$ fixed:
+$q=148.70$ at $(4;1,\frac{11}2,\frac{11}2,6)$ but $70.59$ at $(5;1,\frac{11}2,\frac{11}2,6)$,
+and $912$ of $10\,252$ such steps without a leg $\frac12$ go down. Nor is it monotone along
+$j_1-j_5$ fixed, the setting of \cref{thm:pencil}: $q=146.46$ at $(5;1,4,4,1)$ but
+$63.30$ at $(\frac{11}2;1,4,4,\frac32)$, with $490$ of $19\,498$ steps going down. Reading the
+strip along the antidiagonals instead of the diagonals gives a transfer-matrix version of
+\cref{blem:evenchain}, but its bounds collapse on unbalanced pairs, for example to
+$1.3\times10^{-26}$ where $q=639$.
+
+A proof of \cref{conj:B} along the lines of this section needs a version of
+\cref{thm:ladderA} that allows the diagonal defect $\Delta$, under a hypothesis that is
+structural rather than a bound on its size, that the real $W_0$ satisfies in some
+pairing, and that still yields $\lambda(W_0)\ge c/(j_1+1)$. The defect is explicit and
+concentrated at the corner of the strip, so the hypothesis presumably says that the
+corner acts as a trivial boundary condition, the two-dimensional counterpart of the
+trivial dimerisation of the $j_1=\frac12$ chain. We have not found it.
+
+\paragraph{Identities behind this section.}
+These are proved, and each was checked against an independent computation; the
+scripts and outputs are in \texttt{certificates/su2l}, \texttt{w0ob} and \texttt{t1all}.
+\emph{Lemma O}: on the invariant space $T=\frac1{2i}[J_2\cdot J_3+J_4\cdot J_5,\Omega]$ with
+$\Omega=(J_3+J_5)^2-(J_2+J_4)^2$ (residual $5\times10^{-15}$ by brute force on all $512$
+tuples with doubled spins at most $4$). \emph{Lemma U}: along the antidiagonals the Gram
+matrices of $T$ satisfy the analogue of \cref{prop:zigzag} with ratio $G(u+1)/G(u)$ (exact,
+$97\,597$ entries). \emph{Lemma S}: for a Stark matrix, $h(L+1)^2-h(L)^2=
+-\frac{2L+1}4+\frac12\varepsilon(L)$, and for $m=\frac12$ the Stark matrix is $J_x$ of spin
+$n-\frac12$ on its odd subspace (exact, $20\,540$ labels). \emph{Lemma L}: the Gram identity
+for $W_0$ with the defect $\Delta$ above (exact, $195\,361$ sites, $27\,993$ at the corner).
+\emph{Lemma W}: for half-integer $j_1$, in every pairing exactly one wall has the corner's
+colour, and the leak through the other wall obeys the same $J_x$ law (exact, $12\,900$
+tuples). \emph{Lemma Q}: an explicit two-spin Casimir commutes with $K$ up to the
+$\varepsilon$-terms (float, $16\,875$ pairs of pairs). \Cref{prop:Tladder} was checked
+exactly on all $55\,000$ tuples with $2j_1\le11$ and doubled legs at most $10$, and
+\cref{thm:ladderA} on $3\,312$ honest two-spin strips and $400$ random exact ladders.
+
+\paragraph{Beyond valence five.}
+At valence six we have one embedding class (\cref{thm:v6}), chosen because Brunnemann and
+Rideout's data single it out; its $\sigma$ has only two nonzero entries, and its mechanism
+is close to the five-valent one. Whether the classes that Brunnemann and Rideout found
+increasing at valence six, including the cubic vertex, have a gap is open, as is
+everything non-degenerate at valence seven and higher.
+
+\paragraph{Other operators.}
+The general five-valent gap of the Rovelli--Smolin operator is open, and nothing here
+concerns the polyhedral volume of Bianchi, Don\`a and Speziale~\cite{BDS2011}, for which
+Haggard's level-repulsion argument suggests a generic gap~\cite{Haggard2013}. The
+semiclassical status of the small Ashtekar--Lewandowski eigenvalues is itself debated: the
+operator does not reproduce the polyhedral volume at generic five-valent
+vertices~\cite{BDS2011,FT2008}, and the gap closing found here may be read as a property
+of its regularisation rather than of quantum geometry. It may still matter for
+dynamics. Brunnemann and Thiemann noted that the spectrum near zero volume enters the
+Hamiltonian constraint through the curvature operator, and that valleys of zero
+volume could make the relevant differences of the spectrum unbounded~\cite[p.~46]{BT2006};
+eigenvalues as small as those of \cref{thm:closing} and \cref{thm:v6} sharpen that concern
+for the embeddings that carry them. The classification says which embeddings carry the
+effect; whether they should be counted is a question about the dynamics that this paper
+does not address.

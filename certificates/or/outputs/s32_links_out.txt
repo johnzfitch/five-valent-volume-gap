@@ -1,0 +1,2 @@
+explicit j1=3/2 link formulas vs closed-form grid (exact rationals), all labelled tuples 2j_i<=14: 18028 tuples, 359484 links, 0 mismatches
+plaquette identity for N D0^-1 (orientations A and B, interior rows of zigzag 1): 85568 rows checked, max relative deviation 1.42e-15

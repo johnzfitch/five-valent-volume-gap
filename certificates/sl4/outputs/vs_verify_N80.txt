@@ -1,0 +1,6 @@
+N = 80: 766249 tuples with d >= 2; violations: 0 []
+Lemma F equality cases: 3240; all with B1 = B2 = 0: True
+min (Lemma-S bound)^2/mu = 1.000000000000
+lambda^2 = mu (to 1e-11) in 80 tuples; all of the form (1/2,1/2,j,j): True
+min lambda^2/mu by d (d<=12): d=2: 1.0000 at (1, 1, 16, 16); d=3: 6.0000 at (2, 2, 2, 2); d=4: 1.8000 at (3, 3, 3, 3); d=5: 10.3505 at (4, 4, 4, 4); d=6: 3.0159 at (5, 5, 5, 5); d=7: 16.0000 at (6, 6, 6, 6); d=8: 4.5102 at (7, 7, 7, 7); d=9: 22.6988 at (8, 8, 8, 8); d=10: 6.2497 at (9, 9, 9, 9); d=11: 30.3470 at (10, 10, 10, 10); d=12: 8.2161 at (11, 11, 11, 11)
+wall time 297 s

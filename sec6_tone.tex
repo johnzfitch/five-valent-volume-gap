@@ -1,0 +1,424 @@
+\section{Equal weights: the gap survives}\label{sec:tone}
+
+This section is about the one operator that \cref{sec:closing} leaves open,
+\[
+  T=J_1\cdot(J_2\times J_3+J_4\times J_5),\qquad A=-8iT,\qquad q=8|\text{eigenvalue of }T|,
+\]
+on $\Inv(j_1\otimes\cdots\otimes j_5)$, with $s=j_1$ the distinguished spin.
+
+The chain of \cref{fig:ssh} already says why equal weights should keep the gap: the
+inner pair's links are the weak ones, so the dimerisation is trivial and nothing
+localises at the ends. For $j_1=\frac12$ that picture is the whole story. For larger
+$j_1$ the chain widens into the strip of \cref{fig:grid}, and the question is whether
+anything in two dimensions can do what the topological dimerisation did in one.
+
+The answer we can prove is no on every class listed below, and the plan is the same
+each time. Up to a positive rescaling, the strip carries two Stark matrices, whose
+spectra are integers (\cref{subsec:heronstark}). Where the triangle inequalities do not
+cut the strip, that settles the matter (\cref{subsec:closed}). Where they do, we look,
+for a suitable pairing of the legs, for a one-dimensional object (a chain, a
+two-point pencil, a pair of coupled chains, a tridiagonal stage) whose explicit inverse
+is a product of link ratios, and show that the ratios do not compound. That is the
+quantitative form of trivial dimerisation. What changes from slice to slice is only
+the shape of the one-dimensional object: for $j_1=\frac12$ the strip is a chain; for
+$j_1=1$ one colour class sits on a single diagonal and the problem becomes a pencil;
+for half-integer $j_1$ the diagonals pair up into zigzag chains coupled through
+diagonal matrices; for integer $j_1\ge2$ one diagonal is left over and is shared. The
+difficulty grows with $j_1$ because the number of coupled chains does, and the losses
+of each coupling compound: at $j_1=\frac32$ the bound left over is close enough to
+the threshold that a finite range of parameters has to be checked by computer, and at
+$j_1=\frac92$ the simple chained inequality no longer certifies every tuple.
+
+\begin{theorem}{The gap at equal weights}{tone}
+Every nonzero eigenvalue of $8T$ satisfies $q\ge q_*$ in each of the following cases.
+\begin{enumerate}
+\item[(a)] $j_1=\frac12$, with $q_*=6\sqrt2/\pi=2.7009$ \textup{(}\cref{thm:B2}\textup{)}.
+\item[(b)] $j_1=1$, with $q_*=4.558$ \textup{(}\cref{thm:jone}\textup{)}.
+\item[(c)] $j_1=\frac32$, with $q_*=3.7$ \textup{(}\cref{thm:z32}\textup{)}, \zstatus.
+\item[(d)] $j_1=2$, with $q_*=4.5579607$ \textup{(}\cref{thm:jtwo}\textup{)}.
+\item[(e)] Any $j_1$, if for some pairing of the legs $2$--$5$ the recoupling region has a
+  closed colour class and either the two pair dimensions have odd sum or one pair
+  contains a spin $\frac12$; then $q_*=2\sqrt\mu\ge4\sqrt{2s(s+1)/\pi}$, with $\mu$ the
+  rescaling constant of \cref{lem:mu}
+  \textup{(}\cref{thm:closed}\textup{)}. For integer $j_1$ this covers every tuple
+  except those whose legs $2$--$5$ are all integers or all half-integers at least
+  $\frac32$.
+\item[(f)] Any $j_1$, if one of the legs $2$--$5$ has spin $\frac12$; then $q_*=2.7009$,
+  and $q_*=4\sqrt2$ if $j_1\ge1$ \textup{(}\cref{cor:ladder}\textup{)}.
+\item[(g)] Any $j_1$, if three of the legs $2$--$5$ have spin at most $3$; then
+  $q_*=4.5579607$, and moreover $q\ge4\sqrt{10-6\sqrt2}\,j_1-1370$, with a slope that
+  cannot be improved \textup{(}\cref{thm:C6}\textup{)}.
+\item[(h)] Every tuple with all spins at most $19$, and every tuple with $j_1=\frac52$ and
+  all spins at most $35$, with $q_*=4.5579607$ \textup{(}finite certificates,
+  \cref{sec:computer}\textup{)}.
+\end{enumerate}
+\end{theorem}
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{5.5cm}}
+\toprule
+\estabhead{case} & \estabhead{proved $q_*$} & \estabhead{min.\ found} & \estabhead{method}\\
+\midrule
+(a) $j_1=\frac12$ & $2.7009$ & $4.5579607$ & analytic; two constants in interval arithmetic\\
+(b) $j_1=1$ & $4.558$ & $7.3534$ & analytic; finite part exact\\
+(c) $j_1=\frac32$ & $3.7$ & $7.4763$ & analytic; finite box in interval arithmetic\\
+(d) $j_1=2$ & $4.5579607$ & $10.5410$ & analytic; finite box in interval arithmetic\\
+(e) closed colour class & $4\sqrt{2s(s+1)/\pi}$ & --- & analytic\\
+(f) a leg of spin $\frac12$ & $2.7009$; $4\sqrt2$ for $j_1\ge1$ & --- & analytic; windows $5\le N\le149$ in interval arithmetic\\
+(g) three legs at most $3$ & $4.5579607$ and $4\sqrt{10-6\sqrt2}\,j_1-1370$ & --- & analytic; exact and interval certificates\\
+(h) spins at most $19$; $j_1=\frac52$, spins at most $35$ & $4.5579607$ & $4.5579607$ & rigorous floating point; exact\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent The column ``min.\ found'' gives the smallest value over all tuples of the slice
+with spins at most $19$; it is not a proved infimum.
+The smallest value we have found anywhere is $2\sqrt{18-2\sqrt{41}}=4.5579607392$, at
+$(\frac12;\frac12,1;1,1)$, where the operator is a four-site chain with squared links
+$32,32,80$ and characteristic polynomial $x^4-144x^2+2560$; the minimum at $j_1=\frac52$
+over the same range is $12.8129$. So none of the proved constants is the minimum of
+its slice; $4.5579607$ is, up to $4\times10^{-8}$, the conjectured global minimum of
+\cref{sec:open}, used as a common threshold.
+
+\subsection{The guiding picture: two Stark matrices and a cut}\label{subsec:heronstark}
+
+\Cref{prop:grid} writes every link of $T$ as a Stark link of one pair times
+$\frac14\sqrt{F\,G}$, where $F$ depends only on the diagonal $d=b-c$ and $G$ only on
+the antidiagonal $u=b+c$. A function of $d$ times a function of $u$ is exactly what a
+diagonal congruence (a rescaling of the sites) can produce, so the Heron factors can be
+scaled away. Look at
+\cref{fig:grid} with this in mind: every horizontal link carries $h_1(b)$, every
+vertical link $h_2(c)$, and the factors $\sqrt{F(d\mp\frac12)}$ and $\sqrt{G(u)}$ are
+the same along each diagonal and each antidiagonal. Rescale each site by a number that
+depends on its two diagonals and these factors disappear; what remains is
+$h_1\otimes1+1\otimes h_2$, the Kronecker sum of the two Stark matrices, with the
+links that cross the walls or the corner removed. For $s=\frac12$ the strip is the
+zigzag chain of \cref{sec:closing}, and the rescaled chain has the Stark links of the
+two pairs, alternately.
+
+\begin{theorem}{Heron--Stark congruence}{heron-stark}
+For every spin tuple and the pairing $(23|45)$, the entrywise nonnegative matrix $W$ of $T$
+satisfies $W=\frac14SW_0S$, where $W_0=P_RKP_R$ is the compression to the region $R$
+of the Kronecker sum $K=H(n_1,m_1)\otimes1+1\otimes H(n_2,m_2)$ on the rectangle, and
+$S=\diag(\vartheta)$ with $\vartheta(b,c)^2=\phi(d)\,\omega(u)>0$, where
+$\phi(d)\phi(d+1)=F(d+\frac12)$ and $\omega(u-1)\omega(u)=G(u)$.
+\end{theorem}
+
+\begin{proof}
+An $X$-link joins $(b-1,c)$ and $(b,c)$, so it changes $d$ from $d-1$ to $d$ and $u$
+from $u-1$ to $u$, and $\vartheta\vartheta'=\sqrt{\phi(d-1)\phi(d)\omega(u-1)\omega(u)}=
+\sqrt{F(d-\frac12)G(u)}$; a $D$-link gives $\sqrt{F(d+\frac12)G(u)}$ in the same way.
+By \cref{prop:grid} what remains of each link is $\frac14h_1(b)$ or $\frac14h_2(c)$,
+the link of $K$. Links of $K$ that leave $R$ are absent from $W_0$ by definition, and
+$F$, $G$ are positive inside $R$.
+\end{proof}
+
+So $T$ and the compressed Kronecker sum have the same inertia and the same nullity; their
+kernels correspond through $\ker W=S^{-1}\ker W_0$. By \cref{blem:starkspec} the uncompressed sum $K$ has spectrum
+$\{\lambda+\lambda'\}$ with $\lambda,\lambda'$ running over two Stark spectra: odd
+integers if the pair dimensions $N_P=n_P-m_P=2\min(j_a,j_b)+1$ have odd sum, even
+integers (with a kernel) if they have even sum. All the difficulty of the
+two-dimensional problem is in the cut $P_R$, the triangle inequalities of the
+recoupling, and in how much the rescaling $S$ costs.
+
+\begin{lemma}[Scaling with kernels]\label{lem:scalekernel}
+For any real matrix $B$ and positive diagonal $S_E$, $S_O$, every nonzero singular value
+of $S_EBS_O$ is at least $\min S_E\cdot\min S_O$ times the smallest nonzero singular
+value of $B$.
+\end{lemma}
+
+\begin{proof}
+Put $M=B^TS_E^2B$, which is positive semidefinite. The nonzero eigenvalues of
+$S_OMS_O$ are those of $M^{1/2}S_O^2M^{1/2}$. This matrix dominates $(\min S_O)^2M$ and
+has the kernel of $M$, so Courant--Fischer on the range compares its nonzero eigenvalues
+with those of $M$. Apply this twice.
+\end{proof}
+
+\begin{lemma}[The cost of the rescaling]\label{lem:mu}
+Let $\mu=\min_{\rm one\ colour}\vartheta^2\cdot\min_{\rm other\ colour}\vartheta^2$. Then
+$\mu\ge(2s+2)\Phi_s\ge8s(s+1)/\pi$, where $\Phi_s=2s$ for integer $s$ and
+$\Phi_s=2s/\mathcal W_{s-1/2}$ for half-integer $s$, with Wallis's product
+$\mathcal W_K=\prod_{l\le K}4l^2/(4l^2-1)<\pi/2$. Hence
+\[
+  q\ \ge\ 2\sqrt\mu\;\lambda(W_0),
+\]
+with $\lambda(W_0)$ the smallest nonzero singular value of the bipartite block of $W_0$.
+\end{lemma}
+
+\begin{proof}
+The free constants of $\phi$ and $\omega$ cancel in $\mu$. Since $G$ increases for
+$u>-\frac12$, $\omega(u+2)/\omega(u)=G(u+2)/G(u+1)\ge1$, so the minima over the two
+parities of $u$ are $\omega(u_{\min})$ and $\omega(u_{\min}+1)$, with product
+$G(u_{\min}+1)\ge2s+2$ because $u_{\min}\ge s$. Along each parity class of $d$,
+$\phi(d+2)/\phi(d)=F(d+\frac32)/F(d+\frac12)$ is nonincreasing because $F$ is
+log-concave, so $\log\phi$ is concave there and its minimum is at an end; the end values
+over $[-s,s]$ are equal for integer $s$ (by $F(x)=F(-x)$), giving $\Phi_s=F(s-\frac12)
+=2s$, and differ by Wallis's product $\mathcal W_{s-1/2}$ for half-integer $s$. A
+site's colour, the parity of $u-s$, fixes the parity of $u$; and since $u-d=2c$ and
+$c$ runs over $m_2+\ZZ$, the parity of $d$ is then fixed too. So $\mu$ is at least the
+product. The last statement is \cref{thm:heron-stark,lem:scalekernel}.
+\end{proof}
+
+\subsection{Closed regions and the ladder}\label{subsec:closed}
+
+The cut can cost something only where it removes a link of $K$, and it removes links
+only at the sites next to the walls $d=\pm s$ and the corner $u=s$; the outer edges of
+the rectangle are not cuts, since $K$ itself lives on the rectangle. A colour class
+$C$ of the region is \emph{closed} if every neighbour in the rectangle of every site of
+$C\cap R$ lies in $R$. The cut sites of the region lie on the wall $d=s$, which has
+colour $2(j_4+j_5)\bmod2$; on the wall $d=-s$, of colour $2(j_2+j_3)\bmod2$; and at the
+corner $u=s$, of colour $0$ (the colour being the parity of $u-s$). The class of colour
+$k$ is closed exactly when no cut site has colour $k$.
+
+\begin{theorem}{Closed regions}{closed}
+Suppose a colour class $C$ is closed, and either $N_1+N_2$ is odd or one of the two
+pairs contains a spin $\frac12$. Then every nonzero singular value of the bipartite
+block of $W_0$ is at least $1$, and every nonzero eigenvalue satisfies
+$q\ge2\sqrt\mu\ge4\sqrt{2s(s+1)/\pi}$.
+\end{theorem}
+
+\begin{proof}
+For $\psi$ supported on $C\cap R$, $K\psi$ is supported on neighbours of $C\cap R$,
+all in $R$ by closedness, so the block of $W_0$ from $C$ is $K$ restricted to
+$\ell^2(C\cap R)$. If $N_1+N_2$ is odd the spectrum of $K$ consists of odd integers, so
+$\|K\psi\|\ge\|\psi\|$. If the first pair is $(\frac12,j)$, its Stark matrix is
+$2\times2$ with link $1$, the rectangle is two rails $b=j\pm\frac12$, the two sites
+of a position $c$ have opposite colours, and $K$ restricted to $C$ acts as
+$\hat\psi\mapsto(H'\pm1)\hat\psi$ on the positions $J$ of $C$, where $H'$ is the
+Stark matrix of the other pair. If $N'$ is odd, $H'\pm1$ has odd-integer spectrum. If
+$N'$ is even and $J$ is the whole range of $H'$, the nonzero singular values of
+$H'\pm1$ are at least $2$. If $J$ misses an end, \cref{lem:onesided} gives
+$\|(H'\pm1)\hat\psi\|\ge\|\hat\psi\|$. In every case \cref{lem:mu} finishes.
+\end{proof}
+
+The one step in this proof that is not spectral bookkeeping is the case of a chain
+with an end removed. Removing an end site from a Stark matrix cannot create a
+near-zero mode, because the end components of its eigenvectors are Clebsch--Gordan
+weights, largest in the middle of the spectrum and decreasing away from it; so a
+vector that avoids the end cannot concentrate on the eigenvalue closest to the shift.
+
+\begin{lemma}[One-sided Stark bound]\label{lem:onesided}
+Let $H=H(n,m)$ have even dimension $N$. If $\psi$ vanishes at one end site of the
+chain, then $\|(H\pm1)\psi\|\ge\|\psi\|$.
+\end{lemma}
+
+The proof is in \cref{app:windows}: $Q=(H-1)^2-1=H(H-2)$ has exactly one negative
+eigenvalue, at the eigenvalue $1$ of $H$, and a form with one negative eigenvalue is
+nonnegative on the hyperplane $e^\perp$ if and only if $e^TQ^{-1}e\le0$; for the end
+vector $e$ this is a sum over the eigenvalues weighted by the squared end components,
+and their monotonicity settles the sign.
+
+When no colour class is closed but a leg carries spin $\frac12$, the block is not a
+restriction of $H'\pm1$ but a shifted window of it: rows $[a+1,b+1]$ against columns
+$[a,b]$. These windows have a uniform bound too.
+
+\begin{theorem}{Shifted Stark windows}{SW}
+For every Stark matrix $H(n,m)$ and every window $0\le a\le b\le N-2$, the smallest
+singular value of rows $[a+1,b+1]$ times columns $[a,b]$ of $H-1$ is at least
+$c_*=\sqrt{(15-\sqrt{97})/6}=0.92657$, with equality at $N=3$, $m=0$.
+\end{theorem}
+
+The proof (\cref{app:windows}) reduces every window to the full window $[0,N-2]$, turns
+the bound into an explicit inequality between two end-weighted resolvent sums, proves it
+for even $N$ and for odd $N\ge151$ by hand, and certifies odd $5\le N\le149$ in interval
+arithmetic. A fully analytic constant $\frac2\pi\arcsin\frac34=0.5399$ holds for all
+windows.
+
+\begin{corollary}[Ladders]\label{cor:ladder}
+If one of the legs $2$--$5$ has spin $\frac12$, then $q\ge6\sqrt2/\pi$ if $j_1=\frac12$,
+$q\ge4\sqrt2$ if $j_1$ is an integer, and $q\ge2\sqrt\mu\,c_*\ge6.215$ if $j_1\ge\frac32$
+is a half-integer.
+\end{corollary}
+
+\begin{proof}
+For $j_1=\frac12$ this is \cref{thm:B2}. For integer $j_1$ the number of half-integer
+spins among the legs $2$--$5$ is even; pairing them together puts both walls in colour
+$0$, the colour of the corner, so the other class is closed, and \cref{thm:closed}
+applies with the spin-$\frac12$ pair. For half-integer $j_1\ge\frac32$ either some class is
+closed, or (\cref{lem:window} in \cref{app:windows}) the block is a shifted window of
+$H'+1$, and \cref{thm:SW,lem:mu} give $q\ge2\sqrt\mu\,c_*$ with $\mu\ge45/4$.
+\end{proof}
+
+\subsection{The first slice: \texorpdfstring{$j_1=\frac12$}{j1 = 1/2}}
+
+For $j_1=\frac12$ the region is the chain of \cref{sec:closing}, and the question is
+the dimerisation of \cref{fig:ssh} for general spins. We use doubled labels and work
+with the links of $8T$ itself, so that the eigenvalues are $q$ directly, with no
+factor $8$: let $m_X=2|j_2-j_3|$, $n_X=2(j_2+j_3+1)$, likewise
+$m_D,n_D$, and $m=\max(m_X,m_D)$, $n=\min(n_X,n_D)$. The links carry the labels
+$l=m+1,\dots,n-1$ in order and alternate in type, and a link of type $P$ of $8T$ has
+squared weight $c^2=\frac14(n_P^2-l^2)(l^2-m_P^2)$ (\cref{prop:grid} with $s=\frac12$).
+
+\begin{lemma}[Inner and outer pairs]\label{lem:innerouter}
+If the chain has an even number $N=n-m$ of sites, its odd-numbered links all belong to
+one pair $O$ with $m_O\le m-1$ and $n_O\ge n+1$, and the other pair owns both $m$ and $n$.
+For an even link at label $L=m+2\tau$ followed by an odd link,
+\[
+  \frac{c_{2\tau}^2}{c_{2\tau+1}^2}\ \le\ \frac{n+L}{n+L+2}\cdot\frac{L-m}{L-m+2}\ \le\ \frac{\tau}{\tau+1}.
+\]
+If $N$ is odd, the odd links belong to the pair owning $n$ and the even links to the pair
+owning $m$.
+\end{lemma}
+
+\begin{theorem}{The spin-\texorpdfstring{$\frac12$}{1/2} slice}{B2}
+For $j_1=\frac12$ and all other spins, every nonzero eigenvalue satisfies
+$q\ge6\sqrt2/\pi>2.70$.
+\end{theorem}
+
+The proofs are in \cref{app:chains}. For even $N$ the ratio bound telescopes, so
+$E_{ij}^2\le(j/i)/c_{2j-1}^2$, and a lower bound on the odd links turns $\|E\|_F^2$ into a
+harmonic double sum. For odd $N$ the ratios increase along the chain; deleting the row
+where they cross $1$ splits the chain into two even pieces, one read from each end.
+The smallest value found on this slice, over spins at most $19$, is $4.5579607$, so the
+constant is not sharp.
+
+\subsection{The second slice: \texorpdfstring{$j_1=1$}{j1 = 1}}
+
+For $s=1$ the strip has three diagonals, $d=-1,0,1$, and the two colour classes are the
+middle diagonal and the two walls. So the bipartite block $B$ goes from the diagonal
+to the walls, and $B^TB$ lives on the diagonal alone. A diagonal site $(\ell,\ell)$
+touches only the four wall sites $(\ell\pm1,\ell)$, $(\ell,\ell\pm1)$, and two
+neighbouring diagonal sites share exactly two wall sites; so $B^TB$ is tridiagonal: the
+two-dimensional problem at $j_1=1$ is a one-dimensional birth--death problem, which
+\cref{prop:pencil1} writes down. Each pair of neighbouring diagonal sites sees its two
+shared wall sites through two rows, one weighted by $h_1$ and one by $h_2$. In the
+nonnegative gauge of \cref{prop:grid} every link is positive, so every plaquette (four
+sites around a unit square) has a positive product of links; we call such a gauge
+flux-free. With the sign $(-1)^\ell$ on the diagonal, the two rows then combine into
+the square of a difference, $A^+(\Phi_\ell-\Phi_{\ell-1})^2$, plus a nonnegative term.
+With a plaquette of negative product the cross terms would cancel instead. The
+difference form is a weighted Hardy problem, and Hardy's inequality bounds it.
+
+\begin{proposition}{The pencil at \texorpdfstring{$j_1=1$}{j1 = 1}}{pencil1}
+Fix a pairing with pairs $(n_1,m_1)$, $(n_2,m_2)$. Let $\mathrm{lo}=\max(m_1,m_2)$, raised
+to $1$ if both are $0$, and $\mathrm{hi}=\min(n_1,n_2)-1$. Put
+$P_i(e)=\max(0,(n_i^2-e^2)(e^2-m_i^2))$,
+\[
+  A^+_e=\frac{(\sqrt{P_1(e)}+\sqrt{P_2(e)})^2}{8e},\qquad
+  A^-_e=\frac{(\sqrt{P_1(e)}-\sqrt{P_2(e)})^2}{8e},\qquad \mu_\ell=\frac{2\ell+1}{\ell(\ell+1)}.
+\]
+Then the nonzero values of $(q/8)^2$ are the nonzero eigenvalues of the pencil
+\[
+  \mathcal E(\Phi)=\sum_{e=\mathrm{lo}}^{\mathrm{hi}+1}\Bigl[A^+_e(\Phi_e-\Phi_{e-1})^2+A^-_e(\Phi_e+\Phi_{e-1})^2\Bigr]
+  \quad\text{against}\quad\sum_\ell\mu_\ell\Phi_\ell^2,
+\]
+with $\Phi_{\mathrm{lo}-1}=\Phi_{\mathrm{hi}+1}=0$.
+\end{proposition}
+
+\begin{proof}
+For $s=1$ every wall link has $F(\pm\frac12)=2$. In the gauge $(-1)^\ell$ the two rows
+that see $\phi_{\ell-1}$ and $\phi_\ell$ give $\frac{\sqrt2}4(h_1\xi-h_2\upsilon)$ and
+$\frac{\sqrt2}4(h_2\xi-h_1\upsilon)$ with $\xi=\sqrt{G(2\ell-1)}\phi_{\ell-1}$, $\upsilon=\sqrt{G(2\ell)}
+\phi_\ell$, and $(h_1\xi-h_2\upsilon)^2+(h_2\xi-h_1\upsilon)^2=\frac12[(h_1+h_2)^2(\xi-\upsilon)^2+(h_1-h_2)^2(\xi+\upsilon)^2]$.
+Substituting $\phi_\ell=z_\ell\Phi_\ell$ with $z_\ell^2=\mu_\ell$, which solves
+$\sqrt{G(2\ell-1)}z_{\ell-1}=\sqrt{G(2\ell)}z_\ell$, and $(4\ell^2-1)h_i^2=P_i$ gives the
+pencil. Missing sites and links are exactly the zeros of $P_i$ and of $G(1)$.
+\end{proof}
+
+\begin{theorem}{The slice \texorpdfstring{$j_1=1$}{j1 = 1}}{jone}
+For $j_1=1$ and all other spins every nonzero eigenvalue satisfies $q\ge4.558$.
+\end{theorem}
+
+The proof (\cref{app:jone}) uses the Hardy inequality with constant $4$, a nodal-domain
+argument for identical pairs (whose kernel is the constants), and explicit estimates of
+the Hardy product when $\max(n_1,n_2)\ge33$; the remaining finitely many pairs of pairs
+are certified by exact $LDL^T$ factorisation.
+
+\subsection{Half-integer \texorpdfstring{$j_1$}{j1}: zigzags}
+
+For half-integer $s$ the strip $|d|\le s$ has an even number $2s+1$ of diagonals, and
+they pair up: the sites on two neighbouring diagonals $d_k$, $d_k+1$, with
+$d_k=-s+2k$, form a single zigzag path, which we call a \emph{zigzag}. Rows of the
+bipartite block are the sites with $d+s$ even, columns those with $d+s$ odd. Each
+zigzag is then a chain of the kind solved in \cref{sec:closing}, and neighbouring
+zigzags are coupled through the links between their diagonals. The picture to keep is
+a stack of such chains, glued by couplings whose Gram matrices are a constant multiple
+of the neighbouring chain's, up to a diagonal correction.
+
+\begin{proposition}{Zigzag structure}{zigzag}
+For half-integer $s$ the bipartite block $B$ is block lower-bidiagonal in the zigzag
+index: each diagonal block $D_k$ is a single path alternating between rows and columns,
+with imbalance $\#\mathrm{rows}-\#\mathrm{columns}\in\{-1,0,1\}$, and the off-diagonal
+block $N_k$ couples zigzag $k$ to zigzag $k-1$. Moreover, for adjacent zigzags,
+\[
+  N_k^TN_k=\mathsf r_k\,D_{k-1}^TD_{k-1}+\Lambda_k,\qquad \mathsf r_k=\frac{F(d_k-\frac12)}{F(d_k-\frac32)},
+\]
+with $\Lambda_k$ diagonal.
+\end{proposition}
+
+\begin{proof}
+A row on $d_k$ has its neighbours on $d_k\pm1$; those on $d_k+1$ are the columns of
+zigzag $k$ and those on $d_k-1$ the columns of zigzag $k-1$. On each diagonal the sites
+form an interval, which gives the path structure and the imbalance. For the identity,
+an off-diagonal entry of $D_{k-1}^TD_{k-1}$ (respectively $N_k^TN_k$) between two
+adjacent columns is the product of the two links at their unique shared row of zigzag
+$k-1$ (respectively $k$). These two rows, $(b,c)$ on $d$ and $(b+1,c-1)$ on $d+2$, form
+a plaquette with the two columns, and by \cref{prop:grid} the two link products contain
+the same Stark and $G$ factors and differ only in $F(d+\frac12)$ against $F(d+\frac32)$.
+\end{proof}
+
+For $j_1=\frac32$ there are two zigzags, and in a suitable ordered pairing neither has
+surplus columns, so $B$ is injective and $\lambda(T)=\smin(B)$. Splitting
+$\|B(x,y)\|^2=\|D_0x\|^2+\|Nx+D_1y\|^2$ and giving up a fraction of the first term to
+absorb the coupling gives, for every $\tau>0$,
+\begin{equation}\label{eq:twochain}
+  \smin(B)^2\ \ge\ \min\Bigl(\lambda_{\min}\bigl(D_0^TD_0-\tau N^TN\bigr),\ \tfrac{\tau}{1+\tau}\lambda_{\min}(D_1^TD_1)\Bigr),
+\end{equation}
+and by \cref{prop:zigzag}, $D_0^TD_0-\tau N^TN=(1-\frac43\tau)D_0^TD_0-\tau\Lambda$. So
+everything reduces to two single chains, whose inverses are explicit products of link
+ratios, and one diagonal correction. The price is the factor $\tau/(1+\tau)$, paid
+once at $j_1=\frac32$. What is left is a bound of $3.777$ at the worst tuple, against a
+computed value of $8.87$. The closed-form estimates that make this bound uniform hold only
+for large spins (beyond $n_1=4000$ or $10^5$, depending on the regime), so below that
+the bound is evaluated parameter by parameter, by computer.
+
+\begin{theorem}{The slice \texorpdfstring{$j_1=\frac32$}{j1 = 3/2}}{z32}
+For $j_1=\frac32$ and all other spins every nonzero eigenvalue satisfies $q\ge3.7$.
+This is proved \zstatus. Independently of that box, every tuple with $j_1=\frac32$ and
+spins at most $20$ satisfies $q\ge7.18$, by exact $LDL^T$ certificates.
+\end{theorem}
+
+The proof (\cref{app:z32}) sorts the tuples into eight regimes by the gaps between the
+sorted spins of legs $2$--$5$, chooses in each regime a pairing in which both zigzags have
+no surplus column, bounds the two chains and the coupling by explicit telescoping
+products, evaluates the resulting bound on a finite box of parameters in
+outward-rounded interval arithmetic, and controls everything beyond the box by written
+tail lemmas. The binding regime is the family $(\frac32;j,j+\frac12,j+\frac12,j+\frac12)$
+at $j=1$.
+
+\subsection{The slice \texorpdfstring{$j_1=2$}{j1 = 2}: a triangular reduction}
+
+For integer $j_1$ the strip has an odd number of diagonals, so pairing them into
+zigzags leaves one over. Instead, take the colour class whose diagonals are
+$d=\pm1,\pm3,\dots$ as columns and let each row diagonal be \emph{owned} by one of its
+two neighbouring column diagonals: the owner keeps most of that row's contribution to
+$\|Bx\|^2$ and the other neighbour pays a small penalty. Each column diagonal then
+carries one tridiagonal problem of the kind solved above. For $j_1=2$ there are only
+the two column diagonals $d=\pm1$, the walls $d=\pm2$ are owned by their single
+neighbours, and only the middle row diagonal $d=0$ is shared.
+
+Since $T$ links only adjacent diagonals,
+\[
+  \|Bx\|^2=\sum_\rho\bigl\|Z(\rho-1,\rho)x_{\rho-1}+Z(\rho+1,\rho)x_{\rho+1}\bigr\|^2,
+\]
+where $Z(\delta,\rho)$ is the zigzag block from column diagonal $\delta$ to row diagonal
+$\rho$, a path matrix; and the Gram matrices of the two zigzags at one column diagonal
+are proportional off the diagonal, $Z(\delta,\delta+1)^TZ(\delta,\delta+1)-\mathsf r_\delta
+Z(\delta,\delta-1)^TZ(\delta,\delta-1)=\diag(\Lambda)$, by the same plaquette argument
+as \cref{prop:zigzag}. Applying $\|a+b\|^2\ge(1-\theta)\|a\|^2-(\theta^{-1}-1)\|b\|^2$,
+$0<\theta<1$, row diagonal by row diagonal reduces positivity of $B^TB-\lambda$ to
+positivity of one tridiagonal matrix per column diagonal.
+
+\begin{theorem}{The slice \texorpdfstring{$j_1=2$}{j1 = 2}}{jtwo}
+For $j_1=2$ and all other spins every nonzero eigenvalue satisfies $q\ge4.5579607$.
+\end{theorem}
+
+The proof (\cref{app:jtwo}) routes each tuple to a pairing in which the wall chain on the
+wall $d=-2$ has no surplus columns, and in one of the three cases neither wall chain does, bounds the chains and the one coupling in closed form, and closes
+with an interval-arithmetic box and an explicit tail. Tuples outside the even-sum class
+are already covered by \cref{thm:closed}, and tuples with all spins at most $19$ by the
+finite certificate.
+
+A proof for all $j_1$ along these lines would need either a uniform version of
+\cref{lem:mu} for the compressed Kronecker sum or the large-$j_1$ structure of the next
+section; \cref{sec:open} describes how far both go.

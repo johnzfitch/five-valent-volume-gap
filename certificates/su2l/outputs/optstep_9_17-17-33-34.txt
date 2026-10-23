@@ -1,0 +1,5 @@
+row 0: start  ||Y||=0.0179
+row 2: J_x ratio 0.8729  pinv step/Jx 1.2936   optimal step/Jx 1.2888   ||Y|| 0.0119 vs ||Rs^+|| 0.0117
+row 4: J_x ratio 0.9798  pinv step/Jx 1.2959   optimal step/Jx 1.2915   ||Y|| 0.0108 vs ||Rs^+|| 0.0106
+row 6: J_x ratio 1.0690  pinv step/Jx 1.2982   optimal step/Jx 1.2939   ||Y|| 0.0117 vs ||Rs^+|| 0.0115
+row 8: J_x ratio 1.3333  pinv step/Jx 1.3003   optimal step/Jx 1.2959   ||Y|| 0.0177 vs ||Rs^+|| 0.0174

@@ -1,0 +1,13 @@
+[L] Lemma 4.3 exact vs Racah: 4903 j1=2 tuples (legs 2j<=10); link mismatches 0, Lambda/proportionality mismatches 0, sign mismatches 0
+   (3s)
+[R] Lemma 4.4 routing on 68365 W2 tuples (legs 2j<=60): failures of the conditions the proof uses 0; per regime {'NN': 33149, 'C3': 11482, 'C1': 23734}
+    C1/C3 tuples where W+ is not actually wide (statement 'W+ wide' false, unused by the proof): 2710, of which W+ empty: 2710
+   (14s)
+[V] 600 random W2 tuples (legs <= 160) per regime {'NN': 255, 'C1': 171, 'C3': 174}:
+    closed-form violations (Lemma 4.6 sW, sM; Lemma 4.7 C): 0 []
+    min true/closed: sigma_min(W-)^2 5.218, sigma_min(M+)^2 3.914;  max true C / bound: C1 0.9999, C3 0.9995
+    tuples with 2j_max >= 39 and sigma_min(B)^2 < lam0 on {d=+-1}: 0;  C3 configurations with W > Wbar(n1): 0
+   (54s)
+[K] j1=5/2, level 2j_max=39: 4729 tuples with >= 2 sites
+[K] j1=5/2, level 2j_max=70: 25827 tuples with >= 2 sites
+total 57s

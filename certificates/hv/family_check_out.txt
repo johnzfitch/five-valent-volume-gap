@@ -1,0 +1,26 @@
+1. tangents: [(1, 3, 1), (0, -2, 0), (-2, 0, -3), (-3, 1, 0), (-3, 1, 2)]
+   determinants (all nonzero => non-coplanar): {'123': 2, '124': -6, '125': -10, '134': 28, '135': 40, '145': 20, '234': -18, '235': -26, '245': -12, '345': -4}
+   sigma(123,124,134,234) = (4, 2, 2, 0)
+2. full tensor product, all 10 eps-weighted triples, vs chain:
+   2j=2: dim Inv=4, chain sites=4, max|diff|=5.33e-15, min|q| brute=3.344882050255 chain=3.344882050255
+   2j=3: dim Inv=6, chain sites=6, max|diff|=1.42e-14, min|q| brute=2.826307132085 chain=2.826307132085
+   2j=4: dim Inv=8, chain sites=8, max|diff|=1.42e-14, min|q| brute=2.158484584801 chain=2.158484584802
+3. recoupling basis (sigma from eps) vs chain, 2j = 2..40:
+   max relative discrepancy 5.89e-15
+4. exact product identity:
+   E_{N,1}^{-2} == 16 N^2 (2N+1)/4^N for all N=2..400: True
+5. q_min (60 digits) vs P = 4N sqrt(2N+1) 2^-N:
+   kappa = (16/3 ln(4/3))^(-1/2) = 0.807317258360469
+   2j=  2  q_min=      3.34488205025475  lambda_V=sqrt(q)=      1.82890187  q/P=0.747938364109
+   2j=  3  q_min=        2.826307132085  lambda_V=sqrt(q)=     1.681162435  q/P=0.71216245716
+   2j=  4  q_min=       2.1584845848015  lambda_V=sqrt(q)=       1.4691782  q/P=0.719494861601
+   2j=  5  q_min=      1.52310947462227  lambda_V=sqrt(q)=     1.234143215  q/P=0.734775657012
+   2j= 10  q_min=     0.138940761292283  lambda_V=sqrt(q)=    0.3727475839  q/P=0.776175610803
+   2j= 20  q_min=  0.000387416617601845  lambda_V=sqrt(q)=   0.01968290166  q/P=0.793042099753
+   2j= 30  q_min=   6.96575959377635e-7  lambda_V=sqrt(q)= 0.0008346112624  q/P=0.798035457906
+   2j= 40  q_min=   1.04831261223896e-9  lambda_V=sqrt(q)=  3.237765606e-5  q/P=0.800438824098
+   2j= 50  q_min=  1.43148144627351e-12  lambda_V=sqrt(q)=  1.196445338e-6  q/P=0.801853121256
+   2j= 60  q_min=  1.83824488562522e-15  lambda_V=sqrt(q)=  4.287475814e-8  q/P=0.802784870974
+   2j= 80  q_min=  2.70013509735432e-21  lambda_V=sqrt(q)= 5.196282419e-11  q/P=0.803937395965
+   2j=100  q_min=  3.59957030706098e-27  lambda_V=sqrt(q)= 5.999641912e-14  q/P=0.804622563451
+   min q/P = 0.7121624572, max q/P = 0.8046225635 (Theorem: [0.375, 1])

@@ -1,0 +1,4 @@
+(N,m) pairs: 1189 (N<=30, m in 0..20 step 1/2)
+max relative error of the two ratio formulas (float64 eigenvectors; tiny end weights limit accuracy): 1.60e-09
+max symmetry defect |w(lam)-w(-lam)|: 2.89e-15
+max relative error of |v0 vN| = prod g/|P'(lam)| (components with |v0 vN| > 1e-8): 8.20e-10

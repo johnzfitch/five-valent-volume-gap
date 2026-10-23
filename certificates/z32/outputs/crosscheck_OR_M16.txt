@@ -1,0 +1,1 @@
+z32_core vs oc_fast ([OR]), all ordered pairings of j1=3/2 tuples 2j<=16: 11040 cases, max relative singular-value difference 1.48e-15

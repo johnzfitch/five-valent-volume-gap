@@ -1,0 +1,36 @@
+2j_max=39: tuples 5320, nonempty 4729, NOT certified 0, min q 53.048850, wall 1.7s
+2j_max=40: tuples 5740, nonempty 5092, NOT certified 0, min q 53.974473, wall 1.8s
+2j_max=41: tuples 6160, nonempty 5461, NOT certified 0, min q 54.895050, wall 2.1s
+2j_max=42: tuples 6622, nonempty 5860, NOT certified 0, min q 55.810743, wall 2.4s
+2j_max=43: tuples 7084, nonempty 6265, NOT certified 0, min q 56.721705, wall 2.2s
+2j_max=44: tuples 7590, nonempty 6701, NOT certified 0, min q 57.628078, wall 2.5s
+2j_max=45: tuples 8096, nonempty 7144, NOT certified 0, min q 58.530001, wall 2.6s
+2j_max=46: tuples 8648, nonempty 7619, NOT certified 0, min q 59.427603, wall 2.7s
+2j_max=47: tuples 9200, nonempty 8101, NOT certified 0, min q 60.321007, wall 2.9s
+2j_max=48: tuples 9800, nonempty 8617, NOT certified 0, min q 61.210330, wall 3.1s
+2j_max=49: tuples 10400, nonempty 9140, NOT certified 0, min q 62.095686, wall 3.3s
+2j_max=50: tuples 11050, nonempty 9698, NOT certified 0, min q 62.977179, wall 3.6s
+2j_max=51: tuples 11700, nonempty 10264, NOT certified 0, min q 63.854911, wall 3.9s
+2j_max=52: tuples 12402, nonempty 10866, NOT certified 0, min q 64.728980, wall 4.0s
+2j_max=53: tuples 13104, nonempty 11476, NOT certified 0, min q 65.599479, wall 4.4s
+2j_max=54: tuples 13860, nonempty 12124, NOT certified 0, min q 66.466495, wall 4.6s
+2j_max=55: tuples 14616, nonempty 12780, NOT certified 0, min q 67.330114, wall 4.9s
+2j_max=56: tuples 15428, nonempty 13475, NOT certified 0, min q 68.190418, wall 5.3s
+2j_max=57: tuples 16240, nonempty 14179, NOT certified 0, min q 69.047483, wall 5.9s
+2j_max=58: tuples 17110, nonempty 14923, NOT certified 0, min q 69.901386, wall 6.4s
+2j_max=59: tuples 17980, nonempty 15676, NOT certified 0, min q 70.752197, wall 6.8s
+2j_max=60: tuples 18910, nonempty 16471, NOT certified 0, min q 71.599987, wall 7.0s
+2j_max=61: tuples 19840, nonempty 17275, NOT certified 0, min q 72.444820, wall 7.5s
+2j_max=62: tuples 20832, nonempty 18122, NOT certified 0, min q 73.286762, wall 8.2s
+2j_max=63: tuples 21824, nonempty 18979, NOT certified 0, min q 74.125874, wall 8.5s
+2j_max=64: tuples 22880, nonempty 19880, NOT certified 0, min q 74.962214, wall 8.7s
+2j_max=65: tuples 23936, nonempty 20791, NOT certified 0, min q 75.795841, wall 9.8s
+2j_max=66: tuples 25058, nonempty 21748, NOT certified 0, min q 76.626808, wall 10.1s
+2j_max=67: tuples 26180, nonempty 22715, NOT certified 0, min q 77.455170, wall 10.7s
+2j_max=68: tuples 27370, nonempty 23729, NOT certified 0, min q 78.280977, wall 11.4s
+2j_max=69: tuples 28560, nonempty 24754, NOT certified 0, min q 79.104279, wall 12.3s
+2j_max=70: tuples 29820, nonempty 25827, NOT certified 0, min q 79.925124, wall 12.2s
+
+real	3m3.792s
+user	0m0.000s
+sys	0m0.000s

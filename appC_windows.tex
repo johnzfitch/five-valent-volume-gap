@@ -1,0 +1,126 @@
+\section{Stark matrices with an end removed}\label{app:windows}
+
+This appendix proves \cref{lem:onesided}, the window identity used in
+\cref{cor:ladder}, and \cref{thm:SW}. All three are statements about one Stark matrix
+$H=H(n,m)$ of dimension $N$, with eigenvectors $v_\lambda$ ($\lambda=N-1-2k$), and both
+rest on the end components of its eigenvectors. Write $w_0(\lambda)=v_\lambda(0)^2$ and
+$w_N(\lambda)=v_\lambda(N-1)^2$ for the squared components at the two ends.
+
+\begin{lemma}[End weights]\label{lem:endweights}
+$w(\lambda)=w(-\lambda)$ at both ends, and with $\lambda_k=N-1-2k$,
+\[
+  \frac{w_0(\lambda_{k-1})}{w_0(\lambda_k)}=\frac{k(N+m-k)}{(m+k)(N-k)},\qquad
+  \frac{w_N(\lambda_{k-1})}{w_N(\lambda_k)}=\frac{k(m+k)}{(N+m-k)(N-k)} .
+\]
+Both ratios are at most $1$ for $k\le N/2$, so each end weight decreases away from the
+middle of the spectrum. Relative to the central weight, the bottom weights decrease and the
+top weights increase in $m$, the latter towards the binomial ratios
+$\binom{N-1}k/\binom{N-1}{k_c}$.
+\end{lemma}
+
+\begin{proof}
+$H\cong-H$ through $(-1)^k$, which gives the symmetry. For integer $m$, $H$ is
+$J^{(a)}_z-J^{(b)}_z$ on $(j\otimes j)_{M=m}$ with $2j+1=n$ (\cref{blem:starkspec}); its
+eigenvectors are product states, the bottom site is $|m,m\rangle$ and the top site
+$|2j,m\rangle$, and the end weights are squared Clebsch--Gordan coefficients with the
+stated product forms. For fixed $N$ both sides are rational in $m$ (the end weights of a
+Jacobi matrix are rational functions of its squared links), and they agree at every integer
+$m\ge0$, so they agree for all real $m\ge0$. The monotonicity statements follow factor by
+factor.
+\end{proof}
+
+\begin{proof}[Proof of \cref{lem:onesided}]
+Let $Q=(H-1)^2-1=H(H-2)$. Its eigenvalues are $\lambda(\lambda-2)$, which is $-1$ at
+$\lambda=1$ and at least $3$ otherwise, so $Q$ is nonsingular with exactly one negative
+eigenvalue. For such a form, $Q\succeq0$ on $e^\perp$ if and only if $e^TQ^{-1}e\le0$: with
+$y=Q^{-1}e$, the space splits $Q$-orthogonally as $e^\perp\oplus\mathbb Ry$ and $y^TQy=e^Ty$.
+For the end vector $e$, with $\mathcal G(z)=\sum_\lambda w(\lambda)/(\lambda-z)$,
+$e^TQ^{-1}e=\frac12[\mathcal G(2)-\mathcal G(0)]$, and $\mathcal G(0)=0$ by symmetry. Pairing $\lambda$ with $-\lambda$,
+\[
+  -\mathcal G(2)=\tfrac43w(1)-\sum_{k\ge1}\frac{4\,w(2k+1)}{(2k-1)(2k+3)},
+\]
+and the coefficients sum to $\frac43-\frac1{2K+1}-\frac1{2K+3}<\frac43$, so $-\mathcal G(2)>0$ as soon as
+$w(2k+1)\le w(1)$, which \cref{lem:endweights} gives. Hence $\|(H-1)\psi\|^2-\|\psi\|^2=
+\psi^TQ\psi\ge0$ for $\psi\perp e$. The case $H+1$ follows by the gauge $(-1)^k$.
+\end{proof}
+
+\begin{lemma}[Window identity]\label{lem:window}
+Let one pair be $(\frac12,j)$, with rails $b\in\{\beta,\beta+1\}$, $\beta=j-\frac12$, let $V$
+be the label range of the other pair, and let $s$ be a half-integer. For either colour class
+the block of $W_0$ is $P_{J'}(H'+1)P_J$, where $J,J'$ are the positions of the two classes.
+Either one class is closed, or $J,J'$ are intervals of equal length with $J'=J\pm1$, so
+that the block is a shifted window of $H'+1$.
+\end{lemma}
+
+\begin{proof}
+On the rail $b$ the sites are the positions $c\in V\cap[|b-s|,b+s]$. Since $\beta-s\in\ZZ$,
+either $\beta\ge s$ or $\beta+1\le s$, so before intersecting with $V$ the two rail intervals
+differ by exactly one position at each end. Let $I$ be their common part inside $V$; the
+remaining positions are at most one $p$ below $I$ and one $q$ above it. At each position the
+two rails carry opposite colours, so $p$ and $q$ each join one class, and each class is $I$
+plus its extras. The rung has weight $1$, and a site at $c$ and the opposite-colour site at
+$c\pm1$ lie on the same rail, because colour alternates along a rail; so the block is
+$P_{J'}(H'+1)P_J$. If one class receives both extras or the other receives none, the other
+class sits on $I$, all its rectangle neighbours lie in $R$, and it is closed. Otherwise
+$J=I\cup\{p\}$ and $J'=I\cup\{q\}$, intervals of equal length shifted by one. Finally
+$H'+1\cong-(H'-1)$ by $(-1)^k$, and the gauge preserves windows.
+\end{proof}
+
+\subsection*{Proof of the window theorem}
+
+This is the proof of \cref{thm:SW}.
+
+\emph{Reduction to one window.} $(H-1)_{rc}=0$ for $|r-c|\ge2$. If $B_{a,b}$ denotes rows
+$[a+1,b+1]$ by columns $[a,b]$, then $B_{a,N-2}=\bigl(\begin{smallmatrix}B_{a,b}&*\\0&*\end{smallmatrix}\bigr)$,
+so $\smin(B_{a,N-2})\le\smin(B_{a,b})$; and $W:=B_{0,N-2}=\bigl(\begin{smallmatrix}*&*\\0&B_{a,N-2}\end{smallmatrix}\bigr)$,
+so $\smin(W)=\smin(W^T)\le\smin(B_{a,N-2})$. It suffices to bound $W$.
+
+\emph{Variational form.} For $\psi$ with $\psi_{N-1}=0$,
+$\|W\psi\|^2=\|(H-1)\psi\|^2-(u^T\psi)^2$ with $u=(H-1)e_0$. The corner identity of Jacobi
+matrices gives $v_\lambda(0)v_\lambda(N-1)=\prod h/P'(\lambda)$ with $P(z)=\prod(z-\lambda)$.
+
+\emph{Even $N$.} Here $\smin(W)\ge1$. With $Q=H(H-2)$ as above, $u^TQ^{-1}u=1+\frac12\mathcal G_0(2)<1$, so
+$Q-uu^T$ has one negative eigenvalue, and $\smin(W)\ge1$ iff $e_{N-1}^T(Q-uu^T)^{-1}e_{N-1}\le0$.
+By Sherman--Morrison this is $(X(0)+X(2))^2\le \mathcal G_0(2)\mathcal G_N(2)$ with $X(z)=-\prod h/P(z)$. Here
+$X(0)+X(2)=2X(0)/(N+1)$ and $X(0)^2=w_0(1)w_N(1)R_N^2$ with
+$R_N=|P'(1)/P(0)|=2^{2K+1}K!(K+1)!/((2K+1)!!)^2$, $K=N/2-1$, so the criterion is
+$\gamma_0\gamma_N\ge4R_N^2/(N+1)^2$ with $\gamma_e=-\mathcal G_e(2)/w_e(1)$. \Cref{lem:endweights} gives
+$\gamma_0\ge2N/(N^2-1)$ and $\gamma_N\ge\Gamma_N:=\sum_{i=1}^K4(1-\rho_i)/((2i-1)(2i+3))+2N/(N^2-1)$
+with $\rho_i=\binom{N-1}{K-i}/\binom{N-1}K$, uniformly in $m$, and
+\begin{equation}\label{eq:gammaN}
+  \Gamma_N\ \ge\ \frac{2R_N^2(N-1)}{N(N+1)}
+\end{equation}
+holds for all even $N$. For $N\le400$ it is checked exactly in rationals. For $N=2P$ with
+$P\ge100$, let $k=\lceil\sqrt P\,\rceil$. Since $\log(1-x)\le-x$,
+\[
+  \rho_i=\prod_{r=1}^i\frac{P-r}{P+r}\le\exp\Bigl(-\sum_{r=1}^i\frac{2r}{P+r}\Bigr)\le e^{-i(i+1)/(P+i)},
+\]
+which is at most $e^{-1}<\frac12$ for $i\ge k$, because $i^2\ge P$. Keeping only the terms
+$i\ge k$, where $4(1-\rho_i)>2$, and telescoping $\frac2{(2i-1)(2i+3)}=\frac12\bigl(\frac1{2i-1}-\frac1{2i+3}\bigr)$,
+with $2N/(N^2-1)=\frac1{2P-1}+\frac1{2P+1}$, gives
+\[
+  \Gamma_N>\tfrac12\Bigl(\frac1{2k-1}+\frac1{2k+1}\Bigr)+\tfrac12\Bigl(\frac1{2P-1}+\frac1{2P+1}\Bigr)
+  >\frac1{2k+1}\ge\frac1{2\sqrt P+3}>\frac4P,
+\]
+the last step because $P>8\sqrt P+12$ for $P\ge100$. On the other side, $R_2=2$ and each step
+$P\to P+1$ multiplies $R_N$ by $4P(P+1)/(2P+1)^2<1$, so $R_N\le2$ and the right side of
+\eqref{eq:gammaN} is at most $8(N-1)/(N(N+1))<4/P$. The exact range $N\le400$ ($P\le200$)
+overlaps the analytic range $P\ge100$; at $N=2$ the inequality is an equality.
+
+\emph{Odd $N$.} For $\theta\in(0,1)$, with $\rho(\lambda)=1/((\lambda-1)^2-\theta^2)$,
+the same argument gives $\smin(W)^2\ge \theta^2$ iff $\theta^2\,S_0S_N\le\Xi_N(\theta^2)$, where
+$S_e=\sum_\lambda(w_e(\lambda)/w_e(0))\rho(\lambda)$ and, by residues,
+\[
+  \sqrt{\Xi_N}=\frac{\pi N\,\Gamma(J+1)^2}{4\cos(\pi \theta/2)\,\Gamma(J+\frac32+\frac \theta2)\,\Gamma(J+\frac32-\frac \theta2)},\qquad J=\tfrac{N-1}2,
+\]
+independent of $m$. \Cref{lem:endweights} gives $S_e\le\frac{\pi}{2\theta}\tan\frac{\pi \theta}2$ and
+log-convexity of $\Gamma$ reduces the criterion to $\sin(\pi \theta/2)\le N/(N+1)$, which holds at
+$\theta=c_*$ for all odd $N\ge151$ and at $\theta=\frac2\pi\arcsin\frac34$ for all odd $N\ge3$ (the
+analytic constant). For $N=3$ the window is $\bigl(\begin{smallmatrix}g_1&-1\\0&g_2\end{smallmatrix}\bigr)$
+with $g_1^2=4(m+2)/(2m+3)$, $g_2^2=4(m+1)/(2m+3)$, so
+$\smin^2=\frac12\bigl(5-\sqrt{9+16/(2m+3)^2}\bigr)$, increasing in $m$ and equal to $c_*^2$ at
+$m=0$. For odd $5\le N\le149$: $S_0$ decreases and $S_N$ increases in $m$, so on an interval
+$[m_a,m_b]$ it suffices that $\theta^2\,S_0(m_a)S_N(m_b)<\Xi_N$; the certificate bisects $[0,2^{24}]$
+at rational breakpoints, evaluates the weights exactly and $\rho$, $\Xi$ in 40-digit interval
+arithmetic at $\theta^2=c_*^2$, and uses the binomial limit of $S_N$ on $[2^{24},\infty)$.
+As a check, at $\theta^2=0.93$, above the computed value $0.9249$ at $N=5$, it fails, as it must.

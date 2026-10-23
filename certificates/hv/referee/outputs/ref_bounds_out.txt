@@ -1,0 +1,52 @@
+kappa = 0.80731725836046871648
+N=   2 q_min(Sturm)=        3.34488205025475 q_min(power)rel.diff= 1.43e-31 q/P=0.747938364109  kappa-q/P=0.05938  |1/E_N1-P|/P=0.0 min(X/D)^2=4.0 min(X_l/D_l+1)^2=1.6
+N=   3 q_min(Sturm)=          2.826307132085 q_min(power)rel.diff= 2.34e-31 q/P=0.71216245716  kappa-q/P=0.09515  |1/E_N1-P|/P=1.77e-46 min(X/D)^2=3.0 min(X_l/D_l+1)^2=1.6667
+N=   4 q_min(Sturm)=         2.1584845848015 q_min(power)rel.diff= 5.21e-32 q/P=0.719494861601  kappa-q/P=0.08782  |1/E_N1-P|/P=0.0 min(X/D)^2=2.6667 min(X_l/D_l+1)^2=1.7143
+N=   5 q_min(Sturm)=        1.52310947462227 q_min(power)rel.diff= 1.18e-31 q/P=0.734775657012  kappa-q/P=0.07254  |1/E_N1-P|/P=0.0 min(X/D)^2=2.5 min(X_l/D_l+1)^2=1.75
+N=   6 q_min(Sturm)=        1.01195289353901 q_min(power)rel.diff= 3.31e-31 q/P=0.748440624822  kappa-q/P=0.05888  |1/E_N1-P|/P=3.24e-47 min(X/D)^2=2.4 min(X_l/D_l+1)^2=1.7778
+N=   7 q_min(Sturm)=       0.642859522059311 q_min(power)rel.diff= 2.93e-31 q/P=0.758791382213  kappa-q/P=0.04853  |1/E_N1-P|/P=3.23e-48 min(X/D)^2=2.3333 min(X_l/D_l+1)^2=1.8
+N=   8 q_min(Sturm)=       0.394967514461224 q_min(power)rel.diff= 4.19e-31 q/P=0.766349543911  kappa-q/P=0.04097  |1/E_N1-P|/P=2.66e-48 min(X/D)^2=2.2857 min(X_l/D_l+1)^2=1.8182
+N=   9 q_min(Sturm)=        0.23658600121353 q_min(power)rel.diff= 2.25e-31 q/P=0.771933171085  kappa-q/P=0.03538  |1/E_N1-P|/P=0.0 min(X/D)^2=2.25 min(X_l/D_l+1)^2=1.8333
+N=  10 q_min(Sturm)=       0.138940761292283 q_min(power)rel.diff= 4.58e-31 q/P=0.776175610803  kappa-q/P=0.03114  |1/E_N1-P|/P=2.39e-49 min(X/D)^2=2.2222 min(X_l/D_l+1)^2=1.8462
+N=  11 q_min(Sturm)=      0.0803158697953508 q_min(power)rel.diff= 3.09e-31 q/P=0.779497496663  kappa-q/P=0.02782  |1/E_N1-P|/P=1.04e-49 min(X/D)^2=2.2 min(X_l/D_l+1)^2=1.8571
+N=  12 q_min(Sturm)=      0.0458302148514532 q_min(power)rel.diff= 2.45e-31 q/P=0.782169000131  kappa-q/P=0.02515  |1/E_N1-P|/P=1.82e-49 min(X/D)^2=2.1818 min(X_l/D_l+1)^2=1.8667
+N=  20 q_min(Sturm)=    0.000387416617601845 q_min(power)rel.diff= 2.54e-31 q/P=0.793042099753  kappa-q/P=0.01428  |1/E_N1-P|/P=0.0 min(X/D)^2=2.1053 min(X_l/D_l+1)^2=1.913
+N=  30 q_min(Sturm)=     6.96575959377635e-7 q_min(power)rel.diff= 1.66e-31 q/P=0.798035457906  kappa-q/P=0.009282  |1/E_N1-P|/P=1.78e-55 min(X/D)^2=2.069 min(X_l/D_l+1)^2=1.9394
+N=  40 q_min(Sturm)=     1.04831261223896e-9 q_min(power)rel.diff=  2.9e-31 q/P=0.800438824098  kappa-q/P=0.006878  |1/E_N1-P|/P=1.13e-58 min(X/D)^2=2.0513 min(X_l/D_l+1)^2=1.9535
+N=  50 q_min(Sturm)=    1.43148144627351e-12 q_min(power)rel.diff= 1.53e-31 q/P=0.801853121256  kappa-q/P=0.005464  |1/E_N1-P|/P=1.29e-61 min(X/D)^2=2.0408 min(X_l/D_l+1)^2=1.9623
+N=  60 q_min(Sturm)=    1.83824488562522e-15 q_min(power)rel.diff= 1.61e-31 q/P=0.802784870974  kappa-q/P=0.004532  |1/E_N1-P|/P=5.89e-65 min(X/D)^2=2.0339 min(X_l/D_l+1)^2=1.9683
+N=  70 q_min(Sturm)=    2.26268497343752e-18 q_min(power)rel.diff= 1.99e-31 q/P=0.803445090859  kappa-q/P=0.003872  |1/E_N1-P|/P=4.57e-68 min(X/D)^2=2.029 min(X_l/D_l+1)^2=1.9726
+N=  80 q_min(Sturm)=    2.70013509735432e-21 q_min(power)rel.diff= 1.34e-31 q/P=0.803937395965  kappa-q/P=0.00338  |1/E_N1-P|/P=5.48e-71 min(X/D)^2=2.0253 min(X_l/D_l+1)^2=1.9759
+N=  90 q_min(Sturm)=    3.14680842385307e-24 q_min(power)rel.diff= 2.91e-31 q/P=0.804318625354  kappa-q/P=0.002999  |1/E_N1-P|/P=2.99e-74 min(X/D)^2=2.0225 min(X_l/D_l+1)^2=1.9785
+N= 100 q_min(Sturm)=    3.59957030706098e-27 q_min(power)rel.diff= 3.28e-31 q/P=0.804622563451  kappa-q/P=0.002695  |1/E_N1-P|/P=1.25e-77 min(X/D)^2=2.0202 min(X_l/D_l+1)^2=1.9806
+N= 110 q_min(Sturm)=    4.05578877890683e-30 q_min(power)rel.diff= 2.22e-31 q/P=0.804870553844  kappa-q/P=0.002447  |1/E_N1-P|/P=2.64e-81 min(X/D)^2=2.0183 min(X_l/D_l+1)^2=1.9823
+N= 120 q_min(Sturm)=    4.51323097581083e-33 q_min(power)rel.diff=  3.2e-31 q/P=0.805076743459  kappa-q/P=0.002241  |1/E_N1-P|/P=4.53e-84 min(X/D)^2=2.0168 min(X_l/D_l+1)^2=1.9837
+N= 130 q_min(Sturm)=    4.96998833222384e-36                                   q/P=0.805250880144  kappa-q/P=0.002066  |1/E_N1-P|/P=9.8e-87 min(X/D)^2=2.0155 min(X_l/D_l+1)^2=1.985
+N= 140 q_min(Sturm)=    5.42442070473775e-39                                   q/P=0.80539989931  kappa-q/P=0.001917  |1/E_N1-P|/P=6.85e-90 min(X/D)^2=2.0144 min(X_l/D_l+1)^2=1.986
+N= 150 q_min(Sturm)=    5.87511346762819e-42 q_min(power)rel.diff= 3.93e-32 q/P=0.805528870039  kappa-q/P=0.001788  |1/E_N1-P|/P=1.7e-93 min(X/D)^2=2.0134 min(X_l/D_l+1)^2=1.9869
+N= 160 q_min(Sturm)=    6.32084380045187e-45                                   q/P=0.805641583321  kappa-q/P=0.001676  |1/E_N1-P|/P=1.67e-97 min(X/D)^2=2.0126 min(X_l/D_l+1)^2=1.9877
+N= 170 q_min(Sturm)=    6.76055367731246e-48                                   q/P=0.805740930996  kappa-q/P=0.001576  |1/E_N1-P|/P=2.54e-99 min(X/D)^2=2.0118 min(X_l/D_l+1)^2=1.9884
+N= 180 q_min(Sturm)=    7.19332786262367e-51                                   q/P=0.805829157416  kappa-q/P=0.001488  |1/E_N1-P|/P=9.36e-103 min(X/D)^2=2.0112 min(X_l/D_l+1)^2=1.9891
+N= 190 q_min(Sturm)=    7.61837572679817e-54                                   q/P=0.805908031062  kappa-q/P=0.001409  |1/E_N1-P|/P=1.32e-105 min(X/D)^2=2.0106 min(X_l/D_l+1)^2=1.9896
+N= 200 q_min(Sturm)=    8.03501603085536e-57 q_min(power)rel.diff= 2.49e-31 q/P=0.805978964318  kappa-q/P=0.001338  |1/E_N1-P|/P=1.09e-109 min(X/D)^2=2.0101 min(X_l/D_l+1)^2=1.9901
+N= 210 q_min(Sturm)=    8.44266405642598e-60                                   q/P=0.806043098811  kappa-q/P=0.001274  |1/E_N1-P|/P=1.73e-112 min(X/D)^2=2.0096 min(X_l/D_l+1)^2=1.9906
+N= 220 q_min(Sturm)=    8.84082061557457e-63                                   q/P=0.806101367322  kappa-q/P=0.001216  |1/E_N1-P|/P=1.13e-115 min(X/D)^2=2.0091 min(X_l/D_l+1)^2=1.991
+N= 230 q_min(Sturm)=    9.22906258686981e-66                                   q/P=0.806154539456  kappa-q/P=0.001163  |1/E_N1-P|/P=1.23e-118 min(X/D)^2=2.0087 min(X_l/D_l+1)^2=1.9914
+N= 240 q_min(Sturm)=    9.60703470508532e-69                                   q/P=0.806203255831  kappa-q/P=0.001114  |1/E_N1-P|/P=1.88e-122 min(X/D)^2=2.0084 min(X_l/D_l+1)^2=1.9918
+N= 250 q_min(Sturm)=    9.97444239142811e-72 q_min(power)rel.diff= 1.02e-31 q/P=0.806248054011  kappa-q/P=0.001069  |1/E_N1-P|/P=2.16e-126 min(X/D)^2=2.008 min(X_l/D_l+1)^2=1.9921
+N= 260 q_min(Sturm)=    1.03310454556244e-74                                   q/P=0.806289388431  kappa-q/P=0.001028  |1/E_N1-P|/P=2.99e-129 min(X/D)^2=2.0077 min(X_l/D_l+1)^2=1.9924
+N= 270 q_min(Sturm)=    1.06766525348354e-77                                   q/P=0.806327645867  kappa-q/P=0.0009896  |1/E_N1-P|/P=4.59e-131 min(X/D)^2=2.0074 min(X_l/D_l+1)^2=1.9927
+N= 280 q_min(Sturm)=     1.1011116160176e-80                                   q/P=0.806363157574  kappa-q/P=0.0009541  |1/E_N1-P|/P=1.7e-134 min(X/D)^2=2.0072 min(X_l/D_l+1)^2=1.9929
+N= 290 q_min(Sturm)=    1.13343283616324e-83                                   q/P=0.806396208906  kappa-q/P=0.000921  |1/E_N1-P|/P=6.3e-138 min(X/D)^2=2.0069 min(X_l/D_l+1)^2=1.9932
+N= 300 q_min(Sturm)=    1.16462167378785e-86 q_min(power)rel.diff= 1.09e-31 q/P=0.806427047  kappa-q/P=0.0008902  |1/E_N1-P|/P=1.83e-142 min(X/D)^2=2.0067 min(X_l/D_l+1)^2=1.9934
+N= 310 q_min(Sturm)=    1.19467409299392e-89                                   q/P=0.806455886965  kappa-q/P=0.0008614  |1/E_N1-P|/P=1.1e-144 min(X/D)^2=2.0065 min(X_l/D_l+1)^2=1.9936
+N= 320 q_min(Sturm)=    1.22358894475964e-92                                   q/P=0.80648291691  kappa-q/P=0.0008343  |1/E_N1-P|/P=8.7e-148 min(X/D)^2=2.0063 min(X_l/D_l+1)^2=1.9938
+N= 330 q_min(Sturm)=    1.25136768054683e-95                                   q/P=0.806508302049  kappa-q/P=0.000809  |1/E_N1-P|/P=5.9e-151 min(X/D)^2=2.0061 min(X_l/D_l+1)^2=1.994
+N= 340 q_min(Sturm)=    1.27801409322164e-98                                   q/P=0.806532188083  kappa-q/P=0.0007851  |1/E_N1-P|/P=1.1e-153 min(X/D)^2=2.0059 min(X_l/D_l+1)^2=1.9942
+N= 350 q_min(Sturm)=   1.30353408216875e-101 q_min(power)rel.diff= 1.85e-31 q/P=0.806554703997  kappa-q/P=0.0007626  |1/E_N1-P|/P=1.13e-157 min(X/D)^2=2.0057 min(X_l/D_l+1)^2=1.9943
+N= 360 q_min(Sturm)=   1.32793543992109e-104                                   q/P=0.806575964392  kappa-q/P=0.0007413  |1/E_N1-P|/P=0.0 min(X/D)^2=2.0056 min(X_l/D_l+1)^2=1.9945
+N= 370 q_min(Sturm)=   1.35122765799388e-107                                   q/P=0.806596071435  kappa-q/P=0.0007212  |1/E_N1-P|/P=2.82e-164 min(X/D)^2=2.0054 min(X_l/D_l+1)^2=1.9946
+N= 380 q_min(Sturm)=   1.37342174991813e-110                                   q/P=0.806615116499  kappa-q/P=0.0007021  |1/E_N1-P|/P=9.28e-167 min(X/D)^2=2.0053 min(X_l/D_l+1)^2=1.9948
+N= 390 q_min(Sturm)=   1.39453008972652e-113                                   q/P=0.806633181556  kappa-q/P=0.0006841  |1/E_N1-P|/P=9.96e-170 min(X/D)^2=2.0051 min(X_l/D_l+1)^2=1.9949
+N= 400 q_min(Sturm)=   1.41456626436244e-116 q_min(power)rel.diff= 2.01e-31 q/P=0.80665034035  kappa-q/P=0.0006669  |1/E_N1-P|/P=1.76e-173 min(X/D)^2=2.005 min(X_l/D_l+1)^2=1.995
+over N in 2..400 (129 values): min q/P = 0.71216245716, max q/P = 0.80665034035; ratio-inequality failures = 0; time 24s

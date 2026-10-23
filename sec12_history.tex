@@ -1,0 +1,69 @@
+% =============================================================================
+\section{Motivation and the use of AI}
+\label{sec:history}
+
+This paper did not begin in loop quantum gravity. Since late June 2026 I had been
+building an attention layer, which I call the transporter, in which three tokens interact
+through one trilinear form, so that its basic cell is a triangle, and whose edges carry
+operators on the Albert algebra, the exceptional Jordan algebra of $3\times3$ octonionic
+Hermitian matrices. On that algebra the tensor square of a traceless element splits into
+five irreducible channels, $26\otimes26=1\oplus26\oplus52\oplus273\oplus324$, and the layer
+is built from them~\cite{FitchPairChannels}. In October I asked whether the next simplex,
+the tetrahedron, has any place in this setting. It does. Four primitive idempotents of the
+Albert algebra with equal pairwise overlaps $\frac13$ form a regular tetrahedron of pure
+states that generates the whole algebra. And a quantum tetrahedron in the sense of Barbieri
+and of Baez and Barrett~\cite{Barbieri1998,BaezBarrett1999}, with the exceptional group
+$F_4$ in place of $\mathrm{SU}(2)$ and the $26$ on each of its four faces, has a
+five-dimensional space of shapes, and the five channels label a basis of it. Its
+orientation operator is the commutator of two pair Casimirs, which for $\mathrm{SU}(2)$
+faces is the triple product $J_1\cdot(J_2\times J_3)$, the four-valent volume operator of
+loop quantum gravity.
+
+The volume operator is what took me to the dynamics. In a Claude session on 17 and
+18~October I asked why more physicists had not talked about loop quantum gravity, and the
+answer named the unsolved dynamics, the quantisation of the Hamiltonian constraint and the
+anomaly-free closure of its algebra, as the central problem. In the same session I wrote
+a research prompt for the rank-three Jordan family, and one of its four tasks was to define the
+analogue of the Baez--Barrett volume operator and compute its spectrum, calibrated against
+the published volume spectra of Brunnemann and Thiemann and of Bianchi and
+Haggard~\cite{BT2006,BH2011}. In the dynamics the volume has a role of its own: in
+Thiemann's construction the extrinsic curvature is obtained from the commutator of the
+Hamiltonian constraint with the volume~\cite{ThiemannQSD}. The first lemma proved in the
+work that followed was that this commutator vanishes on the off-shell space that Varadarajan
+built for the Euclidean theory~\cite{Varadarajan2022}, and the question became whether a
+Lorentzian Hamiltonian constraint can be made to close there. I did not settle it. But the
+same triple product kept reappearing inside the calculation, and the Ashtekar--Lewandowski
+volume entered it through the sign factors of the edge tangents that are the subject of
+\cref{sec:normalform}. The questions I could settle turned out to be about the volume
+operator itself. Looking for a named open problem on which these tools could act, I found
+Bianchi and Haggard's question whether the volume has a gap for all spins~\cite{BH2011}.
+At five-valent vertices Brunnemann and Rideout had seen gaps both open and
+close~\cite{BR2008a}, and this paper explains why. The last paragraph of \cref{sec:open}
+returns to dynamics, where the work began. The companion paper~\cite{FitchLimitCircle}
+comes from the same calculation, continued to $\mathrm{SU}(1,1)$. \Cref{app:provenance}
+describes how the results were reached.
+
+\paragraph{Use of AI.} I posed the questions, chose the problems and the order in which to
+pursue them, and set the standard a result had to meet. I directed the computations and
+decided what this paper claims. Large language models were used throughout. Anthropic's
+Claude was used in two ways. In sessions on claude.ai it answered my first questions about
+tetrahedra in Jordan algebras, carried out the exact calculations on the rank-three Jordan
+family, and began the calculation on the dynamics. Through Claude Code it wrote and ran
+nearly all of the code and the certificate scripts for this paper, ran the agent campaigns,
+drafted and revised the text, and gave the first written proofs of most of the results
+here, among them the normal form of \cref{thm:nf-intro}, the gap closing of
+\cref{thm:closing}, the sharp four-valent law of \cref{thm:sharp4} with its Stark
+factorisation, and the interval certificate behind \cref{thm:z32}. Separate Claude agents,
+working from the written results, refereed them one by one, and an independent Claude
+referee read the whole paper. OpenAI's GPT models were used through ChatGPT and Codex.
+ChatGPT produced the first document on the Albert tetrahedron, and GPT ran long
+exact-arithmetic computations on the Jordan family for two further reports. Codex sessions
+continued part of the dynamics calculation and audited a note on the equal-weight case.
+Google's Gemini was used only as a reviewer of this paper, as were further sessions of GPT
+and Claude. Review comments were adopted only after they had been checked against the
+source, the rendered pages and our own code. The claims rest on the following, and not on
+any model's assertion: the written proofs in this paper; the exact rational, outward-rounded
+interval and rigorously bounded floating-point certificates of \cref{sec:computer}, each
+shipped with its script and checksum; our recomputation of the published numbers of
+Brunnemann and Rideout and of Bianchi and Haggard; and cited results. Responsibility for
+the content, and for any error that remains, is mine.

@@ -1,0 +1,2 @@
+Lemma M (j1=3/2), all tuples 2j2<=..<=2j5<=30: 18135 tuples x 3 pairings; criterion mismatches: 0 []; tuples without monotone pairing: 0
+zigzag start/end/interleave rules, all labelled tuples 2s<=11 odd, 2j_i<=15: 145516 tuples, violations: 0

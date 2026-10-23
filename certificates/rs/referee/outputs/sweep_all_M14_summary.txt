@@ -1,0 +1,10 @@
+mode=all M=2j_max=14: tuples with dim>=1: 4187, dim>=2: 4093, dim=1: 94; 31.5s on 8 CPU processes
+dim=1: max |q_T| entry 0.00e+00 (Q_RS = 0)
+min lambda(Q_RS) over dim>=2 = -0.000000 at (12, 12, 12, 14, 14); max kernel dim of Q_RS = 1
+tuples with nontrivial ker Q_RS: 600 e.g. [(8, 10, 14, 14, 14), (8, 12, 12, 14, 14), (10, 12, 12, 12, 14), (10, 10, 12, 14, 14), (4, 14, 14, 14, 14), (6, 12, 14, 14, 14), (12, 12, 12, 12, 12), (2, 12, 14, 14, 14), (4, 10, 14, 14, 14), (4, 12, 12, 14, 14)]
+min positive eigenvalue of Q_RS = 15.932511 at (1, 1, 1, 1, 2)
+min positive eigenvalue of sum_T P_T = 1.707560 at (8, 10, 10, 13, 13); ker(sum P_T) == ker(Q_RS) dims agree: True
+Prop 2 inequality lambda+_min(Q_RS) >= sqrt3*lambda+_min(sum P_T): violations 0
+min lambda(sum_T sqrt|q_T|) = 0.000000 at (2, 2, 2, 2, 4)  (3*3^(1/4) = 3.948222)
+min |eig| of unsigned sum_T q_T = 0.000e+00 at (1, 1, 2, 12, 14)
+per 2j_max: min positive eigenvalue of Q_RS [argmin]: 2: 15.933 (1, 1, 1, 1, 2); 3: 16.553 (1, 2, 2, 2, 3); 4: 21.900 (1, 2, 2, 3, 4); 5: 26.699 (1, 2, 2, 4, 5); 6: 31.360 (1, 2, 2, 5, 6); 7: 35.967 (1, 2, 2, 6, 7); 8: 40.546 (1, 2, 2, 7, 8); 9: 45.110 (1, 2, 2, 8, 9); 10: 49.665 (1, 2, 2, 9, 10); 11: 54.214 (1, 2, 2, 10, 11); 12: 58.758 (1, 2, 2, 11, 12); 13: 63.299 (1, 2, 2, 12, 13); 14: 67.838 (1, 2, 2, 13, 14)

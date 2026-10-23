@@ -1,0 +1,15 @@
+(a) dim (1/2 x 1 x 1)_(M=1/2) = 5;  charpoly(U_z) = x*(4*x**4 - 20*x**2 + 7)/4;  equals x(4x^4-20x^2+7)/4: True
+    roots x^2 = (5 +- 3 sqrt2)/2;  nu0 = 0.615369528365158;  8 nu0 = 4.92295622692127;  4 sqrt(10 - 6 sqrt2) = 4.92295622692127;  equal: True
+(b) closed form vs Racah q_min on (s;1/2,1,1,s-1/2), 2s=3..401: max rel diff 1.50e-15;  M=-1/2 family (s;1/2,1,1,s+1/2): max rel diff 1.46e-15
+    2s=3: q_min = 7.476279493,  q/s = 4.9841863  (8 nu0 = 4.9229562...)
+    2s=4: q_min = 10.540958017,  q/s = 5.2704790  (8 nu0 = 4.9229562...)
+    2s=20: q_min = 50.775559739,  q/s = 5.0775560  (8 nu0 = 4.9229562...)
+    2s=200: q_min = 493.986656687,  q/s = 4.9398666  (8 nu0 = 4.9229562...)
+    2s=401: q_min = 988.751620327,  q/s = 4.9314295  (8 nu0 = 4.9229562...)
+(c) exact charpoly from Racah entries equals the [LJ] polynomial for 2s = 3..41: 39/39
+(d) symbolic s = 3/2 + t (t >= 0): 5 links, 1 four-cycle(s), cycle products are perfect squares of polynomials: True
+    charpoly = x*(28*s**4 + 36*s**3 - 80*s**2*x**2 - 29*s**2 - 48*s*x**2 - 36*s + 16*x**4 + 72*x**2 + 1)/16
+    equals the [LJ] polynomial identically: True
+    roots y = x^2: [5*s**2/2 + 3*s/2 - (3*s + 4)*sqrt(8*s**2 - 12*s + 5)/4 - 9/4, 5*s**2/2 + 3*s/2 + (3*s + 4)*sqrt(8*s**2 - 12*s + 5)/4 - 9/4];  [LJ] x_-^2 among them: True
+    lim x_-/s = sqrt(5/2 - 3*sqrt(2)/2) = 0.615369528365158;  8*lim = 4.92295622692127
+total 3s

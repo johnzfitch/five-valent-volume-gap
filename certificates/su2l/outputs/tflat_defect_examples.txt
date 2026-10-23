@@ -1,0 +1,32 @@
+dims [38, 39, 39, 39, 38, 38]  q = 53.974472654687965  kernel 1
+k=0 |V|=38 offdiag=1.7e+05 rel defect max 1.000 median 1.000; sqrt eig Gp min 16.917 Gm min 0.000
+k=1 |V|=39 offdiag=2.9e-11 rel defect max 0.048 median 0.002; sqrt eig Gp min 6.838 Gm min 0.000
+k=2 |V|=39 offdiag=5.8e-11 rel defect max 0.013 median 0.000; sqrt eig Gp min 9.238 Gm min 6.838
+k=3 |V|=39 offdiag=5.8e-11 rel defect max 0.087 median 0.002; sqrt eig Gp min 0.000 Gm min 9.238
+k=4 |V|=38 offdiag=5.8e-11 rel defect max 0.040 median 0.003; sqrt eig Gp min 11.685 Gm min 18.237
+k=5 |V|=38 offdiag=1.7e+05 rel defect max 1.000 median 1.000; sqrt eig Gp min 0.000 Gm min 11.685
+N_0: shape (39, 38) smin 16.9169  4*smin 67.668
+N_1: shape (39, 39) smin 6.8381  4*smin 27.353
+N_2: shape (39, 39) smin 9.2383  4*smin 36.953
+N_3: shape (38, 39) smin 18.2372  4*smin 72.949
+N_4: shape (38, 38) smin 11.6852  4*smin 46.741
+dims [36, 37, 37, 38, 38, 38, 37, 37, 36, 36]  q = 75.48476513845615  kernel 2
+k=0 |V|=36 offdiag=1.7e+05 rel defect max 1.000 median 1.000; sqrt eig Gp min 21.965 Gm min 0.000
+k=1 |V|=37 offdiag=2.9e-11 rel defect max 0.041 median 0.005; sqrt eig Gp min 10.331 Gm min 0.000
+k=2 |V|=37 offdiag=2.9e-11 rel defect max 0.037 median 0.004; sqrt eig Gp min 19.360 Gm min 10.331
+k=3 |V|=38 offdiag=5.8e-11 rel defect max 0.034 median 0.002; sqrt eig Gp min 7.860 Gm min 0.000
+k=4 |V|=38 offdiag=5.8e-11 rel defect max 0.012 median 0.000; sqrt eig Gp min 10.356 Gm min 7.860
+k=5 |V|=38 offdiag=5.8e-11 rel defect max 0.053 median 0.002; sqrt eig Gp min 0.000 Gm min 10.356
+k=6 |V|=37 offdiag=5.8e-11 rel defect max 0.029 median 0.004; sqrt eig Gp min 12.697 Gm min 20.853
+k=7 |V|=37 offdiag=5.8e-11 rel defect max 0.094 median 0.005; sqrt eig Gp min 0.000 Gm min 12.697
+k=8 |V|=36 offdiag=2.9e-11 rel defect max 0.040 median 0.007; sqrt eig Gp min 14.912 Gm min 23.412
+k=9 |V|=36 offdiag=1.7e+05 rel defect max 1.000 median 1.000; sqrt eig Gp min 0.000 Gm min 14.912
+N_0: shape (37, 36) smin 21.9653  4*smin 87.861
+N_1: shape (37, 37) smin 10.3312  4*smin 41.325
+N_2: shape (38, 37) smin 19.3599  4*smin 77.440
+N_3: shape (38, 38) smin 7.8597  4*smin 31.439
+N_4: shape (38, 38) smin 10.3565  4*smin 41.426
+N_5: shape (37, 38) smin 20.8529  4*smin 83.411
+N_6: shape (37, 37) smin 12.6966  4*smin 50.786
+N_7: shape (36, 37) smin 23.4115  4*smin 93.646
+N_8: shape (36, 36) smin 14.9120  4*smin 59.648

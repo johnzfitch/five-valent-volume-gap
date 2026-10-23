@@ -1,0 +1,9 @@
+dims [38, 39, 39, 39, 38, 38]
+k=0 d=-2.5 |V|=38 offdiag(Cp-Cm)=4.16e+02 diag defect range [58.5,838]  lmin Cp=3.528 lmin Cm=2.188  s(s+1)/4=2.1875
+k=1 d=-1.5 |V|=39 offdiag(Cp-Cm)=0.00e+00 diag defect range [-21.2,5.34]  lmin Cp=0.5884 lmin Cm=0.9375  s(s+1)/4=2.1875
+k=2 d=-0.5 |V|=39 offdiag(Cp-Cm)=0.00e+00 diag defect range [0.00316,16]  lmin Cp=0.6072 lmin Cm=0.5884  s(s+1)/4=2.1875
+k=3 d=+0.5 |V|=39 offdiag(Cp-Cm)=0.00e+00 diag defect range [-38.4,16]  lmin Cp=0.1875 lmin Cm=0.6072  s(s+1)/4=2.1875
+k=4 d=+1.5 |V|=38 offdiag(Cp-Cm)=0.00e+00 diag defect range [0.00368,112]  lmin Cp=2.936 lmin Cm=2.836  s(s+1)/4=2.1875
+k=5 d=+2.5 |V|=38 offdiag(Cp-Cm)=4.77e+02 diag defect range [-853,-78]  lmin Cp=2.188 lmin Cm=2.936  s(s+1)/4=2.1875
+lambda 0.7239780994105354
+<C> 2.9088421466201293 spread 3.6466510696090535  s(s+1)/4 2.1875  (s+1)(s+2)/4 3.9375

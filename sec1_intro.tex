@@ -1,0 +1,265 @@
+\section{Introduction}\label{sec:intro}
+
+In loop quantum gravity the volume of a region is an operator whose spectrum is
+discrete: the volume of each vertex of a spin network acts within the
+finite-dimensional space of intertwiners at that vertex and can be diagonalised there,
+and it depends on the spins of the edges meeting there and on how those edges are
+embedded. Discreteness alone does not say that volume is \emph{granular}. A pure point
+spectrum does not by itself give a positive lower bound: its eigenvalues can still
+accumulate at zero, and then there are quanta of space that are arbitrarily small. The question whether
+the smallest nonzero eigenvalue of the volume of a vertex is bounded below
+uniformly in the spins is the \emph{volume gap} question. Brunnemann and Thiemann
+asked it explicitly~\cite{BT2006}; Bianchi and Haggard asked it for the
+four-valent vertex ``for all spins''~\cite{BH2011}; and the recent review of
+Haggard, Lewandowski and Sahlmann records that ``for vertices of valence higher
+than 4, there are only numerical results for the volume spectrum''~\cite{HLS2023}.
+
+This paper answers it for the Ashtekar--Lewandowski volume operator~\cite{AL1998} at
+five-valent vertices, and explains the answer.
+
+\subsection{What was known}
+
+At valence four the answer was expected to be yes. Brunnemann and Thiemann derived
+the matrix of the operator in closed form, computed all spectra to spin $50$, and
+found that the smallest eigenvalues fall into series, the lowest of which is
+$2\sqrt{j(j+1)}$ at the spins $(\frac12,\frac12,j,j)$~\cite[table on p.~38]{BT2006}.
+Brunnemann and Rideout state in their abstract that for four-valent vertices ``the
+presence of a volume gap is shown''~\cite{BR2008a}. What they prove is a lower bound
+``in leading order of the maximal spin'', derived under assumptions on how the three
+smaller spins scale with the largest~\cite[\S5.4]{BR2008a}; it says nothing about the
+tuples outside those assumptions. Bianchi and Haggard reproduced the spectrum from
+Bohr--Sommerfeld quantisation of the classical tetrahedron and found it
+gapped~\cite{BH2011,BH2012}. None of these is a bound valid for every spin
+assignment.
+
+At valence five and higher Brunnemann and Rideout found, numerically, that the
+answer depends on the embedding~\cite{BR2008a,BR2008b,BR2010}. The operator at a
+vertex depends on the edge tangents only through the signs $\epsilon(IJK)$ of the
+triple products of tangent vectors, which after gauge reduction enter through
+reduced sign factors $\sigma$. For some $\sigma$ the smallest nonzero eigenvalue
+fell exponentially with the largest spin, for others it rose or stayed constant,
+and the falling ones were exactly those whose $\sigma$ contains an entry $\pm4$.
+Their later paper regrouped the embeddings into four relabelling
+classes~\cite{BR2010}. Nothing beyond valence four had been proved.
+
+\subsection{The answer}
+
+The first result organises the problem. Write $J_1,\dots,J_5$ for the angular
+momentum operators on the five edges, acting on the space $\Inv(j_1\otimes\cdots
+\otimes j_5)$ of gauge-invariant states.
+
+\begin{theorem}{Normal form}{nf-intro}
+Up to relabelling the edges and an overall sign, the Ashtekar--Lewandowski operator
+of every five-valent vertex whose edge tangents are in general position (no three of
+them coplanar) is either zero or
+\begin{equation}\label{eq:nf}
+  A_{\alpha,\beta}=-4i\bigl[\alpha\,J_1\cdot(J_2\times J_3)+\beta\,J_1\cdot(J_4\times J_5)\bigr],
+  \qquad(\alpha,\beta)\in\{(2,0),(2,2),(4,2)\}.
+\end{equation}
+The $384$ sign configurations of tangents in general position fall into orbits of
+size $24$ (on which the operator vanishes), $120$, $120$ and $120$, one for each
+normal form. A reduced sign vector
+contains $\pm4$ exactly when $t:=\beta/\alpha=\frac12$.
+\end{theorem}
+
+So a five-valent vertex in general position carries at most two triple products, and
+both pass through one edge, which we call the \emph{distinguished edge}. When some three
+tangents are coplanar the picture is less tidy, and we describe it only briefly
+(\cref{rem:nongeneric}). The whole dichotomy is a
+statement about the ratio $t$ of their weights. Write $\qm$ for the smallest
+nonzero eigenvalue modulus of $A$, a function of the spins; Brunnemann and Rideout's
+$\lambda_V$ is $\sqrt{\qm}$.
+
+\begin{theorem}{The gap closes for unequal weights}{closing-intro}
+If $\alpha\beta\ne0$ and $|t|<1$, the spins $(\frac12;\,j-\frac12,j;\,j,j)$ give
+$\qm\le|\alpha|\,N\sqrt{2N+1}\,|t|^N\to0$, where $N=2j$; if $|t|>1$, the same holds
+with $(\alpha,t)$ replaced by $(\beta,1/t)$ on the spins $(\frac12;\,j,j;\,j-\frac12,j)$,
+in which the two pairs are exchanged. For the
+Ashtekar--Lewandowski value $t=\frac12$, $\frac38P_N\le\qm\le P_N$ with
+$P_N=4N\sqrt{2N+1}\,2^{-N}$, and $\qm/P_N\to(\frac{16}3\ln\frac43)^{-1/2}$.
+\end{theorem}
+
+The two remaining ratios behave differently: a single product keeps a sharp gap, and
+equal weights keep a gap on every class we can reach.
+
+\begin{theorem}{The gap survives when the products do not compete}{t0-intro}
+For $t=0$ every nonzero eigenvalue satisfies $q\ge2\sqrt3$, with equality exactly
+when the three edges of the triple product carry spin $\frac12$ and the other two
+spins differ by $\frac12$.
+\end{theorem}
+
+\begin{theorem}{The gap survives when they compete equally, on these classes}{t1-intro}
+For $t=1$ the smallest nonzero eigenvalue is bounded below by a positive constant,
+uniformly in the other four spins, when the distinguished spin $j_1$ is $\frac12$,
+$1$, $\frac32$\zmark{} or $2$; and, for every $j_1$, on the tuples in which three
+of the other four spins are at most $3$, on the tuples in which one of them is
+$\frac12$, and on the tuples whose recoupling region has a ``closed'' colour class and
+either an odd dimension sum or a pair containing spin $\frac12$ (\cref{thm:closed}). Every tuple with all spins at most $19$, and every tuple with
+$j_1=\frac52$ and spins at most $35$, satisfies $q\ge4.5579607$.
+\end{theorem}
+
+What is left at $t=1$ is a precise conjecture (\cref{sec:open}): the infimum is
+$2\sqrt{18-2\sqrt{41}}=4.55796\ldots$, attained at $(\frac12;\frac12,1;1,1)$, and the
+gap grows at least like the larger of $c_1j_1$ and $c_2M/\ln M$, where $M=2j_{\max}$.
+We prove that $c_1$ cannot exceed $4\sqrt{10-6\sqrt2}=4.92296\ldots$, that a linear
+bound with exactly this slope, $q\ge4\sqrt{10-6\sqrt2}\,j_1-C$, holds on the tuples with
+three bounded legs, and that $M/\ln M$ cannot be improved to $M$. The
+conjectured growth law for all tuples remains open.
+
+The rule concerns a fixed embedding with every assignment of spins to its edges, and
+the theorems above are stated in that convention. Brunnemann and Rideout's 2007
+tables attach each sign vector to sorted spins instead. In that convention
+\cref{thm:closing-intro} gives the decay for $6$ of the $60$ sign vectors (up to
+sign) that contain $\pm4$; for the other $54$ we have exhaustive numerics to
+$2j_{\max}=34$ and no proof (\cref{sec:closing}).
+
+\subsection{The picture}
+
+Why should the ratio of two weights decide whether a spectrum reaches zero? The
+answer is visible already when the distinguished edge carries spin $\frac12$.
+Then the gauge-invariant states form a single chain: each of the two triple
+products moves along it by one step, they alternate, and the operator is a
+zero-diagonal Jacobi matrix whose links are the classical four-valent matrix
+elements. A zero-diagonal chain whose links alternate weak, strong, weak, strong
+is the Su--Schrieffer--Heeger chain of polymer physics~\cite{SSH1979}: if it starts
+and ends with a weak link it carries two states localised at its ends, and their
+energies split only by the product of the weak-to-strong ratios along the chain,
+which is exponentially small. If it starts and ends with a strong link it carries
+nothing of the kind.
+
+\begin{schemfigure}
+\begin{tikzpicture}[scale=1.15]
+  \coordinate (v) at (0,0);
+  \coordinate (e1) at (0,2.2);
+  \coordinate (e2) at (-2.3,0.6);
+  \coordinate (e3) at (-1.5,-1.8);
+  \coordinate (e4) at (1.5,-1.8);
+  \coordinate (e5) at (2.3,0.6);
+  \fill[esPlotBlue!14] (v) -- (e1) -- (e2) -- (e3) -- cycle;
+  \fill[esPlotAmber!16] (v) -- (e1) -- (e5) -- (e4) -- cycle;
+  \draw[line width=1.8pt] (v) -- (e1);
+  \foreach \p in {e2,e3,e4,e5} \draw[line width=0.8pt] (v) -- (\p);
+  \fill (v) circle (2.2pt);
+  \node[above] at (e1) {$j_1$, the distinguished edge};
+  \node[left] at (e2) {$j_2$};
+  \node[below left] at (e3) {$j_3$};
+  \node[below right] at (e4) {$j_4$};
+  \node[right] at (e5) {$j_5$};
+  \node[anchor=east, text=esPlotBlue!85!black] at (-2.9,-0.9) {$\alpha\,J_1\cdot(J_2\times J_3)$};
+  \draw[esPlotBlue!70, thin] (-2.9,-0.9) -- (-1.2,-0.5);
+  \node[anchor=west, text=esPlotAmber!85!black] at (2.9,-0.9) {$\beta\,J_1\cdot(J_4\times J_5)$};
+  \draw[esPlotAmber!80, thin] (2.9,-0.9) -- (1.2,-0.5);
+  \node[align=center, font=\small] at (0,-2.95)
+     {with $t=\beta/\alpha$:\quad $t=0$: one product, gap $2\sqrt3$\\
+      $t=\frac12$: unequal weights, no gap\qquad $t=1$: equal weights, gap};
+\end{tikzpicture}
+\end{schemfigure}
+\esfiglabel{fig:vertex}%
+\schemcap{FIG.\ \theesfig}{After relabelling, a five-valent vertex whose tangents
+are in general position carries at most two triple products, and both pass through the distinguished edge. The sign
+factors of the embedding only fix their weights, and the only ratios that occur are
+$t=0,\frac12,1$. The sign factors enter only through $t$.}
+
+Which links are weak is decided by the two pairs of edges. One pair has the
+narrower range of recoupling values and sits inside the other; its links are the
+inner ones. With equal weights the inner links are only polynomially weaker than
+their neighbours, the dimerisation is trivial, and the gap grows. With weights $4$
+and $2$, the heavier pair can be put inside, the inner links become twice as strong
+as the outer ones, the chain is dimerised in the topologically nontrivial phase, and the gap closes
+like $2^{-N}$. With a single triple product there is nothing to compete, and the
+operator is a four-valent operator in disguise, whose gap we know sharply.
+\Cref{fig:vertex} shows the vertex, \cref{fig:ssh} the chain, and \cref{fig:tplot}
+what happens to $\qm$ as $t$ moves from $\frac14$ to $1$.
+
+For larger distinguished spins the states no longer form a chain but a strip of a
+two-dimensional lattice, and the mechanism that protects the gap at $t=1$ is more
+interesting. The operator is congruent, through an explicit positive diagonal
+matrix, to the compression of a sum of two hydrogen Stark matrices to the strip
+(\cref{thm:heron-stark}). A Stark matrix has the spectrum $N-1,N-3,\dots$, so the
+uncompressed sum has a gap; the triangle inequalities of the recoupling cut it, and
+the question becomes how much the cut can cost. On the parts of the strip that the
+cut does not reach it costs nothing (\cref{thm:closed}), and the rest of the proof is
+about the cut edges, one slice of $j_1$ at a time.
+
+\subsection{Supporting results}
+
+Three results support the main one.
+
+The first is the four-valent law, sharp for every spin:
+$\lambda^2\ge j_{\max}(j_{\max}+1)/4$ for every nonzero eigenvalue $\lambda$ of
+$J_1\cdot(J_2\times J_3)$, with equality exactly on $(\frac12,\frac12,j,j)$
+(\cref{thm:sharp4}). The constant and the minimising family are Brunnemann and
+Thiemann's numerical observation~\cite[p.~38]{BT2006}; what is new is the proof. It is
+used for $t=0$, and its proof, a factorisation of the four-valent matrix into a
+hydrogen Stark matrix and a smooth multiplier, is the first appearance of the Stark
+structure that carries $t=1$.
+
+The second is the six-valent vertex. At Brunnemann and Rideout's minimising
+embedding, whose tangents are in general position, the operator is a two-row ladder, its end modes tunnel through
+$n$ dimers each costing a factor of order $1/h$, and the gap closes at least as fast
+as $\exp(-n\ln n+O(n))$, faster than the exponential their data suggested
+(\cref{thm:v6}).
+
+The third is a contrast. The Rovelli--Smolin operator takes the absolute value of
+each triple product before summing. On every five-valent vertex with an edge of spin
+$\frac12$, which includes every vertex used in \cref{thm:closing-intro}, it has a
+uniform gap (\cref{thm:rs}). This is not an argument for that operator: it too has
+zero-volume states, and it has been disfavoured for dynamics since the
+consistency check of Giesel and Thiemann~\cite{GT2006}.
+
+\subsection{What is new}
+
+Most of these statements confirm what the numerics of Brunnemann, Rideout and
+Thiemann suggested. The four-valent law, with its constant and its minimisers, was
+observed numerically~\cite{BT2006} and derived at leading order~\cite{BR2008a}; the
+decay at valence five and six was observed; the $\pm4$ rule was observed; and the
+constant $2\sqrt3$ of \cref{thm:t0-intro} was observed, as $\lambda_V=\sqrt[4]{12}$,
+in~\cite[p.~35]{BR2010}. What is new is the proofs, the normal form that turns the
+$\pm4$ rule into a statement about $t$, the mechanisms (dimerised chains, Stark
+matrices, ladders), the constants $(\frac{16}3\ln\frac43)^{-1/2}$ for the decay and
+$4\sqrt{10-6\sqrt2}$ for the slope, and the factorial rate at valence six. That rate
+corrects the exponential fit of~\cite{BR2008b}; it is the one quantitative statement
+here that goes against an earlier expectation.
+
+We screened the literature through the citing records of the papers above and found
+no earlier proof of any of these statements, and no earlier statement of the normal
+form or of the identification of the four-valent matrix with a Stark matrix
+(\cref{subsec:related} says what we read). Two sources that we know only in abstract
+are close enough to matter. L\'evy-Leblond and L\'evy-Nahas~\cite{LLLN1965} studied the
+symmetric coupling scheme generated by the mixed product $J_1\cdot(J_2\times J_3)$,
+which Chakrabarti~\cite{Chakrabarti1964} had proposed as a label for the states of three
+angular momenta. Aquilanti, Caligiana and Cavalli~\cite{ACC2003} relate the alternative
+bases of the hydrogen atom, the parabolic (Stark) basis among them, through recoupling
+coefficients. Our priority statement for the Stark identification does not cover these
+two papers.
+
+\subsection{Computer assistance and conventions}
+
+Several proofs end in a finite computation. Each is one of three kinds: an exact
+rational computation (pivots of an $LDL^T$ factorisation, ranks, polynomial
+coefficient signs), an interval-arithmetic computation, or a floating-point
+computation with a rigorous a priori error bound. \Cref{sec:computer} lists them
+with their scope, and every one ships with a script and a checksum. We also
+reproduce, with our own code, the published numbers that fix the normalisation:
+Brunnemann and Rideout's seven-valent value $0.000597922$, their minimising spins at
+valence five and six, and Bianchi and Haggard's $0.310$.
+
+The normalisation is fixed once in \cref{sec:operator}: $q$ is an eigenvalue modulus
+of Brunnemann and Rideout's matrix with $Z=1$, so their $\lambda_V$ is $\sqrt q$, and
+at $t=1$ the operator is $-8iT$ with $T=J_1\cdot(J_2\times J_3+J_4\times J_5)$, so that
+$q$ is $8$ times an eigenvalue modulus of $T$. Every edge carries a positive spin,
+$j_I\ge\frac12$; an edge of spin $0$ is not an edge of the vertex. Spins
+are \emph{labelled}: a statement about an embedding quantifies over all assignments
+of positive spins to its edges. Brunnemann and Rideout's 2007 tables use \emph{sorted} spins;
+we say so whenever the difference matters.
+
+\paragraph{Organisation.}
+\Cref{sec:operator} fixes the operator. \Cref{sec:fourvalent} proves the four-valent
+law. \Cref{sec:normalform} proves the normal form. \Cref{sec:closing} proves that
+the gap closes for $|t|\ne0,1$ and that it survives for $t=0$. \Cref{sec:tone} treats
+$t=1$, \cref{sec:large} its large-spin behaviour, \cref{sec:v6} valence six and
+\cref{sec:rs} the Rovelli--Smolin operator. \Cref{sec:computer} describes the
+computer-assisted steps and \cref{sec:open} what remains open. Routine estimates and
+the bookkeeping of the certificates are in the appendices. \Cref{sec:history} says how
+the work began and how AI tools were used, and \cref{app:provenance} how the results were
+reached.

@@ -1,0 +1,6 @@
+R5 Rovelli-Smolin operator Q_RS = sum_T |qhat_T| (all triples), V = sqrt(Q_RS/32) (Kisielowski 2104.11010 Table 2):
+   2j=(1, 1, 1, 1): V = 0.465302 (x2)
+   2j=(2, 2, 2, 2, 2): V = 1.201406 (x6)
+   2j=(4, 4, 4, 4, 4): V = 0.000000 (x1), 2.293525 (x5), 2.754087 (x5), 2.911094 (x4), 3.095988 (x1)
+R5b RS spin-1/2 theorem spot check: min eigenvalue of Q_RS on tuples (1/2, j2..j5), 2j_i <= 5, dim Inv >= 2:
+   30 tuples, min eigenvalue 15.932511 at 2j = (1, 1, 1, 1, 2) (bound 3 sqrt3 = 5.196152; trivial kernel throughout: True)

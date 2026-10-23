@@ -1,0 +1,1 @@
+C6 with 2j_max <= 38: 17376 tuples (dim Inv >= 2), exact target 4.5579607: {'certified': 17376}; failures 0 []  (4s)

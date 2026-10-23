@@ -1,0 +1,2 @@
+(A) exact: 7095 two-dimensional sectors (1/2,jJ,jK,S) with 2jJ,2jK,2S <= 30: c^2 == X in every case; min X = 3 (=3 gives 4a = sqrt3)
+(B) exact: 55 spin-1/2 5-tuples with dim>=2 and 2j_max <= 6: stacked leg-1 triples have full column rank (trivial common kernel)

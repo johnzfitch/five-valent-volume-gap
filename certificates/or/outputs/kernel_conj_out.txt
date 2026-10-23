@@ -1,0 +1,3 @@
+half-integer s, multiset tuples 2s,2j<=16: 14682
+  dim ker T == min_P sum|imb^P|: 14682 (0 exceptions) []
+  tuples with no monotone pairing: 742 (open: 291); of these, dim ker T == min_P sum|imb^P|: 742

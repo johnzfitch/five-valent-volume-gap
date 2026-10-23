@@ -1,0 +1,5 @@
+tuples 2j_i<=3 with Inv!=0: 121 (iterated)
+identity T_IJ5 = -sum_K T_IJK on Inv: 726 checks, max abs err 1.11e-15
+4 basis triples linearly independent on Inv in 96 tuples with dim>=3
+normal-form presentations vs all-ten-eps brute force: 5445 comparisons, max rel err 4.08e-15, of which identically zero operator 0
+negative control (one sign flipped, j_a>=1): 1320/2430 detected as mismatch

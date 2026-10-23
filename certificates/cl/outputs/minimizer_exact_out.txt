@@ -1,0 +1,5 @@
+minimiser (1/2;1/2,1;1,1): sites [(1, 0), (1, 2), (3, 2), (3, 4)]
+  charpoly of W^2: (8*x**2 - 18*x + 5)**2/64
+  q_min^2 = 64 lambda_min^2 = 72 - 8*sqrt(41)  -> q_min = 4.55796073924921061381614422381
+  equals 2 sqrt(18 - 2 sqrt 41): True 4.55796073924921061381614422381
+60-digit minimum of q over all tuples with 2j_max<=4: 4.557960739249210613816144223811278698856 at (1, 1, 2, 2, 2)

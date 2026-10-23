@@ -1,0 +1,7 @@
+343804 random log-concave chains (2<=n<60, dynamic range <= 1e6):
+  (i)  min of lam*S*sqrt(rho+ rho-) = 1.000000   (lemma claims >= 1)
+  (ii) max of lam*S_odd/2 (even n) = 0.769643   (lemma claims <= 1)
+  (iii) max rel. error of explicit inverse formula on i>=j (and upper-triangle size relative to max) = 1.25e-15
+  dimerised (non log-concave) chain n=10, M=10: lam*S = 5.346e-04  (adjacent ratio M; lemma bound 1/(M S) = 1.852e-02)
+  dimerised (non log-concave) chain n=10, M=100: lam*S = 5.039e-08  (adjacent ratio M; lemma bound 1/(M S) = 1.984e-03)
+  dimerised (non log-concave) chain n=10, M=1000: lam*S = 5.004e-12  (adjacent ratio M; lemma bound 1/(M S) = 1.998e-04)

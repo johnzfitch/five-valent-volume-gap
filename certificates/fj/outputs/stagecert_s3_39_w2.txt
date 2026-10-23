@@ -1,0 +1,2 @@
+2j1=6 2j_max=39: 1228 tuples, 1225 certified at q0=4.5579607, 3 not; min float stage bound 32.448  (44s)  uncertified: [(35, 35, 35, 39), (35, 37, 37, 39), (37, 37, 37, 39)]
+TOTAL 2j1=6 levels 39..39: 1228 tuples, 3 uncertified

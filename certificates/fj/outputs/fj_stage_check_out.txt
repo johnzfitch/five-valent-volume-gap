@@ -1,0 +1,2 @@
+[L] 314776 links compared, max relative difference 2.78e-16
+[R] 4004 (tuple, class, scheme, random t) tests: min stage value > sigma_min(B)^2 in 0 cases

@@ -1,0 +1,5 @@
+{"t": [1, 1, 1, 1, 2], "nE": 2, "nO": 1, "kerT": 1, "cert": true, "why": null, "qmin": 6.6332495807108}
+{"t": [1, 1, 2, 2, 2], "nE": 2, "nO": 2, "kerT": 0, "cert": true, "why": null, "qmin": 4.557960739249211}
+{"t": [2, 1, 1, 1, 1], "nE": 2, "nO": 1, "kerT": 1, "cert": true, "why": null, "qmin": 8.0}
+{"t": [2, 1, 1, 2, 2], "nE": 3, "nO": 1, "kerT": 2, "cert": true, "why": null, "qmin": 14.966629547095765}
+{"t": [2, 2, 2, 2, 2], "nE": 4, "nO": 2, "kerT": 2, "cert": true, "why": null, "qmin": 9.888543819998318}

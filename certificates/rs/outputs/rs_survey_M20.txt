@@ -1,0 +1,23 @@
+2jmax=2: min nonzero eig Q_RS = 15.932511 at [1, 1, 1, 1, 2] (dim 3, ker 0); ratio/(jmax+1) = 7.9663
+2jmax=3: min nonzero eig Q_RS = 16.553242 at [1, 2, 2, 2, 3] (dim 5, ker 0); ratio/(jmax+1) = 6.6213
+2jmax=4: min nonzero eig Q_RS = 21.900011 at [1, 2, 2, 3, 4] (dim 5, ker 0); ratio/(jmax+1) = 7.3000
+2jmax=5: min nonzero eig Q_RS = 26.699394 at [1, 2, 2, 4, 5] (dim 5, ker 0); ratio/(jmax+1) = 7.6284
+2jmax=6: min nonzero eig Q_RS = 31.360251 at [1, 2, 2, 5, 6] (dim 5, ker 0); ratio/(jmax+1) = 7.8401
+2jmax=7: min nonzero eig Q_RS = 35.966526 at [1, 2, 2, 6, 7] (dim 5, ker 0); ratio/(jmax+1) = 7.9926
+2jmax=8: min nonzero eig Q_RS = 40.545925 at [1, 2, 2, 7, 8] (dim 5, ker 0); ratio/(jmax+1) = 8.1092
+2jmax=9: min nonzero eig Q_RS = 45.110156 at [1, 2, 2, 8, 9] (dim 5, ker 0); ratio/(jmax+1) = 8.2018
+2jmax=10: min nonzero eig Q_RS = 49.664999 at [1, 2, 2, 9, 10] (dim 5, ker 0); ratio/(jmax+1) = 8.2775
+2jmax=11: min nonzero eig Q_RS = 54.213625 at [1, 2, 2, 10, 11] (dim 5, ker 0); ratio/(jmax+1) = 8.3406
+2jmax=12: min nonzero eig Q_RS = 58.757922 at [1, 2, 2, 11, 12] (dim 5, ker 0); ratio/(jmax+1) = 8.3940
+2jmax=13: min nonzero eig Q_RS = 63.299083 at [1, 2, 2, 12, 13] (dim 5, ker 0); ratio/(jmax+1) = 8.4399
+2jmax=14: min nonzero eig Q_RS = 67.837897 at [1, 2, 2, 13, 14] (dim 5, ker 0); ratio/(jmax+1) = 8.4797
+2jmax=15: min nonzero eig Q_RS = 72.374908 at [1, 2, 2, 14, 15] (dim 5, ker 0); ratio/(jmax+1) = 8.5147
+2jmax=16: min nonzero eig Q_RS = 76.910504 at [1, 2, 2, 15, 16] (dim 5, ker 0); ratio/(jmax+1) = 8.5456
+2jmax=17: min nonzero eig Q_RS = 81.444970 at [1, 2, 2, 16, 17] (dim 5, ker 0); ratio/(jmax+1) = 8.5732
+2jmax=18: min nonzero eig Q_RS = 85.978515 at [1, 2, 2, 17, 18] (dim 5, ker 0); ratio/(jmax+1) = 8.5979
+2jmax=19: min nonzero eig Q_RS = 90.511304 at [1, 2, 2, 18, 19] (dim 5, ker 0); ratio/(jmax+1) = 8.6201
+2jmax=20: min nonzero eig Q_RS = 95.043462 at [1, 2, 2, 19, 20] (dim 5, ker 0); ratio/(jmax+1) = 8.6403
+kernel dims [0, 1]; tuples 20665
+min nonzero eig of sum of range projectors: 1.480205
+pair {1,3,5},{2,3,5}: kernel equal to ker Q_RS in all but 0 tuples; min nonzero eig/(jmax+1) = 0.7071
+wall 436s

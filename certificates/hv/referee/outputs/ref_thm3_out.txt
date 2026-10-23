@@ -1,0 +1,7 @@
+zero eps triples: [(0, 4, 5), (1, 4, 5), (2, 4, 5), (3, 4, 5)]
+2j=(1,1,2,2,1,1): dimInv=6  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 0
+2j=(1,1,2,2,2,2): dimInv=9  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 1
+2j=(1,2,3,3,1,2): dimInv=10  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 0
+2j=(1,2,3,3,2,1): dimInv=10  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 0
+2j=(1,3,4,4,2,2): dimInv=16  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 0
+2j=(1,3,4,4,3,1): dimInv=14  [A,K^2]=0: True  chain charpoly divides full charpoly: True  dim ker A|Inv = 0

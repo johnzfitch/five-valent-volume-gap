@@ -1,0 +1,26 @@
+C1 Stark matrix H(n,m) has spectrum N-1,N-3,...: N<=24, 8 values of m, max dev 3.2e-14
+C1' characteristic polynomial of H(m+N,m) is identically prod(x-(N-1-2k)) in m, N<=8: True
+C2 Heron-Stark factorisation P(b;s,c)=F(d-1/2)G(u): True; P(c;s,b)=F(d+1/2)G(u): True
+C3a grid with s=1/2 equals the explicit chain D_l, X_l (alpha,beta)=(4,2), N=2..8: max rel diff 5.2e-14
+C3b telescoping and bounds (3/8)P_N <= q <= P_N, kappa = 0.8073172584
+   N=2: q=3.34488205, P_N=4.472135955, prodD/prodX/P_N=1.0, q/P_N=0.747938
+   N=3: q=2.826307132, P_N=3.968626967, prodD/prodX/P_N=1.0, q/P_N=0.712162
+   N=5: q=1.523109475, P_N=2.072890494, prodD/prodX/P_N=1.0, q/P_N=0.734776
+   N=10: q=0.1389407613, P_N=0.1790068631, prodD/prodX/P_N=1.0, q/P_N=0.776176
+   N=20: q=0.0003874166176, P_N=0.0004885196104, prodD/prodX/P_N=1.0, q/P_N=0.793042
+   N=40: q=1.048312612e-9, P_N=1.309672371e-9, prodD/prodX/P_N=1.0, q/P_N=0.800439
+   N=80: q=2.700135097e-21, P_N=3.35863851e-21, prodD/prodX/P_N=1.0, q/P_N=0.803937
+C3c Proposition T, alpha=1, beta=t=0.25: N=10: q=4.1331e-5 <= 4.37028e-5: True; N=20: q=1.10589e-10 <= 1.16472e-10: True; N=40: q=2.83254e-22 <= 2.97785e-22: True
+C3c Proposition T, alpha=1, beta=t=0.5: N=10: q=0.0347352 <= 0.0447517: True; N=20: q=9.68542e-5 <= 0.00012213: True; N=40: q=2.62078e-10 <= 3.27418e-10: True
+C3c Proposition T, alpha=1, beta=t=0.75: N=10: q=1.1839 <= 2.58061: True; N=20: q=0.205626 <= 0.406113: True; N=40: q=0.00191 <= 0.00362037: True
+C3c Proposition T, alpha=1, beta=t=0.9: N=10: q=3.69522 <= 15.9785: True; N=20: q=3.61603 <= 15.5694: True; N=40: q=1.42308 <= 5.32112: True
+C4 t=1 grid at (1/2;1/2,1;1,1): squared links ['32', '32', '80'], char. poly x**4 - 144*x**2 + 2560, smallest positive root = 4.55796073924921, 2sqrt(18-2sqrt41) = 4.55796073924921
+C5 closed form q_min = 8 x_-(s) on (s;1/2,1,1,s-1/2), 2s=3..60: max rel diff 5.7e-16; slope 8 nu0 = 4 sqrt(10-6 sqrt2) = 4.922956226921
+   q at 2s=3: 7.4762794932; at 2s=4: 10.5409580175
+C6 t=0 (A = -8i J1.(J2xJ3)), all labelled 2j_i <= 8: min q = 3.464101615138, 2 sqrt3 = 3.464101615138
+C7 window of H(3,0)-1, rows 1..2 x cols 0..1: sigma_min = 0.926565539884, sqrt((15-sqrt97)/6) = 0.926565539884
+C8 t=1, 2j1=1, legs 2j<=16: min q = 4.5579607392 at 2j = (1, 1, 2, 2, 2)
+C8 t=1, 2j1=2, legs 2j<=16: min q = 7.3533672811 at 2j = (2, 1, 2, 2, 3)
+C8 t=1, 2j1=3, legs 2j<=16: min q = 7.4762794932 at 2j = (3, 1, 2, 2, 2)
+C8 t=1, 2j1=4, legs 2j<=16: min q = 10.5409580175 at 2j = (4, 1, 2, 2, 3)
+C8 t=1, 2j1=5, legs 2j<=16: min q = 12.8128678673 at 2j = (5, 2, 3, 3, 3)

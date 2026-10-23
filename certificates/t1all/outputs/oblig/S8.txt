@@ -1,0 +1,19 @@
+uncovered tuples (W2/open, not C6, no leg 1/2) with 5<=2j1<=8, legs<=24/2: 2205
+violations of q >= 2 sqrt(mu) lambda(W0) (any pairing/class): 0
+smallest lambda(W0)*(j1+1):
+  5.0900  lambda=1.0180 q=130.778 2j1=8 legs=(18, 24, 24, 24) W2
+  5.0937  lambda=1.0187 q=126.506 2j1=8 legs=(17, 23, 23, 23) W2
+  5.0977  lambda=1.0195 q=122.202 2j1=8 legs=(16, 22, 22, 22) W2
+  5.1021  lambda=1.0204 q=117.864 2j1=8 legs=(15, 21, 21, 21) W2
+  5.1069  lambda=1.0214 q=113.490 2j1=8 legs=(14, 20, 20, 20) W2
+  5.1121  lambda=1.0224 q=109.077 2j1=8 legs=(13, 19, 19, 19) W2
+  5.1179  lambda=1.0236 q=104.623 2j1=8 legs=(12, 18, 18, 18) W2
+  5.1243  lambda=1.0249 q=100.124 2j1=8 legs=(11, 17, 17, 17) W2
+  5.1269  lambda=1.0254 q=111.024 2j1=8 legs=(18, 18, 18, 24) W2
+  5.1270  lambda=1.0254 q=115.466 2j1=8 legs=(20, 24, 24, 24) W2
+  5.1314  lambda=1.0263 q=95.576 2j1=8 legs=(10, 16, 16, 16) W2
+  5.1319  lambda=1.0264 q=111.879 2j1=8 legs=(19, 23, 23, 23) W2
+  5.1343  lambda=1.0269 q=106.680 2j1=8 legs=(17, 17, 17, 23) W2
+  5.1371  lambda=1.0274 q=108.262 2j1=8 legs=(18, 22, 22, 22) W2
+  5.1394  lambda=1.0279 q=90.974 2j1=8 legs=(9, 15, 15, 15) W2
+2j1=  8: n=  2205 min lambda=1.0180  min lambda*(j1+1)=5.0900  min q=42.059

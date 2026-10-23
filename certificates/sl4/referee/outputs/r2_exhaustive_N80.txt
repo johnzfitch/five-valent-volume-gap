@@ -1,0 +1,8 @@
+N = 80 (2 j_max <= N): 766249 sorted tuples with d >= 2
+EXACT sharp law: violations 0 []
+EXACT equality cases: 80; equal to {(1/2,1/2,j,j)}: True
+EXACT lemma flags (F, Feq, C0, C2, C3, log-concavity, a_i>=1, b_i>=b_1): 0 []
+FLOAT hydrogen chain spectrum max |ev - integer| = 1.71e-13
+FLOAT Lemma-S bound above LAPACK lambda: 0 []
+min lambda^2/mu by d (d<=10): d=2: 1.000000 at (1, 1, 69, 69); d=3: 6.000000 at (2, 2, 2, 2); d=4: 1.800000 at (3, 3, 3, 3); d=5: 10.350497 at (4, 4, 4, 4); d=6: 3.015875 at (5, 5, 5, 5); d=7: 16.000000 at (6, 6, 6, 6); d=8: 4.510202 at (7, 7, 7, 7); d=9: 22.698796 at (8, 8, 8, 8); d=10: 6.249707 at (9, 9, 9, 9)
+wall 44 s, 8 workers

@@ -1,0 +1,184 @@
+\Needspace*{16\baselineskip}
+\section{The three-spin pencil and three bounded legs}\label{app:bounded}
+
+\subsection*{Proof of the three-spin pencil}
+
+This is the proof of \cref{thm:pencil}. Write $\mathcal H_{2345}=j_2\otimes j_3\otimes j_4\otimes j_5$,
+$L=J_2+J_3+J_4+J_5=\mathsf G+J_5$, and
+$H_s=\{h\in\mathcal H_{2345}:\ L_zh=sh,\ L_+h=0\}$ for the highest-weight vectors of weight
+$s=j_1$. All adjoints are taken in the natural inner products.
+
+\begin{proof}
+\emph{Step 1: removing the distinguished leg.} By \cref{lem:collapse},
+$J_1\cdot(J_4\times J_5)=J_1\cdot(J_2\times J_4+J_3\times J_4)$ on invariant vectors, so
+$T=J_1\cdot U$ there. $U$ acts on legs $2$--$4$ and commutes with $J_1$, and on an
+invariant $\psi$ we have $J_1^a\psi=-L^a\psi$; hence $T\psi=-\sum_aU^aL^a\psi$. The two
+orders of the product agree, $\sum_aU^aL^a=\sum_aL^aU^a=:L\cdot U$, because $U$ is a vector
+operator for $\mathsf G$ and commutes with $J_5$, so
+$\sum_a[L^a,U^a]=\sum_a[\mathsf G^a,U^a]=i\sum_a\epsilon_{aab}U^b=0$; for the same reason
+$L\cdot U$ is Hermitian and commutes with $L$. Write an invariant as
+$\psi=\sum_m|s,m\rangle\otimes w_m$. The component $w_{-s}$ has weight $s$ and is
+annihilated by $L_+$ (the $|s,-s\rangle$ component of $(J_1+L)_+\psi=0$), and
+$\psi\mapsto w_{-s}$ is $(2s+1)^{-1/2}$ times a unitary map from
+$\Inv(j_1\otimes\mathcal H_{2345})$ onto $H_s$. Since $L\cdot U$ acts on $\mathcal H_{2345}$ alone and
+commutes with all rotations of $\mathcal H_{2345}$, this map carries $T$ to $-(L\cdot U)|_{H_s}$.
+
+\emph{Step 2: the extremal projector.} On the weight space $\mathcal H_{2345}[s]$ put
+$P=\sum_k\chi_kL_-^kL_+^k$. On a vector $|l,s\rangle$ of total spin $l\ge s$,
+$L_-^kL_+^k|l,s\rangle=\prod_{i<k}(l-s-i)(l+s+1+i)\,|l,s\rangle$, so $P|l,s\rangle$ is
+$|l,s\rangle$ times the terminating series
+${}_2F_1(-(l-s),l+s+1;2s+2;1)=(s+1-l)_{l-s}/(2s+2)_{l-s}$ (Chu--Vandermonde), which is
+$1$ for $l=s$ and $0$ for $l>s$. So $P$ is the orthogonal projection of $\mathcal H_{2345}[s]$
+onto $H_s$~\cite{AST1971}. It is a polynomial in $L_\pm$, so it commutes with $L\cdot U$.
+
+\emph{Step 3: three spins suffice.} Let $t_5=|j_5,j_5\rangle$ and
+$\iota v=v\otimes t_5$ for $v\in V[M_0]$; $\iota$ is an isometry into $\mathcal H_{2345}[s]$.
+Put $R=P\iota:V[M_0]\to H_s$. $R$ is onto: if $h\in H_s$ is orthogonal to $R(V[M_0])$,
+then $\langle h,\iota v\rangle=\langle Ph,\iota v\rangle=0$ for all $v$, so $h$ has no
+component with $m_5=j_5$; its top nonzero component in $m_5$ then sits below $j_5$, and
+$L_+=\mathsf G_++J_{5+}$ maps it to a nonzero component one step higher in $m_5$, which
+nothing else in $L_+h$ can cancel, contradicting $L_+h=0$ unless $h=0$.
+
+\emph{Step 4: the Gram matrix.} Since $J_{5+}t_5=0$ and $J_{5+}$ commutes with
+$\mathsf G_+$, $L_+^k\iota v=\iota(\mathsf G_+^kv)$. Hence
+\[
+  R^*R=\iota^*P\iota=\sum_k\chi_k(L_+^k\iota)^*(L_+^k\iota)
+  =\sum_k\chi_k\mathsf G_-^k\mathsf G_+^k=\mathsf B,
+\]
+so $\mathsf B\succeq0$. On the part with $\mathsf G^2=g(g+1)$,
+$\mathsf G_-^k\mathsf G_+^k=\prod_{i<k}(g-M_0-i)(g+M_0+1+i)$ and the same Chu--Vandermonde
+evaluation gives $\beta_g=(2s+1-g-M_0)_{g-M_0}/(2s+2)_{g-M_0}$, with
+$2s+1-M_0=s+j_5+1$. Every factor $(s+j_5+1-g+i)/(2s+2+i)$ lies in $[0,1]$ because
+$g\ge|M_0|\ge j_5-s$, and the product vanishes exactly when one numerator factor is
+$0$, that is when $g>s+j_5$.
+
+\emph{Step 5: the operator, short form.} Put $\mathsf A:=R^*(L\cdot U)R=\iota^*(L\cdot U)P\iota$,
+using $P(L\cdot U)P=(L\cdot U)P$; it is Hermitian. For $v\in V[M_0]$, $P\iota v\in H_s$,
+so $L_zP\iota v=sP\iota v$ and $L_+P\iota v=0$. Writing
+$L\cdot U=U_zL_z+\frac12(U_+L_-+U_-L_+)$,
+\[
+  \langle\iota w,(L\cdot U)P\iota v\rangle=s\langle U_z\iota w,P\iota v\rangle
+  +\tfrac12\langle L_+U_-\iota w,P\iota v\rangle
+  =\bigl\langle sU_zw+\tfrac12\mathsf G_+U_-w,\ \mathsf Bv\bigr\rangle,
+\]
+because $U$ acts on legs $2$--$4$, so $U_z\iota w=\iota(U_zw)$ and
+$L_+U_-\iota w=\iota(\mathsf G_+U_-w)$, and $\iota^*P\iota=\mathsf B$. So
+$\mathsf A=(sU_z+\frac12U_+\mathsf G_-)\mathsf B$.
+
+\emph{Step 6: the printed form.} Expand instead
+$(L\cdot U)\iota w=\iota(\mathsf Xw)+\frac12(U_+w)\otimes J_{5-}t_5$, using
+$L_-\iota w=\iota(\mathsf G_-w)+w\otimes J_{5-}t_5$. The first term contributes
+$\langle w,\mathsf X^*\mathsf Bv\rangle$ to $\langle(L\cdot U)\iota w,P\iota v\rangle$. For the
+second, $L_+^k(y\otimes J_{5-}t_5)=\mathsf G_+^ky\otimes J_{5-}t_5+k\,\mathsf G_+^{k-1}y\otimes
+J_{5+}J_{5-}t_5$ and $J_{5+}J_{5-}t_5=2j_5t_5$, so only the second piece survives the
+pairing with $L_+^k\iota v=\iota(\mathsf G_+^kv)$, and with $k\chi_k=-\chi'_{k-1}/(2s+2)$
+the contribution is
+$j_5\sum_kk\chi_k\langle U_+w,\mathsf G_-^{k-1}\mathsf G_+^kv\rangle
+=-\frac{j_5}{2s+2}\langle w,U_-\mathsf B'\mathsf G_+v\rangle$. This is the form
+$\mathsf A=\mathsf X^*\mathsf B-\frac{j_5}{2s+2}U_-\mathsf B'\mathsf G_+$ of the theorem;
+the two forms are equal because both equal $R^*(L\cdot U)R$.
+
+\emph{Step 7: the spectrum.} $R$ is onto $H_s$ and $R^*R=\mathsf B$, so its polar
+decomposition $R=Y\mathsf B^{1/2}$ has $Y$ a unitary from the range of $\mathsf B$ onto
+$H_s$. Then $Y^*(L\cdot U)Y=\mathsf B^{-1/2}\mathsf A\mathsf B^{-1/2}$ on the range of
+$\mathsf B$, and with Step~1 the spectrum of $T$, with multiplicities, is that of
+$-\mathsf B^{-1/2}\mathsf A\mathsf B^{-1/2}$ there.
+\end{proof}
+
+The theorem was also checked numerically, against $T$ built on the full tensor product
+with no recoupling theory, on $15$ tuples with doubled spins up to $8$, including one
+($j_1=1$, all spins $1$) where $\mathsf B$ has a kernel: the two forms of $\mathsf A$
+agree to $1.1\times10^{-15}$ and the spectra, with multiplicities, to $1.8\times10^{-15}$
+(\texttt{certificates/pencil71}).
+
+\subsection*{Three bounded legs}
+
+
+The rest of this appendix proves \cref{thm:C6}. By \cref{prop:S4} the bounded legs may
+be taken to be legs $2$, $3$ and $4$. Call the fourth leg $j_5$, put $M_0=j_1-j_5$ (so $|M_0|\le j_2+j_3+j_4$ when the invariant
+space is nonzero), use the pairing $(j_2j_3|j_4j_5)$ and the coordinates $(b,\gamma)$ with
+$c=s+\gamma$.
+
+\begin{lemma}[Structural stability]\label{lem:stable}
+For $s\ge s_{\min}:=\max\bigl(M_0+j_4,\ \frac12(j_2+j_3+M_0+j_4),\ \max|\gamma|+1,\ 1\bigr)$ the
+sites are exactly $b\in[|j_2-j_3|,j_2+j_3]$, $\gamma\in[-M_0-j_4,\,j_4-M_0]$ with $|\gamma|\le b$,
+independent of $s$, and the links are
+\[
+  X:\ \tfrac14h_1(b)\sqrt{b^2-\gamma^2}\sqrt{(2s+1+\gamma)^2-b^2},\qquad
+  D:\ \tfrac14\sqrt{k_D}\sqrt{\frac{\mathcal N(s)}{4(s+\gamma)^2-1}},
+\]
+with $k_D=(j_4+1-M_0-\gamma)(\gamma+M_0+j_4)(b-\gamma+1)(b+\gamma)$ and
+$\mathcal N(s)=(2s+j_4+1-M_0+\gamma)(2s+\gamma-M_0-j_4)(2s+\gamma-b)(2s+b+\gamma+1)$.
+\end{lemma}
+
+\begin{proof}
+The region conditions are linear in $s$. The condition $c\in[|j_4-j_5|,j_4+j_5]$ becomes
+$\gamma\in[-M_0-j_4,j_4-M_0]$ once $j_5\ge j_4$, that is once $s\ge M_0+j_4$; $c-b\le s$
+becomes $\gamma\le b$; $s\le b+c$ becomes $\gamma\ge-b$; and $b-c\le s$ becomes
+$b\le2s+\gamma$, which holds once $2s\ge j_2+j_3+M_0+j_4$. Substituting $c=s+\gamma$ into
+\cref{prop:grid} gives the links, and every factor is positive for $s\ge s_{\min}$; the
+condition $s>|\gamma|$ keeps $4(s+\gamma)^2-1>0$.
+\end{proof}
+
+So for $s\ge s_{\min}$ the bipartite block $Y(s)$ (from the smaller colour class) has a fixed
+shape, and $Y(s)/s\to Y_\infty$ entrywise.
+
+\paragraph{Error bounds.}
+For $s\ge s_0$ each link satisfies $|w(s)-s\,w_\infty|\le$ an exact rational multiple of
+$\sqrt{k}$, where $k$ is the rational squared limit link ($k=h_1(b)^2(b^2-\gamma^2)$ for an
+$X$-link and $k=k_D$ for a $D$-link, so that $w_\infty=\frac12\sqrt k$): for $X$-links, $|\sqrt{(2s+1+\gamma)^2-b^2}-2s|\le2|1+\gamma|+|(1+\gamma)^2-b^2|/(2s_0)$;
+for $D$-links, $\mathcal N(s)-4s^2(4(s+\gamma)^2-1)$ is a cubic in $s$ whose coefficients are
+bounded termwise, and $2s(4(s+\gamma)^2-1)\ge8s^3[(1-|\gamma|/s_0)^2-1/(4s_0^2)]$. Summing gives
+an exact rational $E(s_0)^2\ge\|Y(s)-sY_\infty\|_F^2$ for all real $s\ge s_0$.
+
+\paragraph{The limit.}
+$Y_\infty$ is in general rectangular, and its nonzero singular values are the positive
+eigenvalues of the three-spin chirality $U_z$ on $V[M_0]$, with multiplicity
+(\cref{thm:pencil} as $s\to\infty$). For every triple with $2j\le6$ and every $M_0$ with
+nonzero invariant space, $Y_\infty$ is injective in at least one of the three choices of which
+bounded leg pairs with $j_5$ (the only exceptions are $|M_0|=j_2+j_3+j_4$, where $T\equiv0$),
+and a lower bound $\sigma_\infty\le\smin(Y_\infty)$ is certified by an interval Cholesky
+factorisation of $Y_\infty^TY_\infty-\sigma_\infty^2$ in $40$-digit interval arithmetic.
+Weyl's inequality then gives $q=8\smin(Y(s))\ge8(s\sigma_\infty-E(s_0))$ for all $s\ge s_0$;
+in particular $Y(s)$ is injective, so this is the smallest nonzero eigenvalue. We take $s_0$
+to be the least half-integer at least $s_{\min}$ with $s_0\sigma_\infty-E(s_0)\ge4.5579607/8$.
+There are $532$ cases $(j_2,j_3,j_4;M_0)$ for $\Cl_6$, with $s_0\le113$ ($s_0\le9.5$ for $\Cl_2$
+and $s_0\le38.5$ for $\Cl_4$).
+
+For all but two of the $532$ cases the certified $\sigma_\infty$ exceeds
+$\nu_0=\sqrt{(5-3\sqrt2)/2}=0.6153695\ldots$, and is in fact at least $0.7087$ (at least
+$0.8660$ on $\Cl_2$); we compared each certified value with $\nu_0$ in exact arithmetic. The
+two exceptions are the triple $(1,1,\frac12)$ on legs $(2,3,4)$ with $M_0=\pm\frac12$, the
+extremal triple of \cref{thm:slope}, where the interval certificate gives only
+$\sigma_\infty=0.6153689<\nu_0$. There the limit matrix has five sites, for $M_0=\frac12$ the
+sites $(b,\gamma)=(0,0),(1,-1),(1,0),(2,-1),(2,0)$, with colour classes of sizes $3$ and $2$, and
+its characteristic polynomial is exactly $x(4x^4-20x^2+7)/4$, as for $U_z$ in \cref{thm:slope}.
+So $Y_\infty$ is $3\times2$ with singular values $\nu_0$ and $\sqrt{(5+3\sqrt2)/2}=2.1497$, and
+$\smin(Y_\infty)=\nu_0$ exactly; the same holds for $M_0=-\frac12$. Hence $\smin(Y_\infty)\ge\nu_0$
+in every case, and Weyl's inequality gives
+\[
+  q\ \ge\ 8\nu_0\,s-8E(s_0)\qquad(s\ge s_0)
+\]
+in every case; for the extremal case $M_0=\frac12$ this reads $q\ge8\nu_0s-15.64$ for $s\ge4.5$.
+
+\paragraph{The finite part.}
+For $s<s_0$ there are finitely many tuples. Those with spins at most $19$ ($17\,376$ tuples)
+are certified exactly by rational $LDL^T$ with exact rank; the remaining $6\,137$ are
+certified individually: their site and link structure is first checked to equal the
+formulas of \cref{lem:stable} at that $s$, then $Y(s)^TY(s)-(c/8)^2$ with
+$c=\max(4.5579607,\ 8\sigma_Ks-C_K)$ is shown positive definite by interval Cholesky.
+
+\paragraph{Assembly.}
+$C_K=\max\bigl(8\max E(s_0),\ 8\sigma_K\max s_0-4.558\bigr)$ rounded up, with $\sigma_K$ the
+smallest certified $\sigma_\infty$, is $97$, $453$ and $1370$ for $K=2,4,6$; in each class the
+first term decides ($8\max E(s_0)=96.05$, $452.08$ and $1369.52$). For $s\ge s_0$ the display
+above gives $q\ge8\nu_0s-C_K$. For $s<s_0$ the finite part gives $q\ge4.5579607$, while
+$8\nu_0s-C_K<8\nu_0\max s_0-C_K<0$ ($8\nu_0\max s_0<46.8$, $189.6$ and $556.3$); so
+$q\ge8\nu_0s-C_K$ for every tuple of $\Cl_K$, which is \cref{thm:C6}. (The finite certificates
+were run against the slightly smaller target $\max(4.5579607,\,8\sigma_Ks-C_K)$, which is
+never below $4.5579607$; only that is used here.) The class constant is crude (a
+Frobenius-norm Weyl bound); the individual bounds in the shipped outputs are much better.
+The exact comparison with $\nu_0$ and the characteristic polynomials of the two exceptional
+limits are checked by \texttt{certificates/lj/scripts/lj\_exact\_slope\_check.py}. For $K=8$ only the part $s\ge s_0$
+was run ($1\,500$ cases, $s_0\le253$); the finite part, about $10^5$ interval certificates,
+was not, and $\Cl_8$ is not claimed.

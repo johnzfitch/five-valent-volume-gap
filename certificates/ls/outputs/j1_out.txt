@@ -1,0 +1,9 @@
+[R] pencil vs full operator: 8384 tuples with j1=1, 2j_i<=16: max rel diff 1.51e-14  (2s)
+[C] exact certificate q >= 4.558 for all j1=1 tuples with max(n1,n2) <= 32: 164176 pair-pairs, outcomes {'pd': 163246, 'kernel1': 930}, failures 0 []  (41s)
+    float min q over sampled pair-pairs: 7.353367 at doubled tuple (2, 1, 2, 2, 3)
+[A] case nu>n, n>=25, m<=n/2: F <= 8(H_n+1)(4+2ln2n)/n^2 at n=24,25: 0.7789, 0.7289 (need <= 0.7701)
+[A] case nu>n, n<=24, nu>=33: F <= 8 H_24 (4+2ln48)/(33^2-24^2) = 0.6914
+[A] case nu=n (not identical), n>=28: 8(H_n+2)(4+2ln2n)/n^2 at n=27,28: 0.7744, 0.7288
+[A] identical pairs, n>=28: tau*M <= 8H_n(4+2ln2n)/n^2 = 0.4829 (need <= 1.5403)
+[S] grid sanity tau'*M' <= F_a: 27360 cases, 0 violations
+total 43s

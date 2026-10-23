@@ -1,0 +1,15 @@
+tuples with j1=1/2, 2jmax<=40: 54019 (dim>=2: 52311)
+(a) max kernel dim of a leg-1 triple: 2; min nonzero |qhat| eigenvalue: 1.732051 (sqrt3 = 1.732051)
+(b) max ||Pi_ker(1JK) Pi_ker(1LM)|| over complementary pairs, dim>=2: 9.26e-15
+(c) min eig of sum over leg-1 triples (dim>=2): 7.129392; min eig of Q_RS (dim>=2): 15.932511; 3 sqrt3 = 5.196152
+    dim-1 tuples: Q_RS = 0 in all: True
+(d) contrast family (1/2, j-1/2, j, j, j): 2j, dim, lambda_min(Q_RS), AL q_min ~ kappa*4N sqrt(2N+1) 2^-N ([HV] Thm 1)
+    2j=  2: dim   4, lambda_min(Q_RS) = 21.3538, AL q_min in [1.677e+00, 4.472e+00]
+    2j=  4: dim   8, lambda_min(Q_RS) = 55.9123, AL q_min in [1.125e+00, 3.000e+00]
+    2j=  6: dim  12, lambda_min(Q_RS) = 104.8699, AL q_min in [5.070e-01, 1.352e+00]
+    2j= 10: dim  20, lambda_min(Q_RS) = 242.3233, AL q_min in [6.713e-02, 1.790e-01]
+    2j= 20: dim  40, lambda_min(Q_RS) = 795.4985, AL q_min in [1.832e-04, 4.885e-04]
+    2j= 30: dim  60, lambda_min(Q_RS) = 1623.6798, AL q_min in [3.273e-07, 8.729e-07]
+    2j= 40: dim  80, lambda_min(Q_RS) = 2709.2276, AL q_min in [4.911e-10, 1.310e-09]
+    2j= 40: dim  80, lambda_min(Q_RS) = 2709.2276, AL q_min in [4.911e-10, 1.310e-09]
+wall 326s

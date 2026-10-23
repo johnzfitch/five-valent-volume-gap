@@ -1,0 +1,184 @@
+\section{The slice \texorpdfstring{$j_1=2$}{j1 = 2}}\label{app:jtwo}
+
+This appendix proves \cref{thm:jtwo}. Tuples whose legs $2$--$5$ are not all integers or all
+half-integers at least $\frac32$ are covered by \cref{thm:closed} with $q\ge4\sqrt{12/\pi}>7.8$,
+and tuples with spins at most $19$ by the finite certificate. It remains to treat the
+\emph{even-sum class} (legs all integers, or all half-integers at least $\frac32$) with
+$2j_{\max}\ge39$. Throughout, $\lambda_0=(4.5579607/8)^2$.
+
+\subsection{The triangular reduction}
+
+For any $j_1$ and a colour class $C$ of columns, let $Z(\delta,\rho)$ be the block of $B$
+from column diagonal $\delta$ to an adjacent row diagonal $\rho=\delta\pm1$. A row meets at
+most two columns of $\delta$, consecutive in $u$, so $Z(\delta,\rho)$ is a path matrix and
+$Z^TZ$ is tridiagonal.
+
+\begin{lemma}\label{lem:rowdiag}
+$\|Bx\|^2=\sum_\rho\|Z(\rho-1,\rho)x_{\rho-1}+Z(\rho+1,\rho)x_{\rho+1}\|^2$, and for a column
+diagonal $\delta$, with $D=Z(\delta,\delta-1)$, $N=Z(\delta,\delta+1)$ and
+$\mathsf r_\delta=F(\delta+\frac12)/F(\delta-\frac12)$,
+$N^TN-\mathsf r_\delta D^TD=\diag(\Lambda)$, where at the column $(b,c)$
+\[
+  \Lambda_{(b,c)}=\tfrac{1}{16}F(\delta+\tfrac12)\bigl[G(u+1)\bigl(h_1(b+1)^2-h_2(c+1)^2\bigr)
+  -G(u)\bigl(h_1(b)^2-h_2(c)^2\bigr)\bigr].
+\]
+\end{lemma}
+
+\begin{proof}
+$T$ links only adjacent diagonals. The off-diagonal entries are the plaquette argument of
+\cref{prop:zigzag}; the diagonal is the difference of the two sums of squared links at
+$(b,c)$, read off \cref{prop:grid}.
+\end{proof}
+\enlargethispage{-2\baselineskip}% avoids a two-line continuation of Theorem F.2 (history section reflow)
+
+\begin{theorem}{Ownership}{ownership}
+Let each row diagonal $\rho$ that touches two column diagonals be dropped, or owned by one of
+its neighbours with a parameter $\theta_\rho\in(0,1)$; row diagonals touching one column diagonal
+are owned by it with coefficient $1$. Put
+\[
+  \mathrm{Stage}_\delta=\sum_{\rho\text{ owned by }\delta}c_\rho Z(\delta,\rho)^TZ(\delta,\rho)
+  -\sum_{\rho\text{ owned by the other neighbour}}\bigl(\theta_\rho^{-1}-1\bigr)Z(\delta,\rho)^TZ(\delta,\rho),
+\]
+with $c_\rho=1$ for walls and $1-\theta_\rho$ otherwise. Then $\|Bx\|^2\ge\sum_\delta x_\delta^T
+\mathrm{Stage}_\delta x_\delta$; if every $\mathrm{Stage}_\delta\succeq\lambda$ with $\lambda>0$, then $B$ is
+injective and $\smin(B)^2\ge\lambda$.
+\end{theorem}
+
+\begin{proof}
+Apply $\|a+b\|^2\ge(1-\theta)\|a\|^2-(\theta^{-1}-1)\|b\|^2$ to each owned row diagonal, with $a$ the
+owner's part, and discard dropped rows.
+\end{proof}
+
+Each $\mathrm{Stage}_\delta-\lambda$ is tridiagonal with rational diagonal and off-diagonal
+entries that are rational multiples of one square root (by the proportionality of
+\cref{lem:rowdiag}), so its $LDL^T$ pivots are rational: \emph{stage certificates} are exact.
+
+\paragraph{Count forms.}
+Let $D$ be a square path matrix with a perfect matching of rows to columns that follows the
+path from its Dirichlet end, matched link $\ell_k$ at row $k$. Then
+$|(D^{-1})_{c,k}|=\ell_k^{-1}\prod(\text{unmatched}/\text{matched ratios from }k\text{ to }c)$,
+and if every ratio is at most $1$, $\smin(D)^2\ge1/\sum_k(\#\text{columns reached by }k)/\ell_k^2$;
+grouping by columns gives the same with column ratios. The row norms obey the same bounds,
+and $\sup_xx^T\Lambda^+x/\|Dx\|^2\le\sum_c\Lambda^+_cR_c$. A tall path is split by deleting one row.
+Chains are typed by their ends as before: RC, CR (square), RR (tall), CC (wide, never used).
+
+\subsection{The proof for \texorpdfstring{$j_1=2$}{j1 = 2}}
+
+In the even-sum class all $n_i,m_i$ are integers and $N_i\ge3$. Take $C=\{d=\pm1\}$; the row
+diagonals are the walls $d=\pm2$ and the middle $d=0$. Write $W_-=Z(-1,-2)$, $W_+=Z(1,2)$,
+$M_-=Z(-1,0)$, $M_+=Z(1,0)$, so that
+\begin{equation}\label{eq:j2split}
+  \|Bx\|^2=\|W_-x_-\|^2+\|M_-x_-+M_+x_+\|^2+\|W_+x_+\|^2 .
+\end{equation}
+With $s=2$: $F(\pm\frac12)=6$, $F(\pm\frac32)=4$, $G(u)=(u+3)(u-2)$; write $P(L)=(n_1^2-L^2)(L^2-m_1^2)$
+and $Q(L)=(n_2^2-L^2)(L^2-m_2^2)$.
+
+\begin{lemma}[Chains]\label{lem:j2chains}
+$W_-$ has rows $(b,b+2)$ and columns $(b,b+1)$; the row $(b,b+2)$ has squared links
+$q_b^2=Q(b+2)\,b/(2(2b+3))$ to $(b,b+1)$ and $p_b^2=P(b+1)(b+3)/(2(2b+3))$ to $(b+1,b+2)$.
+$M_+$ has rows $(e,e)$ and columns $(c+1,c)$; the row $(e,e)$ has
+$\alpha_e^2=\frac34Q(e)(e-1)(2e+3)/((2e-1)(2e+1))$ to $(e,e-1)$ and
+$\beta_e^2=\frac34P(e+1)(e+2)(2e-1)/((2e+1)(2e+3))$ to $(e+1,e)$. $W_+$, $M_-$ are the mirror
+images. On diagonal $-1$, $M_-^TM_-=\frac32W_-^TW_-+\diag(\Lambda)$ with
+$\Lambda_c=3N_c/(4(2c+1)(2c+3))$ and
+\[
+  N_c=(n_1^2+m_1^2-n_2^2-m_2^2)K(c)+2n_1^2m_1^2(c+3)-2n_2^2m_2^2(c-1)-2(n_2^2+m_2^2)+2(2c^2+4c+1)^2,
+\]
+$K(c)=c(2c^2+6c+5)$. $W_-$ is of type RC, CR or RR, or wide exactly when $m_1\ge1$,
+$m_2\le m_1+1$ and $n_2\le n_1+1$.
+\end{lemma}
+
+The proof needs a pairing in which the wall chain $W_-$ is not \emph{wide} (more columns
+than rows), so that it is injective. The routing lemma finds one in three ways: in
+case NN neither wall chain is wide; in cases C1 and C3 only $W_-$ is used, and the
+pair $(n_2,m_2)$ is far from $(n_1,m_1)$ in its upper end (C1) or close to it (C3),
+which decides how the middle row is handled.
+
+\begin{lemma}[Routing]\label{lem:routing}
+Sort $j_2\le j_3\le j_4\le j_5$ with integer gaps $g_1,g_2,g_3$. Some ordered pairing gives
+one of: (NN) neither wall chain is wide; (C1) $W_-$ is not wide, $n_2\ge n_1+2$, and
+$m_2\ge m_1+2$ or $(m_1,m_2)=(0,1)$; (C3) $W_-$ is not wide, $|n_2-n_1|\le1$, and
+$m_2\ge m_1+2$ or $(m_1,m_2)=(0,1)$. In C1 and C3, $W_+$ is wide or empty, and this is
+not used. If $2j_{\max}\ge39$, then $n_2\ge22$ in C1 and $\min(n_1,n_2)\ge21$ in C3.
+\end{lemma}
+
+\begin{proof}
+For $(23|45)$, $(n_2-n_1,m_1,m_2)=(g_1+2g_2+g_3,g_1,g_3)$; for $(45|23)$ the negatives and
+swap; for $(34|25)$, $(g_3-g_1,g_2,g_1+g_2+g_3)$. If $|g_1-g_3|\le1$ and $g_1+g_3\ge2$, then
+$(34|25)$ is C3; if $(g_1,g_3)=(0,0)$, $(23|45)$ is NN; if $(g_1,g_3)=(1,0)$, $(23|45)$ is NN
+when $g_2\ge1$ and $(45|23)$ is C3 otherwise; if $(g_1,g_3)=(0,1)$, $(23|45)$ is C3 when
+$g_2=0$ and C1 otherwise; if $g_3\ge g_1+2$, $(23|45)$ is C1; if $g_1\ge g_3+2$, $(45|23)$ is
+NN. The pair containing $j_5$ has $n+m=2j_5+1$ and $m\le n-3$.
+\end{proof}
+
+The ratio conditions that the count forms need (same-row ratio of $W_-$ at least $1$ in type RC,
+same-column ratio at most $1$ in type CR, monotone same-row ratio in type RR, and the same for
+$M_+$), the bounds on $N_c$, and the telescoping of the coupling are $24$ exact polynomial
+certificates (S1--S10). The same script also runs three negative controls, false variants
+of S1, S2 and S7 that must fail and do; they are checks, not part of the proof. With
+$S(m)=\sum_{i\ge1}1/(i(i+2m))$ ($=\pi^2/6$ for $m=0$, $H_{2m}/(2m)$ otherwise) and
+$\Theta_0=\sum_{k\ge1}\varphi(k)/(k+1)^2\le2.21190$, $\varphi(k)=(2k+1)(2k+3)/((k+2)(2k-1))$, they
+give:
+
+\begin{lemma}[Chain bounds]\label{lem:j2bounds}
+(i) $W_-$ of type RC: $\smin^2\ge(n_1+m_1+1)/(4S(m_1))$. (ii) Type CR: $\smin^2\ge n_2/(4\pi^2/6)$.
+(iii) Type RR: $\smin^2\ge1/\max\bigl(4S(m_1)/(n_1+m_1+1),\ \frac54H_{n_2-3}/n_2\bigr)$, where for the
+lower piece the column count is at most $n_1-L$ because the rows end at $n_1-1$.
+(iv) If $m_2\ge1$ and ($m_2\ge m_1+2$ or $(m_1,m_2)=(0,1)$), then
+$\smin(M_+)^2\ge1/\max\bigl(\frac43\Theta_0/(n_1+m_2+1),\ \frac{40}7H_{n_2}/(n_2(n_2+1))\bigr)$, where the
+second term is present only when $n_2\ge n_1$.
+\end{lemma}
+
+\begin{lemma}[Coupling and two stages]\label{lem:twostage}
+Let $\mathsf C=\sup\|M_-x\|^2/\|W_-x\|^2$ on diagonal $-1$, so that
+$\mathsf C\le\frac32+\sum_c\Lambda^+_cR_c$. In C1, $\Lambda_c\le0$ for every column, so
+$\mathsf C\le\frac32$. In C3, $W_-$ is RC and its same-row ratios satisfy
+$\rho_t\le\nu_t\,t/(t+1)$ with an exactly telescoping $n$-ratio $\nu_t$, which gives
+$\mathsf C\le\frac32+\mathsf W$ with an explicit $\mathsf W$. If $\smin(W_-)^2\ge \lambda_W>\lambda_0$,
+$\smin(M_+)^2\ge \lambda_M$, $\mathsf C\le\bar{\mathsf C}$ and
+$\lambda_M\ge\lambda_0\bigl(1+\bar{\mathsf C}\,\lambda_W/(\lambda_W-\lambda_0)\bigr)$, then $\smin(B)^2\ge\lambda_0$.
+\end{lemma}
+
+\begin{proof}
+For the last statement apply \cref{thm:ownership} to \eqref{eq:j2split}: the walls are owned by
+their own diagonals, the middle row by $x_+$ with $1-\theta=\lambda_0/\lambda_M$; then $x_-$ receives
+$(1-(\theta^{-1}-1)\bar{\mathsf C})\lambda_W\ge\lambda_0$ and $x_+$ receives $(1-\theta)\lambda_M=\lambda_0$, and
+$x\mapsto x/(x-\lambda_0)$ is decreasing, so lower bounds may be substituted.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:jtwo}]
+Take the pairing of \cref{lem:routing}.
+\emph{NN.} Drop the middle row. Each wall chain has
+$\sum\le\max(4\cdot\frac{\pi^2}6/4,\ 4\cdot\frac{\pi^2}6/5,\ \max_{n\ge5}\frac54H_{n-3}/n)=1.6449$,
+so $\smin(B)^2\ge0.6079$ and $q\ge6.237$.
+\emph{C1.} Take $\lambda_W$ from (iii), $\lambda_M$ from (iv), $\bar{\mathsf C}=\frac32$. Both bounds are
+nondecreasing in all four parameters and the requirement of \cref{lem:twostage} decreases in
+$\lambda_W$, so the worst case is the corner $(n_1,m_1,n_2,m_2)=(3,0,22,1)$, where $\lambda_W=0.6079$,
+$\lambda_M=1.6954$ and the requirement is $1.3694$.
+\emph{C3.} For fixed $(n_1,n_2-n_1,m_1)$ the coupling bound $\mathsf W$ is nonincreasing in $m_2$
+and $\lambda_M$ nondecreasing, so it suffices to check the slices $m_2=m_1+2$ and
+$(m_1,m_2)=(0,1)$. For $21\le n_1\le999$ all $1\,489\,059$ slice configurations satisfy
+\cref{lem:twostage} in outward-rounded interval arithmetic, with smallest margin
+$\lambda_M/\text{requirement}>3.2356$ at $(21,0,22,1)$. For $n_1\ge1000$:
+$(k+1)/p_k^2\le4/((n_1^2-L^2)(L-m_1))$ and partial fractions give
+$R_c\le8\nu H_{n_1}/(cn_1(n_1-m_1))$ and $N_c^+\le8an_1c(c+2)^2+8(c+1)^4$, where $\nu$ and $a$
+are fixed together by the case: $(\nu,a)=(1,1)$ for $n_2=n_1-1$, $(2,0)$ for $n_2=n_1$ and
+$(4,0)$ for $n_2=n_1+1$. So $\mathsf W\le\bar{\mathsf W}(n_1)=12\nu H(5a+1+3/n_1+
+(2H+2.6)/n_1)$ with $H=H_{n_1}$, which at $n_1=1000$ is $540.8$, $183.3$ and $366.7$ in the
+three cases, while the requirement allows
+$\bar{\mathsf C}\le1043.4$ there. This comparison persists for every $n_1\ge1000$. With
+$\lambda_M\ge3(n_1+2)/(4\Theta_0)$ (from \cref{lem:j2bounds}(iv), whose second term is the
+smaller one for $n_1\ge1000$, and $m_2\ge1$) and $\lambda_W\ge3(n_1+1)/(2\pi^2)$ (from (i),
+as $S(m_1)\le\pi^2/6$) the allowance is at least
+$f(n_1)=(A(n_1+2)-1)(1-B/(n_1+1))$ with $A=3/(4\Theta_0\lambda_0)>1.04$ and $B=20\lambda_0/3$, and
+$f(n+1)-f(n)=A+B(A-1)/((n+1)(n+2))\ge A$. The case $(\nu,a)=(1,1)$ dominates the other two,
+since its excess over $(4,0)$ is $\frac{24}5H(5n_1-15H-42)/n_1>0$; and its bound
+$\bar{\mathsf W}=72H_{n_1}+(24H_{n_1}^2+67.2H_{n_1})/n_1$ grows by less than
+$72/(n_1+1)<0.072$ per unit of $n_1$, because the second term decreases for $n_1\ge1000$: with
+$H'=H+1/(n_1+1)$, $n_1(n_1+1)$ times its increment is at most
+$-24H^2-19.2H+67.2+24/(n_1+1)<0$, as $H>2$.
+\end{proof}
+
+As independent checks, the closed forms were compared with the actual chain matrices on random
+configurations (never exceeded; the coupling bound is within $0.1\%$ in places), and every
+even-sum tuple with $39\le2j_{\max}\le44$ was given an exact stage certificate directly.

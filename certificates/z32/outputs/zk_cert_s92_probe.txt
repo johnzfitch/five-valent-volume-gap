@@ -1,0 +1,5 @@
+(9, 3, 6, 6, 6): certified q >= 2.5493 (true q = 33.944) via (9, 6, 6, 3, 6) taus ['144424/5749623', '1/100', '1/1000', '852/1350329']
+(9, 5, 8, 10, 10): NOT certified; best float chained bound sigma^2 >= -0.1748 (<= 0 means the inequality gives nothing); true q = 58.335; best pairing (9, 10, 10, 5, 8)
+(9, 4, 11, 11, 11): certified q >= 17.1879 (true q = 55.495) via (9, 11, 11, 4, 11) taus ['279659/1764529', '355279/7088748', '363305/9125809', '1/20']
+(9, 5, 10, 11, 11): NOT certified; best float chained bound sigma^2 >= -0.15 (<= 0 means the inequality gives nothing); true q = 60.113; best pairing (9, 11, 11, 5, 10)
+(9, 14, 15, 17, 21): certified q >= 31.4345 (true q = 94.221) via (9, 14, 15, 17, 21) taus ['2026009/6406803', '1/5', '54821/6901555', '1/100']

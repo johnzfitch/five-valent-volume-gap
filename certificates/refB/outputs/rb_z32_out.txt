@@ -1,0 +1,20 @@
+[A] exact zigzag links vs [Z] table and Prop. 4 identity (legs 2j<=16): 1773 tuples; link mismatches/zero links 0, identity mismatches 0, sign mismatches 0
+[B] regime census (legs 2j<=60): 257045 tuples, mismatches with the Lemma 2 table 0; per regime {'Tp': 59, 'R4': 89800, 'R4c': 1711, 'Tm': 59, 'R2+': 16675, 'R1c': 1711, 'R2-': 16675, 'R1': 130355}  (57s)
+[C] R1   exact, n1 <= 20: min 8sigma bound 10.873596 at (3.5, 1.5);  [Z] box reports 10.873596 at (3.5, 1.5)
+[C] R2+  exact, n1 <= 20: min 8sigma bound 7.125869 at (4.5, 0.5);  [Z] box reports 7.125869 at (4.5, 0.5)
+[C] R2-  exact, n1 <= 20: min 8sigma bound 4.723103 at (3.0, 1.0);  [Z] box reports 4.723103 at (3.0, 1.0)
+[C] R4   exact, n1 <= 20: min 8sigma bound 6.507914 at (2.0, 1.5);  [Z] box reports 6.507914 at (2.0, 1.5)
+[C] R1c  exact, n1 <= 60: min 8sigma bound 8.219253 at n1=2.5;  [Z] box reports 8.219253 at (2.5, 0);  first values [(2.5, 8.2193), (3.5, 9.0267), (4.5, 9.9886), (5.5, 10.9694), (6.5, 11.9404)]
+[C] R4c  exact, n1 <= 60: min 8sigma bound 4.621864 at n1=3.0;  [Z] box reports 4.621864 at (3.0, 0);  first values [(2.0, 6.8525), (3.0, 4.6219), (4.0, 4.6756), (5.0, 4.8916), (6.0, 5.1437)]
+[C] Tp   exact, n1 <= 60: min 8sigma bound 4.386733 at n1=4.0;  [Z] box reports 4.386733 at (4.0, 0);  first values [(2.0, 7.746), (3.0, 4.4324), (4.0, 4.3867), (5.0, 4.4748), (6.0, 4.6584)]
+[C] Tm   exact, n1 <= 60: min 8sigma bound 3.777423 at n1=4.0;  [Z] box reports 3.777423 at (4.0, 0);  first values [(3.0, 3.933), (4.0, 3.7774), (5.0, 3.8704), (6.0, 4.0183), (7.0, 4.1807)]
+    (2s)
+[D] Tm n1=1000: 8sigma bound 30.9031;  rel. error of sigma^2 (binary64 vs 40 digits) 4.99e-13;  max rel. error of F0,F1,W 8.56e-13;  F0 = 1.060e-04;  1 - tau(4/3+W) = 1.582e-03  (0s)
+[D] Tm n1=10000: 8sigma bound 86.9203;  rel. error of sigma^2 (binary64 vs 40 digits) 3.07e-11;  max rel. error of F0,F1,W 3.78e-11;  F0 = 1.937e-06;  1 - tau(4/3+W) = 2.287e-04  (1s)
+[D] Tm n1=100000: 8sigma bound 250.1300;  rel. error of sigma^2 (binary64 vs 40 digits) 1.06e-11;  max rel. error of F0,F1,W 1.26e-11;  F0 = 3.096e-08;  1 - tau(4/3+W) = 3.027e-05  (12s)
+[D] Tp n1=1000: 8sigma bound 38.2332;  rel. error of sigma^2 (binary64 vs 40 digits) 4.94e-12;  max rel. error of F0,F1,W 7.79e-12;  F0 = 1.613e-04;  1 - tau(4/3+W) = 3.685e-03  (0s)
+[D] Tp n1=10000: 8sigma bound 109.6290;  rel. error of sigma^2 (binary64 vs 40 digits) 2.75e-10;  max rel. error of F0,F1,W 3.92e-10;  F0 = 2.735e-06;  1 - tau(4/3+W) = 5.136e-04  (1s)
+[D] Tp n1=100000: 8sigma bound 319.2328;  rel. error of sigma^2 (binary64 vs 40 digits) 1.12e-09;  max rel. error of F0,F1,W 1.50e-09;  F0 = 4.140e-08;  1 - tau(4/3+W) = 6.592e-05  (11s)
+[D] R4c n1=1000: 8sigma bound 56.8596;  rel. error of sigma^2 (binary64 vs 40 digits) 1.32e-15;  max rel. error of F0,F1,W 2.46e-15;  F0 = 5.972e-03;  1 - tau(4/3+W) = 3.017e-01  (0s)
+[D] R4c n1=10000: 8sigma bound 179.8470;  rel. error of sigma^2 (binary64 vs 40 digits) 2.09e-16;  max rel. error of F0,F1,W 2.23e-15;  F0 = 5.961e-04;  1 - tau(4/3+W) = 3.013e-01  (1s)
+[D] R4c n1=100000: 8sigma bound 568.7633;  rel. error of sigma^2 (binary64 vs 40 digits) 1.00e-15;  max rel. error of F0,F1,W 4.63e-15;  F0 = 5.960e-05;  1 - tau(4/3+W) = 3.012e-01  (6s)

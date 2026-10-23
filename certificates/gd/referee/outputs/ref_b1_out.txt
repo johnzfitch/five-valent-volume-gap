@@ -1,0 +1,4 @@
+tuples with Inv != 0 (2j_i <= 14, j2<=j3, j4<=j5): 75915; with nonzero spectrum: 74417
+min q_min = 3.464101615138 at doubled spins (1, 1, 1, 1, 2); 2*sqrt(3) = 3.464101615138
+violations of q >= 2sqrt3: 0
+equality cases: 13; all of form (1/2,1/2,1/2; j4,j5) with |j4-j5|=1/2: True; equals predicted set: True

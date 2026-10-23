@@ -1,0 +1,4 @@
+n=2: dim=10 labels complete True; X links/magnitudes exact False; Y links/magnitudes exact False; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) False
+n=3: dim=14 labels complete True; X links/magnitudes exact False; Y links/magnitudes exact False; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) False
+n=4: dim=18 labels complete True; X links/magnitudes exact False; Y links/magnitudes exact False; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) False
+ALL OK: False

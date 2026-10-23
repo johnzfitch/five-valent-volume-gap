@@ -1,0 +1,12 @@
+pairs (n1, n2), 2 <= n1 <= n2 <= 400, n1 = n2 mod 2: 40000
+min over b of c_b - c_(b+1) - (b + 1/2): 6.274e-04  (>= 0 claimed)
+min over b of (Qg)_b/g_b - (1 + 1/(2 hi)): 1.572e-06  (>= 0 claimed)
+lambda_min(Q) >= 1 + 1/(2 hi) for n2 <= 120: True
+identical pairs n = 3: lambda_min = 1.562097, bound 1 + 1/(2hi) = 1.250000
+identical pairs n = 5: lambda_min = 1.304522, bound 1 + 1/(2hi) = 1.125000
+identical pairs n = 9: lambda_min = 1.160063, bound 1 + 1/(2hi) = 1.062500
+identical pairs n = 15: lambda_min = 1.093779, bound 1 + 1/(2hi) = 1.035714
+identical pairs n = 31: lambda_min = 1.044647, bound 1 + 1/(2hi) = 1.016667
+identical pairs n = 61: lambda_min = 1.022540, bound 1 + 1/(2hi) = 1.008333
+identical pairs n = 121: lambda_min = 1.011328, bound 1 + 1/(2hi) = 1.004167
+identical pairs n = 241: lambda_min = 1.005679, bound 1 + 1/(2hi) = 1.002083

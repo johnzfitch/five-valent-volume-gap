@@ -1,0 +1,4 @@
+float-rigorous certificate {'t': (7, 35, 36, 37, 39), 'nE': 137, 'nO': 137, 'kerT': 2, 'cert': True, 'why': None, 'qmin': 107.48207919319256}
+exact rational LDL at lam0: inertia (1, 0, 136) dim ker B 1 certified exactly: True
+float-rigorous certificate {'t': (7, 35, 37, 38, 39), 'nE': 140, 'nO': 138, 'kerT': 2, 'cert': True, 'why': None, 'qmin': 129.76677601445996}
+exact rational LDL at lam0: inertia (0, 0, 138) dim ker B 0 certified exactly: True

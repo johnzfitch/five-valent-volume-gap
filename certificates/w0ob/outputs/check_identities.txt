@@ -1,0 +1,6 @@
+(I1) delta closed form and partial fractions: 20540 label checks, 0 mismatches
+(I4) h(L)^2 = (n^2-L^2)/4 for m = 1/2: 4851 checks, 0 mismatches
+(I2) interior-diagonal sites 148464; off-diagonal (plaquette) mismatches 0; Lambda = delta1(b)-delta2(c) checked at 133675 sites (all four links present or naturally 0): 0 mismatches
+(I3) Casimir defect identity [Q,K] = (F1-E1)eps2 + (F2-E2)eps1: 16875 pair-pairs, max relative residual 2.60e-15
+     eps equals the closed form C/(2(2L-1)(2L+1)(2L+3)) at 183075 labels (0 mismatches);
+     the exception is the bottom label L = 1/2 of an m = 1/2 pair, where eps(1/2) = (4n^2-1)/8 (checked 2175 cases, max deviation 0.00e+00); for m = 1/2 eps vanishes at every other label.

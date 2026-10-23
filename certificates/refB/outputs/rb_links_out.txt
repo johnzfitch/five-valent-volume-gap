@@ -1,0 +1,1 @@
+exact closed-form links vs Racah: 79698 tuples (2j1<=8, 2j_i<=12), 1852608 links; value mismatches 0, link-set mismatches 0, tuples not flux-free 0  (59s)

@@ -1,0 +1,1 @@
+s=1 formula vs 2D block: classes 2021 max |sqrt(lam) - sigma| 1.0880185641326534e-14

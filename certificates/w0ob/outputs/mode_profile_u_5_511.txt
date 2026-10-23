@@ -1,0 +1,31 @@
+eig 0.6980036107905532
+d=-2.5 mass 0.271
+d=-1.5 mass 0.062
+d=-0.5 mass 0.153
+d=+0.5 mass 0.146
+d=+1.5 mass 0.076
+d=+2.5 mass 0.291
+u in [2,3): mass 0.0008  per-unit 0.00080
+u in [3,4): mass 0.0000  per-unit 0.00000
+u in [4,5): mass 0.0010  per-unit 0.00100
+u in [5,7): mass 0.0011  per-unit 0.00054
+u in [7,9): mass 0.0011  per-unit 0.00057
+u in [9,11): mass 0.0012  per-unit 0.00059
+u in [11,14): mass 0.0012  per-unit 0.00040
+u in [14,19): mass 0.0038  per-unit 0.00075
+u in [19,24): mass 0.0026  per-unit 0.00052
+u in [24,31): mass 0.0053  per-unit 0.00076
+u in [31,39): mass 0.0055  per-unit 0.00069
+u in [39,51): mass 0.0086  per-unit 0.00072
+u in [51,65): mass 0.0104  per-unit 0.00075
+u in [65,84): mass 0.0141  per-unit 0.00074
+u in [84,107): mass 0.0198  per-unit 0.00086
+u in [107,138): mass 0.0268  per-unit 0.00086
+u in [138,177): mass 0.0382  per-unit 0.00098
+u in [177,228): mass 0.0529  per-unit 0.00104
+u in [228,293): mass 0.0752  per-unit 0.00116
+u in [293,376): mass 0.1030  per-unit 0.00124
+u in [376,483): mass 0.1376  per-unit 0.00129
+u in [483,621): mass 0.1660  per-unit 0.00120
+u in [621,797): mass 0.1616  per-unit 0.00092
+u in [797,1024): mass 0.1621  per-unit 0.00071

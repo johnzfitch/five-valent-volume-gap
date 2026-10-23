@@ -1,0 +1,7 @@
+tuples checked: 121 (all 2j_i <= 3, total dim <= 1100)
+  I1: max abs error 7.11e-15
+  I2: max abs error 2.96e-16
+  I3: max abs error 5.75e-16
+  I4: max abs error 4.63e-16
+  I5: max abs error 8.88e-16
+  I5r: max abs error 8.88e-16

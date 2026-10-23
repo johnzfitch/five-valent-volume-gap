@@ -1,0 +1,8 @@
+R6 N=80: 766249 sorted tuples with d>=2, 26s
+R6 min lambda*26.18/(j_max+1) = 7.5569 at (1, 1, 1, 1) (Theorem A claims >= 1)
+R6 global min lambda = 0.433012701892219 at doubled (1, 1, 1, 1); sqrt3/4 = 0.433012701892219
+R6 Conjecture 1 (lambda >= sqrt(jmax(jmax+1))/2) violations: 0 []
+R6 per-j_max minimiser not of the form (1/2,1/2,j,j) for 2j_max in: [] (count 0) -- note ties (e.g. (1/2,1/2,j,j) vs other tuples with equal lambda) would show here
+R6 d>=4: min lambda/sqrt(jmax(jmax+1)) = 0.6708 at (3, 3, 3, 3)
+R6 lambda*S range even d: [1.0000, 2.6939], violations of Prop D [24^-1/4, 6]: 0; odd d>=3: [2.8284, 5.3894]
+R6 author npz keys: ['data', 'columns']

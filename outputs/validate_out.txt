@@ -1,0 +1,5 @@
+V1a 4-valent, all ordered tuples 2j<=4 with Inv != 0: 128 tuples, max spectral diff 7.55e-15
+V1b Racah entries vs closed form (pairs sorted, 2j<=12): 7826 links, 0 mismatches; diagonal zero
+V2 qhat = commutator of pair Casimirs on Inv: max diff 2.66e-15
+V3 full ten-triple operator vs normal-form grid, orbits 1-3, 3 chirotopes each: 1332 cases, dimension mismatches 0, max rel. spectral diff 3.14e-15
+V4 BR (4.12) sigma-reduction = full operator as matrices on Inv: 23 cases, max diff 1.55e-14

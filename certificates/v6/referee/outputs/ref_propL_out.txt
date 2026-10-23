@@ -1,0 +1,20 @@
+n=2: dim=10 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=3: dim=14 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=4: dim=18 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=5: dim=22 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=6: dim=26 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=7: dim=30 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=8: dim=34 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=9: dim=38 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=10: dim=42 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=11: dim=46 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=12: dim=50 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=13: dim=54 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=14: dim=58 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=15: dim=62 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=16: dim=66 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=17: dim=70 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=18: dim=74 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=19: dim=78 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+n=20: dim=82 labels complete True; X links/magnitudes exact True; Y links/magnitudes exact True; Y zero rows exactly L+(0),R+(n): True; alpha/beta overlaps exact (and block-diagonal in (c,e)) True
+ALL OK: True

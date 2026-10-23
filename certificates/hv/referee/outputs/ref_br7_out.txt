@@ -1,0 +1,3 @@
+smallest 8 |q| (float64): 3.575109e-07, 3.575109e-07, 5.216918e-01, 5.216918e-01, 5.615837e+00, 5.615837e+00, 1.139692e+01, 1.139692e+01  max q = 1.5145e+02
+dim Inv = 44, invariance residual = 4.3e-15, max|Re ev| = 2.5e-14
+smallest nonzero q = 3.57510893e-07, lambda_V = sqrt(q) = 0.000597922146  (BR II: 0.000597922)

@@ -1,0 +1,5 @@
+2s=4 legs=(39, 40, 41, 42) lambda=0.9408: <Q>=-1698.83 std(Q)=134.52 ||[Q,W0]psi||=3838.72  ||[Q,W0]||_max-entry=18253.0  idealised spacing near S=s: 3.0
+2s=6 legs=(79, 80, 79, 80) lambda=1.0178: <Q>=-6438.51 std(Q)=350.71 ||[Q,W0]psi||=20068.00  ||[Q,W0]||_max-entry=130306.9  idealised spacing near S=s: 4.0
+2s=5 legs=(63, 64, 64, 64) lambda=0.7148: <Q>=-4176.62 std(Q)=139.39 ||[Q,W0]psi||=3276.56  ||[Q,W0]||_max-entry=77935.9  idealised spacing near S=s: 3.5
+2s=5 legs=(255, 256, 256, 256) lambda=0.7010: <Q>=-65877.67 std(Q)=1098.59 ||[Q,W0]psi||=100273.89  ||[Q,W0]||_max-entry=4880594.1  idealised spacing near S=s: 3.5
+2s=21 legs=(127, 128, 128, 128) lambda=0.6332: <Q>=-16476.43 std(Q)=486.29 ||[Q,W0]psi||=9914.71  ||[Q,W0]||_max-entry=610777.2  idealised spacing near S=s: 11.5

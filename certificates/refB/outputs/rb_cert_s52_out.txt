@@ -1,0 +1,1 @@
+j1=5/2, all 31944 tuples with legs 2j<=22 (sorted within pairs): target 7.69 -> {'trivial': 1922, 'certified': 30022}; failures []  (11s)

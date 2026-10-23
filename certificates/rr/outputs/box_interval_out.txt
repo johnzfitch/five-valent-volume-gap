@@ -1,0 +1,6 @@
+constants: pi^2/6 in [1.6449340668482262, 1.6449340668482266];  T0 in [2.211798463106407, 2.211898460606658] (Arb, K=20000 + tail);  lam0 = 2077500574274449/6400000000000000 exact
+configurations: 1489059 (s2_proof.py [B3] reports 1,489,059)
+failures (rigorous): 0
+worst rigorous margin sM/need = 3.235699 at (n1,m1,n2,m2) = (21, 0, 22, 1), W_hi = 4.301208
+W_hi - W_C3(reference float) relative, 3000 samples: min 1.98e-23, max |.| 2.07e-13 (W_hi must not be below the true W)
+wall 118s

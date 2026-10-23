@@ -1,0 +1,1 @@
+chain reduction check: 14028 (tuple, sigma) cases with 2j<= 8, max relative spectral discrepancy 5.33e-15; all couplings > 0, path connected

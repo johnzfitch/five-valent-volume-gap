@@ -1,0 +1,5 @@
+Theorem Z checks at 40 digits, half-integer s, labelled tuples (j2<=j3, j4<=j5) with 2j_i<=8: 2470 tuples, 5220 monotone pairings
+  dim ker T > sum|imb| (any pairing): 0
+  monotone pairing with dim ker T != sum|imb|: 0
+  lam(T) < sigma_min(B') (uniform end choices): 0
+  largest (zero sv / smallest nonzero sv) over all cases: 0.0

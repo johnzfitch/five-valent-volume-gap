@@ -1,0 +1,10 @@
+C(n) = s*[F0 + (7/3)F1 + W F1] must be <= 1 at the box edge n0 and nonincreasing beyond it
+PASS  R1   n0 = 4000: C(n0) <= 0.764395 (upper end of the interval, rounded upward)   all 8 monomials nonincreasing: True
+PASS  R2+  n0 = 4000: C(n0) <= 0.795919 (upper end of the interval, rounded upward)   all 7 monomials nonincreasing: True
+PASS  R2-  n0 = 4000: C(n0) <= 0.51885 (upper end of the interval, rounded upward)   all 11 monomials nonincreasing: True
+PASS  R4   n0 = 4000: C(n0) <= 0.00091411 (upper end of the interval, rounded upward)   all 4 monomials nonincreasing: True
+PASS  R1c  n0 = 100000: C(n0) <= 0.00000290869 (upper end of the interval, rounded upward)   all 7 monomials nonincreasing: True
+PASS  R4c  n0 = 100000: C(n0) <= 0.0000702789 (upper end of the interval, rounded upward)   all 4 monomials nonincreasing: True
+PASS  Tp   n0 = 100000: C(n0) <= 0.0207904 (upper end of the interval, rounded upward)   all 5 monomials nonincreasing: True
+PASS  Tm   n0 = 100000: C(n0) <= 0.0207904 (upper end of the interval, rounded upward)   all 5 monomials nonincreasing: True
+ALL PASS

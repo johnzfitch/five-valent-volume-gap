@@ -1,0 +1,9 @@
+V1 tangents [(-1, 2, -3), (-2, 4, 1), (2, -1, -4), (-3, 1, 4), (-4, 3, 3), (-2, -3, 2)]: min |det| = 4 (all 20 nonzero: True), sigma = (2, 0, 0, 0, 0, 0, 0, 0, -2, 0)
+V2 full operator vs ladder model, all singular values, n=1..12: dims 4n+2, max rel. deviation 9.25e-15
+V3 (n=3..8) X links only (c-,g=n/2,e)-(c+,g=n/2,e) with |x|=sqrt(n(n+2))/4: True; Y links (c,h,e)-(c,h,e+1) with |y_h| closed form: True; Y zero rows exactly (c+,h=0,e=1/2),(c+,h=n+1,e=n+1/2): True
+V4 recoupling magnitudes (exact sympy 6j, n=2..12, all e): True
+V5 n=1: ladder q_min = 0.840876885219  (previous folder, exact-certified: 0.8409)
+V5 n=3: ladder q_min = 0.0459024418549  (previous folder, exact-certified: 0.04590)
+V5 n=5: ladder q_min = 0.000686353832432  (previous folder, exact-certified: 6.864e-4)
+V5 n=7: ladder q_min = 4.65514461479e-6  (previous folder, exact-certified: 4.655e-6)
+V5 n=9: ladder q_min = 1.79192473905e-8  (previous folder, exact-certified: 1.792e-8)

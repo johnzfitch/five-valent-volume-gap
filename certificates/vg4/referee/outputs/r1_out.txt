@@ -1,0 +1,19 @@
+R1a brute force vs closed form: 128 ORDERED admissible tuples with 1<=2j_i<=4; dim mismatches 0; max |diff| 8.88e-15; 4.0s
+R1a extra (5, 5, 5, 5): dim 6 vs 6, max |diff| 1.78e-14, smallest |q|>0 = 2.5685067263357784
+R1a extra (1, 5, 5, 5): dim 2 vs 2, max |diff| 1.33e-15, smallest |q|>0 = 3.8971143170299753
+R1a extra (2, 4, 5, 5): dim 3 vs 3, max |diff| 2.66e-15, smallest |q|>0 = 6.5954529791364624
+R1a extra (6, 6, 5, 5): dim 6 vs 6, max |diff| 2.84e-14, smallest |q|>0 = 3.333396509205869
+R1a extra (1, 1, 6, 6): dim 2 vs 2, max |diff| 1.33e-15, smallest |q|>0 = 1.7320508075688785
+R1a extra (3, 5, 6, 6): dim 4 vs 4, max |diff| 1.24e-14, smallest |q|>0 = 4.286105418021266
+R1a extra (6, 5, 4, 3): dim 4 vs 4, max |diff| 8.88e-15, smallest |q|>0 = 3.1035521356460833
+R1a extra (6, 6, 6, 6): dim 7 vs 7, max |diff| 1.78e-14, smallest |q|>0 = 6.928203230275505
+R1b recoupling ('1/2', '1/2', '1/2', '1/2'): d=2, |W W^T - I|=0.0, max|off-tridiag|=0.0, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.56e-61, spectrum max|diff| vs closed form 0.00e+00 (0.0s)
+R1b recoupling ('1', '1', '1', '1'): d=3, |W W^T - I|=1.57e-61, max|off-tridiag|=1.55e-62, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.56e-61, spectrum max|diff| vs closed form 0.00e+00 (0.0s)
+R1b recoupling ('3/2', '2', '5/2', '3'): d=4, |W W^T - I|=4.35e-61, max|off-tridiag|=1.18e-60, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.56e-61, spectrum max|diff| vs closed form 0.00e+00 (0.0s)
+R1b recoupling ('1/2', '1/2', '10', '10'): d=2, |W W^T - I|=2.63e-61, max|off-tridiag|=0.0, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.4e-60, spectrum max|diff| vs closed form 0.00e+00 (0.0s)
+R1b recoupling ('5', '7', '17/2', '19/2'): d=11, |W W^T - I|=2.09e-60, max|off-tridiag|=1.24e-58, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 4.67e-61, spectrum max|diff| vs closed form 1.14e-13 (0.0s)
+R1b recoupling ('10', '10', '10', '10'): d=21, |W W^T - I|=6.04e-60, max|off-tridiag|=3.41e-58, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 3.11e-61, spectrum max|diff| vs closed form 1.19e-12 (0.1s)
+R1b recoupling ('1/2', '15', '15', '29/2'): d=2, |W W^T - I|=2.35e-61, max|off-tridiag|=0.0, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.32e-60, spectrum max|diff| vs closed form 0.00e+00 (0.0s)
+R1b recoupling ('3', '20', '21', '30'): d=7, |W W^T - I|=8.08e-61, max|off-tridiag|=1.48e-57, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 8.56e-61, spectrum max|diff| vs closed form 1.14e-12 (0.0s)
+R1b recoupling ('25', '25', '25', '25'): d=51, |W W^T - I|=2.36e-59, max|off-tridiag|=8.89e-57, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 3.89e-61, spectrum max|diff| vs closed form 2.36e-11 (0.5s)
+R1b recoupling ('7/2', '40', '81/2', '44'): d=8, |W W^T - I|=1.37e-60, max|off-tridiag|=1.06e-56, max|diag|=0.0, max rel err of Q_(k-1,k)^2 vs closed form a_k^2 = 1.4e-60, spectrum max|diff| vs closed form 0.00e+00 (0.0s)

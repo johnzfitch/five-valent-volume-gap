@@ -1,0 +1,1 @@
+labelled tuples 2j_i<=6, 5 (alpha,beta) pairs: 19415 cases; max |spec diff|/max(s_max,1) = 9.14e-15; kernel-count mismatches: 0
