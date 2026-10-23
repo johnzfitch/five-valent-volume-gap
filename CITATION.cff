@@ -12,8 +12,8 @@ authors:
     email: zack@internetuniverse.org
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0007-7953-1531"
-version: 1.0.0
-date-released: 2026-10-22
+version: 1.0.1
+date-released: 2026-10-23
 repository-code: "https://github.com/johnzfitch/five-valent-volume-gap"
 license: MIT
 keywords:
