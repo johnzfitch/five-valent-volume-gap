@@ -65,6 +65,6 @@ The full runs `r3 … 30` and `r4 … 9` write `repro_r3.txt` and `repro_r4.txt`
 
 [Bohr–Sommerfeld Asymptotics for Limit-Circle Jacobi Matrices](https://github.com/johnzfitch/limit-circle-jacobi-asymptotics) comes from the same operator with su(1,1) labels.
 
-## Licence
+## License
 
 The paper (the LaTeX sources and the PDF) and the stored outputs are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The code (all `.py` files) is licensed under the MIT License. See [`LICENSE`](LICENSE).
